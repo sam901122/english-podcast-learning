@@ -9,8 +9,9 @@ transcribes its audio with OpenAI, generates Traditional Chinese learning notes,
 static site to GitHub Pages. Audio and full transcripts are not committed to the repository.
 
 Each episode contains basic, intermediate, and advanced study sets. Every set has 20 vocabulary words
-and 10 phrases, sorted by CEFR level; the site opens on the advanced set. Learning entries use canonical
-forms while preserving the exact transcript wording for highlighted examples.
+and up to 10 genuinely useful phrases, sorted by CEFR level; the site opens on the advanced set. Learning
+entries use canonical forms while preserving one exact transcript sentence and the model-selected highlight.
+All generated Chinese is normalized to Taiwan Traditional Chinese before publishing.
 
 ## Setup
 
@@ -34,6 +35,7 @@ python scripts/update_podcast.py --dry-run
 ```
 
 To run the complete process locally, set `OPENAI_API_KEY` in the environment and omit `--dry-run`.
+The complete local process also requires `ffmpeg` on `PATH`.
 
 ## Attribution
 

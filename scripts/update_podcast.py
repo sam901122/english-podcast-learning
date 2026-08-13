@@ -17,6 +17,8 @@ from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 
+from opencc import OpenCC
+
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "site" / "data"
 EPISODES_DIR = DATA_DIR / "episodes"
@@ -140,13 +142,17 @@ def validate_and_sort_notes(notes: dict) -> dict:
 
         collections = (
             ("vocabulary", "word", VOCABULARY_COUNT),
-            ("phrases", "phrase", PHRASE_COUNT),
+            ("phrases", "phrase", None),
         )
         for collection_name, term_key, expected_count in collections:
             items = study_set.get(collection_name, [])
-            if len(items) != expected_count:
+            if expected_count is not None and len(items) != expected_count:
                 raise ValueError(
                     f"Expected {expected_count} {study_level} {collection_name}, received {len(items)}"
+                )
+            if collection_name == "phrases" and len(items) > PHRASE_COUNT:
+                raise ValueError(
+                    f"Expected at most {PHRASE_COUNT} {study_level} phrases, received {len(items)}"
                 )
 
             for item in items:
@@ -162,25 +168,30 @@ def validate_and_sort_notes(notes: dict) -> dict:
                     )
 
                 example = item["example"]
-                highlight_terms = item.get("highlightTerms", [])
-                if not highlight_terms:
-                    raise ValueError(f"Missing highlightTerms for {term!r}")
-                seen_highlights: set[str] = set()
-                for highlight_term in highlight_terms:
-                    normalized_highlight = highlight_term.strip().casefold()
-                    pattern = rf"(?<![A-Za-z]){re.escape(highlight_term.strip())}(?![A-Za-z])"
-                    if (
-                        not normalized_highlight
-                        or normalized_highlight in seen_highlights
-                        or not re.search(pattern, example, re.IGNORECASE)
-                    ):
-                        raise ValueError(
-                            f"Invalid highlight term {highlight_term!r} for {term!r}"
-                        )
-                    seen_highlights.add(normalized_highlight)
+                example_parts = item.get("exampleParts", [])
+                if not example.strip() or len(example) > 500 or "\n" in example or "\r" in example:
+                    raise ValueError(f"Invalid single-sentence example for {term!r}")
+                if not example_parts or "".join(part["text"] for part in example_parts) != example:
+                    raise ValueError(f"exampleParts do not reconstruct the example for {term!r}")
+                highlighted_parts = [
+                    part for part in example_parts if part["highlight"] and part["text"].strip()
+                ]
+                if len(highlighted_parts) != 1:
+                    raise ValueError(f"Expected exactly one LLM-selected highlight for {term!r}")
 
             items.sort(key=lambda item: CEFR_ORDER[item["level"]])
     return notes
+
+
+def normalize_traditional_chinese(value, converter: OpenCC | None = None):
+    converter = converter or OpenCC("s2tw")
+    if isinstance(value, str):
+        return converter.convert(value)
+    if isinstance(value, list):
+        return [normalize_traditional_chinese(item, converter) for item in value]
+    if isinstance(value, dict):
+        return {key: normalize_traditional_chinese(item, converter) for key, item in value.items()}
+    return value
 
 
 def learning_item_schema(kind: str, allowed_levels: list[str]) -> dict:
@@ -188,11 +199,19 @@ def learning_item_schema(kind: str, allowed_levels: list[str]) -> dict:
         "level": {"type": "string", "enum": allowed_levels},
         "meaningZh": {"type": "string"},
         "example": {"type": "string"},
-        "highlightTerms": {
+        "exampleParts": {
             "type": "array",
             "minItems": 1,
-            "maxItems": 3,
-            "items": {"type": "string"},
+            "maxItems": 7,
+            "items": {
+                "type": "object",
+                "additionalProperties": False,
+                "properties": {
+                    "text": {"type": "string"},
+                    "highlight": {"type": "boolean"},
+                },
+                "required": ["text", "highlight"],
+            },
         },
     }
     if kind == "vocabulary":
@@ -204,11 +223,11 @@ def learning_item_schema(kind: str, allowed_levels: list[str]) -> dict:
         }
         required = [
             "word", "kkPhonetic", "partOfSpeech", "level", "meaningZh", "example",
-            "highlightTerms",
+            "exampleParts",
         ]
     else:
         term_properties = {"phrase": {"type": "string"}, **term_properties}
-        required = ["phrase", "level", "meaningZh", "example", "highlightTerms"]
+        required = ["phrase", "level", "meaningZh", "example", "exampleParts"]
     return {
         "type": "object",
         "additionalProperties": False,
@@ -231,7 +250,7 @@ def study_set_schema(study_level: str) -> dict:
             },
             "phrases": {
                 "type": "array",
-                "minItems": PHRASE_COUNT,
+                "minItems": 0,
                 "maxItems": PHRASE_COUNT,
                 "items": learning_item_schema("phrases", allowed_levels),
             },
@@ -261,15 +280,17 @@ def analyze(client, episode: dict, transcript: str) -> dict:
         },
     }
     prompt = f"""You create concise study notes for Taiwanese English learners.
-Summarize this episode in Traditional Chinese and simple English. Build three distinct study sets from
-the transcript, with exactly {VOCABULARY_COUNT} vocabulary words and {PHRASE_COUNT} phrases in each set:
+Summarize this episode in Taiwan Traditional Chinese and simple English. Build three distinct study sets
+from the transcript, with exactly {VOCABULARY_COUNT} vocabulary words and up to {PHRASE_COUNT} phrases in
+each set:
 - `basic`: A2-B1 items
 - `intermediate`: B1-B2 items
 - `advanced`: C1-C2 items
 
 Do not repeat a vocabulary learning form or canonical phrase across study sets. Choose genuinely useful
-items and assign an accurate CEFR `level` within the allowed range for its study set. The web page will
-show the advanced set by default.
+items and assign an accurate CEFR `level` within the allowed range for its study set. Include fewer than
+{PHRASE_COUNT} phrases, including zero, when the transcript does not contain enough genuinely useful phrases;
+never pad the list with weak, generic, or invented phrases. The web page will show the advanced set by default.
 
 For vocabulary, set `word` to the form a learner should study. Convert ordinary inflected verbs to the
 dictionary base form (for example, `evaporating` becomes `evaporate`) and ordinary plural nouns to singular.
@@ -280,15 +301,21 @@ and CEFR `level` describe the learning form in `word`.
 
 For phrases, set `phrase` to the reusable canonical form a learner should study, normally using a base verb
 (for example, `taking a step back` in the transcript becomes `take a step back`). For every word and phrase,
-`example` must be the complete original sentence from the podcast transcript without rewriting it. Set
-`highlightTerms` to the exact, case-preserving surface word or phrase found in that example (for example,
-`evaporating` or `taking a step back`), even when it differs from the learning form. Every highlight term
-must occur verbatim in the example.
+`example` must be exactly one complete original sentence from the podcast transcript without rewriting it.
+Never return a paragraph, multiple sentences, speaker labels, or surrounding context.
+
+The LLM must decide the exact highlight span. Split the complete `example` into ordered `exampleParts` whose
+`text` values concatenate to exactly the original `example`, character for character. Mark only the one exact
+surface form of the learning word or phrase with `highlight: true` (for example, only `evaporating` or only
+`taking a step back`). Mark every other character with `highlight: false`. Do not include punctuation,
+surrounding words, repeated unrelated matches, or extra whitespace in the highlighted part. Do not derive the
+highlight with morphology or string rules; select the intended span from the sentence semantically.
 
 For every word, provide its American English pronunciation in KK phonetic symbols, enclosed in slashes.
-Give phrases a Traditional Chinese meaning only; do not provide an English definition. Do not invent facts
-or wording.
-In the Traditional Chinese summary, insert one regular half-width space at every boundary between
+Give phrases a Taiwan Traditional Chinese meaning only; do not provide an English definition. Every Chinese
+character in `summaryZh` and `meaningZh` must use Taiwan Traditional Chinese. Never output Simplified Chinese
+characters or Mainland Chinese wording. Do not invent facts or wording.
+In the Taiwan Traditional Chinese summary, insert one regular half-width space at every boundary between
 Chinese full-width text and half-width Latin letters or numbers (for example: "BBC 記者 Maddie").
 Apply this typography rule consistently. Internal rule keyword: 盤古之白; do not include the keyword
 in the generated notes.
@@ -304,7 +331,8 @@ Transcript:
         input=prompt,
         text={"format": {"type": "json_schema", **schema}},
     )
-    return validate_and_sort_notes(json.loads(response.output_text))
+    notes = normalize_traditional_chinese(json.loads(response.output_text))
+    return validate_and_sort_notes(notes)
 
 
 def save_episode(episode: dict, notes: dict, index: list[dict]) -> None:

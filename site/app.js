@@ -12,42 +12,11 @@ const STUDY_LEVEL_OPTIONS = [
 ];
 let selectedStudyLevel = 'advanced';
 
-const highlightTerms = (sentence = '', terms = []) => {
-  const uniqueTerms = [...new Set(terms.map(term => term.trim()).filter(Boolean))]
-    .sort((left, right) => right.length - left.length);
-  if (!uniqueTerms.length) return escapeHtml(sentence);
-  const escapedTerms = uniqueTerms.map(term => term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
-  const pattern = new RegExp(`(^|[^A-Za-z])(${escapedTerms.join('|')})(?=$|[^A-Za-z])`, 'gi');
-  let html = '';
-  let lastIndex = 0;
-  let match;
-
-  while ((match = pattern.exec(sentence)) !== null) {
-    const wordStart = match.index + match[1].length;
-    html += escapeHtml(sentence.slice(lastIndex, wordStart));
-    html += `<mark class="target-word">${escapeHtml(match[2])}</mark>`;
-    lastIndex = wordStart + match[2].length;
-  }
-
-  return html + escapeHtml(sentence.slice(lastIndex));
-};
-
-const presentParticiple = word => {
-  if (/ie$/i.test(word)) return `${word.slice(0, -2)}ying`;
-  if (/[^aeiou]e$/i.test(word)) return `${word.slice(0, -1)}ing`;
-  return `${word}ing`;
-};
-
-const itemHighlightTerms = (item, termKey) => {
-  if (item.highlightTerms?.length) return item.highlightTerms;
-  const term = item[termKey] || '';
-  const candidates = [term];
-  if (termKey === 'phrase' && term.includes(' ')) {
-    const [verb, ...rest] = term.split(' ');
-    candidates.push(`${presentParticiple(verb)} ${rest.join(' ')}`);
-  }
-  const example = (item.example || '').toLowerCase();
-  return candidates.filter(candidate => example.includes(candidate.toLowerCase()));
+const renderExample = item => {
+  if (!item.exampleParts?.length) return escapeHtml(item.example || '');
+  return item.exampleParts.map(part => part.highlight
+    ? `<mark class="target-word">${escapeHtml(part.text)}</mark>`
+    : escapeHtml(part.text)).join('');
 };
 
 const sortByCefr = items => [...items].sort((left, right) =>
@@ -135,11 +104,11 @@ function renderStudySet(studySet = {}) {
     <div class="card"><div class="word-row"><strong>${escapeHtml(item.word)}</strong><button class="speak-word" type="button" data-speak="${escapeHtml(item.word)}" aria-label="Pronounce ${escapeHtml(item.word)}">${speakerIcon}</button><span>${escapeHtml(item.level)} · ${escapeHtml(item.partOfSpeech)}</span></div>
     <p class="phonetic" lang="en">${escapeHtml(item.kkPhonetic || '')}</p>
     <p>${escapeHtml(item.meaningZh)}</p>
-    <blockquote lang="en">${highlightTerms(item.example, itemHighlightTerms(item, 'word'))}</blockquote></div>`).join('')
+    <blockquote lang="en">${renderExample(item)}</blockquote></div>`).join('')
     : '<p class="status">尚無單字內容</p>';
   const phraseCards = phrases.length ? phrases.map(item => `
     <div class="card"><div class="phrase-row"><strong>${escapeHtml(item.phrase)}</strong><button class="speak-word" type="button" data-speak="${escapeHtml(item.phrase)}" aria-label="Pronounce ${escapeHtml(item.phrase)}">${speakerIcon}</button>${item.level ? `<span>${escapeHtml(item.level)}</span>` : ''}</div><p>${escapeHtml(item.meaningZh)}</p>
-    <blockquote lang="en">${highlightTerms(item.example, itemHighlightTerms(item, 'phrase'))}</blockquote></div>`).join('')
+    <blockquote lang="en">${renderExample(item)}</blockquote></div>`).join('')
     : '<p class="status">尚無片語內容</p>';
   return `
     <section><h3>今日單字</h3><div class="cards">${vocabularyCards}</div></section>

@@ -1,6 +1,6 @@
 import unittest
 
-from scripts.update_podcast import validate_and_sort_notes
+from scripts.update_podcast import normalize_traditional_chinese, validate_and_sort_notes
 
 
 LEVELS = {
@@ -16,7 +16,11 @@ def make_item(kind, study_level, index, level):
         "level": level,
         "meaningZh": "測試",
         "example": f"The podcast says {surface} in this sentence.",
-        "highlightTerms": [surface],
+        "exampleParts": [
+            {"text": "The podcast says ", "highlight": False},
+            {"text": surface, "highlight": True},
+            {"text": " in this sentence.", "highlight": False},
+        ],
     }
     if kind == "vocabulary":
         item.update({
@@ -64,11 +68,38 @@ class ValidateAndSortNotesTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Duplicate or empty word"):
             validate_and_sort_notes(notes)
 
-    def test_rejects_highlight_term_missing_from_example(self):
+    def test_rejects_parts_that_do_not_reconstruct_example(self):
         notes = make_notes()
-        notes["studySets"]["intermediate"]["phrases"][0]["highlightTerms"] = ["not present"]
+        notes["studySets"]["intermediate"]["phrases"][0]["exampleParts"][1]["text"] = "wrong"
 
-        with self.assertRaisesRegex(ValueError, "Invalid highlight term"):
+        with self.assertRaisesRegex(ValueError, "do not reconstruct"):
+            validate_and_sort_notes(notes)
+
+    def test_rejects_parts_without_llm_selected_highlight(self):
+        notes = make_notes()
+        parts = notes["studySets"]["advanced"]["vocabulary"][0]["exampleParts"]
+        for part in parts:
+            part["highlight"] = False
+
+        with self.assertRaisesRegex(ValueError, "exactly one LLM-selected highlight"):
+            validate_and_sort_notes(notes)
+
+    def test_accepts_no_phrases_when_none_are_useful(self):
+        notes = make_notes()
+        for study_set in notes["studySets"].values():
+            study_set["phrases"] = []
+
+        validated = validate_and_sort_notes(notes)
+
+        self.assertTrue(all(not study_set["phrases"] for study_set in validated["studySets"].values()))
+
+    def test_rejects_more_than_ten_phrases(self):
+        notes = make_notes()
+        notes["studySets"]["basic"]["phrases"].append(
+            make_item("phrases", "basic-extra", 10, "B1")
+        )
+
+        with self.assertRaisesRegex(ValueError, "at most 10 basic phrases"):
             validate_and_sort_notes(notes)
 
     def test_rejects_cefr_level_outside_study_set(self):
@@ -77,6 +108,15 @@ class ValidateAndSortNotesTests(unittest.TestCase):
 
         with self.assertRaisesRegex(ValueError, "Unexpected CEFR level"):
             validate_and_sort_notes(notes)
+
+    def test_normalizes_generated_chinese_to_taiwan_traditional(self):
+        normalized = normalize_traditional_chinese({
+            "summaryZh": "这个节目讨论软件和数据库。",
+            "nested": [{"meaningZh": "视频里的词汇。"}],
+        })
+
+        self.assertEqual(normalized["summaryZh"], "這個節目討論軟件和數據庫。")
+        self.assertEqual(normalized["nested"][0]["meaningZh"], "視頻裡的詞彙。")
 
 
 if __name__ == "__main__":
