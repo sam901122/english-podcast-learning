@@ -4,6 +4,24 @@ const escapeHtml = (value = '') => value.replace(/[&<>'"]/g, char => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
 }[char]));
 
+const highlightWord = (sentence = '', word = '') => {
+  if (!word) return escapeHtml(sentence);
+  const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const pattern = new RegExp(`(^|[^A-Za-z])(${escapedWord})(?=$|[^A-Za-z])`, 'gi');
+  let html = '';
+  let lastIndex = 0;
+  let match;
+
+  while ((match = pattern.exec(sentence)) !== null) {
+    const wordStart = match.index + match[1].length;
+    html += escapeHtml(sentence.slice(lastIndex, wordStart));
+    html += `<mark class="target-word">${escapeHtml(match[2])}</mark>`;
+    lastIndex = wordStart + match[2].length;
+  }
+
+  return html + escapeHtml(sentence.slice(lastIndex));
+};
+
 const dateText = value => new Intl.DateTimeFormat('zh-TW', {
   year: 'numeric', month: 'long', day: 'numeric', timeZone: 'Asia/Taipei'
 }).format(new Date(value));
@@ -25,7 +43,7 @@ async function loadEpisode(id) {
         <div class="card"><div><strong>${escapeHtml(item.word)}</strong><span>${escapeHtml(item.level)} · ${escapeHtml(item.partOfSpeech)}</span></div>
         <p class="phonetic" lang="en">${escapeHtml(item.kkPhonetic || '')}</p>
         <p>${escapeHtml(item.meaningZh)}</p>
-        <blockquote lang="en">${escapeHtml(item.example)}</blockquote></div>`).join('')}</div></section>
+        <blockquote lang="en">${highlightWord(item.example, item.word)}</blockquote></div>`).join('')}</div></section>
       <section><h3>實用片語</h3><div class="cards">${episode.phrases.map(item => `
         <div class="card"><strong>${escapeHtml(item.phrase)}</strong><p>${escapeHtml(item.meaningZh)}</p>
         <p class="definition" lang="en">${escapeHtml(item.definitionEn)}</p><blockquote lang="en">${escapeHtml(item.example)}</blockquote></div>`).join('')}</div></section>

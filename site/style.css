@@ -33,6 +33,7 @@ h3 { display:flex; align-items:center; gap:10px; margin:0 0 18px; font:700 1.5re
 .card .phonetic { margin:2px 0 8px; color:var(--deep-red); font-family:Georgia,serif; font-size:1rem; }
 .definition { color:var(--muted); font-size:.92rem; }
 blockquote { margin:12px 0 0; padding-left:12px; border-left:4px solid var(--red); font-size:.9rem; }
+.target-word { color:inherit; background:transparent; font-weight:850; text-decoration:underline; text-decoration-color:var(--red); text-decoration-thickness:2px; text-underline-offset:3px; }
 .status,.empty { padding:45px; text-align:center; background:var(--white); border:1px solid var(--line); border-radius:4px 16px 16px 4px; }
 .error { color:#8a2525; }
 footer { display:flex; justify-content:space-between; gap:24px; padding:28px 0 45px; color:var(--muted); border-top:1px solid var(--line); font-size:.82rem; }
