@@ -23,6 +23,7 @@ async function loadEpisode(id) {
       <section><h3>English summary</h3><p lang="en">${escapeHtml(episode.summaryEn)}</p></section>
       <section><h3>今日單字</h3><div class="cards">${episode.vocabulary.map(item => `
         <div class="card"><div><strong>${escapeHtml(item.word)}</strong><span>${escapeHtml(item.level)} · ${escapeHtml(item.partOfSpeech)}</span></div>
+        <p class="phonetic" lang="en">${escapeHtml(item.kkPhonetic || '')}</p>
         <p>${escapeHtml(item.meaningZh)}</p><p class="definition" lang="en">${escapeHtml(item.definitionEn)}</p>
         <blockquote lang="en">${escapeHtml(item.example)}</blockquote></div>`).join('')}</div></section>
       <section><h3>實用片語</h3><div class="cards">${episode.phrases.map(item => `
@@ -56,4 +57,3 @@ function showError(error) {
 }
 
 loadIndex().catch(showError);
-

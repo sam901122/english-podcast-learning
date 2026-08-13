@@ -138,13 +138,14 @@ def analyze(client, episode: dict, transcript: str) -> dict:
                         "additionalProperties": False,
                         "properties": {
                             "word": {"type": "string"},
+                            "kkPhonetic": {"type": "string"},
                             "partOfSpeech": {"type": "string"},
                             "level": {"type": "string", "enum": ["B1", "B2", "C1", "C2"]},
                             "meaningZh": {"type": "string"},
                             "definitionEn": {"type": "string"},
                             "example": {"type": "string"},
                         },
-                        "required": ["word", "partOfSpeech", "level", "meaningZh", "definitionEn", "example"],
+                        "required": ["word", "kkPhonetic", "partOfSpeech", "level", "meaningZh", "definitionEn", "example"],
                     },
                 },
                 "phrases": {
@@ -167,7 +168,8 @@ def analyze(client, episode: dict, transcript: str) -> dict:
     }
     prompt = f"""You create concise study notes for a Taiwanese English learner at B1-B2 level.
 Summarize this episode in Traditional Chinese and simple English. Select 8-12 genuinely useful
-B1-C2 words and 4-8 phrases that appear in the transcript. Examples must be short verbatim excerpts
+B1-C2 words and 4-8 phrases that appear in the transcript. For every word, provide its American
+English pronunciation in KK phonetic symbols, enclosed in slashes. Examples must be short verbatim excerpts
 from the supplied transcript. Do not invent facts or words.
 
 Episode title: {episode['title']}

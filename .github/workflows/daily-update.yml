@@ -6,7 +6,7 @@ on:
     paths:
       - ".github/workflows/daily-update.yml"
   schedule:
-    - cron: "30 22 * * 1-5"
+    - cron: "0 8 * * 1-5"
       timezone: "Asia/Taipei"
   workflow_dispatch:
 
