@@ -1,6 +1,6 @@
-:root { --red:#9e211b; --black:#211c18; --white:#fffdf8; --yellow:#d9a72e; }
+:root { --red:#9e211b; --black:#211c18; --white:#fffdf8; --yellow:#d9a72e; --warm:#f4eddf; }
 * { box-sizing:border-box; }
-body { margin:0; color:var(--black); background-color:var(--white); background-image:radial-gradient(var(--yellow) .7px,transparent .7px); background-size:7px 7px; font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif; line-height:1.7; }
+body { margin:0; color:var(--black); background-color:var(--warm); background-image:radial-gradient(var(--yellow) .7px,transparent .7px); background-size:7px 7px; font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif; line-height:1.7; }
 .top-stitch { height:8px; background:repeating-linear-gradient(90deg,var(--red) 0 34px,var(--white) 34px 42px,var(--black) 42px 50px,var(--white) 50px 58px); }
 header, main, footer { width:min(920px, calc(100% - 40px)); margin-inline:auto; }
 header { position:relative; display:grid; grid-template-columns:1.35fr .65fr; min-height:510px; padding:72px 0 54px; overflow:hidden; border-bottom:2px solid var(--black); }
@@ -36,6 +36,8 @@ blockquote { margin:12px 0 0; padding-left:12px; border-left:4px solid var(--red
 .target-word { color:var(--red); background:transparent; font-weight:850; }
 .status,.empty { padding:45px; text-align:center; background:var(--white); border:1px solid var(--black); border-radius:4px 16px 16px 4px; }
 .error { color:var(--red); }
-footer { display:flex; justify-content:space-between; gap:24px; padding:28px 0 45px; color:var(--black); border-top:1px solid var(--black); font-size:.82rem; }
+footer { display:grid; grid-template-columns:1fr 1fr; align-items:stretch; gap:24px; padding:28px 0 45px; color:var(--black); border-top:1px solid var(--black); font-size:.82rem; }
+footer p,footer>a { display:flex; align-items:center; min-height:72px; margin:0; padding:14px 16px; border:1px solid var(--black); }
 footer a { color:var(--red); }
-@media (max-width:700px) { header { grid-template-columns:1fr; min-height:650px; padding-top:45px; } .akabeko { right:32px; bottom:35px; width:245px; transform:rotate(-2deg); } .seal { top:38px; } .cards { grid-template-columns:1fr; } footer { display:block; } }
+footer>a { justify-content:center; text-align:center; font-weight:700; }
+@media (max-width:700px) { header { grid-template-columns:1fr; min-height:650px; padding-top:45px; } .akabeko { right:32px; bottom:35px; width:245px; transform:rotate(-2deg); } .seal { top:38px; } .cards { grid-template-columns:1fr; } footer { grid-template-columns:1fr; gap:10px; } }
