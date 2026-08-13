@@ -1,10 +1,6 @@
 name: Update daily podcast
 
 on:
-  push:
-    branches: [master, main]
-    paths:
-      - ".github/workflows/daily-update.yml"
   schedule:
     - cron: "0 8 * * 1-5"
       timezone: "Asia/Taipei"
@@ -39,7 +35,8 @@ jobs:
       - name: Fetch and process the newest episode
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          FORCE_REPROCESS_LATEST: ${{ github.event_name == 'push' && 'true' || 'false' }}
+          TRANSCRIPTION_MODEL: gpt-4o-mini-transcribe
+          FORCE_REPROCESS_LATEST: ${{ github.event_name == 'workflow_dispatch' && 'true' || 'false' }}
         run: |
           set +e
           python scripts/update_podcast.py 2>&1 | tee /tmp/podcast-update.log

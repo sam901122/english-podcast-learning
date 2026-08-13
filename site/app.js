@@ -24,7 +24,7 @@ async function loadEpisode(id) {
       <section><h3>今日單字</h3><div class="cards">${episode.vocabulary.map(item => `
         <div class="card"><div><strong>${escapeHtml(item.word)}</strong><span>${escapeHtml(item.level)} · ${escapeHtml(item.partOfSpeech)}</span></div>
         <p class="phonetic" lang="en">${escapeHtml(item.kkPhonetic || '')}</p>
-        <p>${escapeHtml(item.meaningZh)}</p><p class="definition" lang="en">${escapeHtml(item.definitionEn)}</p>
+        <p>${escapeHtml(item.meaningZh)}</p>
         <blockquote lang="en">${escapeHtml(item.example)}</blockquote></div>`).join('')}</div></section>
       <section><h3>實用片語</h3><div class="cards">${episode.phrases.map(item => `
         <div class="card"><strong>${escapeHtml(item.phrase)}</strong><p>${escapeHtml(item.meaningZh)}</p>
@@ -52,8 +52,16 @@ async function loadIndex() {
   }));
 }
 
+async function loadLatest() {
+  const response = await fetch('data/episodes.json', { cache: 'no-store' });
+  if (!response.ok) throw new Error('無法讀取集數列表');
+  const episodes = await response.json();
+  if (!episodes.length) return loadIndex();
+  return loadEpisode(episodes[0].id);
+}
+
 function showError(error) {
   app.innerHTML = `<p class="status error">${escapeHtml(error.message)}，請稍後再試。</p>`;
 }
 
-loadIndex().catch(showError);
+loadLatest().catch(showError);

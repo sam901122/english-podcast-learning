@@ -19,8 +19,8 @@ The default feed is `https://podcasts.files.bbci.co.uk/w13xtvrv.rss`. The update
 Asia/Taipei, Monday through Friday. Both can be changed in the workflow or with the
 `PODCAST_FEED_URL` environment variable.
 
-The workflow transcribes the complete episode. When the workflow configuration itself is pushed,
-the latest episode is reprocessed once; scheduled runs only process newly published episodes.
+The workflow transcribes the complete episode. Manual runs reprocess the latest episode; scheduled
+runs only process newly published episodes. Pushing code does not trigger podcast processing.
 
 ## Local feed check
 

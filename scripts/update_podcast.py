@@ -133,6 +133,8 @@ def analyze(client, episode: dict, transcript: str) -> dict:
                 "summaryEn": {"type": "string"},
                 "vocabulary": {
                     "type": "array",
+                    "minItems": 20,
+                    "maxItems": 20,
                     "items": {
                         "type": "object",
                         "additionalProperties": False,
@@ -142,14 +144,15 @@ def analyze(client, episode: dict, transcript: str) -> dict:
                             "partOfSpeech": {"type": "string"},
                             "level": {"type": "string", "enum": ["B1", "B2", "C1", "C2"]},
                             "meaningZh": {"type": "string"},
-                            "definitionEn": {"type": "string"},
                             "example": {"type": "string"},
                         },
-                        "required": ["word", "kkPhonetic", "partOfSpeech", "level", "meaningZh", "definitionEn", "example"],
+                        "required": ["word", "kkPhonetic", "partOfSpeech", "level", "meaningZh", "example"],
                     },
                 },
                 "phrases": {
                     "type": "array",
+                    "minItems": 10,
+                    "maxItems": 10,
                     "items": {
                         "type": "object",
                         "additionalProperties": False,
@@ -167,10 +170,10 @@ def analyze(client, episode: dict, transcript: str) -> dict:
         },
     }
     prompt = f"""You create concise study notes for a Taiwanese English learner at B1-B2 level.
-Summarize this episode in Traditional Chinese and simple English. Select 8-12 genuinely useful
-B1-C2 words and 4-8 phrases that appear in the transcript. For every word, provide its American
-English pronunciation in KK phonetic symbols, enclosed in slashes. Examples must be short verbatim excerpts
-from the supplied transcript. Do not invent facts or words.
+Summarize this episode in Traditional Chinese and simple English. Select exactly 20 genuinely useful
+B1-C2 words and exactly 10 phrases that appear in the transcript. For every word, provide its American
+English pronunciation in KK phonetic symbols, enclosed in slashes. The example must be the complete
+sentence from the podcast transcript that contains that word. Do not invent facts or wording.
 
 Episode title: {episode['title']}
 BBC description: {episode['description']}
