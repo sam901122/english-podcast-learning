@@ -19,6 +19,9 @@ The default feed is `https://podcasts.files.bbci.co.uk/w13xtvrv.rss`. The update
 Asia/Taipei, Monday through Friday. Both can be changed in the workflow or with the
 `PODCAST_FEED_URL` environment variable.
 
+During initial testing, the workflow sets `TRANSCRIPTION_MAX_SECONDS=20`, so only the first 20
+seconds are sent for transcription. Remove that environment variable to process full episodes.
+
 ## Local feed check
 
 ```powershell

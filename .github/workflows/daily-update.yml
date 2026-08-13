@@ -30,6 +30,7 @@ jobs:
       - name: Fetch and process the newest episode
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          TRANSCRIPTION_MAX_SECONDS: "20"
         run: python scripts/update_podcast.py
       - name: Commit generated notes
         run: |

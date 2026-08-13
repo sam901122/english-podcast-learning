@@ -7,6 +7,8 @@ import hashlib
 import json
 import os
 import re
+import shutil
+import subprocess
 import sys
 import tempfile
 import urllib.request
@@ -94,6 +96,29 @@ def transcribe(client, audio_path: Path) -> str:
             prompt="BBC World Service news podcast with international names and current affairs.",
         )
     return result.text.strip()
+
+
+def make_transcription_sample(audio_path: Path, output_dir: Path) -> Path:
+    """Return a shortened audio file when TRANSCRIPTION_MAX_SECONDS is set."""
+    raw_limit = os.getenv("TRANSCRIPTION_MAX_SECONDS", "").strip()
+    if not raw_limit:
+        return audio_path
+    seconds = float(raw_limit)
+    if seconds <= 0:
+        raise ValueError("TRANSCRIPTION_MAX_SECONDS must be greater than zero")
+    if not shutil.which("ffmpeg"):
+        raise RuntimeError("ffmpeg is required when TRANSCRIPTION_MAX_SECONDS is set")
+    sample_path = output_dir / "episode-sample.mp3"
+    subprocess.run(
+        [
+            "ffmpeg", "-hide_banner", "-loglevel", "error", "-y",
+            "-i", str(audio_path), "-t", str(seconds),
+            "-codec:a", "libmp3lame", "-q:a", "4", str(sample_path),
+        ],
+        check=True,
+    )
+    print(f"Using the first {seconds:g} seconds for this transcription run.")
+    return sample_path
 
 
 def analyze(client, episode: dict, transcript: str) -> dict:
@@ -207,7 +232,8 @@ def main() -> int:
     with tempfile.TemporaryDirectory(prefix="english-podcast-") as temp_dir:
         audio_path = Path(temp_dir) / "episode.mp3"
         fetch(episode["audioUrl"], audio_path)
-        transcript = transcribe(client, audio_path)
+        transcription_audio = make_transcription_sample(audio_path, Path(temp_dir))
+        transcript = transcribe(client, transcription_audio)
         notes = analyze(client, episode, transcript)
     save_episode(episode, notes, index)
     print(f"Published learning notes for {episode['id']}")
