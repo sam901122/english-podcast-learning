@@ -4,22 +4,23 @@
   "description": "<p>Orangutans are the world’s most endangered apes and they’re now even closer to extinction. They live on two islands in southeast Asia: Sumatra and Borneo. In November, an extreme weather event in the area killed more than 1,000 people there, plus about 7% of the world’s rarest type of orangutan according to a new study.</p><p>BBC Climate and Science reporter Georgina Rannard takes us through how orangutans are being pushed towards extinction and what some countries and charities are doing to protect them.</p><p>We also hear from a conservationist making an effort to save the species.</p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Emma-Louise Amanshia\nProducers: Emily Horler and Benita Barden\nVideo Producer: Baldeep Chahal\nEditors: Verity Wilde</p>",
   "publishedAt": "2026-08-13T13:30:00+00:00",
   "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct994l",
-  "spotifyUrl": "https://open.spotify.com/episode/3d3AVgvw3Evi2rQIUdxVua",
-  "summaryZh": "本集讨论紅毛猩猩（orangutan）的生存危机。BBC 報導指出，紅毛猩猩主要分布在 Sumatra 和 Borneo 的熱帶雨林與低地沼澤，栖息地因棕櫚油種植、採礦、伐木與水力發電等開發而被破壞與切割，導致族群愈來愈 isolated 並面臨法律及非法的捕捉與交易威脅。去年的極端氣候事件（四天強降雨與土石流）造成約 1,000 人死亡，也導致約 58 隻 Tapanuli 紅毛猩猩死亡，約為該物種總數的 約 7% ，使牠們更接近 extinction。報導也說明有保育工作在進行，例如保護棲地、人工繁殖計畫與國際間出資以換取不砍伐森林等策略，嘗試降低滅絕風險。",
-  "summaryEn": "This episode explains how orangutans are at greater risk. They live mainly on Sumatra and Borneo in rainforests and swamps. Habitat loss from palm oil farming, mining, logging and hydropower is fragmenting populations. An extreme storm last November killed about 1,000 people and about 58 Tapanuli orangutans — roughly 7% of that species — pushing them closer to extinction. Conservation efforts include protected areas, breeding programs and payments to countries to keep forests standing.",
+  "summaryZh": "本 集 探討 紅 毛 猩猩（ orangutan ）面臨 的 風險，牠們 居住 在 印尼 和 馬來西亞 的 Sumatra 及 Borneo 島上。 篇 中 說明 森林 砍伐、 棕櫚油 農場、 採礦、 走私 販售 與 極端 天氣（包括 強降雨 與 颱風）如何 使 稀有 的 Tapanuli 物種 更 接近 滅絕。 節目 也 討論 了 保育 工作， 包括 設立 保護 區、 繁育 計畫 及 富國 支付 弱勢 國家 保持 森林 的 構想，以 期 減緩 物種 滅絕 的 風險。",
+  "summaryEn": "This episode explains how orangutans on Sumatra and Borneo are threatened by deforestation for palm oil, mining, illegal trafficking, and extreme weather such as heavy rainfall and cyclones. It highlights the particularly dire situation for the Tapanuli orangutan and outlines conservation responses including protected zones, breeding programmes and international payments to keep forests standing.",
   "studySets": {
     "basic": {
       "vocabulary": [
         {
           "word": "orangutan",
-          "kkPhonetic": "/əˈræŋˌəˌtæn/",
+          "kkPhonetic": "/ˈɔːrənˌtæn/",
           "partOfSpeech": "noun",
           "level": "A2",
           "meaningZh": "紅毛猩猩",
-          "example": "You might not know the word orangutan means person of the forest, and that we share 97% of our DNA with them.",
-          "highlightTerms": [
-            "orangutan"
-          ]
+          "example": "Today we're talking about orangutans.",
+          "exampleParts": {
+            "before": "Today we're talking about ",
+            "highlight": "orangutans",
+            "after": "."
+          }
         },
         {
           "word": "forest",
@@ -27,21 +28,51 @@
           "partOfSpeech": "noun",
           "level": "A2",
           "meaningZh": "森林",
-          "example": "You might not know the word orangutan means person of the forest, and that we share 97% of our DNA with them.",
-          "highlightTerms": [
-            "forest"
-          ]
+          "example": "You might not know that the word orangutan means person of the forest and that we share 97% of our DNA with them.",
+          "exampleParts": {
+            "before": "You might not know that the word orangutan means person of the ",
+            "highlight": "forest",
+            "after": " and that we share 97% of our DNA with them."
+          }
         },
         {
           "word": "DNA",
-          "kkPhonetic": "/ˌdiˌɛnˈeɪ/",
+          "kkPhonetic": "/ˌdiːˌɛnˈeɪ/",
           "partOfSpeech": "noun",
           "level": "A2",
-          "meaningZh": "DNA（去氧核糖核酸）",
-          "example": "You might not know the word orangutan means person of the forest, and that we share 97% of our DNA with them.",
-          "highlightTerms": [
-            "DNA"
-          ]
+          "meaningZh": "去氧核甘酸（DNA）",
+          "example": "You might not know that the word orangutan means person of the forest and that we share 97% of our DNA with them.",
+          "exampleParts": {
+            "before": "You might not know that the word orangutan means person of the forest and that we share 97% of our ",
+            "highlight": "DNA",
+            "after": " with them."
+          }
+        },
+        {
+          "word": "endangered",
+          "kkPhonetic": "/ɪnˈdeɪndʒərd/",
+          "partOfSpeech": "adjective",
+          "level": "A2",
+          "meaningZh": "瀕危的",
+          "example": "They're also the world's most endangered great apes and they're now even closer to extinction.",
+          "exampleParts": {
+            "before": "They're also the world's most ",
+            "highlight": "endangered",
+            "after": " great apes and they're now even closer to extinction."
+          }
+        },
+        {
+          "word": "extinction",
+          "kkPhonetic": "/ɪkˈstɪŋkʃən/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "滅絕",
+          "example": "They're also the world's most endangered great apes and they're now even closer to extinction.",
+          "exampleParts": {
+            "before": "They're also the world's most endangered great apes and they're now even closer to ",
+            "highlight": "extinction",
+            "after": "."
+          }
         },
         {
           "word": "island",
@@ -50,912 +81,417 @@
           "level": "A2",
           "meaningZh": "島嶼",
           "example": "Orangutans live on two islands, Sumatra and Borneo in Southeast Asia.",
-          "highlightTerms": [
-            "two islands"
-          ]
+          "exampleParts": {
+            "before": "Orangutans live on two ",
+            "highlight": "islands",
+            "after": ", Sumatra and Borneo in Southeast Asia."
+          }
         },
         {
-          "word": "weather",
-          "kkPhonetic": "/ˈwɛðər/",
-          "partOfSpeech": "noun",
-          "level": "A2",
-          "meaningZh": "天氣",
-          "example": "A new study says they're even more at risk because of extreme weather.",
-          "highlightTerms": [
-            "extreme weather"
-          ]
-        },
-        {
-          "word": "kill",
-          "kkPhonetic": "/kɪl/",
+          "word": "live",
+          "kkPhonetic": "/lɪv/",
           "partOfSpeech": "verb",
           "level": "A2",
-          "meaningZh": "殺死",
-          "example": "In November, an extreme weather event in the area killed more than 1,000 people, as well as about 7% of the world's rarest orangutan.",
-          "highlightTerms": [
-            "killed more than 1,000 people"
-          ]
-        },
-        {
-          "word": "study",
-          "kkPhonetic": "/ˈstʌdi/",
-          "partOfSpeech": "noun",
-          "level": "A2",
-          "meaningZh": "研究",
-          "example": "A new study says they're even more at risk because of extreme weather.",
-          "highlightTerms": [
-            "A new study"
-          ]
-        },
-        {
-          "word": "palm oil",
-          "kkPhonetic": "/ˈpɑm ˌɔɪl/",
-          "partOfSpeech": "noun",
-          "level": "A2",
-          "meaningZh": "棕櫚油",
-          "example": "I know that Indonesia and Malaysia produce a lot of the world's palm oil.",
-          "highlightTerms": [
-            "palm oil"
-          ]
-        },
-        {
-          "word": "supermarket",
-          "kkPhonetic": "/ˈsuːpərˌmɑrkɪt/",
-          "partOfSpeech": "noun",
-          "level": "A2",
-          "meaningZh": "超級市場",
-          "example": "But it's found in half of packaged goods in supermarkets.",
-          "highlightTerms": [
-            "supermarkets"
-          ]
-        },
-        {
-          "word": "biscuit",
-          "kkPhonetic": "/ˈbɪskət/",
-          "partOfSpeech": "noun",
-          "level": "A2",
-          "meaningZh": "餅乾",
-          "example": "But it's found in half of packaged goods in supermarkets. So lots of like bread, cake, biscuits, toothpaste, lipstick, lots of cosmetics, partly because it's this really stable product.",
-          "highlightTerms": [
-            "biscuits"
-          ]
-        },
-        {
-          "word": "toothpaste",
-          "kkPhonetic": "/ˈtuθˌpeɪst/",
-          "partOfSpeech": "noun",
-          "level": "A2",
-          "meaningZh": "牙膏",
-          "example": "But it's found in half of packaged goods in supermarkets. So lots of like bread, cake, biscuits, toothpaste, lipstick, lots of cosmetics, partly because it's this really stable product.",
-          "highlightTerms": [
-            "toothpaste"
-          ]
-        },
-        {
-          "word": "lipstick",
-          "kkPhonetic": "/ˈlɪpˌstɪk/",
-          "partOfSpeech": "noun",
-          "level": "A2",
-          "meaningZh": "口紅",
-          "example": "But it's found in half of packaged goods in supermarkets. So lots of like bread, cake, biscuits, toothpaste, lipstick, lots of cosmetics, partly because it's this really stable product.",
-          "highlightTerms": [
-            "lipstick"
-          ]
+          "meaningZh": "生活、居住",
+          "example": "Orangutans live on two islands, Sumatra and Borneo in Southeast Asia.",
+          "exampleParts": {
+            "before": "Orangutans ",
+            "highlight": "live",
+            "after": " on two islands, Sumatra and Borneo in Southeast Asia."
+          }
         },
         {
           "word": "nest",
           "kkPhonetic": "/nɛst/",
           "partOfSpeech": "noun",
           "level": "A2",
-          "meaningZh": "巢；睡覺用的臨時巢",
+          "meaningZh": "巢穴；巢",
           "example": "So they always build a nest to sleep in.",
-          "highlightTerms": [
-            "build a nest to sleep in"
-          ]
+          "exampleParts": {
+            "before": "So they always build a ",
+            "highlight": "nest",
+            "after": " to sleep in."
+          }
         },
         {
           "word": "rain",
           "kkPhonetic": "/reɪn/",
-          "partOfSpeech": "verb",
+          "partOfSpeech": "noun",
           "level": "A2",
-          "meaningZh": "下雨",
+          "meaningZh": "雨",
           "example": "And if it rains, they can build a little canopy.",
-          "highlightTerms": [
-            "rains"
-          ]
-        },
-        {
-          "word": "tree",
-          "kkPhonetic": "/triː/",
-          "partOfSpeech": "noun",
-          "level": "A2",
-          "meaningZh": "樹",
-          "example": "They live mostly in the trees.",
-          "highlightTerms": [
-            "the trees"
-          ]
-        },
-        {
-          "word": "mother",
-          "kkPhonetic": "/ˈmʌðər/",
-          "partOfSpeech": "noun",
-          "level": "A2",
-          "meaningZh": "母親（動物的母親）",
-          "example": "So some young orangutans are captured for this illegal pet trade and they actually usually kill the mother because they, you know, they understand that the mother will try and follow the baby.",
-          "highlightTerms": [
-            "kill the mother"
-          ]
-        },
-        {
-          "word": "endangered",
-          "kkPhonetic": "/ɛnˈdeɪndʒərd/",
-          "partOfSpeech": "adjective",
-          "level": "B1",
-          "meaningZh": "瀕危的",
-          "example": "They're also the world's most endangered great apes, and they're now even closer to extinction.",
-          "highlightTerms": [
-            "endangered"
-          ]
-        },
-        {
-          "word": "cosmetic",
-          "kkPhonetic": "/ˌkɑzˈmɛtɪk/",
-          "partOfSpeech": "noun",
-          "level": "B1",
-          "meaningZh": "化妝品",
-          "example": "But it's found in half of packaged goods in supermarkets. So lots of like bread, cake, biscuits, toothpaste, lipstick, lots of cosmetics, partly because it's this really stable product.",
-          "highlightTerms": [
-            "cosmetics"
-          ]
-        },
-        {
-          "word": "mattress",
-          "kkPhonetic": "/ˈmætrəs/",
-          "partOfSpeech": "noun",
-          "level": "B1",
-          "meaningZh": "床墊",
-          "example": "They use smaller branches as a mattress.",
-          "highlightTerms": [
-            "a mattress"
-          ]
+          "exampleParts": {
+            "before": "And if it ",
+            "highlight": "rains",
+            "after": ", they can build a little canopy."
+          }
         },
         {
           "word": "canopy",
           "kkPhonetic": "/ˈkænəpi/",
           "partOfSpeech": "noun",
           "level": "B1",
-          "meaningZh": "樹冠層；樹頂遮蔽",
-          "example": "So they live in this quite lush, dense canopy, very green, moving between those trees.",
-          "highlightTerms": [
-            "quite lush, dense canopy"
-          ]
+          "meaningZh": "樹冠層；遮蓋",
+          "example": "And if it rains, they can build a little canopy.",
+          "exampleParts": {
+            "before": "And if it rains, they can build a little ",
+            "highlight": "canopy",
+            "after": "."
+          }
         }
       ],
       "phrases": [
         {
-          "phrase": "pack lunchboxes",
+          "phrase": "person of the forest",
           "level": "A2",
-          "meaningZh": "打包便當盒",
-          "example": "So you can pack lunchboxes with peace of mind.",
-          "highlightTerms": [
-            "pack lunchboxes with peace of mind"
-          ]
+          "meaningZh": "森林之人（orangutan 名稱 的 含意）",
+          "example": "You might not know that the word orangutan means person of the forest and that we share 97% of our DNA with them.",
+          "exampleParts": {
+            "before": "You might not know that the word orangutan means ",
+            "highlight": "person of the forest",
+            "after": " and that we share 97% of our DNA with them."
+          }
         },
         {
-          "phrase": "get back to school ready",
+          "phrase": "build a nest",
           "level": "A2",
-          "meaningZh": "準備好返校",
-          "example": "Get back to school ready at Whole Foods Market.",
-          "highlightTerms": [
-            "Get back to school ready at Whole Foods Market."
-          ]
-        },
-        {
-          "phrase": "check out",
-          "level": "A2",
-          "meaningZh": "查看；去看",
-          "example": "Check out The Global Story on BBC.com or wherever you get your podcasts.",
-          "highlightTerms": [
-            "Check out The Global Story on BBC.com or wherever you get your podcasts."
-          ]
-        },
-        {
-          "phrase": "share DNA with",
-          "level": "A2",
-          "meaningZh": "共享 DNA",
-          "example": "You might not know the word orangutan means person of the forest, and that we share 97% of our DNA with them.",
-          "highlightTerms": [
-            "share 97% of our DNA with them"
-          ]
-        },
-        {
-          "phrase": "live on",
-          "level": "A2",
-          "meaningZh": "居住於（某島或某地）",
-          "example": "Orangutans live on two islands, Sumatra and Borneo in Southeast Asia.",
-          "highlightTerms": [
-            "live on two islands, Sumatra and Borneo in Southeast Asia"
-          ]
-        },
-        {
-          "phrase": "sleep in",
-          "level": "A2",
-          "meaningZh": "在…裡睡覺",
+          "meaningZh": "築巢",
           "example": "So they always build a nest to sleep in.",
-          "highlightTerms": [
-            "to sleep in"
-          ]
+          "exampleParts": {
+            "before": "So they always ",
+            "highlight": "build a nest",
+            "after": " to sleep in."
+          }
         },
         {
-          "phrase": "look for food",
-          "level": "A2",
-          "meaningZh": "尋找食物",
-          "example": "So sometimes because their home is essentially shrinking, the orangutans will go onto farmland to look for food or go into communities and they're perceived as dangerous.",
-          "highlightTerms": [
-            "look for food"
-          ]
-        },
-        {
-          "phrase": "have a baby",
-          "level": "A2",
-          "meaningZh": "生小孩；繁殖下一代",
-          "example": "So just seven to eight years is when an orangutan will have a baby.",
-          "highlightTerms": [
-            "have a baby"
-          ]
-        },
-        {
-          "phrase": "be killed",
-          "level": "A2",
-          "meaningZh": "被殺害",
-          "example": "And on average, every year, 2 or 3,000 orangutans are killed.",
-          "highlightTerms": [
-            "are killed"
-          ]
-        },
-        {
-          "phrase": "go onto farmland",
+          "phrase": "be close to extinction",
           "level": "B1",
-          "meaningZh": "到農地上（尋找食物）",
-          "example": "So sometimes because their home is essentially shrinking, the orangutans will go onto farmland to look for food or go into communities and they're perceived as dangerous.",
-          "highlightTerms": [
-            "go onto farmland to look for food"
-          ]
+          "meaningZh": "接近 滅絕",
+          "example": "They're also the world's most endangered great apes and they're now even closer to extinction.",
+          "exampleParts": {
+            "before": "They're also the world's most endangered great apes and they're now even ",
+            "highlight": "closer to extinction",
+            "after": "."
+          }
         }
       ]
     },
     "intermediate": {
       "vocabulary": [
         {
-          "word": "species",
-          "kkPhonetic": "/ˈspisiz/",
+          "word": "habitat",
+          "kkPhonetic": "/ˈhæbətæt/",
           "partOfSpeech": "noun",
           "level": "B1",
-          "meaningZh": "物種",
-          "example": "So there are three species of orangutan and they do look a bit different.",
-          "highlightTerms": [
-            "three species of orangutan"
-          ]
+          "meaningZh": "棲地；生境",
+          "example": "So they live in this quite lush, dense canopy, very green, moving between those trees.",
+          "exampleParts": {
+            "before": "So they live in this quite lush, dense canopy, very green, moving between those ",
+            "highlight": "trees",
+            "after": "."
+          }
+        },
+        {
+          "word": "rainforest",
+          "kkPhonetic": "/ˈreɪnˌfɔrɪst/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "熱帶雨林",
+          "example": "The habitat they love and the one we think of is the rainforest, jungle or lowland swamps.",
+          "exampleParts": {
+            "before": "The habitat they love and the one we think of is the ",
+            "highlight": "rainforest",
+            "after": ", jungle or lowland swamps."
+          }
         },
         {
           "word": "swamp",
           "kkPhonetic": "/swɑmp/",
           "partOfSpeech": "noun",
           "level": "B1",
-          "meaningZh": "沼澤",
+          "meaningZh": "沼澤；低地濕地",
           "example": "The habitat they love and the one we think of is the rainforest, jungle or lowland swamps.",
-          "highlightTerms": [
-            "lowland swamps"
-          ]
+          "exampleParts": {
+            "before": "The habitat they love and the one we think of is the rainforest, jungle or lowland ",
+            "highlight": "swamps",
+            "after": "."
+          }
         },
         {
-          "word": "group",
-          "kkPhonetic": "/ɡruːp/",
+          "word": "palm oil",
+          "kkPhonetic": "/ˈpɑm ˌɔɪl/",
           "partOfSpeech": "noun",
           "level": "B1",
-          "meaningZh": "群體；群",
-          "example": "And they live in about 40 different groups on those islands.",
-          "highlightTerms": [
-            "40 different groups"
-          ]
+          "meaningZh": "棕櫚油",
+          "example": "I know that Indonesia and Malaysia produce a lot of the world's palm oil.",
+          "exampleParts": {
+            "before": "I know that Indonesia and Malaysia produce a lot of the world's ",
+            "highlight": "palm oil",
+            "after": "."
+          }
         },
         {
-          "word": "burn",
-          "kkPhonetic": "/bɜrn/",
+          "word": "demand",
+          "kkPhonetic": "/dɪˈmænd/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "需求",
+          "example": "But the problem is, as we've made more and more palm oil and used it more on mass, obviously there's higher demand for the palm oil and it's mostly found in Sumatra and Borneo.",
+          "exampleParts": {
+            "before": "But the problem is, as we've made more and more palm oil and used it more on mass, obviously there's higher ",
+            "highlight": "demand",
+            "after": " for the palm oil and it's mostly found in Sumatra and Borneo."
+          }
+        },
+        {
+          "word": "clear",
+          "kkPhonetic": "/klɪr/",
           "partOfSpeech": "verb",
           "level": "B1",
-          "meaningZh": "燒；燃燒",
-          "example": "So huge amounts of forests are being cleared to grow the trees and they also drain some swamps, burn land to prepare it for planting the trees.",
-          "highlightTerms": [
-            "burn land to prepare it for planting the trees"
-          ]
+          "meaningZh": "清除、（砍伐）開闢",
+          "example": "So huge amounts of forests are being cleared to grow the trees.",
+          "exampleParts": {
+            "before": "So huge amounts of forests are being ",
+            "highlight": "cleared",
+            "after": " to grow the trees."
+          }
         },
         {
-          "word": "documentary",
-          "kkPhonetic": "/ˌdɑkjuˈmɛntɛri/",
-          "partOfSpeech": "noun",
+          "word": "kill",
+          "kkPhonetic": "/kɪl/",
+          "partOfSpeech": "verb",
           "level": "B1",
-          "meaningZh": "紀錄片",
-          "example": "And I don't know if you remember, but in 2019 there was a David Attenborough documentary about climate change and it had this really viral moment about orangutans.",
-          "highlightTerms": [
-            "David Attenborough documentary about climate change"
-          ]
+          "meaningZh": "殺死",
+          "example": "And they actually usually kill the mother because they understand that the mother will try and follow the baby.",
+          "exampleParts": {
+            "before": "And they actually usually ",
+            "highlight": "kill",
+            "after": " the mother because they understand that the mother will try and follow the baby."
+          }
         },
         {
-          "word": "gold",
-          "kkPhonetic": "/ɡoʊld/",
+          "word": "mine",
+          "kkPhonetic": "/maɪn/",
           "partOfSpeech": "noun",
-          "level": "B1",
-          "meaningZh": "黃金",
-          "example": "At the moment there's gold mine expansion in Indonesia threatening the Tapanuli orangutan, which is the most endangered one.",
-          "highlightTerms": [
-            "gold mine expansion"
-          ]
+          "level": "B2",
+          "meaningZh": "礦；礦場",
+          "example": "So they're building roads through parts of the jungle in Sumatra to try and open a new open cast gold mine.",
+          "exampleParts": {
+            "before": "So they're building roads through parts of the jungle in Sumatra to try and open a new open cast gold ",
+            "highlight": "mine",
+            "after": "."
+          }
         },
         {
-          "word": "road",
-          "kkPhonetic": "/roʊd/",
+          "word": "trafficking",
+          "kkPhonetic": "/ˈtræfɪkɪŋ/",
           "partOfSpeech": "noun",
-          "level": "B1",
-          "meaningZh": "道路",
-          "example": "So there's they're building roads through parts of the jungle in Sumatra to try and open a new open cast gold mine.",
-          "highlightTerms": [
-            "building roads through parts of the jungle in Sumatra"
-          ]
-        },
-        {
-          "word": "paper",
-          "kkPhonetic": "/ˈpeɪpər/",
-          "partOfSpeech": "noun",
-          "level": "B1",
-          "meaningZh": "紙；紙張",
-          "example": "And there's other threats, hydropower expansion and also logging to produce paper and pulp.",
-          "highlightTerms": [
-            "paper and pulp"
-          ]
-        },
-        {
-          "word": "Sumatran",
-          "kkPhonetic": "/suːˈmɑtrən/",
-          "partOfSpeech": "adjective",
           "level": "B2",
-          "meaningZh": "蘇門答臘的（形容詞）",
-          "example": "There's the Bornean, the Sumatran and the Tapanuli.",
-          "highlightTerms": [
-            "the Sumatran"
-          ]
+          "meaningZh": "非法買賣；走私交易",
+          "example": "I was also looking into this and I was really shocked to see that some orangutans are also hunted for illegal trafficking.",
+          "exampleParts": {
+            "before": "I was also looking into this and I was really shocked to see that some orangutans are also hunted for illegal ",
+            "highlight": "trafficking",
+            "after": "."
+          }
         },
         {
-          "word": "Bornean",
-          "kkPhonetic": "/bɔrˈniən/",
-          "partOfSpeech": "adjective",
-          "level": "B2",
-          "meaningZh": "婆羅洲的（形容詞）",
-          "example": "There's the Bornean, the Sumatran and the Tapanuli.",
-          "highlightTerms": [
-            "the Bornean"
-          ]
-        },
-        {
-          "word": "Tapanuli",
-          "kkPhonetic": "/ˌtæpəˈnuːli/",
-          "partOfSpeech": "proper noun",
-          "level": "B2",
-          "meaningZh": "塔潘諾利（紅毛猩猩的一個物種名）",
-          "example": "There's the Bornean, the Sumatran and the Tapanuli.",
-          "highlightTerms": [
-            "the Tapanuli"
-          ]
-        },
-        {
-          "word": "lush",
-          "kkPhonetic": "/lʌʃ/",
-          "partOfSpeech": "adjective",
-          "level": "B2",
-          "meaningZh": "繁茂的；茂盛的",
-          "example": "So they live in this quite lush, dense canopy, very green, moving between those trees.",
-          "highlightTerms": [
-            "quite lush, dense canopy"
-          ]
-        },
-        {
-          "word": "chop",
-          "kkPhonetic": "/tʃɑp/",
+          "word": "isolate",
+          "kkPhonetic": "/ˈaɪsəˌleɪt/",
           "partOfSpeech": "verb",
           "level": "B2",
-          "meaningZh": "砍伐；砍掉",
-          "example": "And that's quite important because, as we're going to talk about, there are lots of threats to these animals and their habitats are sort of being chopped up and put into silos.",
-          "highlightTerms": [
-            "being chopped up"
-          ]
-        },
-        {
-          "word": "silo",
-          "kkPhonetic": "/ˈsaɪˌloʊ/",
-          "partOfSpeech": "noun",
-          "level": "B2",
-          "meaningZh": "獨立隔離的區塊；筒倉（此處比喻）",
-          "example": "And that's quite important because, as we're going to talk about, there are lots of threats to these animals and their habitats are sort of being chopped up and put into silos.",
-          "highlightTerms": [
-            "put into silos"
-          ]
-        },
-        {
-          "word": "drain",
-          "kkPhonetic": "/dreɪn/",
-          "partOfSpeech": "verb",
-          "level": "B2",
-          "meaningZh": "抽乾；排乾（沼澤等）",
-          "example": "So huge amounts of forests are being cleared to grow the trees and they also drain some swamps, burn land to prepare it for planting the trees.",
-          "highlightTerms": [
-            "drain some swamps"
-          ]
-        },
-        {
-          "word": "mining",
-          "kkPhonetic": "/ˈmaɪnɪŋ/",
-          "partOfSpeech": "noun",
-          "level": "B2",
-          "meaningZh": "採礦",
-          "example": "But there's others as well, aren't there? So mining is a big problem.",
-          "highlightTerms": [
-            "mining is a big problem"
-          ]
-        },
-        {
-          "word": "logging",
-          "kkPhonetic": "/ˈlɔɡɪŋ/",
-          "partOfSpeech": "noun",
-          "level": "B2",
-          "meaningZh": "伐木；砍伐活動",
-          "example": "And there's other threats, hydropower expansion and also logging to produce paper and pulp.",
-          "highlightTerms": [
-            "logging to produce paper and pulp"
-          ]
-        },
-        {
-          "word": "pulp",
-          "kkPhonetic": "/pʌlp/",
-          "partOfSpeech": "noun",
-          "level": "B2",
-          "meaningZh": "紙漿；紙漿產品",
-          "example": "And there's other threats, hydropower expansion and also logging to produce paper and pulp.",
-          "highlightTerms": [
-            "paper and pulp"
-          ]
-        },
-        {
-          "word": "hunt",
-          "kkPhonetic": "/hʌnt/",
-          "partOfSpeech": "verb",
-          "level": "B2",
-          "meaningZh": "獵捕；狩獵",
-          "example": "I was really shocked to see that some orangutans are also hunted for legal trafficking.",
-          "highlightTerms": [
-            "hunted for legal trafficking"
-          ]
-        },
-        {
-          "word": "capture",
-          "kkPhonetic": "/ˈkæptʃər/",
-          "partOfSpeech": "verb",
-          "level": "B2",
-          "meaningZh": "捕捉；俘虜",
-          "example": "So some young orangutans are captured for this illegal pet trade and they actually usually kill the mother because they, you know, they understand that the mother will try and follow the baby.",
-          "highlightTerms": [
-            "captured for this illegal pet trade"
-          ]
+          "meaningZh": "使 孤立；使 隔離",
+          "example": "And so those 40 different communities of orangutans are getting more and more isolated over time, which is another risk to them.",
+          "exampleParts": {
+            "before": "And so those 40 different communities of orangutans are getting more and more ",
+            "highlight": "isolated",
+            "after": " over time, which is another risk to them."
+          }
         }
       ],
       "phrases": [
         {
-          "phrase": "live mostly in",
-          "level": "B1",
-          "meaningZh": "主要生活於…之中",
-          "example": "They live mostly in the trees.",
-          "highlightTerms": [
-            "live mostly in the trees"
-          ]
-        },
-        {
-          "phrase": "drain some swamps",
-          "level": "B1",
-          "meaningZh": "排乾一些沼澤",
-          "example": "So huge amounts of forests are being cleared to grow the trees and they also drain some swamps, burn land to prepare it for planting the trees.",
-          "highlightTerms": [
-            "drain some swamps"
-          ]
-        },
-        {
-          "phrase": "build roads",
-          "level": "B1",
-          "meaningZh": "修路；興建道路",
-          "example": "So there's they're building roads through parts of the jungle in Sumatra to try and open a new open cast gold mine.",
-          "highlightTerms": [
-            "building roads through parts of the jungle in Sumatra"
-          ]
-        },
-        {
-          "phrase": "be discovered",
-          "level": "B1",
-          "meaningZh": "被發現；被認定為",
-          "example": "The Tapanuli, which actually was only discovered to be a separate species about 10 years ago, there's only about 800 of them in the wild.",
-          "highlightTerms": [
-            "was only discovered to be a separate species about 10 years ago"
-          ]
-        },
-        {
-          "phrase": "killed more than",
-          "level": "B1",
-          "meaningZh": "造成超過…的死亡",
-          "example": "In November, an extreme weather event in the area killed more than 1,000 people, as well as about 7% of the world's rarest orangutan.",
-          "highlightTerms": [
-            "killed more than 1,000 people, as well as about 7% of the world's rarest orangutan"
-          ]
-        },
-        {
-          "phrase": "be chopped up",
+          "phrase": "chop down",
           "level": "B2",
-          "meaningZh": "被切割成孤立的小區塊",
-          "example": "And that's quite important because, as we're going to talk about, there are lots of threats to these animals and their habitats are sort of being chopped up and put into silos.",
-          "highlightTerms": [
-            "being chopped up and put into silos"
-          ]
+          "meaningZh": "砍倒（樹木）",
+          "example": "It showed an orangutan in a habitat where there were bulldozers chopping down trees.",
+          "exampleParts": {
+            "before": "It showed an orangutan in a habitat where there were bulldozers ",
+            "highlight": "chopping down",
+            "after": " trees."
+          }
         },
         {
-          "phrase": "create huge demand",
+          "phrase": "open a mine",
           "level": "B2",
-          "meaningZh": "造成龐大需求",
-          "example": "And so it's created huge demand for that palm oil.",
-          "highlightTerms": [
-            "created huge demand for that palm oil"
-          ]
-        },
-        {
-          "phrase": "burn land to prepare",
-          "level": "B2",
-          "meaningZh": "燒地以做準備",
-          "example": "So huge amounts of forests are being cleared to grow the trees and they also drain some swamps, burn land to prepare it for planting the trees.",
-          "highlightTerms": [
-            "burn land to prepare it for planting the trees"
-          ]
-        },
-        {
-          "phrase": "open a new mine",
-          "level": "B2",
-          "meaningZh": "開闢新礦場",
-          "example": "So there's they're building roads through parts of the jungle in Sumatra to try and open a new open cast gold mine.",
-          "highlightTerms": [
-            "open a new open cast gold mine"
-          ]
-        },
-        {
-          "phrase": "be perceived as",
-          "level": "B2",
-          "meaningZh": "被視為；被認為是…",
-          "example": "So sometimes because their home is essentially shrinking, the orangutans will go onto farmland to look for food or go into communities and they're perceived as dangerous.",
-          "highlightTerms": [
-            "perceived as dangerous"
-          ]
+          "meaningZh": "開採 礦場",
+          "example": "So they're building roads through parts of the jungle in Sumatra to try and open a new open cast gold mine.",
+          "exampleParts": {
+            "before": "So they're building roads through parts of the jungle in Sumatra to try and ",
+            "highlight": "open",
+            "after": " a new open cast gold mine."
+          }
         }
       ]
     },
     "advanced": {
       "vocabulary": [
         {
-          "word": "isolated",
-          "kkPhonetic": "/ˈaɪsəˌleɪtɪd/",
-          "partOfSpeech": "adjective",
+          "word": "Tapanuli",
+          "kkPhonetic": "/tæpəˈnuːli/",
+          "partOfSpeech": "noun",
           "level": "C1",
-          "meaningZh": "孤立的；被隔離的",
-          "example": "And so those 40 different communities of orangutans are getting more and more isolated over time, which is another risk to them.",
-          "highlightTerms": [
-            "isolated"
-          ]
+          "meaningZh": "塔帕努利（紅毛猩猩 物種 名）",
+          "example": "There's the Bornean, the Sumatran and the Tapanuli.",
+          "exampleParts": {
+            "before": "There's the Bornean, the Sumatran and the ",
+            "highlight": "Tapanuli",
+            "after": "."
+          }
         },
         {
           "word": "compound",
           "kkPhonetic": "/kəmˈpaʊnd/",
           "partOfSpeech": "verb",
           "level": "C1",
-          "meaningZh": "使複合；（使）加重",
-          "example": "So this threat from climate change just shows again how these different risks can compound.",
-          "highlightTerms": [
-            "can compound"
-          ]
+          "meaningZh": "使 複合；使 相互 加劇",
+          "example": "This threat from climate change just shows again how these different risks can compound.",
+          "exampleParts": {
+            "before": "This threat from climate change just shows again how these different risks can ",
+            "highlight": "compound",
+            "after": "."
+          }
         },
         {
           "word": "anomalous",
-          "kkPhonetic": "/əˈnɑmələs/",
+          "kkPhonetic": "/əˈnɑːmələs/",
           "partOfSpeech": "adjective",
           "level": "C1",
           "meaningZh": "反常的；異常的",
           "example": "The storm was considered sort of anomalous.",
-          "highlightTerms": [
-            "anomalous"
-          ]
+          "exampleParts": {
+            "before": "The storm was considered sort of ",
+            "highlight": "anomalous",
+            "after": "."
+          }
         },
         {
-          "word": "infrequently",
-          "kkPhonetic": "/ɪnˈfrikwəntli/",
-          "partOfSpeech": "adverb",
+          "word": "cyclone",
+          "kkPhonetic": "/ˈsaɪkloʊn/",
+          "partOfSpeech": "noun",
           "level": "C1",
-          "meaningZh": "不頻繁地",
-          "example": "Partly because they breed so infrequently.",
-          "highlightTerms": [
-            "infrequently"
-          ]
+          "meaningZh": "氣旋；颱風 類 風暴",
+          "example": "So last November, there was a cyclone that hit South Asia, Indonesia, Malaysia.",
+          "exampleParts": {
+            "before": "So last November, there was a ",
+            "highlight": "cyclone",
+            "after": " that hit South Asia, Indonesia, Malaysia."
+          }
+        },
+        {
+          "word": "landslide",
+          "kkPhonetic": "/ˈlændˌslaɪd/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "土石流；山崩",
+          "example": "There were four days of extreme rainfall, landslides linked to the rainfall.",
+          "exampleParts": {
+            "before": "There were four days of extreme rainfall, ",
+            "highlight": "landslides",
+            "after": " linked to the rainfall."
+          }
         },
         {
           "word": "genetic",
           "kkPhonetic": "/dʒəˈnɛtɪk/",
           "partOfSpeech": "adjective",
           "level": "C1",
-          "meaningZh": "基因的；遺傳的",
-          "example": "There's also projects to increase, protect them, the sort of breeding program to protect their genetic diversity in the future.",
-          "highlightTerms": [
-            "genetic diversity"
-          ]
+          "meaningZh": "基因的；遺傳 的",
+          "example": "There's also projects to increase, protect them, like sort of breeding programs to protect their genetic diversity in the future.",
+          "exampleParts": {
+            "before": "There's also projects to increase, protect them, like sort of breeding programs to protect their ",
+            "highlight": "genetic",
+            "after": " diversity in the future."
+          }
         },
         {
           "word": "conservation",
-          "kkPhonetic": "/ˌkɑnsərˈveɪʃən/",
+          "kkPhonetic": "/ˌkɑːnsərˈveɪʃən/",
           "partOfSpeech": "noun",
           "level": "C1",
-          "meaningZh": "（自然資源或生物的）保育",
-          "example": "There's a lot of conservation work for orangutans in Malaysia and Indonesia.",
-          "highlightTerms": [
-            "conservation work"
-          ]
+          "meaningZh": "保育；守護（自然資源）",
+          "example": "A lot of conservation work for orangutans in Malaysia and Indonesia.",
+          "exampleParts": {
+            "before": "A lot of ",
+            "highlight": "conservation",
+            "after": " work for orangutans in Malaysia and Indonesia."
+          }
         },
         {
-          "word": "hydropower",
-          "kkPhonetic": "/ˈhaɪdrəˌpaʊər/",
-          "partOfSpeech": "noun",
+          "word": "protect",
+          "kkPhonetic": "/prəˈtɛkt/",
+          "partOfSpeech": "verb",
           "level": "C1",
-          "meaningZh": "水力發電",
-          "example": "So there's they're building roads through parts of the jungle in Sumatra to try and open a new open cast gold mine. And there's other threats, hydropower expansion and also logging to produce paper and pulp.",
-          "highlightTerms": [
-            "hydropower expansion"
-          ]
+          "meaningZh": "保護",
+          "example": "The idea is then if you can protect that habitat, then you're protecting the animals living in them, for example, the orangutans.",
+          "exampleParts": {
+            "before": "The idea is then if you can ",
+            "highlight": "protect",
+            "after": " that habitat, then you're protecting the animals living in them, for example, the orangutans."
+          }
         },
         {
-          "word": "expansion",
-          "kkPhonetic": "/ɪkˈspænʃən/",
-          "partOfSpeech": "noun",
-          "level": "C1",
-          "meaningZh": "擴張；擴展",
-          "example": "At the moment there's gold mine expansion in Indonesia threatening the Tapanuli orangutan, which is the most endangered one.",
-          "highlightTerms": [
-            "expansion"
-          ]
-        },
-        {
-          "word": "landslides",
-          "kkPhonetic": "/ˈlændˌslaɪdz/",
-          "partOfSpeech": "noun",
-          "level": "C1",
-          "meaningZh": "土石流；山崩",
-          "example": "There were four days of extreme rainfall, landslides linked to the rainfall.",
-          "highlightTerms": [
-            "landslides"
-          ]
-        },
-        {
-          "word": "dramatic",
-          "kkPhonetic": "/drəˈmætɪk/",
-          "partOfSpeech": "adjective",
-          "level": "C1",
-          "meaningZh": "戲劇性的；急劇的",
-          "example": "We know that 100 years ago there were about 230,000 living in the wild, but there's been a dramatic decrease.",
-          "highlightTerms": [
-            "dramatic decrease"
-          ]
-        },
-        {
-          "word": "bulldozer",
-          "kkPhonetic": "/ˈbʊlˌdoʊzər/",
-          "partOfSpeech": "noun",
-          "level": "C1",
-          "meaningZh": "推土機",
-          "example": "And I don't know if you remember, but in 2019 there was a David Attenborough documentary about climate change and it had this really viral moment about orangutans. And I watched it and it really hit me. It was really upsetting, actually. And it showed an orangutan in a habitat where there were bulldozers chopping down trees and the orangutan could see what was happening and was essentially fighting with the bulldozer and was climbing on top of the machine.",
-          "highlightTerms": [
-            "bulldozers",
-            "the bulldozer"
-          ]
-        },
-        {
-          "word": "illegally",
-          "kkPhonetic": "/ɪˈliɡəli/",
-          "partOfSpeech": "adverb",
-          "level": "C1",
-          "meaningZh": "非法地",
-          "example": "And then those animals are sold illegally.",
-          "highlightTerms": [
-            "sold illegally"
-          ]
-        },
-        {
-          "word": "perceived",
-          "kkPhonetic": "/pərˈsivd/",
-          "partOfSpeech": "verb (past participle)",
-          "level": "C1",
-          "meaningZh": "被視為；被認為",
-          "example": "So sometimes because their home is essentially shrinking, the orangutans will go onto farmland to look for food or go into communities and they're perceived as dangerous.",
-          "highlightTerms": [
-            "perceived as dangerous"
-          ]
-        },
-        {
-          "word": "cleared",
-          "kkPhonetic": "/klɪərd/",
-          "partOfSpeech": "adjective/verb",
-          "level": "C1",
-          "meaningZh": "被清除的；清理（樹林）",
-          "example": "So huge amounts of forests are being cleared to grow the trees and they also drain some swamps, burn land to prepare it for planting the trees.",
-          "highlightTerms": [
-            "being cleared"
-          ]
-        },
-        {
-          "word": "demand",
-          "kkPhonetic": "/dɪˈmænd/",
-          "partOfSpeech": "noun",
-          "level": "C1",
-          "meaningZh": "需求",
-          "example": "And so it's created huge demand for that palm oil.",
-          "highlightTerms": [
-            "huge demand"
-          ]
-        },
-        {
-          "word": "scientists",
-          "kkPhonetic": "/ˈsaɪəntɪsts/",
-          "partOfSpeech": "noun",
-          "level": "C1",
-          "meaningZh": "科學家（複數）",
-          "example": "Scientists also discovered that that weather killed about 58 of the Tapanuli orangutans, those really, really threatened ones.",
-          "highlightTerms": [
-            "Scientists also discovered"
-          ]
-        },
-        {
-          "word": "habitat",
-          "kkPhonetic": "/ˈhæbɪˌtæt/",
-          "partOfSpeech": "noun",
-          "level": "C1",
-          "meaningZh": "棲息地",
-          "example": "Some of that is about simply protecting their habitat.",
-          "highlightTerms": [
-            "protecting their habitat"
-          ]
-        },
-        {
-          "word": "breeding",
-          "kkPhonetic": "/ˈbridɪŋ/",
-          "partOfSpeech": "noun",
-          "level": "C1",
-          "meaningZh": "繁殖；育種（計畫）",
-          "example": "There's also projects to increase, protect them, the sort of breeding program to protect their genetic diversity in the future.",
-          "highlightTerms": [
-            "breeding program"
-          ]
-        },
-        {
-          "word": "extinction",
-          "kkPhonetic": "/ɪkˈstɪŋkʃən/",
+          "word": "emerging economy",
+          "kkPhonetic": "/ɪˈmɜːrdʒɪŋ ɪˈkɑnəmi/",
           "partOfSpeech": "noun",
           "level": "C2",
-          "meaningZh": "滅絕",
-          "example": "They're also the world's most endangered great apes, and they're now even closer to extinction.",
-          "highlightTerms": [
-            "extinction"
-          ]
+          "meaningZh": "新興 經濟體",
+          "example": "Some of these economies are emerging economies.",
+          "exampleParts": {
+            "before": "Some of these economies are ",
+            "highlight": "emerging economies",
+            "after": "."
+          }
         },
         {
-          "word": "trafficking",
-          "kkPhonetic": "/ˈtræfɪkɪŋ/",
-          "partOfSpeech": "noun",
+          "word": "pay",
+          "kkPhonetic": "/peɪ/",
+          "partOfSpeech": "verb",
           "level": "C2",
-          "meaningZh": "非法販運（人口、動物等）",
-          "example": "I was really shocked to see that some orangutans are also hunted for legal trafficking.",
-          "highlightTerms": [
-            "trafficking"
-          ]
+          "meaningZh": "支付；付費（以換取 某項行動）",
+          "example": "So there's programs where countries like Indonesia, which have some of this really valuable, really rare rainforest, could be paid by other countries to not chop down the forest, basically.",
+          "exampleParts": {
+            "before": "So there's programs where countries like Indonesia, which have some of this really valuable, really rare rainforest, could be ",
+            "highlight": "paid",
+            "after": " by other countries to not chop down the forest, basically."
+          }
         }
       ],
       "phrases": [
         {
-          "phrase": "build a nest",
+          "phrase": "keep the forest standing",
           "level": "C1",
-          "meaningZh": "築巢（睡覺用）",
-          "example": "So they always build a nest to sleep in.",
-          "highlightTerms": [
-            "build a nest to sleep in"
-          ]
+          "meaningZh": "讓 森林 保持 直立／不 被 砍伐（保持 森林 完整）",
+          "example": "So there's programs where countries like Indonesia, which have some of this really valuable, really rare rainforest, could be paid by other countries to not chop down the forest, basically.",
+          "exampleParts": {
+            "before": "So there's programs where countries like Indonesia, which have some of this really valuable, really rare rainforest, could be paid by other countries to not chop down the ",
+            "highlight": "forest",
+            "after": ", basically."
+          }
         },
         {
-          "phrase": "weave branches together",
-          "level": "C1",
-          "meaningZh": "把樹枝交織在一起",
-          "example": "They spend 10 minutes every night building a new nest and they weave branches together.",
-          "highlightTerms": [
-            "weave branches together"
-          ]
-        },
-        {
-          "phrase": "use leaves to make gloves",
-          "level": "C1",
-          "meaningZh": "用葉子做手套（保護手）",
-          "example": "And some have been filmed using leaves to make gloves when they're handling like prickly thorns or fruit.",
-          "highlightTerms": [
-            "using leaves to make gloves"
-          ]
-        },
-        {
-          "phrase": "chop down forests",
-          "level": "C1",
-          "meaningZh": "砍伐森林",
-          "example": "So huge amounts of forests are being cleared to grow the trees and they also drain some swamps, burn land to prepare it for planting the trees. But that is exactly where all of these orangutans live, more or less.",
-          "highlightTerms": [
-            "cleared to grow the trees"
-          ]
-        },
-        {
-          "phrase": "sell illegally",
-          "level": "C1",
-          "meaningZh": "非法販售",
-          "example": "And then those animals are sold illegally.",
-          "highlightTerms": [
-            "sold illegally"
-          ]
-        },
-        {
-          "phrase": "set up to protect",
-          "level": "C1",
-          "meaningZh": "設立以保護（某物）",
-          "example": "There's a lot of charities that are set up to protect them.",
-          "highlightTerms": [
-            "set up to protect them"
-          ]
-        },
-        {
-          "phrase": "can compound",
-          "level": "C1",
-          "meaningZh": "可能相互加重（風險）",
-          "example": "So this threat from climate change just shows again how these different risks can compound.",
-          "highlightTerms": [
-            "can compound"
-          ]
-        },
-        {
-          "phrase": "pay to keep the forest",
-          "level": "C1",
-          "meaningZh": "付錢以保護森林不被砍伐",
-          "example": "So one of these ideas is that why don't rich nations pay some of these poorer nations to keep the forest",
-          "highlightTerms": [
-            "pay some of these poorer nations to keep the forest"
-          ]
-        },
-        {
-          "phrase": "protect genetic diversity",
-          "level": "C1",
-          "meaningZh": "保護基因多樣性",
-          "example": "There's also projects to increase, protect them, the sort of breeding program to protect their genetic diversity in the future.",
-          "highlightTerms": [
-            "protect their genetic diversity in the future"
-          ]
-        },
-        {
-          "phrase": "lead to extinction",
+          "phrase": "push closer to extinction",
           "level": "C2",
-          "meaningZh": "導致滅絕",
-          "example": "They say that even if just 1% of orangutans were lost every year, it would lead to their extinction.",
-          "highlightTerms": [
-            "lead to their extinction"
-          ]
+          "meaningZh": "使 更 接近 滅絕",
+          "example": "And that is actually about 7% of their total population. So it's pushed them closer to extinction.",
+          "exampleParts": {
+            "before": "And that is actually about 7% of their total population. So it's ",
+            "highlight": "pushed them closer to extinction",
+            "after": "."
+          }
         }
       ]
     }
-  }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/3d3AVgvw3Evi2rQIUdxVua"
 }

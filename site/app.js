@@ -14,7 +14,12 @@ let selectedStudyLevel = 'advanced';
 let episodeIndexPromise;
 
 const renderExample = item => {
-  if (!item.exampleParts?.length) return escapeHtml(item.example || '');
+  if (!item.exampleParts) return escapeHtml(item.example || '');
+  if (!Array.isArray(item.exampleParts)) {
+    const { before = '', highlight = '', after = '' } = item.exampleParts;
+    return `${escapeHtml(before)}<mark class="target-word">${escapeHtml(highlight)}</mark>${escapeHtml(after)}`;
+  }
+  if (!item.exampleParts.length) return escapeHtml(item.example || '');
   return item.exampleParts.map(part => part.highlight
     ? `<mark class="target-word">${escapeHtml(part.text)}</mark>`
     : escapeHtml(part.text)).join('');

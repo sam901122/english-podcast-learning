@@ -27,11 +27,11 @@ def make_item(kind, study_level, index, level):
         "level": level,
         "meaningZh": "測試",
         "example": f"The podcast says {surface} in this sentence.",
-        "exampleParts": [
-            {"text": "The podcast says ", "highlight": False},
-            {"text": surface, "highlight": True},
-            {"text": " in this sentence.", "highlight": False},
-        ],
+        "exampleParts": {
+            "before": "The podcast says ",
+            "highlight": surface,
+            "after": " in this sentence.",
+        },
     }
     if kind == "vocabulary":
         item.update({
@@ -81,18 +81,16 @@ class ValidateAndSortNotesTests(unittest.TestCase):
 
     def test_rejects_parts_that_do_not_reconstruct_example(self):
         notes = make_notes()
-        notes["studySets"]["intermediate"]["phrases"][0]["exampleParts"][1]["text"] = "wrong"
+        notes["studySets"]["intermediate"]["phrases"][0]["exampleParts"]["highlight"] = "wrong"
 
         with self.assertRaisesRegex(ValueError, "do not reconstruct"):
             validate_and_sort_notes(notes)
 
     def test_rejects_parts_without_llm_selected_highlight(self):
         notes = make_notes()
-        parts = notes["studySets"]["advanced"]["vocabulary"][0]["exampleParts"]
-        for part in parts:
-            part["highlight"] = False
+        notes["studySets"]["advanced"]["vocabulary"][0]["exampleParts"]["highlight"] = ""
 
-        with self.assertRaisesRegex(ValueError, "exactly one LLM-selected highlight"):
+        with self.assertRaisesRegex(ValueError, "an LLM-selected highlight"):
             validate_and_sort_notes(notes)
 
     def test_accepts_no_phrases_when_none_are_useful(self):

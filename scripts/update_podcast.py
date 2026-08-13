@@ -9,6 +9,7 @@ import os
 import re
 import sys
 import tempfile
+import time
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
@@ -36,6 +37,14 @@ CEFR_BY_STUDY_LEVEL = {
     "intermediate": {"B1", "B2"},
     "advanced": {"C1", "C2"},
 }
+
+
+def log(message: str) -> None:
+    print(message, flush=True)
+    diagnostic_log = os.getenv("DIAGNOSTIC_LOG", "").strip()
+    if diagnostic_log:
+        with Path(diagnostic_log).open("a", encoding="utf-8") as output:
+            output.write(message + "\n")
 
 
 def text_of(element: ET.Element | None, default: str = "") -> str:
@@ -190,16 +199,16 @@ def validate_and_sort_notes(notes: dict) -> dict:
                     )
 
                 example = item["example"]
-                example_parts = item.get("exampleParts", [])
+                example_parts = item.get("exampleParts", {})
                 if not example.strip() or len(example) > 500 or "\n" in example or "\r" in example:
                     raise ValueError(f"Invalid single-sentence example for {term!r}")
-                if not example_parts or "".join(part["text"] for part in example_parts) != example:
+                if not example_parts.get("highlight", "").strip():
+                    raise ValueError(f"Expected an LLM-selected highlight for {term!r}")
+                reconstructed_example = "".join(
+                    example_parts.get(key, "") for key in ("before", "highlight", "after")
+                )
+                if reconstructed_example != example:
                     raise ValueError(f"exampleParts do not reconstruct the example for {term!r}")
-                highlighted_parts = [
-                    part for part in example_parts if part["highlight"] and part["text"].strip()
-                ]
-                if len(highlighted_parts) != 1:
-                    raise ValueError(f"Expected exactly one LLM-selected highlight for {term!r}")
 
             items.sort(key=lambda item: CEFR_ORDER[item["level"]])
     return notes
@@ -222,18 +231,14 @@ def learning_item_schema(kind: str, allowed_levels: list[str]) -> dict:
         "meaningZh": {"type": "string"},
         "example": {"type": "string"},
         "exampleParts": {
-            "type": "array",
-            "minItems": 1,
-            "maxItems": 7,
-            "items": {
-                "type": "object",
-                "additionalProperties": False,
-                "properties": {
-                    "text": {"type": "string"},
-                    "highlight": {"type": "boolean"},
-                },
-                "required": ["text", "highlight"],
+            "type": "object",
+            "additionalProperties": False,
+            "properties": {
+                "before": {"type": "string"},
+                "highlight": {"type": "string"},
+                "after": {"type": "string"},
             },
+            "required": ["before", "highlight", "after"],
         },
     }
     if kind == "vocabulary":
@@ -326,12 +331,12 @@ For phrases, set `phrase` to the reusable canonical form a learner should study,
 `example` must be exactly one complete original sentence from the podcast transcript without rewriting it.
 Never return a paragraph, multiple sentences, speaker labels, or surrounding context.
 
-The LLM must decide the exact highlight span. Split the complete `example` into ordered `exampleParts` whose
-`text` values concatenate to exactly the original `example`, character for character. Mark only the one exact
-surface form of the learning word or phrase with `highlight: true` (for example, only `evaporating` or only
-`taking a step back`). Mark every other character with `highlight: false`. Do not include punctuation,
-surrounding words, repeated unrelated matches, or extra whitespace in the highlighted part. Do not derive the
-highlight with morphology or string rules; select the intended span from the sentence semantically.
+The LLM must decide the exact highlight span. Split the complete `example` into the three `exampleParts`
+strings `before`, `highlight`, and `after`; concatenating them in that order must reproduce the original
+`example` character for character. Put only the one exact surface form of the learning word or phrase in
+`highlight` (for example, only `evaporating` or only `taking a step back`). Put every other character in
+`before` or `after`. Do not include punctuation, surrounding words, or extra whitespace in `highlight`.
+Do not derive the highlight with morphology or string rules; select the intended span semantically.
 
 For every word, provide its American English pronunciation in KK phonetic symbols, enclosed in slashes.
 Give phrases a Taiwan Traditional Chinese meaning only; do not provide an English definition. Every Chinese
@@ -356,10 +361,22 @@ Transcript:
                 "\n\nYour previous response failed validation with this error: "
                 f"{validation_error}. Regenerate the complete response and fix that error."
             )
+        attempt_started = time.perf_counter()
         response = client.responses.create(
             model=os.getenv("ANALYSIS_MODEL", "gpt-5-mini"),
             input=prompt + retry_instruction,
+            reasoning={"effort": os.getenv("ANALYSIS_REASONING_EFFORT", "low")},
             text={"format": {"type": "json_schema", **schema}},
+        )
+        elapsed = time.perf_counter() - attempt_started
+        usage = getattr(response, "usage", None)
+        output_details = getattr(usage, "output_tokens_details", None)
+        reasoning_tokens = getattr(output_details, "reasoning_tokens", 0) or 0
+        log(
+            f"Analysis attempt {attempt} took {elapsed:.1f}s "
+            f"(input={getattr(usage, 'input_tokens', 0)}, "
+            f"output={getattr(usage, 'output_tokens', 0)}, "
+            f"reasoning={reasoning_tokens} tokens)."
         )
         notes = normalize_traditional_chinese(json.loads(response.output_text))
         try:
@@ -368,7 +385,7 @@ Transcript:
             validation_error = error
             if attempt == ANALYSIS_ATTEMPTS:
                 raise
-            print(f"Analysis validation failed on attempt {attempt}; retrying: {error}")
+            log(f"Analysis validation failed on attempt {attempt}; retrying: {error}")
 
     raise RuntimeError("Analysis retry loop ended unexpectedly")
 
@@ -397,11 +414,15 @@ def save_episode(episode: dict, notes: dict, index: list[dict]) -> None:
 
 
 def main() -> int:
+    flow_started = time.perf_counter()
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true", help="Only inspect the feed")
     args = parser.parse_args()
     feed_url = os.getenv("PODCAST_FEED_URL", DEFAULT_FEED_URL)
+    feed_started = time.perf_counter()
+    log("Fetching podcast feed...")
     feed = parse_feed(fetch_bytes(feed_url))
+    log(f"Podcast feed took {time.perf_counter() - feed_started:.1f}s.")
     if not feed:
         raise RuntimeError("The podcast feed did not contain playable episodes")
 
@@ -412,7 +433,7 @@ def main() -> int:
     if episode is None:
         print("No new episode found.")
         return 0
-    print(f"New episode: {episode['title']} ({episode['id']})")
+    log(f"New episode: {episode['title']} ({episode['id']})")
     if args.dry_run:
         return 0
     if not os.getenv("OPENAI_API_KEY"):
@@ -420,15 +441,30 @@ def main() -> int:
 
     from openai import OpenAI
 
+    spotify_started = time.perf_counter()
+    log("Looking up Spotify episode...")
     episode["spotifyUrl"] = find_spotify_episode_url(episode)
+    log(f"Spotify lookup took {time.perf_counter() - spotify_started:.1f}s.")
     client = OpenAI()
     with tempfile.TemporaryDirectory(prefix="english-podcast-") as temp_dir:
         audio_path = Path(temp_dir) / "episode.mp3"
+        download_started = time.perf_counter()
+        log("Downloading episode audio...")
         download_file(episode["audioUrl"], audio_path)
+        audio_size_mb = audio_path.stat().st_size / (1024 * 1024)
+        log(
+            f"Audio download took {time.perf_counter() - download_started:.1f}s "
+            f"({audio_size_mb:.1f} MB)."
+        )
+        transcription_started = time.perf_counter()
+        log("Transcribing episode audio...")
         transcript = transcribe(client, audio_path)
+        log(f"Transcription took {time.perf_counter() - transcription_started:.1f}s.")
+        log("Generating learning notes...")
         notes = analyze(client, episode, transcript)
     save_episode(episode, notes, index)
-    print(f"Published learning notes for {episode['id']}")
+    log(f"Published learning notes for {episode['id']}")
+    log(f"Complete flow took {time.perf_counter() - flow_started:.1f}s.")
     return 0
 
 
