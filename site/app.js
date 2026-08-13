@@ -4,10 +4,20 @@ const escapeHtml = (value = '') => value.replace(/[&<>'"]/g, char => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
 }[char]));
 
-const highlightTerm = (sentence = '', term = '') => {
-  if (!term) return escapeHtml(sentence);
-  const escapedTerm = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const pattern = new RegExp(`(^|[^A-Za-z])(${escapedTerm})(?=$|[^A-Za-z])`, 'gi');
+const CEFR_ORDER = { A2: 0, B1: 1, B2: 2, C1: 3, C2: 4 };
+const STUDY_LEVEL_OPTIONS = [
+  { id: 'basic', label: '初級' },
+  { id: 'intermediate', label: '中級' },
+  { id: 'advanced', label: '高級' }
+];
+let selectedStudyLevel = 'advanced';
+
+const highlightTerms = (sentence = '', terms = []) => {
+  const uniqueTerms = [...new Set(terms.map(term => term.trim()).filter(Boolean))]
+    .sort((left, right) => right.length - left.length);
+  if (!uniqueTerms.length) return escapeHtml(sentence);
+  const escapedTerms = uniqueTerms.map(term => term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  const pattern = new RegExp(`(^|[^A-Za-z])(${escapedTerms.join('|')})(?=$|[^A-Za-z])`, 'gi');
   let html = '';
   let lastIndex = 0;
   let match;
@@ -20,6 +30,44 @@ const highlightTerm = (sentence = '', term = '') => {
   }
 
   return html + escapeHtml(sentence.slice(lastIndex));
+};
+
+const presentParticiple = word => {
+  if (/ie$/i.test(word)) return `${word.slice(0, -2)}ying`;
+  if (/[^aeiou]e$/i.test(word)) return `${word.slice(0, -1)}ing`;
+  return `${word}ing`;
+};
+
+const itemHighlightTerms = (item, termKey) => {
+  if (item.highlightTerms?.length) return item.highlightTerms;
+  const term = item[termKey] || '';
+  const candidates = [term];
+  if (termKey === 'phrase' && term.includes(' ')) {
+    const [verb, ...rest] = term.split(' ');
+    candidates.push(`${presentParticiple(verb)} ${rest.join(' ')}`);
+  }
+  const example = (item.example || '').toLowerCase();
+  return candidates.filter(candidate => example.includes(candidate.toLowerCase()));
+};
+
+const sortByCefr = items => [...items].sort((left, right) =>
+  (CEFR_ORDER[left.level] ?? 99) - (CEFR_ORDER[right.level] ?? 99));
+
+const legacyStudySets = episode => {
+  const studySets = Object.fromEntries(STUDY_LEVEL_OPTIONS.map(option => [
+    option.id, { vocabulary: [], phrases: [] }
+  ]));
+  (episode.vocabulary || []).forEach(item => {
+    const studyLevel = ['A2', 'B1'].includes(item.level)
+      ? 'basic' : item.level === 'B2' ? 'intermediate' : 'advanced';
+    studySets[studyLevel].vocabulary.push(item);
+  });
+  (episode.phrases || []).forEach(item => {
+    const studyLevel = ['A2', 'B1'].includes(item.level)
+      ? 'basic' : item.level === 'B2' ? 'intermediate' : 'advanced';
+    studySets[studyLevel].phrases.push(item);
+  });
+  return studySets;
 };
 
 const dateText = value => new Intl.DateTimeFormat('zh-TW', {
@@ -74,6 +122,30 @@ function speakText(text = '') {
   }
 }
 
+function bindSpeechButtons(container) {
+  container.querySelectorAll('.speak-word').forEach(button => {
+    button.addEventListener('click', () => speakText(button.dataset.speak));
+  });
+}
+
+function renderStudySet(studySet = {}) {
+  const vocabulary = sortByCefr(studySet.vocabulary || []);
+  const phrases = sortByCefr(studySet.phrases || []);
+  const vocabularyCards = vocabulary.length ? vocabulary.map(item => `
+    <div class="card"><div class="word-row"><strong>${escapeHtml(item.word)}</strong><button class="speak-word" type="button" data-speak="${escapeHtml(item.word)}" aria-label="Pronounce ${escapeHtml(item.word)}">${speakerIcon}</button><span>${escapeHtml(item.level)} · ${escapeHtml(item.partOfSpeech)}</span></div>
+    <p class="phonetic" lang="en">${escapeHtml(item.kkPhonetic || '')}</p>
+    <p>${escapeHtml(item.meaningZh)}</p>
+    <blockquote lang="en">${highlightTerms(item.example, itemHighlightTerms(item, 'word'))}</blockquote></div>`).join('')
+    : '<p class="status">尚無單字內容</p>';
+  const phraseCards = phrases.length ? phrases.map(item => `
+    <div class="card"><div class="phrase-row"><strong>${escapeHtml(item.phrase)}</strong><button class="speak-word" type="button" data-speak="${escapeHtml(item.phrase)}" aria-label="Pronounce ${escapeHtml(item.phrase)}">${speakerIcon}</button>${item.level ? `<span>${escapeHtml(item.level)}</span>` : ''}</div><p>${escapeHtml(item.meaningZh)}</p>
+    <blockquote lang="en">${highlightTerms(item.example, itemHighlightTerms(item, 'phrase'))}</blockquote></div>`).join('')
+    : '<p class="status">尚無片語內容</p>';
+  return `
+    <section><h3>今日單字</h3><div class="cards">${vocabularyCards}</div></section>
+    <section><h3>實用片語</h3><div class="cards">${phraseCards}</div></section>`;
+}
+
 async function loadEpisode(id) {
   app.innerHTML = '<p class="status">正在載入學習筆記⋯</p>';
   const [episodeResponse, indexResponse] = await Promise.all([
@@ -94,14 +166,13 @@ async function loadEpisode(id) {
       <a class="listen" href="${escapeHtml(episode.bbcUrl)}" target="_blank" rel="noopener">在 BBC 收聽 ↗</a>
       <section><h3>中文摘要</h3><p>${escapeHtml(episode.summaryZh)}</p></section>
       <section><h3>English summary</h3><p lang="en">${escapeHtml(episode.summaryEn)}</p></section>
-      <section><h3>今日單字</h3><div class="cards">${episode.vocabulary.map(item => `
-        <div class="card"><div class="word-row"><strong>${escapeHtml(item.word)}</strong><button class="speak-word" type="button" data-speak="${escapeHtml(item.word)}" aria-label="Pronounce ${escapeHtml(item.word)}">${speakerIcon}</button><span>${escapeHtml(item.level)} · ${escapeHtml(item.partOfSpeech)}</span></div>
-        <p class="phonetic" lang="en">${escapeHtml(item.kkPhonetic || '')}</p>
-        <p>${escapeHtml(item.meaningZh)}</p>
-        <blockquote lang="en">${highlightTerm(item.example, item.word)}</blockquote></div>`).join('')}</div></section>
-      <section><h3>實用片語</h3><div class="cards">${episode.phrases.map(item => `
-        <div class="card"><div class="phrase-row"><strong>${escapeHtml(item.phrase)}</strong><button class="speak-word" type="button" data-speak="${escapeHtml(item.phrase)}" aria-label="Pronounce ${escapeHtml(item.phrase)}">${speakerIcon}</button></div><p>${escapeHtml(item.meaningZh)}</p>
-        <blockquote lang="en">${highlightTerm(item.example, item.phrase)}</blockquote></div>`).join('')}</div></section>
+      <div class="study-toolbar">
+        <h3>學習難度</h3>
+        <div class="level-switch" role="group" aria-label="選擇學習難度">
+          ${STUDY_LEVEL_OPTIONS.map(option => `<button type="button" data-study-level="${option.id}" aria-pressed="${option.id === selectedStudyLevel}">${option.label}</button>`).join('')}
+        </div>
+      </div>
+      <div class="study-content"></div>
       <nav class="day-nav" aria-label="單集日期導覽">
         <button type="button" data-episode-id="${previousEpisode ? escapeHtml(previousEpisode.id) : ''}" ${previousEpisode ? '' : 'disabled'}>← Previous Day</button>
         <button type="button" data-episode-id="${nextEpisode ? escapeHtml(nextEpisode.id) : ''}" ${nextEpisode ? '' : 'disabled'}>Next Day →</button>
@@ -111,9 +182,21 @@ async function loadEpisode(id) {
   document.querySelectorAll('.day-nav button:not(:disabled)').forEach(button => {
     button.addEventListener('click', () => loadEpisode(button.dataset.episodeId).catch(showError));
   });
-  document.querySelectorAll('.speak-word').forEach(button => {
-    button.addEventListener('click', () => speakText(button.dataset.speak));
+  const studySets = episode.studySets || legacyStudySets(episode);
+  const studyContent = document.querySelector('.study-content');
+  const levelButtons = document.querySelectorAll('.level-switch button');
+  const showStudyLevel = studyLevel => {
+    selectedStudyLevel = studyLevel;
+    studyContent.innerHTML = renderStudySet(studySets[studyLevel]);
+    bindSpeechButtons(studyContent);
+    levelButtons.forEach(button => {
+      button.setAttribute('aria-pressed', String(button.dataset.studyLevel === studyLevel));
+    });
+  };
+  levelButtons.forEach(button => {
+    button.addEventListener('click', () => showStudyLevel(button.dataset.studyLevel));
   });
+  showStudyLevel(selectedStudyLevel);
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 

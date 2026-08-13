@@ -8,6 +8,10 @@ On weekdays, GitHub Actions reads the official BBC RSS feed, processes the newes
 transcribes its audio with OpenAI, generates Traditional Chinese learning notes, and deploys the
 static site to GitHub Pages. Audio and full transcripts are not committed to the repository.
 
+Each episode contains basic, intermediate, and advanced study sets. Every set has 20 vocabulary words
+and 10 phrases, sorted by CEFR level; the site opens on the advanced set. Learning entries use canonical
+forms while preserving the exact transcript wording for highlighted examples.
+
 ## Setup
 
 1. In the GitHub repository, open **Settings → Secrets and variables → Actions**.

@@ -23,6 +23,15 @@ EPISODES_DIR = DATA_DIR / "episodes"
 INDEX_FILE = DATA_DIR / "episodes.json"
 DEFAULT_FEED_URL = "https://podcasts.files.bbci.co.uk/w13xtvrv.rss"
 USER_AGENT = "english-podcast-learning-project/1.0"
+VOCABULARY_COUNT = 20
+PHRASE_COUNT = 10
+STUDY_LEVELS = ("basic", "intermediate", "advanced")
+CEFR_ORDER = {"A2": 0, "B1": 1, "B2": 2, "C1": 3, "C2": 4}
+CEFR_BY_STUDY_LEVEL = {
+    "basic": {"A2", "B1"},
+    "intermediate": {"B1", "B2"},
+    "advanced": {"C1", "C2"},
+}
 
 
 def text_of(element: ET.Element | None, default: str = "") -> str:
@@ -121,6 +130,116 @@ def make_transcription_sample(audio_path: Path, output_dir: Path) -> Path:
     return sample_path
 
 
+def validate_and_sort_notes(notes: dict) -> dict:
+    seen_terms = {"vocabulary": set(), "phrases": set()}
+    study_sets = notes.get("studySets", {})
+    for study_level in STUDY_LEVELS:
+        study_set = study_sets.get(study_level, {})
+        if not study_set:
+            raise ValueError(f"Missing study set: {study_level}")
+
+        collections = (
+            ("vocabulary", "word", VOCABULARY_COUNT),
+            ("phrases", "phrase", PHRASE_COUNT),
+        )
+        for collection_name, term_key, expected_count in collections:
+            items = study_set.get(collection_name, [])
+            if len(items) != expected_count:
+                raise ValueError(
+                    f"Expected {expected_count} {study_level} {collection_name}, received {len(items)}"
+                )
+
+            for item in items:
+                term = item[term_key].strip()
+                normalized_term = term.casefold()
+                if not term or normalized_term in seen_terms[collection_name]:
+                    raise ValueError(f"Duplicate or empty {term_key}: {term!r}")
+                seen_terms[collection_name].add(normalized_term)
+
+                if item["level"] not in CEFR_BY_STUDY_LEVEL[study_level]:
+                    raise ValueError(
+                        f"Unexpected CEFR level {item['level']!r} in {study_level} for {term!r}"
+                    )
+
+                example = item["example"]
+                highlight_terms = item.get("highlightTerms", [])
+                if not highlight_terms:
+                    raise ValueError(f"Missing highlightTerms for {term!r}")
+                seen_highlights: set[str] = set()
+                for highlight_term in highlight_terms:
+                    normalized_highlight = highlight_term.strip().casefold()
+                    pattern = rf"(?<![A-Za-z]){re.escape(highlight_term.strip())}(?![A-Za-z])"
+                    if (
+                        not normalized_highlight
+                        or normalized_highlight in seen_highlights
+                        or not re.search(pattern, example, re.IGNORECASE)
+                    ):
+                        raise ValueError(
+                            f"Invalid highlight term {highlight_term!r} for {term!r}"
+                        )
+                    seen_highlights.add(normalized_highlight)
+
+            items.sort(key=lambda item: CEFR_ORDER[item["level"]])
+    return notes
+
+
+def learning_item_schema(kind: str, allowed_levels: list[str]) -> dict:
+    term_properties = {
+        "level": {"type": "string", "enum": allowed_levels},
+        "meaningZh": {"type": "string"},
+        "example": {"type": "string"},
+        "highlightTerms": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 3,
+            "items": {"type": "string"},
+        },
+    }
+    if kind == "vocabulary":
+        term_properties = {
+            "word": {"type": "string"},
+            "kkPhonetic": {"type": "string"},
+            "partOfSpeech": {"type": "string"},
+            **term_properties,
+        }
+        required = [
+            "word", "kkPhonetic", "partOfSpeech", "level", "meaningZh", "example",
+            "highlightTerms",
+        ]
+    else:
+        term_properties = {"phrase": {"type": "string"}, **term_properties}
+        required = ["phrase", "level", "meaningZh", "example", "highlightTerms"]
+    return {
+        "type": "object",
+        "additionalProperties": False,
+        "properties": term_properties,
+        "required": required,
+    }
+
+
+def study_set_schema(study_level: str) -> dict:
+    allowed_levels = sorted(CEFR_BY_STUDY_LEVEL[study_level], key=CEFR_ORDER.get)
+    return {
+        "type": "object",
+        "additionalProperties": False,
+        "properties": {
+            "vocabulary": {
+                "type": "array",
+                "minItems": VOCABULARY_COUNT,
+                "maxItems": VOCABULARY_COUNT,
+                "items": learning_item_schema("vocabulary", allowed_levels),
+            },
+            "phrases": {
+                "type": "array",
+                "minItems": PHRASE_COUNT,
+                "maxItems": PHRASE_COUNT,
+                "items": learning_item_schema("phrases", allowed_levels),
+            },
+        },
+        "required": ["vocabulary", "phrases"],
+    }
+
+
 def analyze(client, episode: dict, transcript: str) -> dict:
     schema = {
         "name": "learning_notes",
@@ -131,49 +250,44 @@ def analyze(client, episode: dict, transcript: str) -> dict:
             "properties": {
                 "summaryZh": {"type": "string"},
                 "summaryEn": {"type": "string"},
-                "vocabulary": {
-                    "type": "array",
-                    "minItems": 20,
-                    "maxItems": 20,
-                    "items": {
-                        "type": "object",
-                        "additionalProperties": False,
-                        "properties": {
-                            "word": {"type": "string"},
-                            "kkPhonetic": {"type": "string"},
-                            "partOfSpeech": {"type": "string"},
-                            "level": {"type": "string", "enum": ["B1", "B2", "C1", "C2"]},
-                            "meaningZh": {"type": "string"},
-                            "example": {"type": "string"},
-                        },
-                        "required": ["word", "kkPhonetic", "partOfSpeech", "level", "meaningZh", "example"],
-                    },
-                },
-                "phrases": {
-                    "type": "array",
-                    "minItems": 10,
-                    "maxItems": 10,
-                    "items": {
-                        "type": "object",
-                        "additionalProperties": False,
-                        "properties": {
-                            "phrase": {"type": "string"},
-                            "meaningZh": {"type": "string"},
-                            "example": {"type": "string"},
-                        },
-                        "required": ["phrase", "meaningZh", "example"],
-                    },
+                "studySets": {
+                    "type": "object",
+                    "additionalProperties": False,
+                    "properties": {level: study_set_schema(level) for level in STUDY_LEVELS},
+                    "required": list(STUDY_LEVELS),
                 },
             },
-            "required": ["summaryZh", "summaryEn", "vocabulary", "phrases"],
+            "required": ["summaryZh", "summaryEn", "studySets"],
         },
     }
-    prompt = f"""You create concise study notes for a Taiwanese English learner at B1-B2 level.
-Summarize this episode in Traditional Chinese and simple English. Select exactly 20 genuinely useful
-B1-C2 words and exactly 10 phrases that appear in the transcript. For every word, provide its American
-English pronunciation in KK phonetic symbols, enclosed in slashes. For every word and phrase, the example
-must be the complete sentence from the podcast transcript that contains it. Give phrases a Traditional
-Chinese meaning only; do not provide an English definition. Do not invent facts or wording.
+    prompt = f"""You create concise study notes for Taiwanese English learners.
+Summarize this episode in Traditional Chinese and simple English. Build three distinct study sets from
+the transcript, with exactly {VOCABULARY_COUNT} vocabulary words and {PHRASE_COUNT} phrases in each set:
+- `basic`: A2-B1 items
+- `intermediate`: B1-B2 items
+- `advanced`: C1-C2 items
+
+Do not repeat a vocabulary learning form or canonical phrase across study sets. Choose genuinely useful
+items and assign an accurate CEFR `level` within the allowed range for its study set. The web page will
+show the advanced set by default.
+
+For vocabulary, set `word` to the form a learner should study. Convert ordinary inflected verbs to the
+dictionary base form (for example, `evaporating` becomes `evaporate`) and ordinary plural nouns to singular.
+Keep a participial form such as `dehydrated`, `stranded`, or `sequestered` when it functions as an
+established adjective in that sentence and is genuinely more useful to learn as an adjective. Do not
+mechanically convert every participial adjective into a verb. Make `partOfSpeech`, meaning, KK pronunciation,
+and CEFR `level` describe the learning form in `word`.
+
+For phrases, set `phrase` to the reusable canonical form a learner should study, normally using a base verb
+(for example, `taking a step back` in the transcript becomes `take a step back`). For every word and phrase,
+`example` must be the complete original sentence from the podcast transcript without rewriting it. Set
+`highlightTerms` to the exact, case-preserving surface word or phrase found in that example (for example,
+`evaporating` or `taking a step back`), even when it differs from the learning form. Every highlight term
+must occur verbatim in the example.
+
+For every word, provide its American English pronunciation in KK phonetic symbols, enclosed in slashes.
+Give phrases a Traditional Chinese meaning only; do not provide an English definition. Do not invent facts
+or wording.
 In the Traditional Chinese summary, insert one regular half-width space at every boundary between
 Chinese full-width text and half-width Latin letters or numbers (for example: "BBC 記者 Maddie").
 Apply this typography rule consistently. Internal rule keyword: 盤古之白; do not include the keyword
@@ -190,7 +304,7 @@ Transcript:
         input=prompt,
         text={"format": {"type": "json_schema", **schema}},
     )
-    return json.loads(response.output_text)
+    return validate_and_sort_notes(json.loads(response.output_text))
 
 
 def save_episode(episode: dict, notes: dict, index: list[dict]) -> None:
@@ -203,8 +317,7 @@ def save_episode(episode: dict, notes: dict, index: list[dict]) -> None:
         "bbcUrl": episode["bbcUrl"],
         "summaryZh": notes["summaryZh"],
         "summaryEn": notes["summaryEn"],
-        "vocabulary": notes["vocabulary"],
-        "phrases": notes["phrases"],
+        "studySets": notes["studySets"],
     }
     detail_file = EPISODES_DIR / f"{episode['id']}.json"
     detail_file.write_text(json.dumps(public_episode, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
