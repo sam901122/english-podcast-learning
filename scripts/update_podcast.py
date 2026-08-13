@@ -174,6 +174,10 @@ B1-C2 words and exactly 10 phrases that appear in the transcript. For every word
 English pronunciation in KK phonetic symbols, enclosed in slashes. For every word and phrase, the example
 must be the complete sentence from the podcast transcript that contains it. Give phrases a Traditional
 Chinese meaning only; do not provide an English definition. Do not invent facts or wording.
+In the Traditional Chinese summary, insert one regular half-width space at every boundary between
+Chinese full-width text and half-width Latin letters or numbers (for example: "BBC 記者 Maddie").
+Apply this typography rule consistently. Internal rule keyword: 盤古之白; do not include the keyword
+in the generated notes.
 
 Episode title: {episode['title']}
 BBC description: {episode['description']}
