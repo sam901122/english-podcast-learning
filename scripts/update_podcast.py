@@ -13,6 +13,7 @@ import sys
 import tempfile
 import urllib.request
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from html.parser import HTMLParser
@@ -26,6 +27,7 @@ DEFAULT_FEED_URL = "https://podcasts.files.bbci.co.uk/w13xtvrv.rss"
 SPOTIFY_SHOW_ID = "2mPQrJT37b3iXf4zxlnPOD"
 SPOTIFY_EMBED_URL = f"https://open.spotify.com/embed/show/{SPOTIFY_SHOW_ID}"
 USER_AGENT = "english-podcast-learning-project/1.0"
+WORD_FORM_WORKERS = 4
 
 
 def text_of(element: ET.Element | None, default: str = "") -> str:
@@ -218,6 +220,9 @@ B1-C2 words and exactly 10 phrases that appear in the transcript. For every word
 English pronunciation in KK phonetic symbols, enclosed in slashes. For every word and phrase, the example
 must be the complete sentence from the podcast transcript that contains it. Give phrases a Traditional
 Chinese meaning only; do not provide an English definition. Do not invent facts or wording.
+At this stage, each vocabulary `word` must be the exact surface form used in its `example`. Do not convert
+inflected words to dictionary forms yet: use `evaporating`, not `evaporate`, when the sentence says
+`evaporating`. Each `phrase` must likewise be the exact contiguous wording used in its `example`.
 In the Traditional Chinese summary, insert one regular half-width space at every boundary between
 Chinese full-width text and half-width Latin letters or numbers (for example: "BBC 記者 Maddie").
 Apply this typography rule consistently. Internal rule keyword: 盤古之白; do not include the keyword
@@ -235,6 +240,60 @@ Transcript:
         text={"format": {"type": "json_schema", **schema}},
     )
     return json.loads(response.output_text)
+
+
+def decide_study_word(client, item: dict) -> str:
+    original_word = item["word"]
+    schema = {
+        "name": "study_word_decision",
+        "strict": True,
+        "schema": {
+            "type": "object",
+            "additionalProperties": False,
+            "properties": {
+                "shouldChange": {"type": "boolean"},
+                "word": {"type": "string"},
+            },
+            "required": ["shouldChange", "word"],
+        },
+    }
+    prompt = f"""Decide whether this single English vocabulary item should be shown to a learner in its
+dictionary form. Change ordinary inflected verbs to the base form and ordinary plural nouns to singular.
+Keep the original form when it is an established adjective or noun in this sentence, or when changing it
+would make the learning item less natural. Do not rewrite the sentence, meaning, pronunciation, or part of
+speech. If no change is needed, return the original word exactly.
+
+Original word: {original_word}
+Part of speech: {item['partOfSpeech']}
+Traditional Chinese meaning: {item['meaningZh']}
+Original sentence: {item['example']}
+"""
+    try:
+        response = client.responses.create(
+            model=os.getenv("WORD_FORM_MODEL", os.getenv("ANALYSIS_MODEL", "gpt-5-mini")),
+            input=prompt,
+            text={"format": {"type": "json_schema", **schema}},
+        )
+        decision = json.loads(response.output_text)
+        candidate = decision["word"].strip()
+        if decision["shouldChange"] and candidate:
+            return candidate
+    except Exception as error:
+        print(f"Word-form check failed for {original_word!r}; keeping original: {error}")
+    return original_word
+
+
+def prepare_vocabulary(client, notes: dict) -> dict:
+    vocabulary = notes.get("vocabulary", [])
+    for item in vocabulary:
+        item["highlight"] = item["word"]
+
+    with ThreadPoolExecutor(max_workers=WORD_FORM_WORKERS) as executor:
+        study_words = list(executor.map(lambda item: decide_study_word(client, item), vocabulary))
+
+    for item, study_word in zip(vocabulary, study_words):
+        item["word"] = study_word
+    return notes
 
 
 def save_episode(episode: dict, notes: dict, index: list[dict]) -> None:
@@ -293,6 +352,7 @@ def main() -> int:
         transcription_audio = make_transcription_sample(audio_path, Path(temp_dir))
         transcript = transcribe(client, transcription_audio)
         notes = analyze(client, episode, transcript)
+        notes = prepare_vocabulary(client, notes)
     save_episode(episode, notes, index)
     print(f"Published learning notes for {episode['id']}")
     return 0
