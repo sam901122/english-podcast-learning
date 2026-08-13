@@ -1,6 +1,10 @@
+import copy
+import json
 import unittest
+from types import SimpleNamespace
+from unittest.mock import Mock
 
-from scripts.update_podcast import normalize_traditional_chinese, validate_and_sort_notes
+from scripts.update_podcast import analyze, normalize_traditional_chinese, validate_and_sort_notes
 
 
 LEVELS = {
@@ -117,6 +121,28 @@ class ValidateAndSortNotesTests(unittest.TestCase):
 
         self.assertEqual(normalized["summaryZh"], "這個節目討論軟件和數據庫。")
         self.assertEqual(normalized["nested"][0]["meaningZh"], "視頻裡的詞彙。")
+
+
+class AnalyzeTests(unittest.TestCase):
+    def test_retries_when_generated_terms_are_duplicated(self):
+        invalid_notes = copy.deepcopy(make_notes())
+        invalid_notes["studySets"]["advanced"]["vocabulary"][0]["word"] = (
+            invalid_notes["studySets"]["basic"]["vocabulary"][0]["word"]
+        )
+        responses = Mock()
+        responses.create.side_effect = [
+            SimpleNamespace(output_text=json.dumps(invalid_notes)),
+            SimpleNamespace(output_text=json.dumps(make_notes())),
+        ]
+        client = SimpleNamespace(responses=responses)
+        episode = {"title": "Test episode", "description": "Test description"}
+
+        notes = analyze(client, episode, "Test transcript.")
+
+        self.assertEqual(responses.create.call_count, 2)
+        retry_prompt = responses.create.call_args_list[1].kwargs["input"]
+        self.assertIn("Duplicate or empty word", retry_prompt)
+        self.assertEqual(len(notes["studySets"]["advanced"]["vocabulary"]), 20)
 
 
 if __name__ == "__main__":

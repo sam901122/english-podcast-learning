@@ -25,6 +25,7 @@ DEFAULT_FEED_URL = "https://podcasts.files.bbci.co.uk/w13xtvrv.rss"
 USER_AGENT = "english-podcast-learning-project/1.0"
 VOCABULARY_COUNT = 20
 PHRASE_COUNT = 10
+ANALYSIS_ATTEMPTS = 3
 STUDY_LEVELS = ("basic", "intermediate", "advanced")
 CEFR_ORDER = {"A2": 0, "B1": 1, "B2": 2, "C1": 3, "C2": 4}
 CEFR_BY_STUDY_LEVEL = {
@@ -303,13 +304,29 @@ BBC description: {episode['description']}
 Transcript:
 {transcript}
 """
-    response = client.responses.create(
-        model=os.getenv("ANALYSIS_MODEL", "gpt-5-mini"),
-        input=prompt,
-        text={"format": {"type": "json_schema", **schema}},
-    )
-    notes = normalize_traditional_chinese(json.loads(response.output_text))
-    return validate_and_sort_notes(notes)
+    validation_error = None
+    for attempt in range(1, ANALYSIS_ATTEMPTS + 1):
+        retry_instruction = ""
+        if validation_error is not None:
+            retry_instruction = (
+                "\n\nYour previous response failed validation with this error: "
+                f"{validation_error}. Regenerate the complete response and fix that error."
+            )
+        response = client.responses.create(
+            model=os.getenv("ANALYSIS_MODEL", "gpt-5-mini"),
+            input=prompt + retry_instruction,
+            text={"format": {"type": "json_schema", **schema}},
+        )
+        notes = normalize_traditional_chinese(json.loads(response.output_text))
+        try:
+            return validate_and_sort_notes(notes)
+        except ValueError as error:
+            validation_error = error
+            if attempt == ANALYSIS_ATTEMPTS:
+                raise
+            print(f"Analysis validation failed on attempt {attempt}; retrying: {error}")
+
+    raise RuntimeError("Analysis retry loop ended unexpectedly")
 
 
 def save_episode(episode: dict, notes: dict, index: list[dict]) -> None:
