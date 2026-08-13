@@ -3,7 +3,69 @@ import unittest
 from types import SimpleNamespace
 from unittest.mock import Mock, patch
 
-from scripts.update_podcast import decide_study_word, prepare_vocabulary
+from scripts.update_podcast import analyze, decide_study_word, prepare_vocabulary
+
+
+def make_study_set(level):
+    return {
+        "vocabulary": [
+            {
+                "word": f"word-{index}",
+                "kkPhonetic": "/word/",
+                "partOfSpeech": "noun",
+                "level": level,
+                "meaningZh": "繁體中文解釋",
+                "example": f"This sentence contains word-{index}.",
+            }
+            for index in range(10)
+        ],
+        "phrases": [
+            {
+                "phrase": f"phrase-{index}",
+                "meaningZh": "繁體中文解釋",
+                "example": f"This sentence contains phrase-{index}.",
+            }
+            for index in range(5)
+        ],
+    }
+
+
+class AnalyzeTests(unittest.TestCase):
+    def test_uses_separate_requests_for_summary_and_each_difficulty(self):
+        responses = Mock()
+        responses.create.side_effect = [
+            SimpleNamespace(output_text=json.dumps({
+                "summaryZh": "繁體中文摘要",
+                "summaryEn": "English summary",
+            })),
+            SimpleNamespace(output_text=json.dumps(make_study_set("A2"))),
+            SimpleNamespace(output_text=json.dumps(make_study_set("B1"))),
+            SimpleNamespace(output_text=json.dumps(make_study_set("C1"))),
+        ]
+        client = SimpleNamespace(responses=responses)
+
+        notes = analyze(
+            client,
+            {"title": "Episode", "description": "Description"},
+            "Transcript text.",
+        )
+
+        self.assertEqual(responses.create.call_count, 4)
+        self.assertEqual(set(notes["studySets"]), {"basic", "intermediate", "advanced"})
+        prompts = [call.kwargs["input"] for call in responses.create.call_args_list]
+        self.assertIn("Taiwan Traditional Chinese only", prompts[0])
+        self.assertIn("beginner English study set", prompts[1])
+        self.assertIn("intermediate English study set", prompts[2])
+        self.assertIn("advanced English study set", prompts[3])
+        for prompt in prompts:
+            self.assertIn("Traditional Chinese", prompt)
+
+        for call in responses.create.call_args_list[1:]:
+            properties = call.kwargs["text"]["format"]["schema"]["properties"]
+            self.assertEqual(properties["vocabulary"]["minItems"], 10)
+            self.assertEqual(properties["vocabulary"]["maxItems"], 10)
+            self.assertEqual(properties["phrases"]["minItems"], 5)
+            self.assertEqual(properties["phrases"]["maxItems"], 5)
 
 
 class VocabularyPreparationTests(unittest.TestCase):

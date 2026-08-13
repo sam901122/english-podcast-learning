@@ -25,6 +25,14 @@ article h2 { margin:.15em 0 .5em; font:700 clamp(2.2rem,7vw,4.2rem)/1.05 Georgia
 .listen { display:inline-block; padding:10px 18px; color:var(--white); background:var(--red); border:2px solid var(--black); border-radius:4px; box-shadow:4px 4px 0 var(--black); text-decoration:none; font-weight:700; }
 section { padding:30px 0; border-top:2px solid var(--black); }
 h3 { display:flex; align-items:center; gap:10px; margin:0 0 18px; font:700 1.5rem Georgia,serif; }
+.study-toolbar { display:flex; align-items:center; justify-content:space-between; gap:20px; padding:30px 0 24px; border-top:2px solid var(--black); }
+.study-toolbar h3 { margin:0; }
+.level-switch { display:grid; grid-template-columns:repeat(3,minmax(76px,1fr)); border:1px solid var(--black); border-radius:4px; overflow:hidden; }
+.level-switch button { min-height:40px; padding:7px 14px; color:var(--black); background:var(--white); border:0; border-right:1px solid var(--black); appearance:none; -webkit-appearance:none; -webkit-tap-highlight-color:transparent; font:inherit; font-size:.9rem; font-weight:800; cursor:pointer; }
+.level-switch button:last-child { border-right:0; }
+.level-switch button[aria-pressed="true"] { color:var(--white); background:var(--red); }
+.level-switch button:focus-visible { position:relative; outline:2px solid var(--yellow); outline-offset:-3px; }
+.study-content > section:first-child { padding-top:0; border-top:0; }
 .cards { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
 .card { padding:20px; background:var(--white); border:1px solid var(--black); border-radius:3px 12px 12px 3px; }
 .card strong { font-size:1.15rem; }
@@ -50,4 +58,4 @@ footer { display:grid; grid-template-columns:1fr; gap:6px; padding:28px 0 45px; 
 footer p,footer>a { margin:0; padding:0; }
 footer a { color:var(--red); }
 footer>a { font-weight:700; }
-@media (max-width:700px) { header { grid-template-columns:1fr; min-height:650px; padding-top:45px; } .akabeko { right:32px; bottom:35px; width:245px; transform:rotate(-2deg); } .seal { top:38px; } .cards { grid-template-columns:1fr; } }
+@media (max-width:700px) { header { grid-template-columns:1fr; min-height:650px; padding-top:45px; } .akabeko { right:32px; bottom:35px; width:245px; transform:rotate(-2deg); } .seal { top:38px; } .study-toolbar { align-items:stretch; flex-direction:column; gap:12px; } .level-switch { width:100%; } .cards { grid-template-columns:1fr; } }

@@ -28,6 +28,23 @@ SPOTIFY_SHOW_ID = "2mPQrJT37b3iXf4zxlnPOD"
 SPOTIFY_EMBED_URL = f"https://open.spotify.com/embed/show/{SPOTIFY_SHOW_ID}"
 USER_AGENT = "english-podcast-learning-project/1.0"
 WORD_FORM_WORKERS = 4
+STUDY_LEVELS = {
+    "basic": {
+        "label": "beginner",
+        "levels": ["A2", "B1"],
+        "guidance": "common, concrete, broadly useful words and everyday phrases",
+    },
+    "intermediate": {
+        "label": "intermediate",
+        "levels": ["B1", "B2"],
+        "guidance": "moderately challenging words and idiomatic phrases useful in news and conversation",
+    },
+    "advanced": {
+        "label": "advanced",
+        "levels": ["C1", "C2"],
+        "guidance": "precise, nuanced, less common words and sophisticated phrases",
+    },
+}
 
 
 def text_of(element: ET.Element | None, default: str = "") -> str:
@@ -167,9 +184,9 @@ def make_transcription_sample(audio_path: Path, output_dir: Path) -> Path:
     return sample_path
 
 
-def analyze(client, episode: dict, transcript: str) -> dict:
+def summarize(client, episode: dict, transcript: str) -> dict:
     schema = {
-        "name": "learning_notes",
+        "name": "episode_summaries",
         "strict": True,
         "schema": {
             "type": "object",
@@ -177,56 +194,16 @@ def analyze(client, episode: dict, transcript: str) -> dict:
             "properties": {
                 "summaryZh": {"type": "string"},
                 "summaryEn": {"type": "string"},
-                "vocabulary": {
-                    "type": "array",
-                    "minItems": 20,
-                    "maxItems": 20,
-                    "items": {
-                        "type": "object",
-                        "additionalProperties": False,
-                        "properties": {
-                            "word": {"type": "string"},
-                            "kkPhonetic": {"type": "string"},
-                            "partOfSpeech": {"type": "string"},
-                            "level": {"type": "string", "enum": ["B1", "B2", "C1", "C2"]},
-                            "meaningZh": {"type": "string"},
-                            "example": {"type": "string"},
-                        },
-                        "required": ["word", "kkPhonetic", "partOfSpeech", "level", "meaningZh", "example"],
-                    },
-                },
-                "phrases": {
-                    "type": "array",
-                    "minItems": 10,
-                    "maxItems": 10,
-                    "items": {
-                        "type": "object",
-                        "additionalProperties": False,
-                        "properties": {
-                            "phrase": {"type": "string"},
-                            "meaningZh": {"type": "string"},
-                            "example": {"type": "string"},
-                        },
-                        "required": ["phrase", "meaningZh", "example"],
-                    },
-                },
             },
-            "required": ["summaryZh", "summaryEn", "vocabulary", "phrases"],
+            "required": ["summaryZh", "summaryEn"],
         },
     }
-    prompt = f"""You create concise study notes for a Taiwanese English learner at B1-B2 level.
-Summarize this episode in Traditional Chinese and simple English. Select exactly 20 genuinely useful
-B1-C2 words and exactly 10 phrases that appear in the transcript. For every word, provide its American
-English pronunciation in KK phonetic symbols, enclosed in slashes. For every word and phrase, the example
-must be the complete sentence from the podcast transcript that contains it. Give phrases a Traditional
-Chinese meaning only; do not provide an English definition. Do not invent facts or wording.
-At this stage, each vocabulary `word` must be the exact surface form used in its `example`. Do not convert
-inflected words to dictionary forms yet: use `evaporating`, not `evaporate`, when the sentence says
-`evaporating`. Each `phrase` must likewise be the exact contiguous wording used in its `example`.
-In the Traditional Chinese summary, insert one regular half-width space at every boundary between
+    prompt = f"""Summarize this BBC podcast episode accurately and concisely in two versions.
+`summaryZh` MUST use Taiwan Traditional Chinese only. Never use Simplified Chinese characters or Mainland
+Chinese wording anywhere in `summaryZh`. `summaryEn` must use clear, natural English.
+In `summaryZh`, insert one regular half-width space at every boundary between
 Chinese full-width text and half-width Latin letters or numbers (for example: "BBC 記者 Maddie").
-Apply this typography rule consistently. Internal rule keyword: 盤古之白; do not include the keyword
-in the generated notes.
+Do not add spaces between adjacent Chinese characters. Do not invent facts.
 
 Episode title: {episode['title']}
 BBC description: {episode['description']}
@@ -240,6 +217,87 @@ Transcript:
         text={"format": {"type": "json_schema", **schema}},
     )
     return json.loads(response.output_text)
+
+
+def analyze_study_level(client, transcript: str, study_level: str) -> dict:
+    config = STUDY_LEVELS[study_level]
+    item_properties = {
+        "word": {"type": "string"},
+        "kkPhonetic": {"type": "string"},
+        "partOfSpeech": {"type": "string"},
+        "level": {"type": "string", "enum": config["levels"]},
+        "meaningZh": {"type": "string"},
+        "example": {"type": "string"},
+    }
+    phrase_properties = {
+        "phrase": {"type": "string"},
+        "meaningZh": {"type": "string"},
+        "example": {"type": "string"},
+    }
+    schema = {
+        "name": f"{study_level}_study_set",
+        "strict": True,
+        "schema": {
+            "type": "object",
+            "additionalProperties": False,
+            "properties": {
+                "vocabulary": {
+                    "type": "array",
+                    "minItems": 10,
+                    "maxItems": 10,
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": False,
+                        "properties": item_properties,
+                        "required": list(item_properties),
+                    },
+                },
+                "phrases": {
+                    "type": "array",
+                    "minItems": 5,
+                    "maxItems": 5,
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": False,
+                        "properties": phrase_properties,
+                        "required": list(phrase_properties),
+                    },
+                },
+            },
+            "required": ["vocabulary", "phrases"],
+        },
+    }
+    prompt = f"""Create one {config['label']} English study set from this podcast transcript.
+Choose exactly 10 {config['guidance']} as vocabulary, at CEFR {"-".join(config['levels'])}, and exactly
+5 useful phrases at a comparable difficulty. Items may overlap with study sets created by other requests.
+
+Every vocabulary `word` must be the exact surface form that appears in its `example`; do not convert it to
+a dictionary form yet. Every `phrase` must be the exact contiguous wording that appears in its `example`.
+Each `example` must be one complete original sentence from the transcript containing that exact word or
+phrase. Do not rewrite examples and do not return multiple sentences or a paragraph.
+
+For every word, provide its American English pronunciation in KK phonetic symbols enclosed in slashes.
+Every `meaningZh` MUST use Taiwan Traditional Chinese only. Never use Simplified Chinese characters or
+Mainland Chinese wording in any Chinese field. Do not invent facts, wording, words, or phrases.
+
+Transcript:
+{transcript}
+"""
+    response = client.responses.create(
+        model=os.getenv("ANALYSIS_MODEL", "gpt-5-mini"),
+        input=prompt,
+        text={"format": {"type": "json_schema", **schema}},
+    )
+    return json.loads(response.output_text)
+
+
+def analyze(client, episode: dict, transcript: str) -> dict:
+    notes = summarize(client, episode, transcript)
+    notes["studySets"] = {
+        study_level: analyze_study_level(client, transcript, study_level)
+        for study_level in STUDY_LEVELS
+    }
+    return notes
 
 
 def decide_study_word(client, item: dict) -> str:
@@ -284,7 +342,15 @@ Original sentence: {item['example']}
 
 
 def prepare_vocabulary(client, notes: dict) -> dict:
-    vocabulary = notes.get("vocabulary", [])
+    study_sets = notes.get("studySets")
+    if study_sets:
+        vocabulary = [
+            item
+            for study_level in STUDY_LEVELS
+            for item in study_sets[study_level]["vocabulary"]
+        ]
+    else:
+        vocabulary = notes.get("vocabulary", [])
     for item in vocabulary:
         item["highlight"] = item["word"]
 
@@ -306,8 +372,7 @@ def save_episode(episode: dict, notes: dict, index: list[dict]) -> None:
         "bbcUrl": episode["bbcUrl"],
         "summaryZh": notes["summaryZh"],
         "summaryEn": notes["summaryEn"],
-        "vocabulary": notes["vocabulary"],
-        "phrases": notes["phrases"],
+        "studySets": notes["studySets"],
     }
     if episode.get("spotifyUrl"):
         public_episode["spotifyUrl"] = episode["spotifyUrl"]

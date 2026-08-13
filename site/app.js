@@ -1,4 +1,10 @@
 const app = document.querySelector('#app');
+const studyLevelOptions = [
+  { id: 'basic', label: '初級' },
+  { id: 'intermediate', label: '中級' },
+  { id: 'advanced', label: '高級' }
+];
+let selectedStudyLevel = 'advanced';
 
 const escapeHtml = (value = '') => value.replace(/[&<>'"]/g, char => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
@@ -74,6 +80,26 @@ function speakText(text = '') {
   }
 }
 
+function bindSpeakButtons(root = app) {
+  root.querySelectorAll('.speak-word').forEach(button => {
+    button.addEventListener('click', () => speakText(button.dataset.speak));
+  });
+}
+
+function renderStudySet(studySet = {}) {
+  const vocabulary = studySet.vocabulary || [];
+  const phrases = studySet.phrases || [];
+  return `
+    <section><h3>今日單字</h3><div class="cards">${vocabulary.map(item => `
+      <div class="card"><div class="word-row"><strong>${escapeHtml(item.word)}</strong><button class="speak-word" type="button" data-speak="${escapeHtml(item.word)}" aria-label="Pronounce ${escapeHtml(item.word)}">${speakerIcon}</button><span>${escapeHtml(item.level)} · ${escapeHtml(item.partOfSpeech)}</span></div>
+      <p class="phonetic" lang="en">${escapeHtml(item.kkPhonetic || '')}</p>
+      <p>${escapeHtml(item.meaningZh)}</p>
+      <blockquote lang="en">${highlightTerm(item.example, item.highlight || item.word)}</blockquote></div>`).join('')}</div></section>
+    <section><h3>實用片語</h3><div class="cards">${phrases.map(item => `
+      <div class="card"><div class="phrase-row"><strong>${escapeHtml(item.phrase)}</strong><button class="speak-word" type="button" data-speak="${escapeHtml(item.phrase)}" aria-label="Pronounce ${escapeHtml(item.phrase)}">${speakerIcon}</button></div><p>${escapeHtml(item.meaningZh)}</p>
+      <blockquote lang="en">${highlightTerm(item.example, item.phrase)}</blockquote></div>`).join('')}</div></section>`;
+}
+
 async function loadEpisode(id) {
   app.innerHTML = '<p class="status">正在載入學習筆記⋯</p>';
   const [episodeResponse, indexResponse] = await Promise.all([
@@ -97,26 +123,45 @@ async function loadEpisode(id) {
       </div>
       <section><h3>中文摘要</h3><p>${escapeHtml(episode.summaryZh)}</p></section>
       <section><h3>English summary</h3><p lang="en">${escapeHtml(episode.summaryEn)}</p></section>
-      <section><h3>今日單字</h3><div class="cards">${episode.vocabulary.map(item => `
-        <div class="card"><div class="word-row"><strong>${escapeHtml(item.word)}</strong><button class="speak-word" type="button" data-speak="${escapeHtml(item.word)}" aria-label="Pronounce ${escapeHtml(item.word)}">${speakerIcon}</button><span>${escapeHtml(item.level)} · ${escapeHtml(item.partOfSpeech)}</span></div>
-        <p class="phonetic" lang="en">${escapeHtml(item.kkPhonetic || '')}</p>
-        <p>${escapeHtml(item.meaningZh)}</p>
-        <blockquote lang="en">${highlightTerm(item.example, item.highlight || item.word)}</blockquote></div>`).join('')}</div></section>
-      <section><h3>實用片語</h3><div class="cards">${episode.phrases.map(item => `
-        <div class="card"><div class="phrase-row"><strong>${escapeHtml(item.phrase)}</strong><button class="speak-word" type="button" data-speak="${escapeHtml(item.phrase)}" aria-label="Pronounce ${escapeHtml(item.phrase)}">${speakerIcon}</button></div><p>${escapeHtml(item.meaningZh)}</p>
-        <blockquote lang="en">${highlightTerm(item.example, item.phrase)}</blockquote></div>`).join('')}</div></section>
+      <div class="study-toolbar">
+        <h3>學習難度</h3>
+        <div class="level-switch" role="group" aria-label="選擇學習難度">
+          ${studyLevelOptions.map(option => `<button type="button" data-study-level="${option.id}" aria-pressed="${option.id === selectedStudyLevel}">${option.label}</button>`).join('')}
+        </div>
+      </div>
+      <div class="study-content"></div>
       <nav class="day-nav" aria-label="單集日期導覽">
         <button type="button" data-episode-id="${previousEpisode ? escapeHtml(previousEpisode.id) : ''}" ${previousEpisode ? '' : 'disabled'}>← Previous Day</button>
         <button type="button" data-episode-id="${nextEpisode ? escapeHtml(nextEpisode.id) : ''}" ${nextEpisode ? '' : 'disabled'}>Next Day →</button>
       </nav>
     </article>`;
-  document.querySelector('.back').addEventListener('click', loadIndex);
-  document.querySelectorAll('.day-nav button:not(:disabled)').forEach(button => {
+  app.querySelector('.back').addEventListener('click', loadIndex);
+  app.querySelectorAll('.day-nav button:not(:disabled)').forEach(button => {
     button.addEventListener('click', () => loadEpisode(button.dataset.episodeId).catch(showError));
   });
-  document.querySelectorAll('.speak-word').forEach(button => {
-    button.addEventListener('click', () => speakText(button.dataset.speak));
+  const legacyStudySet = {
+    vocabulary: episode.vocabulary || [],
+    phrases: episode.phrases || []
+  };
+  const studySets = episode.studySets || {
+    basic: legacyStudySet,
+    intermediate: legacyStudySet,
+    advanced: legacyStudySet
+  };
+  const studyContent = app.querySelector('.study-content');
+  const levelButtons = app.querySelectorAll('.level-switch button');
+  const showStudyLevel = studyLevel => {
+    selectedStudyLevel = studyLevel;
+    studyContent.innerHTML = renderStudySet(studySets[studyLevel] || legacyStudySet);
+    levelButtons.forEach(button => {
+      button.setAttribute('aria-pressed', String(button.dataset.studyLevel === studyLevel));
+    });
+    bindSpeakButtons(studyContent);
+  };
+  levelButtons.forEach(button => {
+    button.addEventListener('click', () => showStudyLevel(button.dataset.studyLevel));
   });
+  showStudyLevel(selectedStudyLevel);
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
