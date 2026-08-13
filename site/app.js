@@ -26,6 +26,22 @@ const dateText = value => new Intl.DateTimeFormat('zh-TW', {
   year: 'numeric', month: 'long', day: 'numeric', timeZone: 'Asia/Taipei'
 }).format(new Date(value));
 
+const speakerIcon = `
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M11 5 6 9H3v6h3l5 4V5Z"></path>
+    <path d="M15.5 8.5a5 5 0 0 1 0 7"></path>
+    <path d="M18.5 5.5a9 9 0 0 1 0 13"></path>
+  </svg>`;
+
+function speakText(text = '') {
+  if (!('speechSynthesis' in window) || !text.trim()) return;
+  window.speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = 'en-US';
+  utterance.rate = 0.6;
+  window.speechSynthesis.speak(utterance);
+}
+
 async function loadEpisode(id) {
   app.innerHTML = '<p class="status">正在載入學習筆記⋯</p>';
   const [episodeResponse, indexResponse] = await Promise.all([
@@ -47,7 +63,7 @@ async function loadEpisode(id) {
       <section><h3>中文摘要</h3><p>${escapeHtml(episode.summaryZh)}</p></section>
       <section><h3>English summary</h3><p lang="en">${escapeHtml(episode.summaryEn)}</p></section>
       <section><h3>今日單字</h3><div class="cards">${episode.vocabulary.map(item => `
-        <div class="card"><div><strong>${escapeHtml(item.word)}</strong><span>${escapeHtml(item.level)} · ${escapeHtml(item.partOfSpeech)}</span></div>
+        <div class="card"><div class="word-row"><strong>${escapeHtml(item.word)}</strong><button class="speak-word" type="button" data-speak="${escapeHtml(item.word)}" aria-label="Pronounce ${escapeHtml(item.word)}">${speakerIcon}</button><span>${escapeHtml(item.level)} · ${escapeHtml(item.partOfSpeech)}</span></div>
         <p class="phonetic" lang="en">${escapeHtml(item.kkPhonetic || '')}</p>
         <p>${escapeHtml(item.meaningZh)}</p>
         <blockquote lang="en">${highlightTerm(item.example, item.word)}</blockquote></div>`).join('')}</div></section>
@@ -62,6 +78,9 @@ async function loadEpisode(id) {
   document.querySelector('.back').addEventListener('click', loadIndex);
   document.querySelectorAll('.day-nav button:not(:disabled)').forEach(button => {
     button.addEventListener('click', () => loadEpisode(button.dataset.episodeId).catch(showError));
+  });
+  document.querySelectorAll('.speak-word').forEach(button => {
+    button.addEventListener('click', () => speakText(button.dataset.speak));
   });
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
