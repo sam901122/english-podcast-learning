@@ -33,13 +33,45 @@ const speakerIcon = `
     <path d="M18.5 5.5a9 9 0 0 1 0 13"></path>
   </svg>`;
 
+const speech = 'speechSynthesis' in window ? window.speechSynthesis : null;
+let availableVoices = [];
+let activeUtterance = null;
+
+function refreshVoices() {
+  availableVoices = speech ? speech.getVoices() : [];
+}
+
+if (speech) {
+  refreshVoices();
+  speech.addEventListener('voiceschanged', refreshVoices);
+}
+
 function speakText(text = '') {
-  if (!('speechSynthesis' in window) || !text.trim()) return;
-  window.speechSynthesis.cancel();
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = 'en-US';
-  utterance.rate = 0.6;
-  window.speechSynthesis.speak(utterance);
+  if (!speech || !text.trim()) return;
+  const startSpeaking = () => {
+    const utterance = new SpeechSynthesisUtterance(text);
+    const voices = speech.getVoices();
+    if (voices.length) availableVoices = voices;
+    const englishVoice = availableVoices.find(voice => voice.lang.toLowerCase() === 'en-us')
+      || availableVoices.find(voice => voice.lang.toLowerCase().startsWith('en'));
+    activeUtterance = utterance;
+    utterance.lang = 'en-US';
+    utterance.rate = 0.6;
+    utterance.volume = 1;
+    if (englishVoice) utterance.voice = englishVoice;
+    utterance.onend = utterance.onerror = () => {
+      if (activeUtterance === utterance) activeUtterance = null;
+    };
+    speech.speak(utterance);
+    if (speech.paused) speech.resume();
+  };
+
+  if (speech.speaking || speech.pending) {
+    speech.cancel();
+    window.setTimeout(startSpeaking, 100);
+  } else {
+    startSpeaking();
+  }
 }
 
 async function loadEpisode(id) {
