@@ -4,7 +4,13 @@ import unittest
 from types import SimpleNamespace
 from unittest.mock import Mock
 
-from scripts.update_podcast import analyze, normalize_traditional_chinese, validate_and_sort_notes
+from scripts.update_podcast import (
+    PHRASE_COUNT,
+    VOCABULARY_COUNT,
+    analyze,
+    normalize_traditional_chinese,
+    validate_and_sort_notes,
+)
 
 
 LEVELS = {
@@ -43,11 +49,11 @@ def make_notes():
         study_sets[study_level] = {
             "vocabulary": [
                 make_item("vocabulary", study_level, index, levels[index % 2])
-                for index in range(20)
+                for index in range(VOCABULARY_COUNT)
             ],
             "phrases": [
                 make_item("phrases", study_level, index, levels[index % 2])
-                for index in range(10)
+                for index in range(PHRASE_COUNT)
             ],
         }
     return {"summaryZh": "摘要", "summaryEn": "Summary", "studySets": study_sets}
@@ -97,13 +103,13 @@ class ValidateAndSortNotesTests(unittest.TestCase):
 
         self.assertTrue(all(not study_set["phrases"] for study_set in validated["studySets"].values()))
 
-    def test_rejects_more_than_ten_phrases(self):
+    def test_rejects_more_than_the_phrase_limit(self):
         notes = make_notes()
         notes["studySets"]["basic"]["phrases"].append(
-            make_item("phrases", "basic-extra", 10, "B1")
+            make_item("phrases", "basic-extra", PHRASE_COUNT, "B1")
         )
 
-        with self.assertRaisesRegex(ValueError, "at most 10 basic phrases"):
+        with self.assertRaisesRegex(ValueError, f"at most {PHRASE_COUNT} basic phrases"):
             validate_and_sort_notes(notes)
 
     def test_rejects_cefr_level_outside_study_set(self):
@@ -142,7 +148,10 @@ class AnalyzeTests(unittest.TestCase):
         self.assertEqual(responses.create.call_count, 2)
         retry_prompt = responses.create.call_args_list[1].kwargs["input"]
         self.assertIn("Duplicate or empty word", retry_prompt)
-        self.assertEqual(len(notes["studySets"]["advanced"]["vocabulary"]), 20)
+        self.assertEqual(
+            len(notes["studySets"]["advanced"]["vocabulary"]),
+            VOCABULARY_COUNT,
+        )
 
 
 if __name__ == "__main__":
