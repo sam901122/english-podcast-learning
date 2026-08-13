@@ -30,6 +30,7 @@ h3 { display:flex; align-items:center; gap:10px; margin:0 0 18px; font:700 1.5re
 .card span { float:right; padding:2px 8px; color:var(--white); background:var(--red); border-radius:2px; font-size:.72rem; font-weight:800; }
 .word-row { display:grid; grid-template-columns:auto 32px 1fr; align-items:center; gap:8px; }
 .word-row span { justify-self:end; float:none; }
+.phrase-row { display:flex; align-items:center; gap:8px; }
 .speak-word { display:inline-grid; place-items:center; width:32px; height:32px; padding:0; color:var(--red); background:var(--warm); border:1px solid var(--black); border-radius:50%; cursor:pointer; transition:.16s; }
 .speak-word:hover,.speak-word:focus-visible { color:var(--white); background:var(--red); transform:translate(-1px,-1px); }
 .speak-word:focus-visible { outline:2px solid var(--yellow); outline-offset:2px; }

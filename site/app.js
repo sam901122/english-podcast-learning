@@ -68,7 +68,7 @@ async function loadEpisode(id) {
         <p>${escapeHtml(item.meaningZh)}</p>
         <blockquote lang="en">${highlightTerm(item.example, item.word)}</blockquote></div>`).join('')}</div></section>
       <section><h3>實用片語</h3><div class="cards">${episode.phrases.map(item => `
-        <div class="card"><strong>${escapeHtml(item.phrase)}</strong><p>${escapeHtml(item.meaningZh)}</p>
+        <div class="card"><div class="phrase-row"><strong>${escapeHtml(item.phrase)}</strong><button class="speak-word" type="button" data-speak="${escapeHtml(item.phrase)}" aria-label="Pronounce ${escapeHtml(item.phrase)}">${speakerIcon}</button></div><p>${escapeHtml(item.meaningZh)}</p>
         <blockquote lang="en">${highlightTerm(item.example, item.phrase)}</blockquote></div>`).join('')}</div></section>
       <nav class="day-nav" aria-label="單集日期導覽">
         <button type="button" data-episode-id="${previousEpisode ? escapeHtml(previousEpisode.id) : ''}" ${previousEpisode ? '' : 'disabled'}>← Previous Day</button>
