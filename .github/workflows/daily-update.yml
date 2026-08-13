@@ -31,7 +31,15 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           TRANSCRIPTION_MAX_SECONDS: "20"
-        run: python scripts/update_podcast.py
+        run: |
+          set +e
+          python scripts/update_podcast.py 2>&1 | tee /tmp/podcast-update.log
+          status=${PIPESTATUS[0]}
+          if [ "$status" -ne 0 ]; then
+            message=$(tail -n 1 /tmp/podcast-update.log | sed 's/%/%25/g; s/\r/%0D/g; s/\n/%0A/g')
+            echo "::error title=Podcast update failed::$message"
+            exit "$status"
+          fi
       - name: Commit generated notes
         run: |
           git config user.name "github-actions[bot]"
