@@ -7,8 +7,6 @@ import hashlib
 import json
 import os
 import re
-import shutil
-import subprocess
 import sys
 import tempfile
 import urllib.request
@@ -70,7 +68,6 @@ def parse_feed(xml_bytes: bytes) -> list[dict]:
         episodes.append(
             {
                 "id": episode_id(guid, audio_url),
-                "guid": guid,
                 "title": text_of(item.find("title"), "Untitled episode"),
                 "description": first_child_text(item, ("description", "summary")),
                 "publishedAt": published,
@@ -81,15 +78,18 @@ def parse_feed(xml_bytes: bytes) -> list[dict]:
     return episodes
 
 
-def fetch(url: str, destination: Path | None = None) -> bytes | None:
+def fetch_bytes(url: str) -> bytes:
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     with urllib.request.urlopen(request, timeout=120) as response:
-        if destination is None:
-            return response.read()
+        return response.read()
+
+
+def download_file(url: str, destination: Path) -> None:
+    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    with urllib.request.urlopen(request, timeout=120) as response:
         with destination.open("wb") as output:
             while chunk := response.read(1024 * 1024):
                 output.write(chunk)
-    return None
 
 
 def load_index() -> list[dict]:
@@ -107,29 +107,6 @@ def transcribe(client, audio_path: Path) -> str:
             prompt="BBC World Service news podcast with international names and current affairs.",
         )
     return result.text.strip()
-
-
-def make_transcription_sample(audio_path: Path, output_dir: Path) -> Path:
-    """Return a shortened audio file when TRANSCRIPTION_MAX_SECONDS is set."""
-    raw_limit = os.getenv("TRANSCRIPTION_MAX_SECONDS", "").strip()
-    if not raw_limit:
-        return audio_path
-    seconds = float(raw_limit)
-    if seconds <= 0:
-        raise ValueError("TRANSCRIPTION_MAX_SECONDS must be greater than zero")
-    if not shutil.which("ffmpeg"):
-        raise RuntimeError("ffmpeg is required when TRANSCRIPTION_MAX_SECONDS is set")
-    sample_path = output_dir / "episode-sample.mp3"
-    subprocess.run(
-        [
-            "ffmpeg", "-hide_banner", "-loglevel", "error", "-y",
-            "-i", str(audio_path), "-t", str(seconds),
-            "-codec:a", "libmp3lame", "-q:a", "4", str(sample_path),
-        ],
-        check=True,
-    )
-    print(f"Using the first {seconds:g} seconds for this transcription run.")
-    return sample_path
 
 
 def validate_and_sort_notes(notes: dict) -> dict:
@@ -361,7 +338,7 @@ def main() -> int:
     parser.add_argument("--dry-run", action="store_true", help="Only inspect the feed")
     args = parser.parse_args()
     feed_url = os.getenv("PODCAST_FEED_URL", DEFAULT_FEED_URL)
-    feed = parse_feed(fetch(feed_url) or b"")
+    feed = parse_feed(fetch_bytes(feed_url))
     if not feed:
         raise RuntimeError("The podcast feed did not contain playable episodes")
 
@@ -383,9 +360,8 @@ def main() -> int:
     client = OpenAI()
     with tempfile.TemporaryDirectory(prefix="english-podcast-") as temp_dir:
         audio_path = Path(temp_dir) / "episode.mp3"
-        fetch(episode["audioUrl"], audio_path)
-        transcription_audio = make_transcription_sample(audio_path, Path(temp_dir))
-        transcript = transcribe(client, transcription_audio)
+        download_file(episode["audioUrl"], audio_path)
+        transcript = transcribe(client, audio_path)
         notes = analyze(client, episode, transcript)
     save_episode(episode, notes, index)
     print(f"Published learning notes for {episode['id']}")

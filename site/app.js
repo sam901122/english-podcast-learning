@@ -11,6 +11,7 @@ const STUDY_LEVEL_OPTIONS = [
   { id: 'advanced', label: '高級' }
 ];
 let selectedStudyLevel = 'advanced';
+let episodeIndexPromise;
 
 const renderExample = item => {
   if (!item.exampleParts?.length) return escapeHtml(item.example || '');
@@ -91,10 +92,19 @@ function speakText(text = '') {
   }
 }
 
-function bindSpeechButtons(container) {
-  container.querySelectorAll('.speak-word').forEach(button => {
-    button.addEventListener('click', () => speakText(button.dataset.speak));
-  });
+app.addEventListener('click', event => {
+  const button = event.target.closest('.speak-word');
+  if (button) speakText(button.dataset.speak);
+});
+
+async function getEpisodeIndex() {
+  if (!episodeIndexPromise) {
+    episodeIndexPromise = fetch('data/episodes.json', { cache: 'no-store' }).then(response => {
+      if (!response.ok) throw new Error('無法讀取集數列表');
+      return response.json();
+    });
+  }
+  return episodeIndexPromise;
 }
 
 function renderStudySet(studySet = {}) {
@@ -117,13 +127,12 @@ function renderStudySet(studySet = {}) {
 
 async function loadEpisode(id) {
   app.innerHTML = '<p class="status">正在載入學習筆記⋯</p>';
-  const [episodeResponse, indexResponse] = await Promise.all([
+  const [episodeResponse, episodes] = await Promise.all([
     fetch(`data/episodes/${encodeURIComponent(id)}.json`),
-    fetch('data/episodes.json', { cache: 'no-store' })
+    getEpisodeIndex()
   ]);
   if (!episodeResponse.ok) throw new Error('無法讀取這集內容');
   const episode = await episodeResponse.json();
-  const episodes = indexResponse.ok ? await indexResponse.json() : [];
   const episodeIndex = episodes.findIndex(item => item.id === id);
   const previousEpisode = episodeIndex >= 0 ? episodes[episodeIndex + 1] : null;
   const nextEpisode = episodeIndex > 0 ? episodes[episodeIndex - 1] : null;
@@ -147,17 +156,16 @@ async function loadEpisode(id) {
         <button type="button" data-episode-id="${nextEpisode ? escapeHtml(nextEpisode.id) : ''}" ${nextEpisode ? '' : 'disabled'}>Next Day →</button>
       </nav>
     </article>`;
-  document.querySelector('.back').addEventListener('click', loadIndex);
-  document.querySelectorAll('.day-nav button:not(:disabled)').forEach(button => {
+  app.querySelector('.back').addEventListener('click', loadIndex);
+  app.querySelectorAll('.day-nav button:not(:disabled)').forEach(button => {
     button.addEventListener('click', () => loadEpisode(button.dataset.episodeId).catch(showError));
   });
   const studySets = episode.studySets || legacyStudySets(episode);
-  const studyContent = document.querySelector('.study-content');
-  const levelButtons = document.querySelectorAll('.level-switch button');
+  const studyContent = app.querySelector('.study-content');
+  const levelButtons = app.querySelectorAll('.level-switch button');
   const showStudyLevel = studyLevel => {
     selectedStudyLevel = studyLevel;
     studyContent.innerHTML = renderStudySet(studySets[studyLevel]);
-    bindSpeechButtons(studyContent);
     levelButtons.forEach(button => {
       button.setAttribute('aria-pressed', String(button.dataset.studyLevel === studyLevel));
     });
@@ -170,9 +178,7 @@ async function loadEpisode(id) {
 }
 
 async function loadIndex() {
-  const response = await fetch('data/episodes.json', { cache: 'no-store' });
-  if (!response.ok) throw new Error('無法讀取集數列表');
-  const episodes = await response.json();
+  const episodes = await getEpisodeIndex();
   if (!episodes.length) {
     app.innerHTML = '<div class="empty"><h2>第一集準備中</h2><p>完成第一次自動更新後，學習筆記會出現在這裡。</p></div>';
     return;
@@ -182,15 +188,13 @@ async function loadIndex() {
       <span class="date">${dateText(item.publishedAt)}</span><strong>${escapeHtml(item.title)}</strong>
       <span>${escapeHtml(item.summaryZh)}</span><i>開始學習 →</i>
     </button>`).join('')}</div>`;
-  document.querySelectorAll('.episode').forEach(button => button.addEventListener('click', () => {
+  app.querySelectorAll('.episode').forEach(button => button.addEventListener('click', () => {
     loadEpisode(button.dataset.id).catch(showError);
   }));
 }
 
 async function loadLatest() {
-  const response = await fetch('data/episodes.json', { cache: 'no-store' });
-  if (!response.ok) throw new Error('無法讀取集數列表');
-  const episodes = await response.json();
+  const episodes = await getEpisodeIndex();
   if (!episodes.length) return loadIndex();
   return loadEpisode(episodes[0].id);
 }

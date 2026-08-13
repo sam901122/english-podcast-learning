@@ -35,7 +35,6 @@ python scripts/update_podcast.py --dry-run
 ```
 
 To run the complete process locally, set `OPENAI_API_KEY` in the environment and omit `--dry-run`.
-The complete local process also requires `ffmpeg` on `PATH`.
 
 ## Attribution
 

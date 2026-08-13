@@ -27,10 +27,6 @@ jobs:
         with:
           python-version: "3.11"
           cache: pip
-      - name: Install ffmpeg
-        run: |
-          sudo apt-get update
-          sudo apt-get install --yes ffmpeg
       - run: pip install -r requirements.txt
       - name: Fetch and process the newest episode
         env:
