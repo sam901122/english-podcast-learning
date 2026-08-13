@@ -6,7 +6,7 @@ on:
     paths:
       - ".github/workflows/daily-update.yml"
   schedule:
-    - cron: "30 14 * * 1-5"
+    - cron: "30 22 * * 1-5"
       timezone: "Asia/Taipei"
   workflow_dispatch:
 
@@ -39,7 +39,7 @@ jobs:
       - name: Fetch and process the newest episode
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          TRANSCRIPTION_MAX_SECONDS: "20"
+          FORCE_REPROCESS_LATEST: ${{ github.event_name == 'push' && 'true' || 'false' }}
         run: |
           set +e
           python scripts/update_podcast.py 2>&1 | tee /tmp/podcast-update.log

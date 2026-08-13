@@ -199,6 +199,7 @@ def save_episode(episode: dict, notes: dict, index: list[dict]) -> None:
     }
     detail_file = EPISODES_DIR / f"{episode['id']}.json"
     detail_file.write_text(json.dumps(public_episode, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    index[:] = [item for item in index if item.get("id") != episode["id"]]
     index_entry = {key: public_episode[key] for key in ("id", "title", "publishedAt", "bbcUrl", "summaryZh")}
     index.insert(0, index_entry)
     index.sort(key=lambda value: value.get("publishedAt", ""), reverse=True)
@@ -216,7 +217,8 @@ def main() -> int:
 
     index = load_index()
     known = {item["id"] for item in index}
-    episode = next((item for item in feed if item["id"] not in known), None)
+    force_latest = os.getenv("FORCE_REPROCESS_LATEST", "").lower() in {"1", "true", "yes"}
+    episode = feed[0] if force_latest else next((item for item in feed if item["id"] not in known), None)
     if episode is None:
         print("No new episode found.")
         return 0
