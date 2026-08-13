@@ -13,6 +13,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
+from html.parser import HTMLParser
 from pathlib import Path
 
 from opencc import OpenCC
@@ -22,6 +23,8 @@ DATA_DIR = ROOT / "site" / "data"
 EPISODES_DIR = DATA_DIR / "episodes"
 INDEX_FILE = DATA_DIR / "episodes.json"
 DEFAULT_FEED_URL = "https://podcasts.files.bbci.co.uk/w13xtvrv.rss"
+SPOTIFY_SHOW_ID = "2mPQrJT37b3iXf4zxlnPOD"
+SPOTIFY_EMBED_URL = f"https://open.spotify.com/embed/show/{SPOTIFY_SHOW_ID}"
 USER_AGENT = "english-podcast-learning-project/1.0"
 VOCABULARY_COUNT = 10
 PHRASE_COUNT = 5
@@ -91,6 +94,47 @@ def download_file(url: str, destination: Path) -> None:
         with destination.open("wb") as output:
             while chunk := response.read(1024 * 1024):
                 output.write(chunk)
+
+
+class SpotifyEmbedDataParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self._capturing = False
+        self.data = ""
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag == "script" and dict(attrs).get("id") == "__NEXT_DATA__":
+            self._capturing = True
+
+    def handle_data(self, data: str) -> None:
+        if self._capturing:
+            self.data += data
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "script" and self._capturing:
+            self._capturing = False
+
+
+def find_spotify_episode_url(episode: dict) -> str:
+    try:
+        parser = SpotifyEmbedDataParser()
+        parser.feed(fetch_bytes(SPOTIFY_EMBED_URL).decode("utf-8"))
+        entity = json.loads(parser.data)["props"]["pageProps"]["state"]["data"]["entity"]
+        title_matches = " ".join(entity["title"].casefold().split()) == " ".join(
+            episode["title"].casefold().split()
+        )
+        spotify_date = entity.get("releaseDate", {}).get("isoString", "")
+        date_matches = datetime.fromisoformat(spotify_date.replace("Z", "+00:00")).date() == (
+            datetime.fromisoformat(episode["publishedAt"]).date()
+        )
+        expected_show = entity.get("relatedEntityUri") == f"spotify:show:{SPOTIFY_SHOW_ID}"
+        spotify_id = entity.get("id", "")
+        if title_matches and date_matches and expected_show and re.fullmatch(r"[A-Za-z0-9]+", spotify_id):
+            return f"https://open.spotify.com/episode/{spotify_id}"
+        print("Spotify did not return a matching latest episode; continuing without a link.")
+    except Exception as error:
+        print(f"Spotify lookup failed; continuing without a link: {error}")
+    return ""
 
 
 def load_index() -> list[dict]:
@@ -341,6 +385,8 @@ def save_episode(episode: dict, notes: dict, index: list[dict]) -> None:
         "summaryEn": notes["summaryEn"],
         "studySets": notes["studySets"],
     }
+    if episode.get("spotifyUrl"):
+        public_episode["spotifyUrl"] = episode["spotifyUrl"]
     detail_file = EPISODES_DIR / f"{episode['id']}.json"
     detail_file.write_text(json.dumps(public_episode, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     index[:] = [item for item in index if item.get("id") != episode["id"]]
@@ -374,6 +420,7 @@ def main() -> int:
 
     from openai import OpenAI
 
+    episode["spotifyUrl"] = find_spotify_episode_url(episode)
     client = OpenAI()
     with tempfile.TemporaryDirectory(prefix="english-podcast-") as temp_dir:
         audio_path = Path(temp_dir) / "episode.mp3"

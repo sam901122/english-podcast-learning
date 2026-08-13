@@ -2,12 +2,13 @@ import copy
 import json
 import unittest
 from types import SimpleNamespace
-from unittest.mock import Mock
+from unittest.mock import Mock, patch
 
 from scripts.update_podcast import (
     PHRASE_COUNT,
     VOCABULARY_COUNT,
     analyze,
+    find_spotify_episode_url,
     normalize_traditional_chinese,
     validate_and_sort_notes,
 )
@@ -152,6 +153,45 @@ class AnalyzeTests(unittest.TestCase):
             len(notes["studySets"]["advanced"]["vocabulary"]),
             VOCABULARY_COUNT,
         )
+
+
+class SpotifyLookupTests(unittest.TestCase):
+    @staticmethod
+    def embed_page(title="Test episode", spotify_id="abc123"):
+        data = {
+            "props": {"pageProps": {"state": {"data": {"entity": {
+                "title": title,
+                "id": spotify_id,
+                "releaseDate": {"isoString": "2026-08-13T13:30:00Z"},
+                "relatedEntityUri": "spotify:show:2mPQrJT37b3iXf4zxlnPOD",
+            }}}}},
+        }
+        return (
+            '<script id="__NEXT_DATA__" type="application/json">'
+            f"{json.dumps(data)}</script>"
+        ).encode()
+
+    @patch("scripts.update_podcast.fetch_bytes")
+    def test_returns_direct_link_for_an_exact_title_match(self, fetch_bytes):
+        fetch_bytes.return_value = self.embed_page()
+
+        url = find_spotify_episode_url({
+            "title": "Test episode",
+            "publishedAt": "2026-08-13T13:30:00+00:00",
+        })
+
+        self.assertEqual(url, "https://open.spotify.com/episode/abc123")
+
+    @patch("scripts.update_podcast.fetch_bytes")
+    def test_ignores_a_different_spotify_episode(self, fetch_bytes):
+        fetch_bytes.return_value = self.embed_page(title="Different episode")
+
+        url = find_spotify_episode_url({
+            "title": "Test episode",
+            "publishedAt": "2026-08-13T13:30:00+00:00",
+        })
+
+        self.assertEqual(url, "")
 
 
 if __name__ == "__main__":

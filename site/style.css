@@ -21,7 +21,8 @@ main { min-height:55vh; padding:40px 0 80px; }
 article { max-width:760px; }
 article h2 { margin:.15em 0 .5em; font:700 clamp(2.2rem,7vw,4.2rem)/1.05 Georgia,serif; letter-spacing:-.035em; }
 .back { margin-bottom:30px; padding:0; border:0; color:var(--red); background:none; font:inherit; font-weight:750; cursor:pointer; }
-.listen { display:inline-block; margin:10px 0 35px; padding:10px 18px; color:var(--white); background:var(--red); border:2px solid var(--black); border-radius:4px; box-shadow:4px 4px 0 var(--black); text-decoration:none; font-weight:700; }
+.listen-links { display:flex; flex-wrap:wrap; gap:12px; margin:10px 0 35px; }
+.listen { display:inline-block; padding:10px 18px; color:var(--white); background:var(--red); border:2px solid var(--black); border-radius:4px; box-shadow:4px 4px 0 var(--black); text-decoration:none; font-weight:700; }
 section { padding:30px 0; border-top:2px solid var(--black); }
 h3 { display:flex; align-items:center; gap:10px; margin:0 0 18px; font:700 1.5rem Georgia,serif; }
 .study-toolbar { display:flex; align-items:center; justify-content:space-between; gap:20px; padding:30px 0 24px; border-top:2px solid var(--black); }

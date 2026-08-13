@@ -141,7 +141,10 @@ async function loadEpisode(id) {
       <button class="back" type="button">← 所有集數</button>
       <p class="date">${dateText(episode.publishedAt)}</p>
       <h2>${escapeHtml(episode.title)}</h2>
-      <a class="listen" href="${escapeHtml(episode.bbcUrl)}" target="_blank" rel="noopener">在 BBC 收聽 ↗</a>
+      <div class="listen-links">
+        <a class="listen" href="${escapeHtml(episode.bbcUrl)}" target="_blank" rel="noopener">在 BBC 收聽 ↗</a>
+        ${episode.spotifyUrl ? `<a class="listen spotify" href="${escapeHtml(episode.spotifyUrl)}" target="_blank" rel="noopener">在 Spotify 收聽 ↗</a>` : ''}
+      </div>
       <section><h3>中文摘要</h3><p>${escapeHtml(episode.summaryZh)}</p></section>
       <section><h3>English summary</h3><p lang="en">${escapeHtml(episode.summaryEn)}</p></section>
       <div class="study-toolbar">
