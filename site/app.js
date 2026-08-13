@@ -97,7 +97,7 @@ function renderStudySet(studySet = {}) {
       <blockquote lang="en">${highlightTerm(item.example, item.highlight || item.word)}</blockquote></div>`).join('')}</div></section>
     <section><h3>實用片語</h3><div class="cards">${phrases.map(item => `
       <div class="card"><div class="phrase-row"><strong>${escapeHtml(item.phrase)}</strong><button class="speak-word" type="button" data-speak="${escapeHtml(item.phrase)}" aria-label="Pronounce ${escapeHtml(item.phrase)}">${speakerIcon}</button></div><p>${escapeHtml(item.meaningZh)}</p>
-      <blockquote lang="en">${highlightTerm(item.example, item.phrase)}</blockquote></div>`).join('')}</div></section>`;
+      <blockquote lang="en">${highlightTerm(item.example, item.highlight || item.phrase)}</blockquote></div>`).join('')}</div></section>`;
 }
 
 async function loadEpisode(id) {

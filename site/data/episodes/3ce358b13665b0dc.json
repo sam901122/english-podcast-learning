@@ -1,0 +1,390 @@
+{
+  "id": "3ce358b13665b0dc",
+  "title": "How extreme rain is putting orangutans at risk",
+  "description": "<p>Orangutans are the world’s most endangered apes and they’re now even closer to extinction. They live on two islands in southeast Asia: Sumatra and Borneo. In November, an extreme weather event in the area killed more than 1,000 people there, plus about 7% of the world’s rarest type of orangutan according to a new study.</p><p>BBC Climate and Science reporter Georgina Rannard takes us through how orangutans are being pushed towards extinction and what some countries and charities are doing to protect them.</p><p>We also hear from a conservationist making an effort to save the species.</p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Emma-Louise Amanshia\nProducers: Emily Horler and Benita Barden\nVideo Producer: Baldeep Chahal\nEditors: Verity Wilde</p>",
+  "publishedAt": "2026-08-13T13:30:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct994l",
+  "summaryZh": "本集談及紅毛猩猩（人猿）面臨的急迫滅絕風險。牠們分布在蘇門答臘和婆羅洲，過去一百年野外族群從約 230,000 隻驟減，目前婆羅洲約 104,000 隻、蘇門答臘約 14,000 隻、塔帕努利約 800 隻；平均每年約被殺 2,000 至 3,000 隻，若每年損失 1% 即可能走向滅絕。主要威脅包括為種植棕櫚油而大規模砍伐與放火、採礦（含近期金礦開發）、水力發電與紙漿伐林，以及幼獸被捕做非法寵物交易或因人類衝突遭殺害。去年 11 月的極端降雨與土石流造成約 1,000 人死亡，也奪走約 58 隻塔帕努利紅毛猩猩（約占其族群的 7%），顯示極端氣候會加劇瀕危程度。節目也介紹保育作法：設立受保護棲地、族群繁殖與基因保護，以及以資金補償換取保留森林等政策，並呼籲停止在塔帕努利棲地興建水壩或採礦等基礎建設以免加速滅絕。",
+  "summaryEn": "The episode outlines how orangutans — literally “people of the forest” — are increasingly close to extinction. They live in the trees on Sumatra and Borneo; a century ago about 230,000 existed in the wild, today there are roughly 104,000 Bornean, 14,000 Sumatran and only about 800 Tapanuli orangutans. Major threats are habitat loss from palm oil expansion, logging, mining (including proposed gold mines), hydropower projects, and illegal pet trade and human–wildlife conflict; on average 2,000–3,000 orangutans are killed each year. An extreme rainfall event in November killed over 1,000 people and about 58 Tapanuli orangutans (around 7% of that species), illustrating how extreme weather can further push small populations toward extinction. Conservation measures discussed include protected habitats, breeding and genetic programs, payments to keep forests standing, and calls to halt infrastructure projects in critical orangutan habitat.",
+  "studySets": {
+    "basic": {
+      "vocabulary": [
+        {
+          "word": "orangutan",
+          "kkPhonetic": "/əˈræŋətæn/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "紅毛猩猩",
+          "example": "Today, we're talking about orangutans.",
+          "highlight": "orangutans"
+        },
+        {
+          "word": "forest",
+          "kkPhonetic": "/ˈfɔrɪst/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "森林",
+          "example": "You might not know the word orangutan means person of the forest and that we share 97% of our DNA with them.",
+          "highlight": "forest"
+        },
+        {
+          "word": "DNA",
+          "kkPhonetic": "/ˌdiː.ɛnˈeɪ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "DNA（遺傳物質）",
+          "example": "You might not know the word orangutan means person of the forest and that we share 97% of our DNA with them.",
+          "highlight": "DNA"
+        },
+        {
+          "word": "island",
+          "kkPhonetic": "/ˈaɪlənd/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "島嶼",
+          "example": "Orangutans live on two islands, Sumatra and Borneo in Southeast Asia.",
+          "highlight": "islands"
+        },
+        {
+          "word": "nest",
+          "kkPhonetic": "/nɛst/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "巢；窩",
+          "example": "So they always build a nest to sleep in.",
+          "highlight": "nest"
+        },
+        {
+          "word": "branch",
+          "kkPhonetic": "/bræntʃ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "樹枝",
+          "example": "They weave branches together.",
+          "highlight": "branches"
+        },
+        {
+          "word": "mattress",
+          "kkPhonetic": "/ˈmætrəs/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "床墊",
+          "example": "They use smaller branches as a mattress.",
+          "highlight": "mattress"
+        },
+        {
+          "word": "rain",
+          "kkPhonetic": "/reɪn/",
+          "partOfSpeech": "verb",
+          "level": "A2",
+          "meaningZh": "下雨",
+          "example": "And if it rains, they can build a little canopy.",
+          "highlight": "rains"
+        },
+        {
+          "word": "tree",
+          "kkPhonetic": "/triː/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "樹；樹木",
+          "example": "They live mostly in the trees.",
+          "highlight": "trees"
+        },
+        {
+          "word": "home",
+          "kkPhonetic": "/hoʊm/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "家；家園",
+          "example": "You felt you knew that the orangutan understood that its home was being destroyed.",
+          "highlight": "home"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "person of the forest",
+          "highlight": "person of the forest",
+          "meaningZh": "森林之人；森林的居民",
+          "example": "You might not know the word orangutan means person of the forest and that we share 97% of our DNA with them."
+        },
+        {
+          "phrase": "closer to extinction",
+          "highlight": "closer to extinction",
+          "meaningZh": "更接近滅絕",
+          "example": "They're also the world's most endangered great apes and they're now even closer to extinction."
+        },
+        {
+          "phrase": "live on",
+          "highlight": "live on",
+          "meaningZh": "居住於；住在（某地）",
+          "example": "Orangutans live on two islands, Sumatra and Borneo in Southeast Asia."
+        },
+        {
+          "phrase": "build a nest",
+          "highlight": "build a nest",
+          "meaningZh": "築巢；建造巢穴",
+          "example": "So they always build a nest to sleep in."
+        },
+        {
+          "phrase": "keep the forest standing",
+          "highlight": "keep the forest standing",
+          "meaningZh": "保護森林不被砍伐（讓森林保持原狀）",
+          "example": "So one of these ideas is that why don't rich nations pay some of these poor nations to keep the forest standing?"
+        }
+      ]
+    },
+    "intermediate": {
+      "vocabulary": [
+        {
+          "word": "endangered",
+          "kkPhonetic": "/ɛnˈdeɪndʒərd/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "瀕臨絕種的；受威脅的",
+          "example": "They're also the world's most endangered great apes and they're now even closer to extinction.",
+          "highlight": "endangered"
+        },
+        {
+          "word": "extinction",
+          "kkPhonetic": "/ɪkˈstɪŋkʃən/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "滅絕；絕種",
+          "example": "They say that even if just one percent of orangutans were lost every year, it would lead to their extinction, partly because they breed so infrequently.",
+          "highlight": "extinction"
+        },
+        {
+          "word": "habitat",
+          "kkPhonetic": "/ˈhæbɪˌtæt/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "棲息地（複數）",
+          "example": "Where do they live and what are their habitats like?",
+          "highlight": "habitats"
+        },
+        {
+          "word": "canopy",
+          "kkPhonetic": "/ˈkænəpi/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "樹冠層；樹梢層",
+          "example": "So they live in this quite lush, dense canopy, very green, moving between those trees.",
+          "highlight": "canopy"
+        },
+        {
+          "word": "isolated",
+          "kkPhonetic": "/ˈaɪsəˌleɪtɪd/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "孤立的；被隔離的",
+          "example": "And so those 40 different communities of orangutans are getting more and more isolated over time, which is another risk to them.",
+          "highlight": "isolated"
+        },
+        {
+          "word": "palm oil",
+          "kkPhonetic": "/pɑm ɔɪl/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "棕櫚油",
+          "example": "I know that Indonesia and Malaysia produce a lot of the world's palm oil.",
+          "highlight": "palm oil"
+        },
+        {
+          "word": "drain",
+          "kkPhonetic": "/dreɪn/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "（使）排乾；抽乾（如排乾沼澤）",
+          "example": "And they also drain some swamps, burn land to prepare it for planting the trees.",
+          "highlight": "drain"
+        },
+        {
+          "word": "trafficking",
+          "kkPhonetic": "/ˈtræfɪkɪŋ/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "非法買賣；走私（此處指非法販運動物）",
+          "example": "I was also looking into this and I was really shocked to see that some orangutans are also hunted for legal trafficking.",
+          "highlight": "trafficking"
+        },
+        {
+          "word": "infrequently",
+          "kkPhonetic": "/ɪnˈfrikwəntli/",
+          "partOfSpeech": "adverb",
+          "level": "B2",
+          "meaningZh": "不常；罕見地",
+          "example": "They say that even if just one percent of orangutans were lost every year, it would lead to their extinction, partly because they breed so infrequently.",
+          "highlight": "infrequently"
+        },
+        {
+          "word": "conservation",
+          "kkPhonetic": "/ˌkɑnsərˈveɪʃən/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "保育；保護（自然資源或動物）",
+          "example": "So there's a lot of conservation work for orangutans in Malaysia and Indonesia.",
+          "highlight": "conservation"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "be closer to extinction",
+          "highlight": "closer to extinction",
+          "meaningZh": "更接近滅絕",
+          "example": "They're also the world's most endangered great apes and they're now even closer to extinction."
+        },
+        {
+          "phrase": "build a nest",
+          "highlight": "build a nest",
+          "meaningZh": "築巢（睡覺或居住用）",
+          "example": "So they always build a nest to sleep in."
+        },
+        {
+          "phrase": "chop down trees",
+          "highlight": "chopping down trees",
+          "meaningZh": "砍倒樹木",
+          "example": "It showed an orangutan in a habitat where there were bulldozers chopping down trees."
+        },
+        {
+          "phrase": "put into silos",
+          "highlight": "put into silos",
+          "meaningZh": "分割並孤立（組織、區域等）",
+          "example": "And that's quite important because, as we're going to talk about, there are lots of threats to these animals and their habitats are sort of being chopped up and put into silos."
+        },
+        {
+          "phrase": "wiped from the face of the earth",
+          "highlight": "wiped from the face of the earth",
+          "meaningZh": "從地球上徹底除去；完全消滅",
+          "example": "We can't allow this wonderful great ape, one of our closest relatives in the animal kingdom, to be wiped from the face of the earth."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "orangutan",
+          "kkPhonetic": "/əˈræŋətæn/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "紅毛猩猩；字面意為「森林的人」",
+          "example": "You might not know the word orangutan means person of the forest and that we share 97% of our DNA with them.",
+          "highlight": "orangutan"
+        },
+        {
+          "word": "canopy",
+          "kkPhonetic": "/ˈkænəpi/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "樹冠層；樹梢形成的遮蔽物",
+          "example": "So they live in this quite lush, dense canopy, very green, moving between those trees.",
+          "highlight": "canopy"
+        },
+        {
+          "word": "silo",
+          "kkPhonetic": "/ˈsaɪloʊ/",
+          "partOfSpeech": "noun",
+          "level": "C2",
+          "meaningZh": "筒倉；比喻為被隔離的獨立群體或區塊",
+          "example": "And that's quite important because, as we're going to talk about, there are lots of threats to these animals and their habitats are sort of being chopped up and put into silos.",
+          "highlight": "silos"
+        },
+        {
+          "word": "en masse",
+          "kkPhonetic": "/ˌɑnˈmæs/",
+          "partOfSpeech": "adverb",
+          "level": "C2",
+          "meaningZh": "大批地、集體地",
+          "example": "But the problem is, as we've made more and more palm oil and used it more en masse, obviously there's higher demand for the palm oil and it's mostly found in Sumatra and Borneo.",
+          "highlight": "en masse"
+        },
+        {
+          "word": "bulldozer",
+          "kkPhonetic": "/ˈbʊldoʊzər/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "推土機（大型土方工程機械）",
+          "example": "And the orangutan could see what was happening and was essentially fighting with the bulldozer and was climbing on top of the machine.",
+          "highlight": "bulldozer"
+        },
+        {
+          "word": "hydropower",
+          "kkPhonetic": "/ˈhaɪdrəˌpaʊər/",
+          "partOfSpeech": "noun",
+          "level": "C2",
+          "meaningZh": "水力發電；水力能源",
+          "example": "And there's other threats, hydropower expansion and also logging to produce paper and pulp.",
+          "highlight": "hydropower"
+        },
+        {
+          "word": "trafficking",
+          "kkPhonetic": "/ˈtræfɪkɪŋ/",
+          "partOfSpeech": "noun",
+          "level": "C2",
+          "meaningZh": "販運（通常指非法走私或交易）",
+          "example": "I was really shocked to see that some orangutans are also hunted for legal trafficking.",
+          "highlight": "trafficking"
+        },
+        {
+          "word": "anomalous",
+          "kkPhonetic": "/əˈnɑmələs/",
+          "partOfSpeech": "adjective",
+          "level": "C2",
+          "meaningZh": "異常的、不規則的",
+          "example": "The storm was considered sort of anomalous, so it hasn't been linked very directly to climate change, but we know that climate change means that that area of the world will see more intense rainfall, more storms in the future.",
+          "highlight": "anomalous"
+        },
+        {
+          "word": "compound",
+          "kkPhonetic": "/kəmˈpaʊnd/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "使情況惡化或複雜化；加重",
+          "example": "So this threat from climate change just shows again how these different risks can compound.",
+          "highlight": "compound"
+        },
+        {
+          "word": "extinction",
+          "kkPhonetic": "/ɪkˈstɪŋkʃən/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "（物種等的）滅絕、消失",
+          "example": "So it's pushed them closer to extinction.",
+          "highlight": "extinction"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "person of the forest",
+          "highlight": "person of the forest",
+          "meaningZh": "字面：森林裡的人（為 orangutan 名稱由來）",
+          "example": "You might not know the word orangutan means person of the forest and that we share 97% of our DNA with them."
+        },
+        {
+          "phrase": "build a nest",
+          "highlight": "build a nest",
+          "meaningZh": "築巢、搭建睡巢（動物行為）",
+          "example": "So they always build a nest to sleep in."
+        },
+        {
+          "phrase": "wiped from the face of the earth",
+          "highlight": "wiped from the face of the earth",
+          "meaningZh": "徹底消滅，從世上抹去",
+          "example": "We can't allow this wonderful great ape, one of our closest relatives in the animal kingdom, to be wiped from the face of the earth."
+        },
+        {
+          "phrase": "emerging economies",
+          "highlight": "emerging economies",
+          "meaningZh": "新興經濟體；正在快速發展的國家或經濟",
+          "example": "It sounds very simple, but, you know, some of these economies are emerging economies."
+        },
+        {
+          "phrase": "illegal pet trade",
+          "highlight": "illegal pet trade",
+          "meaningZh": "非法寵物貿易（捕捉並販賣野生動物作寵物）",
+          "example": "Some young orangutans are captured for this illegal pet trade and they actually usually kill the mother because they, you know, they understand that the mother will try and follow the baby."
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/3d3AVgvw3Evi2rQIUdxVua"
+}

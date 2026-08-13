@@ -22,6 +22,7 @@ def make_study_set(level):
         "phrases": [
             {
                 "phrase": f"phrase-{index}",
+                "highlight": f"phrase-{index}",
                 "meaningZh": "繁體中文解釋",
                 "example": f"This sentence contains phrase-{index}.",
             }
@@ -68,12 +69,26 @@ class AnalyzeTests(unittest.TestCase):
             self.assertEqual(properties["phrases"]["maxItems"], 5)
 
 
+class MainTests(unittest.TestCase):
+    @patch("scripts.update_podcast.fetch")
+    @patch("scripts.update_podcast.parse_feed")
+    def test_rejects_an_episode_offset_outside_the_feed(self, parse_feed, fetch):
+        from scripts.update_podcast import main
+
+        fetch.return_value = b"feed"
+        parse_feed.return_value = [{"id": "first"}]
+        with patch("sys.argv", ["update_podcast.py", "--episode-offset", "2"]):
+            with self.assertRaisesRegex(ValueError, "outside the RSS feed"):
+                main()
+
+
 class VocabularyPreparationTests(unittest.TestCase):
     def test_decides_one_word_without_changing_other_fields(self):
         responses = Mock()
         responses.create.return_value = SimpleNamespace(output_text=json.dumps({
             "shouldChange": True,
             "word": "evaporate",
+            "kkPhonetic": "/ɪˈvæpəˌret/",
         }))
         client = SimpleNamespace(responses=responses)
         item = {
@@ -83,9 +98,13 @@ class VocabularyPreparationTests(unittest.TestCase):
             "example": "The water is evaporating quickly.",
         }
 
+        item["kkPhonetic"] = "/ɪˈvæpəˌretɪŋ/"
         result = decide_study_word(client, item)
 
-        self.assertEqual(result, "evaporate")
+        self.assertEqual(result, {
+            "word": "evaporate",
+            "kkPhonetic": "/ɪˈvæpəˌret/",
+        })
         prompt = responses.create.call_args.kwargs["input"]
         self.assertIn("Original word: evaporating", prompt)
         self.assertNotIn("batteries", prompt)
@@ -93,17 +112,22 @@ class VocabularyPreparationTests(unittest.TestCase):
 
     @patch("scripts.update_podcast.decide_study_word")
     def test_locks_highlights_before_updating_display_words(self, decide_study_word):
-        replacements = {"evaporating": "evaporate", "batteries": "battery"}
+        replacements = {
+            "evaporating": {"word": "evaporate", "kkPhonetic": "/evaporate/"},
+            "batteries": {"word": "battery", "kkPhonetic": "/battery/"},
+        }
         decide_study_word.side_effect = lambda _client, item: replacements[item["word"]]
         notes = {"vocabulary": [
             {
                 "word": "evaporating",
+                "kkPhonetic": "/evaporating/",
                 "partOfSpeech": "verb",
                 "meaningZh": "蒸發",
                 "example": "The water is evaporating quickly.",
             },
             {
                 "word": "batteries",
+                "kkPhonetic": "/batteries/",
                 "partOfSpeech": "noun",
                 "meaningZh": "電池",
                 "example": "The batteries ran out.",
@@ -114,8 +138,10 @@ class VocabularyPreparationTests(unittest.TestCase):
 
         self.assertEqual(result["vocabulary"][0]["word"], "evaporate")
         self.assertEqual(result["vocabulary"][0]["highlight"], "evaporating")
+        self.assertEqual(result["vocabulary"][0]["kkPhonetic"], "/evaporate/")
         self.assertEqual(result["vocabulary"][1]["word"], "battery")
         self.assertEqual(result["vocabulary"][1]["highlight"], "batteries")
+        self.assertEqual(result["vocabulary"][1]["kkPhonetic"], "/battery/")
         self.assertEqual(result["vocabulary"][0]["example"], "The water is evaporating quickly.")
 
 

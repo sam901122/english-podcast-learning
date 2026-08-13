@@ -231,6 +231,7 @@ def analyze_study_level(client, transcript: str, study_level: str) -> dict:
     }
     phrase_properties = {
         "phrase": {"type": "string"},
+        "highlight": {"type": "string"},
         "meaningZh": {"type": "string"},
         "example": {"type": "string"},
     }
@@ -272,9 +273,11 @@ Choose exactly 10 {config['guidance']} as vocabulary, at CEFR {"-".join(config['
 5 useful phrases at a comparable difficulty. Items may overlap with study sets created by other requests.
 
 Every vocabulary `word` must be the exact surface form that appears in its `example`; do not convert it to
-a dictionary form yet. Every `phrase` must be the exact contiguous wording that appears in its `example`.
+a dictionary form yet. For phrases, `phrase` is the reusable learning form and `highlight` is the exact
+contiguous surface form that appears in `example` (for example, phrase `take a step back` may highlight
+`taking a step back`).
 Each `example` must be one complete original sentence from the transcript containing that exact word or
-phrase. Do not rewrite examples and do not return multiple sentences or a paragraph.
+highlight. Do not rewrite examples and do not return multiple sentences or a paragraph.
 
 For every word, provide its American English pronunciation in KK phonetic symbols enclosed in slashes.
 Every `meaningZh` MUST use Taiwan Traditional Chinese only. Never use Simplified Chinese characters or
@@ -300,8 +303,9 @@ def analyze(client, episode: dict, transcript: str) -> dict:
     return notes
 
 
-def decide_study_word(client, item: dict) -> str:
+def decide_study_word(client, item: dict) -> dict:
     original_word = item["word"]
+    original_phonetic = item["kkPhonetic"]
     schema = {
         "name": "study_word_decision",
         "strict": True,
@@ -311,17 +315,20 @@ def decide_study_word(client, item: dict) -> str:
             "properties": {
                 "shouldChange": {"type": "boolean"},
                 "word": {"type": "string"},
+                "kkPhonetic": {"type": "string"},
             },
-            "required": ["shouldChange", "word"],
+            "required": ["shouldChange", "word", "kkPhonetic"],
         },
     }
     prompt = f"""Decide whether this single English vocabulary item should be shown to a learner in its
 dictionary form. Change ordinary inflected verbs to the base form and ordinary plural nouns to singular.
 Keep the original form when it is an established adjective or noun in this sentence, or when changing it
-would make the learning item less natural. Do not rewrite the sentence, meaning, pronunciation, or part of
-speech. If no change is needed, return the original word exactly.
+would make the learning item less natural. If `word` changes, return the American English KK pronunciation
+for the NEW dictionary form, enclosed in slashes. If no change is needed, return both the original word and
+its original KK pronunciation exactly. Do not rewrite the sentence, meaning, or part of speech.
 
 Original word: {original_word}
+Original KK pronunciation: {original_phonetic}
 Part of speech: {item['partOfSpeech']}
 Traditional Chinese meaning: {item['meaningZh']}
 Original sentence: {item['example']}
@@ -334,11 +341,12 @@ Original sentence: {item['example']}
         )
         decision = json.loads(response.output_text)
         candidate = decision["word"].strip()
-        if decision["shouldChange"] and candidate:
-            return candidate
+        candidate_phonetic = decision["kkPhonetic"].strip()
+        if decision["shouldChange"] and candidate and candidate_phonetic:
+            return {"word": candidate, "kkPhonetic": candidate_phonetic}
     except Exception as error:
         print(f"Word-form check failed for {original_word!r}; keeping original: {error}")
-    return original_word
+    return {"word": original_word, "kkPhonetic": original_phonetic}
 
 
 def prepare_vocabulary(client, notes: dict) -> dict:
@@ -358,7 +366,7 @@ def prepare_vocabulary(client, notes: dict) -> dict:
         study_words = list(executor.map(lambda item: decide_study_word(client, item), vocabulary))
 
     for item, study_word in zip(vocabulary, study_words):
-        item["word"] = study_word
+        item.update(study_word)
     return notes
 
 
@@ -388,6 +396,11 @@ def save_episode(episode: dict, notes: dict, index: list[dict]) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true", help="Only inspect the feed")
+    parser.add_argument(
+        "--episode-offset",
+        type=int,
+        help="Process a specific RSS episode by zero-based position",
+    )
     args = parser.parse_args()
     feed_url = os.getenv("PODCAST_FEED_URL", DEFAULT_FEED_URL)
     feed = parse_feed(fetch(feed_url) or b"")
@@ -397,7 +410,12 @@ def main() -> int:
     index = load_index()
     known = {item["id"] for item in index}
     force_latest = os.getenv("FORCE_REPROCESS_LATEST", "").lower() in {"1", "true", "yes"}
-    episode = feed[0] if force_latest else next((item for item in feed if item["id"] not in known), None)
+    if args.episode_offset is not None:
+        if args.episode_offset < 0 or args.episode_offset >= len(feed):
+            raise ValueError(f"Episode offset {args.episode_offset} is outside the RSS feed")
+        episode = feed[args.episode_offset]
+    else:
+        episode = feed[0] if force_latest else next((item for item in feed if item["id"] not in known), None)
     if episode is None:
         print("No new episode found.")
         return 0
