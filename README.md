@@ -7,13 +7,6 @@ Daily English-learning notes generated from BBC World Service's **What in the Wo
 On weekdays, GitHub Actions reads the official BBC RSS feed, processes the newest unseen episode,
 transcribes its audio with OpenAI, generates Traditional Chinese learning notes, and deploys the
 static site to GitHub Pages. Audio and full transcripts are not committed to the repository.
-When Spotify's public show page has an exact title match for the newest episode, the published notes
-also include a direct Spotify episode link. A failed or mismatched Spotify lookup does not stop the update.
-
-Each episode contains basic, intermediate, and advanced study sets. Every set has 10 vocabulary words
-and up to 5 genuinely useful phrases, sorted by CEFR level; the site opens on the advanced set. Learning
-entries use canonical forms while preserving one exact transcript sentence and the model-selected highlight.
-All generated Chinese is normalized to Taiwan Traditional Chinese before publishing.
 
 ## Setup
 

@@ -7,17 +7,16 @@ import hashlib
 import json
 import os
 import re
+import shutil
+import subprocess
 import sys
 import tempfile
-import time
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from html.parser import HTMLParser
 from pathlib import Path
-
-from opencc import OpenCC
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "site" / "data"
@@ -27,24 +26,6 @@ DEFAULT_FEED_URL = "https://podcasts.files.bbci.co.uk/w13xtvrv.rss"
 SPOTIFY_SHOW_ID = "2mPQrJT37b3iXf4zxlnPOD"
 SPOTIFY_EMBED_URL = f"https://open.spotify.com/embed/show/{SPOTIFY_SHOW_ID}"
 USER_AGENT = "english-podcast-learning-project/1.0"
-VOCABULARY_COUNT = 10
-PHRASE_COUNT = 5
-ANALYSIS_ATTEMPTS = 3
-STUDY_LEVELS = ("basic", "intermediate", "advanced")
-CEFR_ORDER = {"A2": 0, "B1": 1, "B2": 2, "C1": 3, "C2": 4}
-CEFR_BY_STUDY_LEVEL = {
-    "basic": {"A2", "B1"},
-    "intermediate": {"B1", "B2"},
-    "advanced": {"C1", "C2"},
-}
-
-
-def log(message: str) -> None:
-    print(message, flush=True)
-    diagnostic_log = os.getenv("DIAGNOSTIC_LOG", "").strip()
-    if diagnostic_log:
-        with Path(diagnostic_log).open("a", encoding="utf-8") as output:
-            output.write(message + "\n")
 
 
 def text_of(element: ET.Element | None, default: str = "") -> str:
@@ -81,6 +62,7 @@ def parse_feed(xml_bytes: bytes) -> list[dict]:
         episodes.append(
             {
                 "id": episode_id(guid, audio_url),
+                "guid": guid,
                 "title": text_of(item.find("title"), "Untitled episode"),
                 "description": first_child_text(item, ("description", "summary")),
                 "publishedAt": published,
@@ -91,18 +73,15 @@ def parse_feed(xml_bytes: bytes) -> list[dict]:
     return episodes
 
 
-def fetch_bytes(url: str) -> bytes:
+def fetch(url: str, destination: Path | None = None) -> bytes | None:
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     with urllib.request.urlopen(request, timeout=120) as response:
-        return response.read()
-
-
-def download_file(url: str, destination: Path) -> None:
-    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(request, timeout=120) as response:
+        if destination is None:
+            return response.read()
         with destination.open("wb") as output:
             while chunk := response.read(1024 * 1024):
                 output.write(chunk)
+    return None
 
 
 class SpotifyEmbedDataParser(HTMLParser):
@@ -127,7 +106,7 @@ class SpotifyEmbedDataParser(HTMLParser):
 def find_spotify_episode_url(episode: dict) -> str:
     try:
         parser = SpotifyEmbedDataParser()
-        parser.feed(fetch_bytes(SPOTIFY_EMBED_URL).decode("utf-8"))
+        parser.feed((fetch(SPOTIFY_EMBED_URL) or b"").decode("utf-8"))
         entity = json.loads(parser.data)["props"]["pageProps"]["state"]["data"]["entity"]
         title_matches = " ".join(entity["title"].casefold().split()) == " ".join(
             episode["title"].casefold().split()
@@ -163,127 +142,27 @@ def transcribe(client, audio_path: Path) -> str:
     return result.text.strip()
 
 
-def validate_and_sort_notes(notes: dict) -> dict:
-    seen_terms = {"vocabulary": set(), "phrases": set()}
-    study_sets = notes.get("studySets", {})
-    for study_level in STUDY_LEVELS:
-        study_set = study_sets.get(study_level, {})
-        if not study_set:
-            raise ValueError(f"Missing study set: {study_level}")
-
-        collections = (
-            ("vocabulary", "word", VOCABULARY_COUNT),
-            ("phrases", "phrase", None),
-        )
-        for collection_name, term_key, expected_count in collections:
-            items = study_set.get(collection_name, [])
-            if expected_count is not None and len(items) != expected_count:
-                raise ValueError(
-                    f"Expected {expected_count} {study_level} {collection_name}, received {len(items)}"
-                )
-            if collection_name == "phrases" and len(items) > PHRASE_COUNT:
-                raise ValueError(
-                    f"Expected at most {PHRASE_COUNT} {study_level} phrases, received {len(items)}"
-                )
-
-            for item in items:
-                term = item[term_key].strip()
-                normalized_term = term.casefold()
-                if not term or normalized_term in seen_terms[collection_name]:
-                    raise ValueError(f"Duplicate or empty {term_key}: {term!r}")
-                seen_terms[collection_name].add(normalized_term)
-
-                if item["level"] not in CEFR_BY_STUDY_LEVEL[study_level]:
-                    raise ValueError(
-                        f"Unexpected CEFR level {item['level']!r} in {study_level} for {term!r}"
-                    )
-
-                example = item["example"]
-                example_parts = item.get("exampleParts", {})
-                if not example.strip() or len(example) > 500 or "\n" in example or "\r" in example:
-                    raise ValueError(f"Invalid single-sentence example for {term!r}")
-                if not example_parts.get("highlight", "").strip():
-                    raise ValueError(f"Expected an LLM-selected highlight for {term!r}")
-                reconstructed_example = "".join(
-                    example_parts.get(key, "") for key in ("before", "highlight", "after")
-                )
-                if reconstructed_example != example:
-                    raise ValueError(f"exampleParts do not reconstruct the example for {term!r}")
-
-            items.sort(key=lambda item: CEFR_ORDER[item["level"]])
-    return notes
-
-
-def normalize_traditional_chinese(value, converter: OpenCC | None = None):
-    converter = converter or OpenCC("s2tw")
-    if isinstance(value, str):
-        return converter.convert(value)
-    if isinstance(value, list):
-        return [normalize_traditional_chinese(item, converter) for item in value]
-    if isinstance(value, dict):
-        return {key: normalize_traditional_chinese(item, converter) for key, item in value.items()}
-    return value
-
-
-def learning_item_schema(kind: str, allowed_levels: list[str]) -> dict:
-    term_properties = {
-        "level": {"type": "string", "enum": allowed_levels},
-        "meaningZh": {"type": "string"},
-        "example": {"type": "string"},
-        "exampleParts": {
-            "type": "object",
-            "additionalProperties": False,
-            "properties": {
-                "before": {"type": "string"},
-                "highlight": {"type": "string"},
-                "after": {"type": "string"},
-            },
-            "required": ["before", "highlight", "after"],
-        },
-    }
-    if kind == "vocabulary":
-        term_properties = {
-            "word": {"type": "string"},
-            "kkPhonetic": {"type": "string"},
-            "partOfSpeech": {"type": "string"},
-            **term_properties,
-        }
-        required = [
-            "word", "kkPhonetic", "partOfSpeech", "level", "meaningZh", "example",
-            "exampleParts",
-        ]
-    else:
-        term_properties = {"phrase": {"type": "string"}, **term_properties}
-        required = ["phrase", "level", "meaningZh", "example", "exampleParts"]
-    return {
-        "type": "object",
-        "additionalProperties": False,
-        "properties": term_properties,
-        "required": required,
-    }
-
-
-def study_set_schema(study_level: str) -> dict:
-    allowed_levels = sorted(CEFR_BY_STUDY_LEVEL[study_level], key=CEFR_ORDER.get)
-    return {
-        "type": "object",
-        "additionalProperties": False,
-        "properties": {
-            "vocabulary": {
-                "type": "array",
-                "minItems": VOCABULARY_COUNT,
-                "maxItems": VOCABULARY_COUNT,
-                "items": learning_item_schema("vocabulary", allowed_levels),
-            },
-            "phrases": {
-                "type": "array",
-                "minItems": 0,
-                "maxItems": PHRASE_COUNT,
-                "items": learning_item_schema("phrases", allowed_levels),
-            },
-        },
-        "required": ["vocabulary", "phrases"],
-    }
+def make_transcription_sample(audio_path: Path, output_dir: Path) -> Path:
+    """Return a shortened audio file when TRANSCRIPTION_MAX_SECONDS is set."""
+    raw_limit = os.getenv("TRANSCRIPTION_MAX_SECONDS", "").strip()
+    if not raw_limit:
+        return audio_path
+    seconds = float(raw_limit)
+    if seconds <= 0:
+        raise ValueError("TRANSCRIPTION_MAX_SECONDS must be greater than zero")
+    if not shutil.which("ffmpeg"):
+        raise RuntimeError("ffmpeg is required when TRANSCRIPTION_MAX_SECONDS is set")
+    sample_path = output_dir / "episode-sample.mp3"
+    subprocess.run(
+        [
+            "ffmpeg", "-hide_banner", "-loglevel", "error", "-y",
+            "-i", str(audio_path), "-t", str(seconds),
+            "-codec:a", "libmp3lame", "-q:a", "4", str(sample_path),
+        ],
+        check=True,
+    )
+    print(f"Using the first {seconds:g} seconds for this transcription run.")
+    return sample_path
 
 
 def analyze(client, episode: dict, transcript: str) -> dict:
@@ -296,53 +175,50 @@ def analyze(client, episode: dict, transcript: str) -> dict:
             "properties": {
                 "summaryZh": {"type": "string"},
                 "summaryEn": {"type": "string"},
-                "studySets": {
-                    "type": "object",
-                    "additionalProperties": False,
-                    "properties": {level: study_set_schema(level) for level in STUDY_LEVELS},
-                    "required": list(STUDY_LEVELS),
+                "vocabulary": {
+                    "type": "array",
+                    "minItems": 20,
+                    "maxItems": 20,
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": False,
+                        "properties": {
+                            "word": {"type": "string"},
+                            "kkPhonetic": {"type": "string"},
+                            "partOfSpeech": {"type": "string"},
+                            "level": {"type": "string", "enum": ["B1", "B2", "C1", "C2"]},
+                            "meaningZh": {"type": "string"},
+                            "example": {"type": "string"},
+                        },
+                        "required": ["word", "kkPhonetic", "partOfSpeech", "level", "meaningZh", "example"],
+                    },
+                },
+                "phrases": {
+                    "type": "array",
+                    "minItems": 10,
+                    "maxItems": 10,
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": False,
+                        "properties": {
+                            "phrase": {"type": "string"},
+                            "meaningZh": {"type": "string"},
+                            "example": {"type": "string"},
+                        },
+                        "required": ["phrase", "meaningZh", "example"],
+                    },
                 },
             },
-            "required": ["summaryZh", "summaryEn", "studySets"],
+            "required": ["summaryZh", "summaryEn", "vocabulary", "phrases"],
         },
     }
-    prompt = f"""You create concise study notes for Taiwanese English learners.
-Summarize this episode in Taiwan Traditional Chinese and simple English. Build three distinct study sets
-from the transcript, with exactly {VOCABULARY_COUNT} vocabulary words and up to {PHRASE_COUNT} phrases in
-each set:
-- `basic`: A2-B1 items
-- `intermediate`: B1-B2 items
-- `advanced`: C1-C2 items
-
-Do not repeat a vocabulary learning form or canonical phrase across study sets. Choose genuinely useful
-items and assign an accurate CEFR `level` within the allowed range for its study set. Include fewer than
-{PHRASE_COUNT} phrases, including zero, when the transcript does not contain enough genuinely useful phrases;
-never pad the list with weak, generic, or invented phrases. The web page will show the advanced set by default.
-
-For vocabulary, set `word` to the form a learner should study. Convert ordinary inflected verbs to the
-dictionary base form (for example, `evaporating` becomes `evaporate`) and ordinary plural nouns to singular.
-Keep a participial form such as `dehydrated`, `stranded`, or `sequestered` when it functions as an
-established adjective in that sentence and is genuinely more useful to learn as an adjective. Do not
-mechanically convert every participial adjective into a verb. Make `partOfSpeech`, meaning, KK pronunciation,
-and CEFR `level` describe the learning form in `word`.
-
-For phrases, set `phrase` to the reusable canonical form a learner should study, normally using a base verb
-(for example, `taking a step back` in the transcript becomes `take a step back`). For every word and phrase,
-`example` must be exactly one complete original sentence from the podcast transcript without rewriting it.
-Never return a paragraph, multiple sentences, speaker labels, or surrounding context.
-
-The LLM must decide the exact highlight span. Split the complete `example` into the three `exampleParts`
-strings `before`, `highlight`, and `after`; concatenating them in that order must reproduce the original
-`example` character for character. Put only the one exact surface form of the learning word or phrase in
-`highlight` (for example, only `evaporating` or only `taking a step back`). Put every other character in
-`before` or `after`. Do not include punctuation, surrounding words, or extra whitespace in `highlight`.
-Do not derive the highlight with morphology or string rules; select the intended span semantically.
-
-For every word, provide its American English pronunciation in KK phonetic symbols, enclosed in slashes.
-Give phrases a Taiwan Traditional Chinese meaning only; do not provide an English definition. Every Chinese
-character in `summaryZh` and `meaningZh` must use Taiwan Traditional Chinese. Never output Simplified Chinese
-characters or Mainland Chinese wording. Do not invent facts or wording.
-In the Taiwan Traditional Chinese summary, insert one regular half-width space at every boundary between
+    prompt = f"""You create concise study notes for a Taiwanese English learner at B1-B2 level.
+Summarize this episode in Traditional Chinese and simple English. Select exactly 20 genuinely useful
+B1-C2 words and exactly 10 phrases that appear in the transcript. For every word, provide its American
+English pronunciation in KK phonetic symbols, enclosed in slashes. For every word and phrase, the example
+must be the complete sentence from the podcast transcript that contains it. Give phrases a Traditional
+Chinese meaning only; do not provide an English definition. Do not invent facts or wording.
+In the Traditional Chinese summary, insert one regular half-width space at every boundary between
 Chinese full-width text and half-width Latin letters or numbers (for example: "BBC 記者 Maddie").
 Apply this typography rule consistently. Internal rule keyword: 盤古之白; do not include the keyword
 in the generated notes.
@@ -353,41 +229,12 @@ BBC description: {episode['description']}
 Transcript:
 {transcript}
 """
-    validation_error = None
-    for attempt in range(1, ANALYSIS_ATTEMPTS + 1):
-        retry_instruction = ""
-        if validation_error is not None:
-            retry_instruction = (
-                "\n\nYour previous response failed validation with this error: "
-                f"{validation_error}. Regenerate the complete response and fix that error."
-            )
-        attempt_started = time.perf_counter()
-        response = client.responses.create(
-            model=os.getenv("ANALYSIS_MODEL", "gpt-5-mini"),
-            input=prompt + retry_instruction,
-            reasoning={"effort": os.getenv("ANALYSIS_REASONING_EFFORT", "low")},
-            text={"format": {"type": "json_schema", **schema}},
-        )
-        elapsed = time.perf_counter() - attempt_started
-        usage = getattr(response, "usage", None)
-        output_details = getattr(usage, "output_tokens_details", None)
-        reasoning_tokens = getattr(output_details, "reasoning_tokens", 0) or 0
-        log(
-            f"Analysis attempt {attempt} took {elapsed:.1f}s "
-            f"(input={getattr(usage, 'input_tokens', 0)}, "
-            f"output={getattr(usage, 'output_tokens', 0)}, "
-            f"reasoning={reasoning_tokens} tokens)."
-        )
-        notes = normalize_traditional_chinese(json.loads(response.output_text))
-        try:
-            return validate_and_sort_notes(notes)
-        except ValueError as error:
-            validation_error = error
-            if attempt == ANALYSIS_ATTEMPTS:
-                raise
-            log(f"Analysis validation failed on attempt {attempt}; retrying: {error}")
-
-    raise RuntimeError("Analysis retry loop ended unexpectedly")
+    response = client.responses.create(
+        model=os.getenv("ANALYSIS_MODEL", "gpt-5-mini"),
+        input=prompt,
+        text={"format": {"type": "json_schema", **schema}},
+    )
+    return json.loads(response.output_text)
 
 
 def save_episode(episode: dict, notes: dict, index: list[dict]) -> None:
@@ -400,7 +247,8 @@ def save_episode(episode: dict, notes: dict, index: list[dict]) -> None:
         "bbcUrl": episode["bbcUrl"],
         "summaryZh": notes["summaryZh"],
         "summaryEn": notes["summaryEn"],
-        "studySets": notes["studySets"],
+        "vocabulary": notes["vocabulary"],
+        "phrases": notes["phrases"],
     }
     if episode.get("spotifyUrl"):
         public_episode["spotifyUrl"] = episode["spotifyUrl"]
@@ -414,15 +262,11 @@ def save_episode(episode: dict, notes: dict, index: list[dict]) -> None:
 
 
 def main() -> int:
-    flow_started = time.perf_counter()
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true", help="Only inspect the feed")
     args = parser.parse_args()
     feed_url = os.getenv("PODCAST_FEED_URL", DEFAULT_FEED_URL)
-    feed_started = time.perf_counter()
-    log("Fetching podcast feed...")
-    feed = parse_feed(fetch_bytes(feed_url))
-    log(f"Podcast feed took {time.perf_counter() - feed_started:.1f}s.")
+    feed = parse_feed(fetch(feed_url) or b"")
     if not feed:
         raise RuntimeError("The podcast feed did not contain playable episodes")
 
@@ -433,7 +277,7 @@ def main() -> int:
     if episode is None:
         print("No new episode found.")
         return 0
-    log(f"New episode: {episode['title']} ({episode['id']})")
+    print(f"New episode: {episode['title']} ({episode['id']})")
     if args.dry_run:
         return 0
     if not os.getenv("OPENAI_API_KEY"):
@@ -441,30 +285,16 @@ def main() -> int:
 
     from openai import OpenAI
 
-    spotify_started = time.perf_counter()
-    log("Looking up Spotify episode...")
     episode["spotifyUrl"] = find_spotify_episode_url(episode)
-    log(f"Spotify lookup took {time.perf_counter() - spotify_started:.1f}s.")
     client = OpenAI()
     with tempfile.TemporaryDirectory(prefix="english-podcast-") as temp_dir:
         audio_path = Path(temp_dir) / "episode.mp3"
-        download_started = time.perf_counter()
-        log("Downloading episode audio...")
-        download_file(episode["audioUrl"], audio_path)
-        audio_size_mb = audio_path.stat().st_size / (1024 * 1024)
-        log(
-            f"Audio download took {time.perf_counter() - download_started:.1f}s "
-            f"({audio_size_mb:.1f} MB)."
-        )
-        transcription_started = time.perf_counter()
-        log("Transcribing episode audio...")
-        transcript = transcribe(client, audio_path)
-        log(f"Transcription took {time.perf_counter() - transcription_started:.1f}s.")
-        log("Generating learning notes...")
+        fetch(episode["audioUrl"], audio_path)
+        transcription_audio = make_transcription_sample(audio_path, Path(temp_dir))
+        transcript = transcribe(client, transcription_audio)
         notes = analyze(client, episode, transcript)
     save_episode(episode, notes, index)
-    log(f"Published learning notes for {episode['id']}")
-    log(f"Complete flow took {time.perf_counter() - flow_started:.1f}s.")
+    print(f"Published learning notes for {episode['id']}")
     return 0
 
 
