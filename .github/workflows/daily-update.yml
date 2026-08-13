@@ -1,6 +1,10 @@
 name: Update daily podcast
 
 on:
+  push:
+    branches: [master, main]
+    paths:
+      - ".github/workflows/daily-update.yml"
   schedule:
     - cron: "30 14 * * 1-5"
       timezone: "Asia/Taipei"
@@ -34,4 +38,3 @@ jobs:
           git add site/data
           git diff --cached --quiet || git commit -m "content: add latest learning notes"
           git push
-
