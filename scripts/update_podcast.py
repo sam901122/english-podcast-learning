@@ -159,10 +159,9 @@ def analyze(client, episode: dict, transcript: str) -> dict:
                         "properties": {
                             "phrase": {"type": "string"},
                             "meaningZh": {"type": "string"},
-                            "definitionEn": {"type": "string"},
                             "example": {"type": "string"},
                         },
-                        "required": ["phrase", "meaningZh", "definitionEn", "example"],
+                        "required": ["phrase", "meaningZh", "example"],
                     },
                 },
             },
@@ -172,8 +171,9 @@ def analyze(client, episode: dict, transcript: str) -> dict:
     prompt = f"""You create concise study notes for a Taiwanese English learner at B1-B2 level.
 Summarize this episode in Traditional Chinese and simple English. Select exactly 20 genuinely useful
 B1-C2 words and exactly 10 phrases that appear in the transcript. For every word, provide its American
-English pronunciation in KK phonetic symbols, enclosed in slashes. The example must be the complete
-sentence from the podcast transcript that contains that word. Do not invent facts or wording.
+English pronunciation in KK phonetic symbols, enclosed in slashes. For every word and phrase, the example
+must be the complete sentence from the podcast transcript that contains it. Give phrases a Traditional
+Chinese meaning only; do not provide an English definition. Do not invent facts or wording.
 
 Episode title: {episode['title']}
 BBC description: {episode['description']}

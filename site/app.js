@@ -4,10 +4,10 @@ const escapeHtml = (value = '') => value.replace(/[&<>'"]/g, char => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
 }[char]));
 
-const highlightWord = (sentence = '', word = '') => {
-  if (!word) return escapeHtml(sentence);
-  const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const pattern = new RegExp(`(^|[^A-Za-z])(${escapedWord})(?=$|[^A-Za-z])`, 'gi');
+const highlightTerm = (sentence = '', term = '') => {
+  if (!term) return escapeHtml(sentence);
+  const escapedTerm = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const pattern = new RegExp(`(^|[^A-Za-z])(${escapedTerm})(?=$|[^A-Za-z])`, 'gi');
   let html = '';
   let lastIndex = 0;
   let match;
@@ -28,9 +28,16 @@ const dateText = value => new Intl.DateTimeFormat('zh-TW', {
 
 async function loadEpisode(id) {
   app.innerHTML = '<p class="status">正在載入學習筆記⋯</p>';
-  const response = await fetch(`data/episodes/${encodeURIComponent(id)}.json`);
-  if (!response.ok) throw new Error('無法讀取這集內容');
-  const episode = await response.json();
+  const [episodeResponse, indexResponse] = await Promise.all([
+    fetch(`data/episodes/${encodeURIComponent(id)}.json`),
+    fetch('data/episodes.json', { cache: 'no-store' })
+  ]);
+  if (!episodeResponse.ok) throw new Error('無法讀取這集內容');
+  const episode = await episodeResponse.json();
+  const episodes = indexResponse.ok ? await indexResponse.json() : [];
+  const episodeIndex = episodes.findIndex(item => item.id === id);
+  const previousEpisode = episodeIndex >= 0 ? episodes[episodeIndex + 1] : null;
+  const nextEpisode = episodeIndex > 0 ? episodes[episodeIndex - 1] : null;
   app.innerHTML = `
     <article>
       <button class="back" type="button">← 所有集數</button>
@@ -43,12 +50,19 @@ async function loadEpisode(id) {
         <div class="card"><div><strong>${escapeHtml(item.word)}</strong><span>${escapeHtml(item.level)} · ${escapeHtml(item.partOfSpeech)}</span></div>
         <p class="phonetic" lang="en">${escapeHtml(item.kkPhonetic || '')}</p>
         <p>${escapeHtml(item.meaningZh)}</p>
-        <blockquote lang="en">${highlightWord(item.example, item.word)}</blockquote></div>`).join('')}</div></section>
+        <blockquote lang="en">${highlightTerm(item.example, item.word)}</blockquote></div>`).join('')}</div></section>
       <section><h3>實用片語</h3><div class="cards">${episode.phrases.map(item => `
         <div class="card"><strong>${escapeHtml(item.phrase)}</strong><p>${escapeHtml(item.meaningZh)}</p>
-        <p class="definition" lang="en">${escapeHtml(item.definitionEn)}</p><blockquote lang="en">${escapeHtml(item.example)}</blockquote></div>`).join('')}</div></section>
+        <blockquote lang="en">${highlightTerm(item.example, item.phrase)}</blockquote></div>`).join('')}</div></section>
+      <nav class="day-nav" aria-label="單集日期導覽">
+        <button type="button" data-episode-id="${previousEpisode ? escapeHtml(previousEpisode.id) : ''}" ${previousEpisode ? '' : 'disabled'}>← Previous Day</button>
+        <button type="button" data-episode-id="${nextEpisode ? escapeHtml(nextEpisode.id) : ''}" ${nextEpisode ? '' : 'disabled'}>Next Day →</button>
+      </nav>
     </article>`;
   document.querySelector('.back').addEventListener('click', loadIndex);
+  document.querySelectorAll('.day-nav button:not(:disabled)').forEach(button => {
+    button.addEventListener('click', () => loadEpisode(button.dataset.episodeId).catch(showError));
+  });
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
