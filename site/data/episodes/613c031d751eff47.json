@@ -4,126 +4,136 @@
   "description": "<p>Heatwaves are uncomfortable for everyone. But people living with disabilities face additional and specific challenges that can compromise their health and well-being. Many of these issues - from struggling service dogs to overheating wheelchairs - are frequently overlooked, even in public advice and emergency planning. </p><p>Maddie Molloy is a BBC climate and science reporter who is also profoundly deaf. She explains some of the challenges a heatwave can pose for deaf people, the visually impaired and people who use wheelchairs. We also hear from Blessing Odukoya, Emily Davison, Maddie Haining and Osayuki Igbinoba about how they cope with the heat. </p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Hannah Gelbart\nProducers: William Lee Adams and Adam Chowdhury\nEditors: Verity Wilde</p>",
   "publishedAt": "2026-08-12T13:30:00+00:00",
   "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct992b",
-  "summaryZh": "本集討論熱浪如何特別影響身心障礙者。受訪者提到輔具和動物協助者在高溫下會出問題：導盲/助聽犬會吸熱難以外出，輪椅金屬與電池過熱或耗盡，義肢襯墊會悶熱導致皮膚問題。公共運輸、無障礙設施與緊急指引常被忽略，受訪者建議在制定防熱措施時納入多元障礙者的聲音與實際需求。",
-  "summaryEn": "This episode looks at how heatwaves create extra problems for people with disabilities. Dogs, wheelchairs, batteries and prosthetic liners can overheat or fail. Public transport and advice often miss disabled people's needs. Guests say planning should include disabled people's voices and practical solutions.",
+  "summaryZh": "本集談到熱浪（heatwave）對身心障礙者與有健康狀況者的特殊影響。主持人訪問了資深氣候記者兼重度聽障者Maddie，她說她和她的助聽犬Cole在高溫下都很難適應。節目說明：輪椅使用者會遇到椅布悶熱、金屬把手與輪子燙手、電池快速沒電；截肢者的義肢襯墊（liner）會悶熱造成紅疹與熱疹；視障者在強光下可能失去餘光；人工電子設備（如人工耳蝸、電池）在高溫中可能故障。受訪者提到公共交通缺乏空調、電梯故障會讓人被困、以及導致更多疲勞。建議包括在政策與緊急規劃中納入更多不同障礙者的聲音，改善無障礙交通、提供充電與備援方案、並提醒保持補水與降溫等個人應對策略。",
+  "summaryEn": "This episode explains how heatwaves make life harder for people with disabilities. Guests include Maddie, a BBC climate reporter who is profoundly deaf, and other disabled people. Problems described: wheelchairs get hot (fabric, metal, wheels), batteries and medical devices can fail, prosthetic liners trap heat, guide or hearing dogs also suffer, and public transport or lifts failing can leave people stuck. Solutions suggested: include disabled people's voices in planning, improve accessibility (air conditioning, charging, backup plans), and give practical tips like staying cool and hydrated.",
   "vocabulary": [
     {
       "word": "heatwave",
+      "kkPhonetic": "/ˈhitˌweɪv/",
       "partOfSpeech": "noun",
       "level": "B1",
-      "meaningZh": "熱浪，高溫時期",
-      "definitionEn": "A period of unusually hot weather over several days.",
-      "example": "During a heatwave, it's harder for me to push myself in my manual wheelchair"
+      "meaningZh": "熱浪，長時間的高溫天氣",
+      "definitionEn": "A period of unusually hot weather lasting several days or more.",
+      "example": "another heatwave has just begun"
     },
     {
       "word": "wheelchair",
+      "kkPhonetic": "/ˈwɪltʃɚ/",
       "partOfSpeech": "noun",
       "level": "B1",
       "meaningZh": "輪椅",
       "definitionEn": "A chair on wheels used by someone who cannot walk or has difficulty walking.",
-      "example": "manual wheelchair"
-    },
-    {
-      "word": "assistance dog",
-      "partOfSpeech": "noun",
-      "level": "B2",
-      "meaningZh": "協助犬（如導盲犬、助聽犬）",
-      "definitionEn": "A trained dog that helps a person with a disability by performing specific tasks.",
-      "example": "I've got an assistance dog."
+      "example": "push myself in my manual wheelchair"
     },
     {
       "word": "prosthetic",
-      "partOfSpeech": "adjective",
+      "kkPhonetic": "/prɑˈθɛtɪk/",
+      "partOfSpeech": "adjective / noun",
       "level": "B2",
-      "meaningZh": "義肢的，義體的",
-      "definitionEn": "Relating to an artificial body part used to replace a missing limb.",
+      "meaningZh": "義肢的；義肢（名詞）",
+      "definitionEn": "Relating to an artificial body part (or the artificial part itself).",
       "example": "my prosthetic legs"
     },
     {
-      "word": "liners",
+      "word": "liner",
+      "kkPhonetic": "/ˈlaɪnɚ/",
       "partOfSpeech": "noun",
       "level": "B2",
-      "meaningZh": "襯墊（此處指義肢襯墊）",
-      "definitionEn": "Inner layers or pads used to provide comfort or protection, here for prosthetic sockets.",
+      "meaningZh": "襯墊（如義肢內襯）",
+      "definitionEn": "A thin layer or covering placed inside something (here, inside a prosthetic) for comfort or protection.",
       "example": "I wear liners which are made of silicone"
     },
     {
-      "word": "sequestered",
-      "partOfSpeech": "adjective/verb",
-      "level": "C2",
-      "meaningZh": "被隔離（在家中）",
-      "definitionEn": "Kept away or isolated in a place; confined and removed from others.",
-      "example": "we've been sort of sequestered at home"
-    },
-    {
-      "word": "exacerbated",
-      "partOfSpeech": "verb",
-      "level": "C2",
-      "meaningZh": "使惡化，加重",
-      "definitionEn": "Made a problem, situation, or feeling worse.",
-      "example": "And that's exacerbated by the fact that most of the lines of the London Underground don't have air conditioning."
-    },
-    {
-      "word": "evaporating",
-      "partOfSpeech": "verb",
-      "level": "C1",
-      "meaningZh": "蒸發；（電池電量）快速耗盡（比喻）",
-      "definitionEn": "Turning from liquid to vapor; here used metaphorically to describe batteries losing charge quickly.",
-      "example": "their batteries just like completely evaporating"
-    },
-    {
       "word": "fatigue",
+      "kkPhonetic": "/fəˈtig/",
       "partOfSpeech": "noun",
       "level": "B2",
-      "meaningZh": "疲勞，極度疲倦",
-      "definitionEn": "Extreme tiredness resulting from physical or mental exertion or illness.",
+      "meaningZh": "疲勞、極度疲倦",
+      "definitionEn": "Extreme tiredness or exhaustion, often physical or mental.",
       "example": "the fatigue you do experience"
     },
     {
-      "word": "cochlear implant",
-      "partOfSpeech": "noun",
+      "word": "evaporating",
+      "kkPhonetic": "/ɪˈvæpəˌreɪtɪŋ/",
+      "partOfSpeech": "verb (present participle)",
       "level": "C1",
-      "meaningZh": "人工耳蝸（植入式聽力裝置）",
-      "definitionEn": "A device surgically placed in the ear to provide a sense of sound to a person with severe hearing loss.",
-      "example": "my implant breaks down because I have a cochlear implant."
+      "meaningZh": "（在此為）快速耗盡、消失（字面意為蒸發）",
+      "definitionEn": "Disappearing or being used up quickly (literally turning from liquid into vapor).",
+      "example": "their batteries just like completely evaporating"
+    },
+    {
+      "word": "accessibility",
+      "kkPhonetic": "/ækˌsɛsəˈbɪləti/",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "meaningZh": "無障礙性、可達性",
+      "definitionEn": "The quality of being easy to reach, use, or enter, especially for people with disabilities.",
+      "example": "is public transport accessible?"
+    },
+    {
+      "word": "sequestered",
+      "kkPhonetic": "/sɪˈkwɛstɚd/",
+      "partOfSpeech": "adjective",
+      "level": "C2",
+      "meaningZh": "被隔離、被關在某處（通常短期、不方便活動）",
+      "definitionEn": "Kept away or isolated, often in a place where movement is limited.",
+      "example": "we've been sort of sequestered at home"
+    },
+    {
+      "word": "cochlear",
+      "kkPhonetic": "/ˈkɑkliɚ/",
+      "partOfSpeech": "adjective",
+      "level": "C2",
+      "meaningZh": "耳蝸的（常見於“cochlear implant”人工耳蝸）",
+      "definitionEn": "Relating to the cochlea in the inner ear; used in terms like cochlear implant (a device helping hearing).",
+      "example": "I have a cochlear implant"
+    },
+    {
+      "word": "sores",
+      "kkPhonetic": "/sɔrz/",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "meaningZh": "皮膚破損、潰瘍、發炎處",
+      "definitionEn": "Open or painful spots on the skin caused by irritation, pressure, or infection.",
+      "example": "can actually start to cause sores on your skin"
     }
   ],
   "phrases": [
     {
-      "phrase": "keep me safe",
-      "meaningZh": "保護我，讓我安全",
-      "definitionEn": "To protect someone from harm or danger.",
-      "example": "Cole's job is to keep me safe"
+      "phrase": "hearing dog",
+      "meaningZh": "助聽犬（提醒失聰者注意聲音）",
+      "definitionEn": "A trained assistance dog that alerts a deaf or hard-of-hearing person to important sounds.",
+      "example": "I have a hearing dog as well"
     },
     {
-      "phrase": "take it easy",
-      "meaningZh": "別太累，放輕鬆",
-      "definitionEn": "To relax or not do too much; to go slowly.",
-      "example": "Definitely just take it easy."
-    },
-    {
-      "phrase": "get out and about",
-      "meaningZh": "外出活動，到處走動",
-      "definitionEn": "To go outside and be active or travel around locally.",
-      "example": "Can they get out and about and charge?"
+      "phrase": "guide dogs",
+      "meaningZh": "導盲犬",
+      "definitionEn": "Dogs trained to help visually impaired people move around safely.",
+      "example": "guide dogs for blind people"
     },
     {
       "phrase": "cabin fever",
-      "meaningZh": "因長期被困在室內而感到煩悶或壓抑",
-      "definitionEn": "Restlessness or irritability from being confined indoors for a long time.",
-      "example": "we both have been feeling a bit of cabin fever"
+      "meaningZh": "長時間被困在室內造成的煩悶或焦躁",
+      "definitionEn": "Irritation or restlessness from being confined indoors for a long time.",
+      "example": "feeling a bit of cabin fever"
     },
     {
-      "phrase": "pressure sores",
-      "meaningZh": "壓瘡（長期受壓導致的皮膚潰爛）",
-      "definitionEn": "Injuries to skin and underlying tissue caused by prolonged pressure on the skin.",
-      "example": "make you more prone to things like pressure sores as well."
+      "phrase": "take it easy",
+      "meaningZh": "放輕鬆、休息別逞強",
+      "definitionEn": "Relax and avoid doing too much; rest when needed.",
+      "example": "Definitely just take it easy"
     },
     {
-      "phrase": "take a step back",
-      "meaningZh": "後退一步（暫停思考全局）",
-      "definitionEn": "To pause and consider a situation from a broader or more careful perspective.",
-      "example": "just taking a step back and really thinking about the challenges"
+      "phrase": "get stranded",
+      "meaningZh": "被困（無法離開或回家）",
+      "definitionEn": "To be left in a place without a way to leave, often unexpectedly.",
+      "example": "if they get stranded?"
+    },
+    {
+      "phrase": "backup plan",
+      "meaningZh": "備用方案、備援計畫",
+      "definitionEn": "An alternative plan to be used if the first plan fails.",
+      "example": "what is their backup plan"
     }
   ]
 }
