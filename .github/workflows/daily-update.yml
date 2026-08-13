@@ -12,6 +12,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: daily-podcast-update
@@ -20,6 +22,9 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
@@ -51,3 +56,12 @@ jobs:
           git add site/data
           git diff --cached --quiet || git commit -m "content: add latest learning notes"
           git push
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+      - name: Deploy updated site
+        id: deployment
+        uses: actions/deploy-pages@v4
