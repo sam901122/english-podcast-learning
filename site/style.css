@@ -10,7 +10,13 @@ h1 { margin:.08em 0; font-family:Georgia,"Noto Serif TC",serif; font-size:clamp(
 .intro { max-width:570px; margin:24px 0 0; color:var(--muted); font-size:1.12rem; }
 .seal { position:absolute; right:0; top:65px; z-index:3; width:56px; height:56px; margin:0; padding:6px 0; color:var(--paper); background:var(--deep-red); border-radius:3px; font:700 .82rem/1.25 "Noto Serif TC",serif; letter-spacing:.18em; text-align:center; transform:rotate(3deg); }
 .akabeko { position:absolute; right:18px; bottom:44px; width:min(38vw,350px); height:auto; filter:drop-shadow(0 18px 9px #3e231326); transform:rotate(-3deg); }
-.monkey-friend { position:absolute; right:275px; bottom:28px; z-index:1; width:150px; height:auto; filter:drop-shadow(0 14px 7px #3e231326); transform:rotate(4deg); }
+.beko-motifs { position:absolute; right:0; bottom:20px; width:440px; height:330px; pointer-events:none; }
+.beko-motifs i { position:absolute; display:block; border:8px solid var(--white); border-radius:50%; box-shadow:0 0 0 5px var(--ink); }
+.beko-motifs i:nth-child(1) { left:16px; top:38px; width:44px; height:44px; background:var(--red); }
+.beko-motifs i:nth-child(2) { left:74px; top:8px; width:22px; height:22px; background:var(--gold); border-width:4px; box-shadow:0 0 0 4px var(--ink); }
+.beko-motifs i:nth-child(3) { right:28px; top:84px; width:30px; height:30px; background:var(--ink); border-color:var(--gold); box-shadow:none; }
+.beko-motifs i:nth-child(4) { left:18px; bottom:14px; width:25px; height:25px; background:var(--white); border:6px solid var(--red); box-shadow:0 0 0 4px var(--ink); }
+.beko-motifs i:nth-child(5) { right:85px; bottom:0; width:18px; height:18px; background:var(--gold); border:0; box-shadow:0 0 0 5px var(--red); }
 main { min-height:55vh; padding:40px 0 80px; }
 .episode-list { display:grid; gap:14px; }
 .episode { position:relative; display:grid; gap:8px; width:100%; padding:28px 30px 28px 42px; overflow:hidden; text-align:left; color:inherit; background:var(--white); border:1px solid var(--line); border-radius:3px 18px 18px 3px; cursor:pointer; transition:.2s; }
@@ -25,7 +31,8 @@ article h2 { margin:.15em 0 .5em; font:700 clamp(2.2rem,7vw,4.2rem)/1.05 Georgia
 .back { margin-bottom:30px; padding:0; border:0; color:var(--deep-red); background:none; font:inherit; font-weight:750; cursor:pointer; }
 .listen { display:inline-block; margin:10px 0 35px; padding:10px 18px; color:var(--white); background:var(--red); border:2px solid var(--ink); border-radius:4px; box-shadow:4px 4px 0 var(--ink); text-decoration:none; font-weight:700; }
 section { padding:30px 0; border-top:2px solid var(--ink); }
-h3 { margin:0 0 18px; font:700 1.5rem Georgia,serif; }
+h3 { display:flex; align-items:center; gap:10px; margin:0 0 18px; font:700 1.5rem Georgia,serif; }
+h3::before { content:""; width:16px; height:16px; flex:0 0 auto; background:var(--ink); border:5px solid var(--white); border-radius:50%; box-shadow:0 0 0 4px var(--red); }
 .cards { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
 .card { padding:20px; background:var(--white); border:1px solid var(--line); border-radius:3px 12px 12px 3px; }
 .card strong { font-size:1.15rem; }
@@ -37,4 +44,4 @@ blockquote { margin:12px 0 0; padding-left:12px; border-left:4px solid var(--red
 .error { color:#8a2525; }
 footer { display:flex; justify-content:space-between; gap:24px; padding:28px 0 45px; color:var(--muted); border-top:1px solid var(--line); font-size:.82rem; }
 footer a { color:var(--deep-red); }
-@media (max-width:700px) { header { grid-template-columns:1fr; min-height:670px; padding-top:45px; } .akabeko { right:32px; bottom:35px; width:245px; transform:rotate(-2deg); } .monkey-friend { right:auto; left:12px; bottom:24px; width:125px; } .seal { top:38px; } .cards { grid-template-columns:1fr; } footer { display:block; } }
+@media (max-width:700px) { header { grid-template-columns:1fr; min-height:650px; padding-top:45px; } .akabeko { right:32px; bottom:35px; width:245px; transform:rotate(-2deg); } .beko-motifs { right:12px; bottom:15px; width:310px; height:270px; } .beko-motifs i:nth-child(3) { display:none; } .seal { top:38px; } .cards { grid-template-columns:1fr; } footer { display:block; } }
