@@ -3,7 +3,7 @@ import unittest
 from types import SimpleNamespace
 from unittest.mock import Mock, patch
 
-from scripts.update_podcast import analyze, decide_study_word, prepare_vocabulary
+from scripts.update_podcast import analyze, decide_study_word, prepare_vocabulary, remove_advertising
 
 
 def make_study_set(level):
@@ -67,6 +67,30 @@ class AnalyzeTests(unittest.TestCase):
             self.assertEqual(properties["vocabulary"]["maxItems"], 10)
             self.assertEqual(properties["phrases"]["minItems"], 5)
             self.assertEqual(properties["phrases"]["maxItems"], 5)
+
+
+class AdvertisingRemovalTests(unittest.TestCase):
+    def test_removes_only_exact_segments_returned_by_the_model(self):
+        responses = Mock()
+        responses.create.return_value = SimpleNamespace(output_text=json.dumps({
+            "segments": ["Buy our unrelated product today.", "A rewritten passage."],
+        }))
+        client = SimpleNamespace(responses=responses)
+        transcript = (
+            "Welcome to the programme. Buy our unrelated product today. "
+            "Orangutans depend on healthy forests."
+        )
+
+        result = remove_advertising(
+            client,
+            {"title": "Orangutans", "description": "Risks facing orangutans"},
+            transcript,
+        )
+
+        self.assertEqual(result, "Welcome to the programme. Orangutans depend on healthy forests.")
+        prompt = responses.create.call_args.kwargs["input"]
+        self.assertIn("EXACT, contiguous verbatim substring", prompt)
+        self.assertIn("When uncertain, keep it", prompt)
 
 
 class MainTests(unittest.TestCase):

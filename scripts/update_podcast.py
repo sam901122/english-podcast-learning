@@ -161,6 +161,51 @@ def transcribe(client, audio_path: Path) -> str:
     return result.text.strip()
 
 
+def remove_advertising(client, episode: dict, transcript: str) -> str:
+    schema = {
+        "name": "advertising_segments",
+        "strict": True,
+        "schema": {
+            "type": "object",
+            "additionalProperties": False,
+            "properties": {
+                "segments": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                },
+            },
+            "required": ["segments"],
+        },
+    }
+    prompt = f"""Identify only advertising, unrelated programme promotions, and promotional calls to action
+in this podcast transcript. Return each removable passage as an EXACT, contiguous verbatim substring copied
+from the transcript. Never paraphrase, correct, shorten, or include surrounding editorial content. Keep the
+BBC programme introduction, presenter dialogue, interviews, news context, credits, and any passage that might
+be part of the episode. When uncertain, keep it. Return an empty list when there is no clearly unrelated
+promotional passage.
+
+Episode title: {episode['title']}
+BBC description: {episode['description']}
+
+Transcript:
+{transcript}
+"""
+    response = client.responses.create(
+        model=os.getenv("ANALYSIS_MODEL", "gpt-5-mini"),
+        input=prompt,
+        text={"format": {"type": "json_schema", **schema}},
+    )
+    segments = json.loads(response.output_text)["segments"]
+    cleaned = transcript
+    for segment in segments:
+        exact_segment = segment.strip()
+        if exact_segment and exact_segment in cleaned:
+            cleaned = cleaned.replace(exact_segment, "", 1)
+        elif exact_segment:
+            print("Ignoring an advertising segment that was not copied exactly from the transcript.")
+    return re.sub(r"\s+", " ", cleaned).strip()
+
+
 def make_transcription_sample(audio_path: Path, output_dir: Path) -> Path:
     """Return a shortened audio file when TRANSCRIPTION_MAX_SECONDS is set."""
     raw_limit = os.getenv("TRANSCRIPTION_MAX_SECONDS", "").strip()
@@ -434,6 +479,7 @@ def main() -> int:
         fetch(episode["audioUrl"], audio_path)
         transcription_audio = make_transcription_sample(audio_path, Path(temp_dir))
         transcript = transcribe(client, transcription_audio)
+        transcript = remove_advertising(client, episode, transcript)
         notes = analyze(client, episode, transcript)
         notes = prepare_vocabulary(client, notes)
     save_episode(episode, notes, index)
