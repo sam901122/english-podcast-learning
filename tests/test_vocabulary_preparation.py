@@ -105,6 +105,24 @@ class MainTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "outside the RSS feed"):
                 main()
 
+    @patch("scripts.update_podcast.load_index")
+    @patch("scripts.update_podcast.fetch")
+    @patch("scripts.update_podcast.parse_feed")
+    def test_stops_when_latest_episode_is_already_known(self, parse_feed, fetch, load_index):
+        from scripts.update_podcast import main
+
+        fetch.return_value = b"feed"
+        parse_feed.return_value = [
+            {"id": "latest", "title": "Latest episode"},
+            {"id": "older", "title": "Older unprocessed episode"},
+        ]
+        load_index.return_value = [{"id": "latest"}]
+
+        with patch("sys.argv", ["update_podcast.py"]):
+            result = main()
+
+        self.assertEqual(result, 0)
+
 
 class VocabularyPreparationTests(unittest.TestCase):
     def test_decides_one_word_without_changing_other_fields(self):

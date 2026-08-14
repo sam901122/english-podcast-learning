@@ -454,13 +454,12 @@ def main() -> int:
 
     index = load_index()
     known = {item["id"] for item in index}
-    force_latest = os.getenv("FORCE_REPROCESS_LATEST", "").lower() in {"1", "true", "yes"}
     if args.episode_offset is not None:
         if args.episode_offset < 0 or args.episode_offset >= len(feed):
             raise ValueError(f"Episode offset {args.episode_offset} is outside the RSS feed")
         episode = feed[args.episode_offset]
     else:
-        episode = feed[0] if force_latest else next((item for item in feed if item["id"] not in known), None)
+        episode = feed[0] if feed[0]["id"] not in known else None
     if episode is None:
         print("No new episode found.")
         return 0
