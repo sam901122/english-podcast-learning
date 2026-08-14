@@ -1,0 +1,389 @@
+{
+  "id": "613c031d751eff47",
+  "title": "How heatwaves impact people with disabilities",
+  "description": "<p>Heatwaves are uncomfortable for everyone. But people living with disabilities face additional and specific challenges that can compromise their health and well-being. Many of these issues - from struggling service dogs to overheating wheelchairs - are frequently overlooked, even in public advice and emergency planning. </p><p>Maddie Molloy is a BBC climate and science reporter who is also profoundly deaf. She explains some of the challenges a heatwave can pose for deaf people, the visually impaired and people who use wheelchairs. We also hear from Blessing Odukoya, Emily Davison, Maddie Haining and Osayuki Igbinoba about how they cope with the heat. </p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Hannah Gelbart\nProducers: William Lee Adams and Adam Chowdhury\nEditors: Verity Wilde</p>",
+  "publishedAt": "2026-08-12T13:30:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct992b",
+  "summaryZh": "本集 BBC 節目《What in the World》探討極端熱浪對身心障礙者及健康受損者帶來的獨特挑戰。主持人 Hannah Gelbart 邀請 BBC 記者 Maddie Molloy 與多位身障人士分享親身經歷。熱浪期間，輪椅使用者面臨椅面與金屬發燙、透氣不良引發疹子與壓瘡、電池加速耗盡，以及電梯故障導致受困等問題；義肢使用者因矽膠襯套積熱而冒汗發疹；視障者因強光失去殘餘視力；聽障者的電子耳設備易故障且需花費更多精力接收聲音；導盲犬與聽導犬也因地面高溫燙傷風險而無法正常出門。受訪者提出多備冰水、放慢步調與尋求雇主支援等應對方法，並呼籲大眾運輸與緊急應變計畫在制定熱浪指引時，必須納入身心障礙者的需求。",
+  "summaryEn": "This episode of the BBC podcast What in the World examines the overlooked challenges that heatwaves pose to people with disabilities and long-term health conditions. Host Hannah Gelbart speaks with BBC reporter Maddie Molloy and several disabled individuals about their daily struggles during extreme heat. They describe severe issues such as overheating wheelchairs causing skin sores, rapidly draining mobility batteries, prosthetic liners trapping sweat, guide and hearing dogs unable to walk on hot pavements, and sunlight glare blinding residual vision. The guests share coping tactics like staying hydrated, resting, and requesting work accommodations, while calling on authorities to include disabled voices when designing emergency planning, public advice, and accessible transit.",
+  "studySets": {
+    "basic": {
+      "vocabulary": [
+        {
+          "word": "exhaust",
+          "kkPhonetic": "/ɪɡˈzɔst/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "令人精疲力竭的",
+          "example": "It's exhausting.",
+          "highlight": "exhausting"
+        },
+        {
+          "word": "tired",
+          "kkPhonetic": "/taɪrd/",
+          "partOfSpeech": "adjective",
+          "level": "A2",
+          "meaningZh": "疲倦的",
+          "example": "I feel very hot and get tired more easily.",
+          "highlight": "tired"
+        },
+        {
+          "word": "safe",
+          "kkPhonetic": "/sef/",
+          "partOfSpeech": "adjective",
+          "level": "A2",
+          "meaningZh": "安全的",
+          "example": "Cole's job is to keep me safe, to identify sounds that I'm missing.",
+          "highlight": "safe"
+        },
+        {
+          "word": "doorbell",
+          "kkPhonetic": "/ˈdorˌbɛl/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "門鈴",
+          "example": "So when it's something safe like the doorbell, he nudges me on my leg and he sort of takes me towards the sound.",
+          "highlight": "doorbell"
+        },
+        {
+          "word": "struggle",
+          "kkPhonetic": "/ˈstrʌɡəl/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "辛苦應對；掙扎",
+          "example": "We've both been really struggling.",
+          "highlight": "struggling"
+        },
+        {
+          "word": "park",
+          "kkPhonetic": "/pɑrk/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "公園",
+          "example": "Once he's done his work, and he's been a good boy, he sort of wants to go to the park, and he can't go to the park.",
+          "highlight": "park"
+        },
+        {
+          "word": "sock",
+          "kkPhonetic": "/sɑk/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "襪子",
+          "example": "Before putting on my prosthetic legs, I wear liners, which are made of silicone and short socks on my stump.",
+          "highlight": "socks"
+        },
+        {
+          "word": "effort",
+          "kkPhonetic": "/ˈɛfɚt/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "努力；精力",
+          "example": "Therefore, I have to put a lot more effort in.",
+          "highlight": "effort"
+        },
+        {
+          "word": "body",
+          "kkPhonetic": "/ˈbɑdi/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "身體",
+          "example": "Relax your body.",
+          "highlight": "body"
+        },
+        {
+          "word": "sunlight",
+          "kkPhonetic": "/ˈsʌnˌlaɪt/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "陽光",
+          "example": "I mean, people who are blind who have a small amount of vision, and someone was saying to me, you know, the sunlight just makes their last bit of vision disappear.",
+          "highlight": "sunlight"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "take a step back",
+          "highlight": "taking a step back",
+          "meaningZh": "退後一步思考；暫停審視",
+          "example": "But I think it's as simple as when you're talking about guidance for people, just taking a step back and really thinking about the challenges people might face."
+        },
+        {
+          "phrase": "ask for help",
+          "highlight": "ask for help",
+          "meaningZh": "尋求協助",
+          "example": "It's also just really important to ensure that you have a support system in place, and that you are able to ask for help if you need it."
+        },
+        {
+          "phrase": "take it easy",
+          "highlight": "take it easy",
+          "meaningZh": "放輕鬆；別太勞累",
+          "example": "Definitely just take it easy."
+        },
+        {
+          "phrase": "cool down",
+          "highlight": "cool you down",
+          "meaningZh": "幫你降溫；使涼爽",
+          "example": "Find different ways to cool you down because a lot of wheelchair users, depending on their condition or what's caused them that, can also have problems with, uh, regulating their body temperature."
+        },
+        {
+          "phrase": "look after",
+          "highlight": "looking after",
+          "meaningZh": "照顧；照料",
+          "example": "And today, we're hearing from people like her about what it's like to live through extreme heat with a disability or health condition, from getting around to looking after guide dogs, to simply keeping cool."
+        }
+      ]
+    },
+    "intermediate": {
+      "vocabulary": [
+        {
+          "word": "dehydrate",
+          "kkPhonetic": "/diˈhaɪdret/",
+          "partOfSpeech": "adj.",
+          "level": "B2",
+          "meaningZh": "脫水的",
+          "example": "It can mess with your sleep, leave you dehydrated, and in really extreme temperatures, it can make you seriously ill.",
+          "highlight": "dehydrated"
+        },
+        {
+          "word": "expertise",
+          "kkPhonetic": "/ˌɛkspɚˈtiz/",
+          "partOfSpeech": "n.",
+          "level": "B2",
+          "meaningZh": "專業知識",
+          "example": "Beyond your climate expertise, Maddie, this is something that you know very well.",
+          "highlight": "expertise"
+        },
+        {
+          "word": "profoundly",
+          "kkPhonetic": "/prəˈfaʊndli/",
+          "partOfSpeech": "adv.",
+          "level": "B2",
+          "meaningZh": "極度地；深刻地",
+          "example": "Yeah, so I am a climate and science journalist, but aside from that, I also happen to be profoundly deaf and I have a hearing dog as well.",
+          "highlight": "profoundly"
+        },
+        {
+          "word": "absorb",
+          "kkPhonetic": "/əbˈzɔrb/",
+          "partOfSpeech": "v.",
+          "level": "B2",
+          "meaningZh": "吸收",
+          "example": "Poor boy, he's um, he's a lovely black spaniel, but he really absorbs the heat.",
+          "highlight": "absorbs"
+        },
+        {
+          "word": "irritate",
+          "kkPhonetic": "/ˈɪrəˌtet/",
+          "partOfSpeech": "adj.",
+          "level": "B2",
+          "meaningZh": "令人刺痛或不適的；令人惱人的",
+          "example": "I think the the fact that you're constantly on the fabric of your chair can there's no airflow, your clothes and the chair become really warm, really sweaty, really irritating and can actually start to cause sores on your skin or rashes, um, little blisters.",
+          "highlight": "irritating"
+        },
+        {
+          "word": "prone",
+          "kkPhonetic": "/proʊn/",
+          "partOfSpeech": "adj.",
+          "level": "B2",
+          "meaningZh": "有……傾向的；易於……的",
+          "example": "It makes you more prone to things like pressure sores as well.",
+          "highlight": "prone"
+        },
+        {
+          "word": "jarring",
+          "kkPhonetic": "/ˈdʒɑrɪŋ/",
+          "partOfSpeech": "adj.",
+          "level": "B2",
+          "meaningZh": "突兀的；令人不適的",
+          "example": "So, that that vision that they rely on just goes away and that can be very sudden and jarring.",
+          "highlight": "jarring"
+        },
+        {
+          "word": "evaporate",
+          "kkPhonetic": "/ɪˈvæpəˌret/",
+          "partOfSpeech": "v.",
+          "level": "B2",
+          "meaningZh": "蒸發；消失",
+          "example": "you can have a lot of technical failures, so like people in wheelchairs can find their batteries just like completely evaporating, just like we find our phone batteries just going completely off.",
+          "highlight": "evaporating"
+        },
+        {
+          "word": "implement",
+          "kkPhonetic": "/ˈɪmpləmənt/",
+          "partOfSpeech": "v.",
+          "level": "B2",
+          "meaningZh": "實施；執行",
+          "example": "Maddie, what kind of solutions have you been hearing from them that authorities might be able to implement to help people with disabilities to cope better during heat waves?",
+          "highlight": "implement"
+        },
+        {
+          "word": "exacerbate",
+          "kkPhonetic": "/ɪɡˈzæsɚˌbet/",
+          "partOfSpeech": "v.",
+          "level": "B2",
+          "meaningZh": "使惡化；加劇",
+          "example": "And that's exacerbated by the fact that most of the lines of the London Underground don't have air conditioning.",
+          "highlight": "exacerbated"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "mess with",
+          "highlight": "mess with",
+          "meaningZh": "干擾；影響",
+          "example": "It can mess with your sleep, leave you dehydrated, and in really extreme temperatures, it can make you seriously ill."
+        },
+        {
+          "phrase": "get around",
+          "highlight": "getting around",
+          "meaningZh": "四處走動；出行",
+          "example": "And today, we're hearing from people like her about what it's like to live through extreme heat with a disability or health condition, from getting around to looking after guide dogs, to simply keeping cool."
+        },
+        {
+          "phrase": "hours on end",
+          "highlight": "hours on end",
+          "meaningZh": "連續數小時",
+          "example": "Um, so the heat was just coming all day, and he spoke about how, you know, his lift would break down and because he was in a wheelchair, that kind of left him stuck in a hot room all day for hours on end."
+        },
+        {
+          "phrase": "take a step back",
+          "highlight": "taking a step back",
+          "meaningZh": "退後一步思考；重新審視",
+          "example": "But I think it's as simple as when you're talking about guidance for people, just taking a step back and really thinking about the challenges people might face."
+        },
+        {
+          "phrase": "take it easy",
+          "highlight": "take it easy",
+          "meaningZh": "放輕鬆；別太勞累",
+          "example": "Definitely just take it easy."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "expertise",
+          "kkPhonetic": "/ˌɛkspɚˈtiz/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "專業知識",
+          "example": "Beyond your climate expertise, Maddie, this is something that you know very well.",
+          "highlight": "expertise"
+        },
+        {
+          "word": "profoundly",
+          "kkPhonetic": "/prəˈfaʊndli/",
+          "partOfSpeech": "adverb",
+          "level": "C1",
+          "meaningZh": "極度地；嚴重地",
+          "example": "Yeah, so I am a climate and science journalist, but aside from that, I also happen to be profoundly deaf and I have a hearing dog as well.",
+          "highlight": "profoundly"
+        },
+        {
+          "word": "sequestered",
+          "kkPhonetic": "/sɪˈkwɛstɚd/",
+          "partOfSpeech": "adjective",
+          "level": "C2",
+          "meaningZh": "被隔絕的；被封閉的",
+          "example": "I mean, things like travelling in and about, um, it can be really dangerous for him, so, um, unfortunately for him, we've been sort of sequestered at home and sort of, I think we both have been feeling a bit of cabin fever from having to sort of trap ourselves in the house.",
+          "highlight": "sequestered"
+        },
+        {
+          "word": "prone",
+          "kkPhonetic": "/proʊn/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "易於…的；有…傾向的",
+          "example": "It makes you more prone to things like pressure sores as well.",
+          "highlight": "prone"
+        },
+        {
+          "word": "jarring",
+          "kkPhonetic": "/ˈdʒɑːrɪŋ/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "突兀不適的；令人震撼的",
+          "example": "So, that that vision that they rely on just goes away and that can be very sudden and jarring.",
+          "highlight": "jarring"
+        },
+        {
+          "word": "evaporate",
+          "kkPhonetic": "/ɪˈvæpəˌreɪt/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "消失殆盡；蒸發",
+          "example": "so like people in wheelchairs can find their batteries just like completely evaporating, just like we find our phone batteries just going completely off.",
+          "highlight": "evaporating"
+        },
+        {
+          "word": "implement",
+          "kkPhonetic": "/ˈɪmpləmənt/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "實施；執行",
+          "example": "Maddie, what kind of solutions have you been hearing from them that authorities might be able to implement to help people with disabilities to cope better during heat waves?",
+          "highlight": "implement"
+        },
+        {
+          "word": "stranded",
+          "kkPhonetic": "/ˈstrændɪd/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "滯留的；陷入困境的",
+          "example": "Like what is their backup plan if they get stranded?",
+          "highlight": "stranded"
+        },
+        {
+          "word": "ordeal",
+          "kkPhonetic": "/ɔːrˈdiːl/",
+          "partOfSpeech": "noun",
+          "level": "C2",
+          "meaningZh": "折磨；嚴峻考驗",
+          "example": "Um, for people that are vision impaired, you know, I one person spoke to me about how she got stranded on the Tube because of the lack of staffing around that, and a 45-minute journey turned into a two-hour ordeal.",
+          "highlight": "ordeal"
+        },
+        {
+          "word": "exacerbate",
+          "kkPhonetic": "/ɪɡˈzæsɚˌbeɪt/",
+          "partOfSpeech": "verb",
+          "level": "C2",
+          "meaningZh": "加劇；使惡化",
+          "example": "And that's exacerbated by the fact that most of the lines of the London Underground don't have air conditioning.",
+          "highlight": "exacerbated"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "cabin fever",
+          "highlight": "cabin fever",
+          "meaningZh": "幽閉煩躁症（因長期關在室內而產生的悶倦感）",
+          "example": "I mean, things like travelling in and about, um, it can be really dangerous for him, so, um, unfortunately for him, we've been sort of sequestered at home and sort of, I think we both have been feeling a bit of cabin fever from having to sort of trap ourselves in the house."
+        },
+        {
+          "phrase": "hours on end",
+          "highlight": "hours on end",
+          "meaningZh": "連續數小時",
+          "example": "Um, so the heat was just coming all day, and he spoke about how, you know, his lift would break down and because he was in a wheelchair, that kind of left him stuck in a hot room all day for hours on end."
+        },
+        {
+          "phrase": "take a step back",
+          "highlight": "taking a step back",
+          "meaningZh": "退後一步思考",
+          "example": "But I think it's as simple as when you're talking about guidance for people, just taking a step back and really thinking about the challenges people might face."
+        },
+        {
+          "phrase": "out and about",
+          "highlight": "out and about",
+          "meaningZh": "外出活動；到處走動",
+          "example": "Can we make it accessible? Um, can they get out and about and charge?"
+        },
+        {
+          "phrase": "time and again",
+          "highlight": "time and again",
+          "meaningZh": "屢次；一再",
+          "example": "And extreme heat and climate change are topics that we come back to time and again here on What in the World, and we do love hearing what you think about them, too."
+        }
+      ]
+    }
+  }
+}

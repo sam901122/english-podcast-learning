@@ -27,15 +27,13 @@ jobs:
         with:
           python-version: "3.11"
           cache: pip
-      - name: Install ffmpeg
-        run: |
-          sudo apt-get update
-          sudo apt-get install --yes ffmpeg
       - run: pip install -r requirements.txt
       - name: Fetch and process the newest episode
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          TRANSCRIPTION_MODEL: gpt-4o-mini-transcribe
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TRANSCRIPTION_MODEL: gemini-3.6-flash
+          ANALYSIS_MODEL: gemini-3.6-flash
+          WORD_FORM_MODEL: gemini-3.5-flash-lite
         run: |
           set +e
           python scripts/update_podcast.py 2>&1 | tee /tmp/podcast-update.log

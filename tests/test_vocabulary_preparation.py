@@ -1,9 +1,13 @@
-import json
 import unittest
-from types import SimpleNamespace
 from unittest.mock import Mock, patch
 
-from scripts.update_podcast import analyze, decide_study_word, prepare_vocabulary, remove_advertising
+from scripts.update_podcast import (
+    analyze,
+    decide_study_words,
+    prepare_vocabulary,
+    remove_advertising,
+    validate_notes,
+)
 
 
 def make_study_set(level):
@@ -33,17 +37,16 @@ def make_study_set(level):
 
 class AnalyzeTests(unittest.TestCase):
     def test_uses_separate_requests_for_summary_and_each_difficulty(self):
-        responses = Mock()
-        responses.create.side_effect = [
-            SimpleNamespace(output_text=json.dumps({
+        client = Mock()
+        client.generate_json.side_effect = [
+            {
                 "summaryZh": "繁體中文摘要",
                 "summaryEn": "English summary",
-            })),
-            SimpleNamespace(output_text=json.dumps(make_study_set("A2"))),
-            SimpleNamespace(output_text=json.dumps(make_study_set("B1"))),
-            SimpleNamespace(output_text=json.dumps(make_study_set("C1"))),
+            },
+            make_study_set("A2"),
+            make_study_set("B1"),
+            make_study_set("C1"),
         ]
-        client = SimpleNamespace(responses=responses)
 
         notes = analyze(
             client,
@@ -51,18 +54,19 @@ class AnalyzeTests(unittest.TestCase):
             "Transcript text.",
         )
 
-        self.assertEqual(responses.create.call_count, 4)
+        self.assertEqual(client.generate_json.call_count, 4)
         self.assertEqual(set(notes["studySets"]), {"basic", "intermediate", "advanced"})
-        prompts = [call.kwargs["input"] for call in responses.create.call_args_list]
+        prompts = [call.kwargs["prompt"] for call in client.generate_json.call_args_list]
         self.assertIn("Taiwan Traditional Chinese only", prompts[0])
+        self.assertIn("本集 BBC 節目《What in the World》探討", prompts[0])
         self.assertIn("beginner English study set", prompts[1])
         self.assertIn("intermediate English study set", prompts[2])
         self.assertIn("advanced English study set", prompts[3])
         for prompt in prompts:
             self.assertIn("Traditional Chinese", prompt)
 
-        for call in responses.create.call_args_list[1:]:
-            properties = call.kwargs["text"]["format"]["schema"]["properties"]
+        for call in client.generate_json.call_args_list[1:]:
+            properties = call.kwargs["schema"]["properties"]
             self.assertEqual(properties["vocabulary"]["minItems"], 10)
             self.assertEqual(properties["vocabulary"]["maxItems"], 10)
             self.assertEqual(properties["phrases"]["minItems"], 5)
@@ -71,11 +75,10 @@ class AnalyzeTests(unittest.TestCase):
 
 class AdvertisingRemovalTests(unittest.TestCase):
     def test_removes_only_exact_segments_returned_by_the_model(self):
-        responses = Mock()
-        responses.create.return_value = SimpleNamespace(output_text=json.dumps({
+        client = Mock()
+        client.generate_json.return_value = {
             "segments": ["Buy our unrelated product today.", "A rewritten passage."],
-        }))
-        client = SimpleNamespace(responses=responses)
+        }
         transcript = (
             "Welcome to the programme. Buy our unrelated product today. "
             "Orangutans depend on healthy forests."
@@ -88,7 +91,7 @@ class AdvertisingRemovalTests(unittest.TestCase):
         )
 
         self.assertEqual(result, "Welcome to the programme. Orangutans depend on healthy forests.")
-        prompt = responses.create.call_args.kwargs["input"]
+        prompt = client.generate_json.call_args.kwargs["prompt"]
         self.assertIn("EXACT, contiguous verbatim substring", prompt)
         self.assertIn("When uncertain, keep it", prompt)
 
@@ -125,14 +128,24 @@ class MainTests(unittest.TestCase):
 
 
 class VocabularyPreparationTests(unittest.TestCase):
+    def test_rejects_a_highlight_missing_from_its_example(self):
+        notes = {"studySets": {
+            level: make_study_set(config_level)
+            for level, config_level in (("basic", "A2"), ("intermediate", "B1"), ("advanced", "C1"))
+        }}
+        for study_set in notes["studySets"].values():
+            for item in study_set["vocabulary"]:
+                item["highlight"] = item["word"]
+        notes["studySets"]["advanced"]["vocabulary"][0]["highlight"] = "missing"
+
+        with self.assertRaisesRegex(ValueError, "absent from its example"):
+            validate_notes(notes)
+
     def test_decides_one_word_without_changing_other_fields(self):
-        responses = Mock()
-        responses.create.return_value = SimpleNamespace(output_text=json.dumps({
-            "shouldChange": True,
-            "word": "evaporate",
-            "kkPhonetic": "/ɪˈvæpəˌret/",
-        }))
-        client = SimpleNamespace(responses=responses)
+        client = Mock()
+        client.generate_json.return_value = {"items": [{
+            "id": 0, "word": "evaporate", "kkPhonetic": "/ɪˈvæpəˌret/",
+        }]}
         item = {
             "word": "evaporating",
             "partOfSpeech": "verb",
@@ -141,24 +154,23 @@ class VocabularyPreparationTests(unittest.TestCase):
         }
 
         item["kkPhonetic"] = "/ɪˈvæpəˌretɪŋ/"
-        result = decide_study_word(client, item)
+        result = decide_study_words(client, [item])[0]
 
         self.assertEqual(result, {
             "word": "evaporate",
             "kkPhonetic": "/ɪˈvæpəˌret/",
         })
-        prompt = responses.create.call_args.kwargs["input"]
+        prompt = client.generate_json.call_args.kwargs["prompt"]
         self.assertIn("Original word: evaporating", prompt)
         self.assertNotIn("batteries", prompt)
         self.assertEqual(item["example"], "The water is evaporating quickly.")
 
-    @patch("scripts.update_podcast.decide_study_word")
-    def test_locks_highlights_before_updating_display_words(self, decide_study_word):
-        replacements = {
-            "evaporating": {"word": "evaporate", "kkPhonetic": "/evaporate/"},
-            "batteries": {"word": "battery", "kkPhonetic": "/battery/"},
-        }
-        decide_study_word.side_effect = lambda _client, item: replacements[item["word"]]
+    def test_batches_words_and_locks_highlights_before_updating_display_words(self):
+        client = Mock()
+        client.generate_json.return_value = {"items": [
+            {"id": 0, "word": "evaporate", "kkPhonetic": "/evaporate/"},
+            {"id": 1, "word": "battery", "kkPhonetic": "/battery/"},
+        ]}
         notes = {"vocabulary": [
             {
                 "word": "evaporating",
@@ -176,7 +188,12 @@ class VocabularyPreparationTests(unittest.TestCase):
             },
         ]}
 
-        result = prepare_vocabulary(object(), notes)
+        result = prepare_vocabulary(client, notes)
+
+        self.assertEqual(client.generate_json.call_count, 1)
+        schema = client.generate_json.call_args.kwargs["schema"]
+        self.assertEqual(schema["properties"]["items"]["minItems"], 2)
+        self.assertEqual(schema["properties"]["items"]["maxItems"], 2)
 
         self.assertEqual(result["vocabulary"][0]["word"], "evaporate")
         self.assertEqual(result["vocabulary"][0]["highlight"], "evaporating")

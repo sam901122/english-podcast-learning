@@ -1,0 +1,389 @@
+{
+  "id": "4070a9bddf5e94d7",
+  "title": "Is working from home holding you back in your career?",
+  "description": "<p>Working from home has plenty of benefits: no commute, greater flexibility and the chance to catch up on household chores during your break. But for young people starting out their careers, could this extra freedom actually have a negative impact on career progression?</p><p>Emer Moreau, a BBC Business Reporter, breaks it down. She explains how the pandemic led to a huge increase in at-home and remote working, and looks at how many people have now returned to in-person work.  </p><p>She also discusses the impact working from home has on productivity, how it affects the social nature of working life, and the ways it can slow someone's effort to climb the career ladder. We also hear from young people about their experiences with remote working. </p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Hannah Gelbart\nProducers: Chelsea Coates, William Lee Adams, and Benita Barden\nVideo Producer: Baldeep Chahal\nEditors: Verity Wilde</p>",
+  "publishedAt": "2026-08-11T13:30:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct9902",
+  "summaryZh": "本集 BBC 節目《What in the World》探討居家辦公 WFH 是否會阻礙年輕人的職涯發展。主持人 Hannah Gelbart 與 BBC 商業記者 Emer Moreau 指出，全球目前約有 3.3 億人實施遠端或混合辦公，但統計顯示 24 歲以下的年輕員工遠端工作比例顯著較低。雖然遠端工作具備彈性與免通勤等優點，但缺乏能見度、合作效率降低及社交連結減少，可能減緩初入職場者的升遷速度。受訪的年輕專業人士表示，遠端工作需要付出額外努力紀錄績效以獲得重視，因此許多人更傾向兼顧彈性與人際互動的混合模式。 Emer 建議遠端工作者應主動溝通、維持曝光度並積極建立聯繫。此外，針對人工智慧 AI 取代職缺的焦慮， Emer 指出許多先前大量裁員並以 AI 取代基層員工的公司，已發現仍需要人類進行監督與訓練，目前正默默重新招募員工。",
+  "summaryEn": "In this episode of What in the World, host Hannah Gelbart and BBC business reporter Emer Moreau examine whether working from home (WFH) negatively affects career growth, particularly for young professionals. While around 330 million people globally still work remotely, younger employees do so at much lower rates. Although remote work offers flexibility and saves commute time, it can hinder early-career progression due to lower visibility, reduced collaboration efficiency, and fewer networking opportunities. Young workers interviewed shared that remote setups require extra effort to document accomplishments and stay noticed, leading many to prefer a hybrid model. Emer advises early-career remote workers to stay proactive, communicate frequently, and maintain visibility. Finally, addressing concerns about AI replacing jobs, Emer notes that companies that replaced junior staff with AI are realizing human oversight and training are still necessary, and many are quietly rehiring.",
+  "studySets": {
+    "basic": {
+      "vocabulary": [
+        {
+          "word": "flexibility",
+          "kkPhonetic": "/ˌflɛksəˈbɪləti/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "彈性",
+          "example": "You've got all that flexibility and you get to do things a bit more your own way.",
+          "highlight": "flexibility"
+        },
+        {
+          "word": "commute",
+          "kkPhonetic": "/kəˈmjut/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "通勤",
+          "example": "The big one is you don't have to commute.",
+          "highlight": "commute"
+        },
+        {
+          "word": "productivity",
+          "kkPhonetic": "/ˌprɑdʌkˈtɪvəti/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "生產力",
+          "example": "Do we know how working from home affects productivity?",
+          "highlight": "productivity"
+        },
+        {
+          "word": "collaborative",
+          "kkPhonetic": "/kəˈlæbərətɪv/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "合作的",
+          "example": "Yeah, because when you're more junior, you're tending to be doing more sort of collaborative work.",
+          "highlight": "collaborative"
+        },
+        {
+          "word": "promotion",
+          "kkPhonetic": "/prəˈmoʃən/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "升遷",
+          "example": "I got my promotion out of cycle, and that's like a pretty rare thing.",
+          "highlight": "promotion"
+        },
+        {
+          "word": "metric",
+          "kkPhonetic": "/ˈmɛtrɪk/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "指標",
+          "example": "I had like every message documented, like every metric documented, and on every single meeting with my manager, I was like enforcing that.",
+          "highlight": "metric"
+        },
+        {
+          "word": "corporate",
+          "kkPhonetic": "/ˈkɔrpərɪt/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "企業的",
+          "example": "Well, my first corporate opportunity was an internship at a big consulting firm in which we worked in a hybrid model going twice a week to the office.",
+          "highlight": "corporate"
+        },
+        {
+          "word": "internship",
+          "kkPhonetic": "/ˈɪntɝnˌʃɪp/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "實習",
+          "example": "Well, my first corporate opportunity was an internship at a big consulting firm in which we worked in a hybrid model going twice a week to the office.",
+          "highlight": "internship"
+        },
+        {
+          "word": "introverted",
+          "kkPhonetic": "/ˈɪntrəˌvɝtɪd/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "內向的",
+          "example": "I'm quite introverted, so the idea of having more of my own space, skipping the commute, and just getting on with my work was the ideal scenario.",
+          "highlight": "introverted"
+        },
+        {
+          "word": "anxiety",
+          "kkPhonetic": "/æŋˈzaɪətɪ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "焦慮",
+          "example": "So Aaron said, \"Can't pay the bills with my anxiety.\"",
+          "highlight": "anxiety"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "hold someone back",
+          "highlight": "holding you back",
+          "meaningZh": "阻礙（某人）的發展",
+          "example": "So, what impact does that have on your career, and could it be holding you back?"
+        },
+        {
+          "phrase": "work your way up",
+          "highlight": "work your way up",
+          "meaningZh": "逐步晉升",
+          "example": "It does depend on a lot of factors, but yeah, I think for young people, it is very hard to work your way up and really make yourself known in such a competitive job landscape like we talked about before, if you're only in the office one day a week or if you're never in the office."
+        },
+        {
+          "phrase": "play a pivotal role",
+          "highlight": "played a pivotal role",
+          "meaningZh": "發揮關鍵作用",
+          "example": "It makes it much easier to balance my class schedules with my work schedules, but I also loved meeting with my colleagues in the office and this has played a pivotal role in building up my confidence in a corporate environment that I think wouldn't happen if I was working in a fully remote setting."
+        },
+        {
+          "phrase": "get on with one's work",
+          "highlight": "getting on with my work",
+          "meaningZh": "專心做自己的工作",
+          "example": "I'm quite introverted, so the idea of having more of my own space, skipping the commute, and just getting on with my work was the ideal scenario."
+        },
+        {
+          "phrase": "turn a corner",
+          "highlight": "turn a corner",
+          "meaningZh": "情況好轉",
+          "example": "Are things going to turn a corner?"
+        }
+      ]
+    },
+    "intermediate": {
+      "vocabulary": [
+        {
+          "word": "commute",
+          "kkPhonetic": "/kəˈmjut/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "通勤；上下班往返",
+          "example": "The big one is you don't have to commute.",
+          "highlight": "commute"
+        },
+        {
+          "word": "flexibility",
+          "kkPhonetic": "/ˌflɛksəˈbɪləti/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "靈活性；彈性",
+          "example": "You've got all that flexibility and you get to do things a bit more your own way.",
+          "highlight": "flexibility"
+        },
+        {
+          "word": "impact",
+          "kkPhonetic": "/ˈɪmpækt/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "影響；衝擊",
+          "example": "So, what impact does that have on your career, and could it be holding you back?",
+          "highlight": "impact"
+        },
+        {
+          "word": "progression",
+          "kkPhonetic": "/prəˈɡrɛʃən/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "進展；升遷；推進",
+          "example": "Yeah, so Emma Grede, who's a founding partner of SKIMS, the Kim Kardashian shapewear and clothing brand, she told our friends at BBC Woman's Hour recently that basically her experience is that women are being left behind in terms of career progression because they didn't return to the office in the same numbers that men did.",
+          "highlight": "progression"
+        },
+        {
+          "word": "productive",
+          "kkPhonetic": "/prəˈdʌktɪv/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "富有成效的；高生產力的",
+          "example": "So I read this stat that workers say that they're more productive, but employers say that they're less productive.",
+          "highlight": "productive"
+        },
+        {
+          "word": "collaborative",
+          "kkPhonetic": "/kəˈlæbərətɪv/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "合作的；協作的",
+          "example": "Yeah, because when you're more junior, you're tending to be doing more sort of collaborative work.",
+          "highlight": "collaborative"
+        },
+        {
+          "word": "visibility",
+          "kkPhonetic": "/ˌvɪzəˈbɪləti/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "能見度；曝光度",
+          "example": "But in remote setting, you have to do like I would say more work to bring visibility to your projects than actually doing the project.",
+          "highlight": "visibility"
+        },
+        {
+          "word": "pivotal",
+          "kkPhonetic": "/ˈpɪvətəl/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "關鍵的；核心的",
+          "example": "It makes it much easier to balance my class schedules with my work schedules, but I also loved meeting with my colleagues in the office and this has played a pivotal role in building up my confidence in a corporate environment that I think wouldn't happen if I was working in a fully remote setting.",
+          "highlight": "pivotal"
+        },
+        {
+          "word": "scenario",
+          "kkPhonetic": "/səˈnɛriˌo/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "情境；可能發生的情況",
+          "example": "I'm quite introverted, so the idea of having more of my own space, skipping the commute, and just getting on with my work was the ideal scenario.",
+          "highlight": "scenario"
+        },
+        {
+          "word": "incorporate",
+          "kkPhonetic": "/ɪnˈkɔrpəˌret/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "納入；包含",
+          "example": "Eimear, do you have any tips for people who are starting out in their jobs who might want to incorporate some remote working or have a kind of more of a hybrid model, but don't want to feel that they're falling behind in any way?",
+          "highlight": "incorporate"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "hold back",
+          "highlight": "holding you back",
+          "meaningZh": "阻礙（發展）；拖累",
+          "example": "So, what impact does that have on your career, and could it be holding you back?"
+        },
+        {
+          "phrase": "the cat's out of the bag",
+          "highlight": "the cat's out of the bag",
+          "meaningZh": "秘密已洩漏；事實已成既定無法改變",
+          "example": "So I think in terms of if you go back to pre-pandemic, the cat's out of the bag, the genie's out of the bottle, you're never going to fully go back to the way it was pre-COVID."
+        },
+        {
+          "phrase": "climb the career ladder",
+          "highlight": "climb the career ladder",
+          "meaningZh": "沿著職涯階梯向上升遷",
+          "example": "And when it comes to this idea that it could be harder to climb the career ladder if you're working remotely, do the CEOs who have said that, do they have a point here?"
+        },
+        {
+          "phrase": "work one's way up",
+          "highlight": "work your way up",
+          "meaningZh": "努力升遷；打拚出頭",
+          "example": "I think it is mixed. It does depend on a lot of factors, but yeah, I think for young people, it is very hard to work your way up and really make yourself known in such a competitive job landscape like we talked about before, if you're only in the office one day a week or if you're never in the office."
+        },
+        {
+          "phrase": "turn a corner",
+          "highlight": "turn a corner",
+          "meaningZh": "好轉；走出困境",
+          "example": "Are things going to turn a corner?"
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "counterpart",
+          "kkPhonetic": "/ˈkaʊntɚˌpɑrt/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "對等的人（或職務者）",
+          "example": "They're not being seen in the same way that maybe their male counterparts who did go back to the office fully or three or four days a week are.",
+          "highlight": "counterparts"
+        },
+        {
+          "word": "collaborative",
+          "kkPhonetic": "/kəˈlæbəˌretɪv/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "合作的、協作的",
+          "example": "So when you're more junior, you're tending to be doing more sort of collaborative work.",
+          "highlight": "collaborative"
+        },
+        {
+          "word": "reminisce",
+          "kkPhonetic": "/ˌrɛməˈnɪs/",
+          "partOfSpeech": "verb",
+          "level": "C2",
+          "meaningZh": "追憶、回想",
+          "example": "Somehow reminiscing my school years of COVID and you know, all the Zoom-based classes.",
+          "highlight": "reminiscing"
+        },
+        {
+          "word": "enforce",
+          "kkPhonetic": "/ɪnˈfɔrs/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "強調、貫徹",
+          "example": "I had like every message documented, like every metric documented, and on every single meeting with my manager, I was like enforcing that.",
+          "highlight": "enforcing"
+        },
+        {
+          "word": "pivotal",
+          "kkPhonetic": "/ˈpɪvətəl/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "關鍵的、樞紐的",
+          "example": "It makes it much easier to balance my class schedules with my work schedules, but I also loved meeting with my colleagues in the office and this has played a pivotal role in building up my confidence in a corporate environment that I think wouldn't happen if I was working in a fully remote setting.",
+          "highlight": "pivotal"
+        },
+        {
+          "word": "facilitate",
+          "kkPhonetic": "/fəˈsɪləˌtet/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "促進、有助於",
+          "example": "Being at the office has facilitated myself meeting with other interns and other people who were at the same level of career as I did and sharing experiences, and that made the journey feel much less lonely in the end.",
+          "highlight": "facilitated"
+        },
+        {
+          "word": "incorporate",
+          "kkPhonetic": "/ɪnˈkɔrpəˌret/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "納入、融入",
+          "example": "Eimear, do you have any tips for people who are starting out in their jobs who might want to incorporate some remote working or have a kind of more of a hybrid model, but don't want to feel that they're falling behind in any way?",
+          "highlight": "incorporate"
+        },
+        {
+          "word": "overshoot",
+          "kkPhonetic": "/ˌovɚˈʃut/",
+          "partOfSpeech": "verb",
+          "level": "C2",
+          "meaningZh": "做得過頭、超過目標",
+          "example": "So if you're worried that your job is going to be replaced by AI, maybe you can take some comfort in the fact that a lot of the companies who did that first are now realizing, \"Oh, I think we overshot a bit.\"",
+          "highlight": "overshot"
+        },
+        {
+          "word": "acquire",
+          "kkPhonetic": "/əˈkwɑɪɚ/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "獲得、習得",
+          "example": "And also, like acquiring skills and learning is much harder, so you naturally just progress slower in your career.",
+          "highlight": "acquiring"
+        },
+        {
+          "word": "progression",
+          "kkPhonetic": "/prəˈɡrɛʃən/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "職涯晉升、發展",
+          "example": "How did you find working remotely impacted your career progression?",
+          "highlight": "progression"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "the cat's out of the bag",
+          "highlight": "the cat's out of the bag",
+          "meaningZh": "秘密已被揭穿（事情已無法還原或隱瞞）",
+          "example": "So I think in terms of if you go back to pre-pandemic, the cat's out of the bag, the genie's out of the bottle, you're never going to fully go back to the way it was pre-COVID."
+        },
+        {
+          "phrase": "bear out",
+          "highlight": "borne out",
+          "meaningZh": "證實、獲得數據或研究支持",
+          "example": "That's not really borne out in the research."
+        },
+        {
+          "phrase": "climb the career ladder",
+          "highlight": "climb the career ladder",
+          "meaningZh": "沿著職涯階梯向上爬、升遷",
+          "example": "Yeah, and when it comes to this idea that it could be harder to climb the career ladder if you're working remotely, do the CEOs who have said that, do they have a point here?"
+        },
+        {
+          "phrase": "turn a corner",
+          "highlight": "turn a corner",
+          "meaningZh": "情況好轉、走出困境",
+          "example": "Are things going to turn a corner?"
+        },
+        {
+          "phrase": "lay off",
+          "highlight": "laid off",
+          "meaningZh": "裁員、解僱",
+          "example": "and I think one thing that people might find a bit comforting is that the companies who laid off loads of staff, especially more junior staff, to replace them with AI, a lot of them are kind of realizing now that they need humans still to sort of oversee the AI tools or train the AI tools."
+        }
+      ]
+    }
+  }
+}

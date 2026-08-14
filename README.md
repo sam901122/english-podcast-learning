@@ -5,13 +5,13 @@ Daily English-learning notes generated from BBC World Service's **What in the Wo
 ## How it works
 
 On weekdays, GitHub Actions reads the official BBC RSS feed, processes the newest unseen episode,
-transcribes its audio with OpenAI, generates Traditional Chinese learning notes, and deploys the
+uses Gemini to transcribe its audio and generate Traditional Chinese learning notes, then deploys the
 static site to GitHub Pages. Audio and full transcripts are not committed to the repository.
 
 ## Setup
 
 1. In the GitHub repository, open **Settings → Secrets and variables → Actions**.
-2. Create a repository secret named `OPENAI_API_KEY`.
+2. Create a repository secret named `GEMINI_API_KEY`.
 3. Open **Settings → Pages** and select **GitHub Actions** as the deployment source.
 4. Run **Actions → Update daily podcast → Run workflow** once.
 
@@ -29,7 +29,9 @@ python -m pip install -r requirements.txt
 python scripts/update_podcast.py --dry-run
 ```
 
-To run the complete process locally, set `OPENAI_API_KEY` in the environment and omit `--dry-run`.
+To run the complete process locally, put `GEMINI_API_KEY=...` in a local `.env` file and omit
+`--dry-run`. To deliberately rebuild a particular RSS item, pass its zero-based position, for example
+`--episode-offset 0` for the newest episode.
 
 ## Attribution
 
