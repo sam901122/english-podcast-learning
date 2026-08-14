@@ -16,7 +16,7 @@ static site to GitHub Pages. Audio and full transcripts are not committed to the
 4. Run **Actions → Update daily podcast → Run workflow** once.
 
 The default feed is `https://podcasts.files.bbci.co.uk/w13xtvrv.rss`. The update runs at 08:00
-Asia/Taipei, Monday through Friday. Both can be changed in the workflow or with the
+Asia/Taipei, Tuesday through Friday. Both can be changed in the workflow or with the
 `PODCAST_FEED_URL` environment variable.
 
 The workflow transcribes the complete episode. Manual runs reprocess the latest episode; scheduled
