@@ -1,0 +1,390 @@
+{
+  "id": "1bdc8d888a536d94",
+  "title": "Why AI music is getting labelled on streaming sites",
+  "description": "<p>What would you do if you found out that your favourite artist was not actually human? More musicians are using AI-tools for their work. But recently, there has also been a boom in AI Personas and 100% AI generated work. Some fans and musicians are not happy, they have called for more transparency around what’s human made. Streaming websites have also raised concerns about fraud and copyright infringement. Tidal and Deezer have outright banned the promotion of this AI content. And now Spotify has announced it will begin labelling songs that are AI generated. </p><p>BBC Newsbeat journalist, Eleanor Doyle, talks us through how you can spot AI generated music, how it has made and how regulating it on streaming platforms might work. </p><p>Plus, we also hear from two musicians, Marina Josephina in the UK, and Nkasiobi Chukwu in Nigeria about their experiences with AI music.</p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Hannah Gelbart\nProducers: Benita Barden and Eleanor Sly\nEditors: Verity Wilde</p>",
+  "publishedAt": "2026-08-14T14:30:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct8q5y",
+  "summaryZh": "本集 BBC 節目《What in the World》探討 AI 生成音樂在串流平台上的普及與監管機制。節目邀請英國歌手 Marina Josefina 分享發現心儀藝人竟為 AI 虛擬人物時的受騙感受，以及尼日利亞音樂製作人 Nsikak 談論 AI 如何降低創作門檻，但同時對傳統音樂人與版權機制帶來衝擊。 BBC 記者 Eleanor Doyle 解釋， AI 音樂透過巨量數據訓練與文字指令生成，雖然歌詞或聲線有時較為生硬，但辨識難度正隨著技術演化而增加。為回應創作者與聽眾對透明度的訴求， Spotify 與 Deezer 以及 Apple Music 等串流平台已陸續導入 AI 標籤與推薦限制政策。",
+  "summaryEn": "This episode of What in the World explores the rise of AI-generated music on streaming platforms and the efforts to regulate it through clearer labeling. UK singer Marina Josefina shares her frustration after discovering an artist she enjoyed was entirely AI-generated, while Nigerian producer Nsikak discusses how AI lowers barriers to music creation while creating economic and copyright challenges for human artists. BBC journalist Eleanor Doyle explains how AI music is created and spotted, and details how platforms like Spotify, Deezer, and Apple Music are implementing AI badges, self-disclosure requirements, and recommendation restrictions to increase transparency for listeners.",
+  "studySets": {
+    "basic": {
+      "vocabulary": [
+        {
+          "word": "discover",
+          "kkPhonetic": "/dɪˈskʌvɚ/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "發現",
+          "example": "I discovered an artist that I liked at the start of this year.",
+          "highlight": "discovered"
+        },
+        {
+          "word": "shocked",
+          "kkPhonetic": "/ʃɑkt/",
+          "partOfSpeech": "adjective",
+          "level": "A2",
+          "meaningZh": "震驚的",
+          "example": "I felt fooled completely, and I was shocked, and I was disappointed in myself that it took me so long to listen to several songs by this artist before I realized.",
+          "highlight": "shocked"
+        },
+        {
+          "word": "disappointed",
+          "kkPhonetic": "/ˌdɪsəˈpɔɪntɪd/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "感到失望的",
+          "example": "I felt fooled completely, and I was shocked, and I was disappointed in myself that it took me so long to listen to several songs by this artist before I realized.",
+          "highlight": "disappointed"
+        },
+        {
+          "word": "positive",
+          "kkPhonetic": "/ˈpɑzətɪv/",
+          "partOfSpeech": "adjective",
+          "level": "A2",
+          "meaningZh": "正面的",
+          "example": "I think making music accessible to everyone is a really positive thing.",
+          "highlight": "positive"
+        },
+        {
+          "word": "struggle",
+          "kkPhonetic": "/ˈstrʌɡl/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "感到困難",
+          "example": "So some casual listeners often might struggle to tell, especially if it's not a genre that you listen to.",
+          "highlight": "struggle"
+        },
+        {
+          "word": "platform",
+          "kkPhonetic": "/ˈplætˌfɔrm/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "平台",
+          "example": "Loads of musicians and artists are experimenting with AI, and AI-generated music is flooding streaming platforms.",
+          "highlight": "platforms"
+        },
+        {
+          "word": "strange",
+          "kkPhonetic": "/strendʒ/",
+          "partOfSpeech": "adjective",
+          "level": "A2",
+          "meaningZh": "奇怪的",
+          "example": "The vocals might sound slightly too perfect or a little bit metallic, emotions can feel a little bit flat, or the lyrics can be strange or repetitive, and instruments can have a little bit of an unnatural quality.",
+          "highlight": "strange"
+        },
+        {
+          "word": "emotion",
+          "kkPhonetic": "/ɪˈmoʃən/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "情緒",
+          "example": "It's a wonderful way for me to go through my emotions and feelings and can be really beneficial to mental health.",
+          "highlight": "emotions"
+        },
+        {
+          "word": "challenge",
+          "kkPhonetic": "/ˈtʃælɪndʒ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "挑戰",
+          "example": "But then, it also created a huge challenge in terms of what that then means for the artists themselves, the industry, its business model, and essentially the sustainability of the art form and the business.",
+          "highlight": "challenge"
+        },
+        {
+          "word": "recommendation",
+          "kkPhonetic": "/ˌrɛkəmɛnˈdeʃən/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "推薦",
+          "example": "Artists with the badge will not appear in user's personalized recommendations unless they already follow them.",
+          "highlight": "recommendations"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "come across",
+          "highlight": "came across",
+          "meaningZh": "偶然發現",
+          "example": "So I saw your TikTok video where you were talking about an AI song that you came across."
+        },
+        {
+          "phrase": "wait and see",
+          "highlight": "wait and see",
+          "meaningZh": "拭目以待",
+          "example": "So we don't yet know how this will affect the music industry and how people are listening to these playlists, but um it's we'll have to wait and see, basically."
+        },
+        {
+          "phrase": "from scratch",
+          "highlight": "from scratch",
+          "meaningZh": "從頭開始",
+          "example": "What are your thoughts on people using AI to generate songs completely from scratch or to enhance or use AI in other parts of the music process?"
+        },
+        {
+          "phrase": "a couple of",
+          "highlight": "a couple of",
+          "meaningZh": "幾個",
+          "example": "For example, we only had our copyright act updated a couple of years ago, and I don't think it even fully captured a lot of the things that people had hoped for within the world of copyright."
+        },
+        {
+          "phrase": "when it comes to",
+          "highlight": "when it comes to",
+          "meaningZh": "談到",
+          "example": "There's a lot of strong feelings when it comes to AI-generated music."
+        }
+      ]
+    },
+    "intermediate": {
+      "vocabulary": [
+        {
+          "word": "regulation",
+          "kkPhonetic": "/ˌrɛɡjəˈleʃən/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "規管",
+          "example": "Some fans and artists are now calling for more regulation, and Spotify says it's going to start labeling songs that have been made with AI.",
+          "highlight": "regulation"
+        },
+        {
+          "word": "cliché",
+          "kkPhonetic": "/klɪˈʃe/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "陳腐老套的",
+          "example": "Also, yeah, everything just sounded a little bit too perfect and some lyrics almost being like a little bit cliché.",
+          "highlight": "cliché"
+        },
+        {
+          "word": "betrayed",
+          "kkPhonetic": "/bɪˈtred/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "感到被背叛的",
+          "example": "I felt, number one, extremely betrayed, but yeah, I felt fooled completely and I was shocked and I was disappointed in myself that it took me so long to listen to several songs by this artist before I realized.",
+          "highlight": "betrayed"
+        },
+        {
+          "word": "therapeutic",
+          "kkPhonetic": "/ˌθɛrəˈpjutɪk/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "有療癒效果的",
+          "example": "I think for me, songwriting and composing, creating music, I find it really therapeutic.",
+          "highlight": "therapeutic"
+        },
+        {
+          "word": "transparent",
+          "kkPhonetic": "/trænˈspɛrənt/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "公開透明的",
+          "example": "I just think when it gets released into the world, I think it's just really important that it's transparent to everyone to know that computers helped the process.",
+          "highlight": "transparent"
+        },
+        {
+          "word": "sustainability",
+          "kkPhonetic": "/səˌstenəˈbɪləti/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "永續性",
+          "example": "But then, it also created a huge challenge in terms of what that then means for the artists themselves, the industry, its business model, and essentially the sustainability of the art form and the business.",
+          "highlight": "sustainability"
+        },
+        {
+          "word": "essentially",
+          "kkPhonetic": "/ɪˈsɛnʃəli/",
+          "partOfSpeech": "adverb",
+          "level": "B2",
+          "meaningZh": "基本上",
+          "example": "You know, AI has lowered the barriers to entry for essentially music generation.",
+          "highlight": "essentially"
+        },
+        {
+          "word": "unpack",
+          "kkPhonetic": "/ʌnˈpæk/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "剖析",
+          "example": "We're going to unpack this now with Eleanor Doyle, who's a BBC journalist who has been looking into this.",
+          "highlight": "unpack"
+        },
+        {
+          "word": "genre",
+          "kkPhonetic": "/ˈʒɑnrə/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "（音樂或藝術的）類型",
+          "example": "So some casual listeners often might struggle to tell, especially if it's not a genre that you listen to.",
+          "highlight": "genre"
+        },
+        {
+          "word": "acknowledge",
+          "kkPhonetic": "/ækˈnɑlɪdʒ/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "承認",
+          "example": "The streamer said it will also put a badge that will relate to the artist's public identity and about how the music was made, acknowledging that AI tools were used in the music process and in the music creation.",
+          "highlight": "acknowledging"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "come across",
+          "highlight": "came across",
+          "meaningZh": "偶然發現",
+          "example": "So I saw your TikTok video where you were talking about an AI song that you came across."
+        },
+        {
+          "phrase": "from scratch",
+          "highlight": "from scratch",
+          "meaningZh": "從零開始",
+          "example": "What are your thoughts on people using AI to generate songs completely from scratch or to enhance or use AI in other parts of the music process?"
+        },
+        {
+          "phrase": "take on a life of its own",
+          "highlight": "take on a life of their own",
+          "meaningZh": "脫離控制並自動發展",
+          "example": "We've seen exciting songs take on a life of their own."
+        },
+        {
+          "phrase": "look into",
+          "highlight": "looking into",
+          "meaningZh": "調查；深入了解",
+          "example": "We're going to unpack this now with Eleanor Doyle, who's a BBC journalist who has been looking into this."
+        },
+        {
+          "phrase": "wait and see",
+          "highlight": "wait and see",
+          "meaningZh": "靜觀其變",
+          "example": "So we don't yet know how this will affect the music industry and how people are listening to these playlists, but um it's we'll have to wait and see, basically."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "cliché",
+          "kkPhonetic": "/kliˈʃe/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "陳詞濫調的；老套的",
+          "example": "Also, yeah, everything just sounded a little bit too perfect and some lyrics almost being like a little bit cliché.",
+          "highlight": "cliché"
+        },
+        {
+          "word": "therapeutic",
+          "kkPhonetic": "/ˌθɛrəˈpjutɪk/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "具療癒作用的；有益身心的",
+          "example": "I think for me, songwriting and composing, creating music, I find it really therapeutic.",
+          "highlight": "therapeutic"
+        },
+        {
+          "word": "sustainability",
+          "kkPhonetic": "/səˌstenəˈbɪləti/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "永續性；持續發展能力",
+          "example": "But then, it also created a huge challenge in terms of what that then means for the artists themselves, the industry, its business model, and essentially the sustainability of the art form and the business.",
+          "highlight": "sustainability"
+        },
+        {
+          "word": "progression",
+          "kkPhonetic": "/prəˈɡrɛʃən/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "演進；進展",
+          "example": "The shift in my thought around AI was really built around the scale of AI's progression.",
+          "highlight": "progression"
+        },
+        {
+          "word": "unpack",
+          "kkPhonetic": "/ʌnˈpæk/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "剖析；詳細分析",
+          "example": "We're going to unpack this now with Eleanor Doyle, who's a BBC journalist who has been looking into this.",
+          "highlight": "unpack"
+        },
+        {
+          "word": "recreate",
+          "kkPhonetic": "/ˌrikriˈet/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "重新創造；再現",
+          "example": "It learns things like patterns, melodies, chords, rhythms, and instruments and song structures, and basically recreates them using the catalog that it already has.",
+          "highlight": "recreates"
+        },
+        {
+          "word": "transparent",
+          "kkPhonetic": "/trænsˈpɛrənt/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "透明的；公開坦誠的",
+          "example": "I just think when it gets released into the world, I think it's just really important that it's transparent to everyone to know that computers helped the process.",
+          "highlight": "transparent"
+        },
+        {
+          "word": "acknowledge",
+          "kkPhonetic": "/ækˈnɑlɪdʒ/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "承認；表明",
+          "example": "The streamer said it will also put a badge that will relate to the artist's public identity and about how the music was made, acknowledging that AI tools were used in the music process and in the music creation.",
+          "highlight": "acknowledging"
+        },
+        {
+          "word": "persona",
+          "kkPhonetic": "/pɚˈsonə/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "虛構角色；人設",
+          "example": "So those that are labeled with the AI persona badge by the streamer will be given the chance to self-disclose or appeal the decision.",
+          "highlight": "persona"
+        },
+        {
+          "word": "self-disclose",
+          "kkPhonetic": "/ˌsɛlf dɪsˈkloz/",
+          "partOfSpeech": "verb",
+          "level": "C2",
+          "meaningZh": "自我揭露；主動申報",
+          "example": "So those that are labeled with the AI persona badge by the streamer will be given the chance to self-disclose or appeal the decision.",
+          "highlight": "self-disclose"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "lower the barrier to entry",
+          "highlight": "lowered the barriers to entry",
+          "meaningZh": "降低進入門檻",
+          "example": "You know, AI has lowered the barriers to entry for essentially music generation."
+        },
+        {
+          "phrase": "take on a life of one's own",
+          "highlight": "take on a life of their own",
+          "meaningZh": "獨立發展；產生自身影響力",
+          "example": "We've seen exciting songs take on a life of their own."
+        },
+        {
+          "phrase": "wild West",
+          "highlight": "wild, wild West",
+          "meaningZh": "缺乏規範的混亂狀態；無法無天之境",
+          "example": "So, essentially, like most of the world, we're in like a wild, wild West, and I think that it's something that worries me."
+        },
+        {
+          "phrase": "carbon copy",
+          "highlight": "carbon copies",
+          "meaningZh": "極為相似的複製品；一模一樣的東西",
+          "example": "And when I was listening to it, I realized there was a lot of similarities, there was a lot of similar lyrics between the songs, a lot of the melodies and stuff, and even just some of the instrumental elements of it were just like carbon copies, but obviously just in slightly different keys and tempos."
+        },
+        {
+          "phrase": "from scratch",
+          "highlight": "from scratch",
+          "meaningZh": "從零開始；從頭開始",
+          "example": "What are your thoughts on people using AI to generate songs completely from scratch or to enhance or use AI in other parts of the music process?"
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/1OC622jIGlLLwhE2QpANse"
+}
