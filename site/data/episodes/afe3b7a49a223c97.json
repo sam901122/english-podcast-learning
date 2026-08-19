@@ -1,0 +1,390 @@
+{
+  "id": "afe3b7a49a223c97",
+  "title": "Will AI make your degree pointless?",
+  "description": "<p>AI isn’t just occasionally going rogue…(Open AI and Meta we’re looking at you) it’s also changing the world of work. Nearly 70% of college students in the US said they thought AI would make it harder to find a job in a recent survey - and 22% said that they’ve changed what they’re deciding to study at university because of this. They’re not the only ones… students all over the world are thinking about how to AI-proof their future careers.</p><p>In this episode, we go to the University College London campus to speak to three students: Omer, who’s studying French and German, Zahra, who’s studying entrepreneurship, and Allie, who’s just graduated from Kings College after completing her law studies. They tell us how they think AI could change the course of their careers, how they’re adapting to the new technology, and if their degrees will still be helpful in the face of AI.</p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Hannah Gelbart\nProducers: William Lee Adams, Chelsea Coates and Benita Barden\nVideo Producer: Baldeep Chahal\nEditors: Verity Wilde</p>",
+  "publishedAt": "2026-08-18T13:30:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct9903",
+  "summaryZh": "本集 BBC 節目《What in the World》探討人工智慧 AI 對大學學位與職涯前景的衝擊，並採訪三位來自倫敦的大學生與畢業生。修讀語言學的 Omar 表示，書面翻譯雖易被 AI 取代，但面對面溝通、情感連結與文化脈絡仍無法被科技取代。法律系畢業生 Ali 指出，法律界正積極導入 AI 技術，但由於 AI 容易產生錯誤與「幻覺」，始終需要人類嚴格監督。主修創業學的 Zara 則保持樂觀，主張結合人類領導與 AI 技術以創造優勢。三位受訪者均認為，大學所培養的人際技能與生活體驗無法被取代，學子應選擇能與 AI 互補的專業，積極運用科技打造未來的職涯防護。",
+  "summaryEn": "In this episode of BBC's What in the World, host Hannah Gelbart visits University College London (UCL) to discuss with three students and graduates—Omer (studying languages), Zara (studying entrepreneurship), and Allie (a law graduate)—how AI is impacting their future careers and the value of their degrees. Omer highlights that while written translation can be automated, real human connection and cultural nuances remain irreplaceable. Allie notes that although law firms are embracing AI tools, human oversight is still crucial because AI models are prone to errors and hallucinations. Zara sees AI as an exciting opportunity, advocating for a hybrid model that balances human leadership with technology. Overall, the guests agree that university provides vital life experiences and interpersonal skills, advising future students to pursue their passions while using AI as a complementary tool.",
+  "studySets": {
+    "basic": {
+      "vocabulary": [
+        {
+          "word": "degree",
+          "kkPhonetic": "/dɪˈɡri/",
+          "partOfSpeech": "Noun",
+          "level": "A2",
+          "meaningZh": "學位",
+          "example": "Zara, do you think your degree is AI-proof?",
+          "highlight": "degree"
+        },
+        {
+          "word": "optimistic",
+          "kkPhonetic": "/ˌɑptəˈmɪstɪk/",
+          "partOfSpeech": "Adjective",
+          "level": "B1",
+          "meaningZh": "樂觀的",
+          "example": "I'm feeling quite optimistic.",
+          "highlight": "optimistic"
+        },
+        {
+          "word": "scary",
+          "kkPhonetic": "/ˈskɛri/",
+          "partOfSpeech": "Adjective",
+          "level": "A2",
+          "meaningZh": "可怕的",
+          "example": "Zara, you said that AI was a bit scary and you guys both agreed with it.",
+          "highlight": "scary"
+        },
+        {
+          "word": "society",
+          "kkPhonetic": "/səˈsaɪətɪ/",
+          "partOfSpeech": "Noun",
+          "level": "B1",
+          "meaningZh": "社會",
+          "example": "And I think that's invaluable to have in a society.",
+          "highlight": "society"
+        },
+        {
+          "word": "traditional",
+          "kkPhonetic": "/trəˈdɪʃənəl/",
+          "partOfSpeech": "Adjective",
+          "level": "B1",
+          "meaningZh": "傳統的",
+          "example": "So, yeah, I would say there is a lot of uncertainty, especially for those parents who want us to go in, you know, the the the traditional routes.",
+          "highlight": "traditional"
+        },
+        {
+          "word": "tool",
+          "kkPhonetic": "/tul/",
+          "partOfSpeech": "Noun",
+          "level": "A2",
+          "meaningZh": "工具",
+          "example": "So you're getting that human-led, whatever those elements are, and you're getting the AI tools alongside with it, so that it's a win-win.",
+          "highlight": "tools"
+        },
+        {
+          "word": "advice",
+          "kkPhonetic": "/ədˈvaɪs/",
+          "partOfSpeech": "Noun",
+          "level": "A2",
+          "meaningZh": "建議",
+          "example": "And with that in mind, what advice would you have for people who are choosing what to study at uni now and wanting to make themselves as AI-proof as possible?",
+          "highlight": "advice"
+        },
+        {
+          "word": "skill",
+          "kkPhonetic": "/skɪl/",
+          "partOfSpeech": "Noun",
+          "level": "A2",
+          "meaningZh": "技能",
+          "example": "I think all of us gain have gained so much from our from our degrees, different skills and I think university is also just broader and bigger than just academic side of it.",
+          "highlight": "skills"
+        },
+        {
+          "word": "textbook",
+          "kkPhonetic": "/ˈtɛkstˌbʊk/",
+          "partOfSpeech": "Noun",
+          "level": "A2",
+          "meaningZh": "教科書",
+          "example": "There really is, it's a luxury to have a university degree and to have 3 years to to think about a subject that you are, hopefully, passionate about and to think about the different sides of it and have the teachers and textbooks available to you for for questions.",
+          "highlight": "textbooks"
+        },
+        {
+          "word": "dream",
+          "kkPhonetic": "/drim/",
+          "partOfSpeech": "Noun",
+          "level": "A2",
+          "meaningZh": "夢想",
+          "example": "My advice would be to still follow your dreams, follow your passions, but make sure that what you are get, do your research, of course, but make sure that the subjects that your degree has to offer are complementary.",
+          "highlight": "dreams"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "in person",
+          "highlight": "in person",
+          "meaningZh": "親自；當面",
+          "example": "The written side of it, the translation side of it, definitely getting replaced by AI, but I think one thing that it will never replace is the ability to orally communicate in person."
+        },
+        {
+          "phrase": "do research",
+          "highlight": "do your research",
+          "meaningZh": "做功課；做研究",
+          "example": "My advice would be to still follow your dreams, follow your passions, but make sure that what you are get, do your research, of course, but make sure that the subjects that your degree has to offer are complementary."
+        },
+        {
+          "phrase": "follow one's dreams",
+          "highlight": "follow your dreams",
+          "meaningZh": "追隨夢想",
+          "example": "My advice would be to still follow your dreams, follow your passions, but make sure that what you are get, do your research, of course, but make sure that the subjects that your degree has to offer are complementary."
+        },
+        {
+          "phrase": "win-win",
+          "highlight": "win-win",
+          "meaningZh": "雙贏",
+          "example": "So you're getting that human-led, whatever those elements are, and you're getting the AI tools alongside with it, so that it's a win-win."
+        },
+        {
+          "phrase": "start out",
+          "highlight": "starting out",
+          "meaningZh": "起步；開始",
+          "example": "I feel like the law industry is generally kind of lagging behind maybe in the implementation of these new modern AI technologies, which is good for us starting out in this industry, because then we can kind of join it and actually spur it on and be the kind of trailblazers in that sense."
+        }
+      ]
+    },
+    "intermediate": {
+      "vocabulary": [
+        {
+          "word": "optimistic",
+          "kkPhonetic": "/ˌɑptəˈmɪstɪk/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "樂觀的",
+          "example": "I'm feeling quite optimistic.",
+          "highlight": "optimistic"
+        },
+        {
+          "word": "uncertainty",
+          "kkPhonetic": "/ʌnˈsɝtn̩ti/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "不確定性",
+          "example": "I think there's still a lot of uncertainty in the whole of of what's happening, so being in the forefront of entrepreneurship and being thrown into the deep end, what I love about my college is that, that they are constant- constantly innovating.",
+          "highlight": "uncertainty"
+        },
+        {
+          "word": "proactive",
+          "kkPhonetic": "/proˈæktɪv/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "積極主動的",
+          "example": "Yeah, so I'm Ali and I did a law degree at KCL and I do think my degree is future-proof because law firms are incredibly proactive with future-proofing themselves with AI and legal tech, legal AI is a huge, huge, huge industry that I'm very excited to be able to explore.",
+          "highlight": "proactive"
+        },
+        {
+          "word": "implementation",
+          "kkPhonetic": "/ˌɪmpləmɛnˈteʃən/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "實施；貫徹",
+          "example": "I feel like the law industry is generally kind of lagging behind maybe in the implementation of these new modern AI technologies, which is good for us starting out in this industry, because then we can kind of join it and actually spur it on and be the kind of trailblazers in that sense.",
+          "highlight": "implementation"
+        },
+        {
+          "word": "supervision",
+          "kkPhonetic": "/ˌsupɚˈvɪʒən/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "監督；管理",
+          "example": "and so human supervision will always be required.",
+          "highlight": "supervision"
+        },
+        {
+          "word": "pivot",
+          "kkPhonetic": "/ˈpɪvət/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "轉向；轉變",
+          "example": "Yeah, I've actually got some friends that were originally going to go into consulting, but consulting firms such as like KPMG and everything, they have been, they have shrunk, and they there has been layoffs and everything and some of them have actually pivoted to law.",
+          "highlight": "pivoted"
+        },
+        {
+          "word": "polarization",
+          "kkPhonetic": "/ˌpoʊlərəˈzeɪʃən/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "兩極分化",
+          "example": "Yeah, I I do think that across a lot of industries, there will be a polarization, so it will be the most elite firms or most elite companies that will be able to sort of source the best AI technology and to train their people to be able to harness that AI technology, and I think unfortunately that that would mean some maybe small, medium enterprises or firms might be squeezed out.",
+          "highlight": "polarization"
+        },
+        {
+          "word": "catalyst",
+          "kkPhonetic": "/ˈkætəlɪst/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "催化劑；促進因素",
+          "example": "So, and that that relates to to a bunch of different industries, and I think depending on which lens you look at it through, AI can be like a real a real catalyst or a handicap depending on depending on your your perspective.",
+          "highlight": "catalyst"
+        },
+        {
+          "word": "misconception",
+          "kkPhonetic": "/ˌmɪskənˈsɛpʃən/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "誤解；錯誤觀念",
+          "example": "And my fear is that the the rise in AI cause a kind of a a false a misconception in the through the lens of our degree saying, \"Ah, what are you going to use languages for?\"",
+          "highlight": "misconception"
+        },
+        {
+          "word": "complementary",
+          "kkPhonetic": "/ˌkɑmpləˈmɛntri/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "互補的",
+          "example": "My advice would be to still follow your dreams, follow your passions, but make sure that what you are get, do your research, of course, but make sure that the subjects that your degree has to offer are complementary.",
+          "highlight": "complementary"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "throw into the deep end",
+          "highlight": "thrown into the deep end",
+          "meaningZh": "迫使（某人）直接面對困境（或新環境）",
+          "example": "I think there's still a lot of uncertainty in the whole of of what's happening, so being in the forefront of entrepreneurship and being thrown into the deep end, what I love about my college is that, that they are constant- constantly innovating."
+        },
+        {
+          "phrase": "get your message across",
+          "highlight": "get your message across",
+          "meaningZh": "傳達你的訊息；表達清楚意思",
+          "example": "You know, if you go up to someone and you have the kind of the, the new tech, the little earpiece on and it automatically translates, you might be able to get your message across, but it's never going to have that human connection, the emotional connection of shaking someone's hand and introducing yourself and having that linguistic and contextual understanding of their language and culture."
+        },
+        {
+          "phrase": "lag behind",
+          "highlight": "lagging behind",
+          "meaningZh": "落後",
+          "example": "I feel like the law industry is generally kind of lagging behind maybe in the implementation of these new modern AI technologies, which is good for us starting out in this industry, because then we can kind of join it and actually spur it on and be the kind of trailblazers in that sense."
+        },
+        {
+          "phrase": "squeeze out",
+          "highlight": "squeezed out",
+          "meaningZh": "排擠；擠出",
+          "example": "Yeah, I I do think that across a lot of industries, there will be a polarization, so it will be the most elite firms or most elite companies that will be able to sort of source the best AI technology and to train their people to be able to harness that AI technology, and I think unfortunately that that would mean some maybe small, medium enterprises or firms might be squeezed out."
+        },
+        {
+          "phrase": "wither away",
+          "highlight": "wither away",
+          "meaningZh": "枯萎；逐漸消失",
+          "example": "I do fear that, especially in the UK where there's been a general trend in the reduction of language choices at GCSE and as an A-level, that it's going to also wither away at a degree level, which which can then have a negative impact overall in the job market."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "proactive",
+          "kkPhonetic": "/proˈæktɪv/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "積極主動的",
+          "example": "Yeah, so I'm Ali and I did a law degree at KCL and I do think my degree is future-proof because law firms are incredibly proactive with future-proofing themselves with AI and legal tech, legal AI is a huge, huge, huge industry that I'm very excited to be able to explore.",
+          "highlight": "proactive"
+        },
+        {
+          "word": "trailblazer",
+          "kkPhonetic": "/ˈtrelˌblezɚ/",
+          "partOfSpeech": "noun",
+          "level": "C2",
+          "meaningZh": "開拓者；先驅",
+          "example": "I feel like the law industry is generally kind of lagging behind maybe in the implementation of these new modern AI technologies, which is good for us starting out in this industry, because then we can kind of join it and actually spur it on and be the kind of trailblazers in that sense.",
+          "highlight": "trailblazers"
+        },
+        {
+          "word": "hallucination",
+          "kkPhonetic": "/həˌlusnˈeʃən/",
+          "partOfSpeech": "noun",
+          "level": "C2",
+          "meaningZh": "（人工智慧的）幻覺；虛構內容",
+          "example": "and so there no matter how the technology is is improving, because it is AI, there will be hallucinations in that, and so human supervision will always be required.",
+          "highlight": "hallucinations"
+        },
+        {
+          "word": "polarization",
+          "kkPhonetic": "/ˌpolərəˈzeʃən/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "極化；兩極分化",
+          "example": "Yeah, I I do think that across a lot of industries, there will be a polarization, so it will be the most elite firms or most elite companies that will be able to sort of source the best AI technology and to train their people to be able to harness that AI technology, and I think unfortunately that that would mean some maybe small, medium enterprises or firms might be squeezed out.",
+          "highlight": "polarization"
+        },
+        {
+          "word": "harness",
+          "kkPhonetic": "/ˈhɑrnɪs/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "運用；駕馭",
+          "example": "Yeah, I I do think that across a lot of industries, there will be a polarization, so it will be the most elite firms or most elite companies that will be able to sort of source the best AI technology and to train their people to be able to harness that AI technology, and I think unfortunately that that would mean some maybe small, medium enterprises or firms might be squeezed out.",
+          "highlight": "harness"
+        },
+        {
+          "word": "catalyst",
+          "kkPhonetic": "/ˈkætəlɪst/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "觸媒；催化劑",
+          "example": "So, and that that relates to to a bunch of different industries, and I think depending on which lens you look at it through, AI can be like a real a real catalyst or a handicap depending on depending on your your perspective.",
+          "highlight": "catalyst"
+        },
+        {
+          "word": "handicap",
+          "kkPhonetic": "/ˈhændɪˌkæp/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "障礙；不利條件",
+          "example": "So, and that that relates to to a bunch of different industries, and I think depending on which lens you look at it through, AI can be like a real a real catalyst or a handicap depending on depending on your your perspective.",
+          "highlight": "handicap"
+        },
+        {
+          "word": "osmosis",
+          "kkPhonetic": "/ɑzˈmosɪs/",
+          "partOfSpeech": "noun",
+          "level": "C2",
+          "meaningZh": "潛移默化；耳濡目染",
+          "example": "20 years ago, people in my situation, sort of a future trainee solicitor, they'd be preparing for actually doing a lot of grunt work, and they have told me how much they've learned from sorting through a lot of documents, and this is the kind of osmosis that I don't really get to have now.",
+          "highlight": "osmosis"
+        },
+        {
+          "word": "wither",
+          "kkPhonetic": "/ˈwɪðɚ/",
+          "partOfSpeech": "verb",
+          "level": "C2",
+          "meaningZh": "枯萎；漸漸萎縮",
+          "example": "Or knowing being in in the course itself that it gives so much more, I do fear that, especially in the UK where there's been a general trend in the reduction of language choices at GCSE and as an A-level, that it's going to also wither away at a degree level, which which can then have a negative impact overall in the job market.",
+          "highlight": "wither"
+        },
+        {
+          "word": "complementary",
+          "kkPhonetic": "/ˌkɑmpləˈmɛntri/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "互補的",
+          "example": "My advice would be to still follow your dreams, follow your passions, but make sure that what you are get, do your research, of course, but make sure that the subjects that your degree has to offer are complementary.",
+          "highlight": "complementary"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "throw into the deep end",
+          "highlight": "thrown into the deep end",
+          "meaningZh": "被推入陌生且具挑戰性的環境中",
+          "example": "So, I would say that, in terms of it being, I think there's still a lot of uncertainty in the whole of of what's happening, so being in the forefront of entrepreneurship and being thrown into the deep end, what I love about my college is that, that they are constant- constantly innovating."
+        },
+        {
+          "phrase": "lag behind",
+          "highlight": "lagging behind",
+          "meaningZh": "落後；跟不上進度",
+          "example": "I feel like the law industry is generally kind of lagging behind maybe in the implementation of these new modern AI technologies, which is good for us starting out in this industry, because then we can kind of join it and actually spur it on and be the kind of trailblazers in that sense."
+        },
+        {
+          "phrase": "grunt work",
+          "highlight": "grunt work",
+          "meaningZh": "繁重單調的基礎工作",
+          "example": "20 years ago, people in my situation, sort of a future trainee solicitor, they'd be preparing for actually doing a lot of grunt work, and they have told me how much they've learned from sorting through a lot of documents, and this is the kind of osmosis that I don't really get to have now."
+        },
+        {
+          "phrase": "squeeze out",
+          "highlight": "squeezed out",
+          "meaningZh": "被擠出（市場）；被淘汰",
+          "example": "Yeah, I I do think that across a lot of industries, there will be a polarization, so it will be the most elite firms or most elite companies that will be able to sort of source the best AI technology and to train their people to be able to harness that AI technology, and I think unfortunately that that would mean some maybe small, medium enterprises or firms might be squeezed out."
+        },
+        {
+          "phrase": "sweeping comment",
+          "highlight": "sweeping comments",
+          "meaningZh": "一概而論的言論",
+          "example": "It's really hard in this kind of discussion to make any kind of sweeping comments across across industry, because, you know, if you're someone who has prospects in the film industry and you're in the visual effects industry, I mean look out."
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/3kTyx14R0ssOlIfdo5sGRk"
+}
