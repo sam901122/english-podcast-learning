@@ -86,14 +86,12 @@ function speakText(text = '') {
   }
 }
 
-function bindSpeakButtons(root = app) {
-  root.querySelectorAll('.speak-word:not(.copy-word)').forEach(button => {
+function bindStudyActions(root = app) {
+  root.querySelectorAll('[data-speak]').forEach(button => {
     button.addEventListener('click', () => speakText(button.dataset.speak));
   });
-}
 
-function bindCopyButtons(root = app) {
-  root.querySelectorAll('.copy-word').forEach(button => {
+  root.querySelectorAll('[data-copy]').forEach(button => {
     button.addEventListener('click', async () => {
       await navigator.clipboard.writeText(button.dataset.copy);
       button.innerHTML = copiedIcon;
@@ -113,19 +111,19 @@ function renderStudySet(studySet = {}) {
   const phrases = studySet.phrases || [];
   return `
     <section><h3>今日單字</h3><div class="cards">${vocabulary.map(item => `
-      <div class="card"><div class="word-row"><strong>${escapeHtml(item.word)}</strong><button class="speak-word" type="button" data-speak="${escapeHtml(item.word)}" aria-label="Pronounce ${escapeHtml(item.word)}">${speakerIcon}</button><button class="speak-word copy-word" type="button" data-copy="${escapeHtml(item.word)}" aria-label="複製 ${escapeHtml(item.word)}">${copyIcon}</button><span>${escapeHtml(item.level)} · ${escapeHtml(item.partOfSpeech)}</span></div>
+      <div class="card"><div class="word-row"><strong>${escapeHtml(item.word)}</strong><button class="word-action" type="button" data-speak="${escapeHtml(item.word)}" aria-label="Pronounce ${escapeHtml(item.word)}">${speakerIcon}</button><button class="word-action copy-word" type="button" data-copy="${escapeHtml(item.word)}" aria-label="複製 ${escapeHtml(item.word)}">${copyIcon}</button><span>${escapeHtml(item.level)} · ${escapeHtml(item.partOfSpeech)}</span></div>
       <p class="phonetic" lang="en">${escapeHtml(item.kkPhonetic || '')}</p>
       <p>${escapeHtml(item.meaningZh)}</p>
       <blockquote lang="en">${highlightTerm(item.example, item.highlight || item.word)}</blockquote></div>`).join('')}</div></section>
     ${phrases.length ? `<section><h3>實用片語</h3><div class="cards">${phrases.map(item => `
-      <div class="card"><div class="phrase-row"><strong>${escapeHtml(item.phrase)}</strong><button class="speak-word" type="button" data-speak="${escapeHtml(item.phrase)}" aria-label="Pronounce ${escapeHtml(item.phrase)}">${speakerIcon}</button></div><p>${escapeHtml(item.meaningZh)}</p>
+      <div class="card"><div class="phrase-row"><strong>${escapeHtml(item.phrase)}</strong><button class="word-action" type="button" data-speak="${escapeHtml(item.phrase)}" aria-label="Pronounce ${escapeHtml(item.phrase)}">${speakerIcon}</button></div><p>${escapeHtml(item.meaningZh)}</p>
       <blockquote lang="en">${highlightTerm(item.example, item.highlight || item.phrase)}</blockquote></div>`).join('')}</div></section>` : ''}`;
 }
 
 async function loadEpisode(id) {
   app.innerHTML = '<p class="status">正在載入學習筆記⋯</p>';
   const [episodeResponse, indexResponse] = await Promise.all([
-    fetch(`data/episodes/${encodeURIComponent(id)}.json`),
+    fetch(`data/episodes/${encodeURIComponent(id)}.json`, { cache: 'no-store' }),
     fetch('data/episodes.json', { cache: 'no-store' })
   ]);
   if (!episodeResponse.ok) throw new Error('無法讀取這集內容');
@@ -188,8 +186,7 @@ async function loadEpisode(id) {
     levelButtons.forEach(button => {
       button.setAttribute('aria-pressed', String(button.dataset.studyLevel === studyLevel));
     });
-    bindSpeakButtons(studyContent);
-    bindCopyButtons(studyContent);
+    bindStudyActions(studyContent);
   };
   levelButtons.forEach(button => {
     button.addEventListener('click', () => showStudyLevel(button.dataset.studyLevel));

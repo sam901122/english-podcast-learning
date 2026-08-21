@@ -2,14 +2,12 @@ name: Update daily podcast
 
 on:
   schedule:
-    - cron: "0 8 * * 2-6"
+    - cron: "5 6,8 * * 2-6"
       timezone: "Asia/Taipei"
   workflow_dispatch:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
   group: daily-podcast-update
@@ -18,9 +16,6 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
@@ -29,6 +24,7 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - name: Fetch and process the newest episode
+        id: podcast
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           TRANSCRIPTION_MODEL: gemini-3.6-flash
@@ -43,19 +39,16 @@ jobs:
             echo "::error title=Podcast update failed::$message"
             exit "$status"
           fi
+          if [ -n "$(git status --porcelain -- site/data)" ]; then
+            echo "updated=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "updated=false" >> "$GITHUB_OUTPUT"
+          fi
       - name: Commit generated notes
+        if: steps.podcast.outputs.updated == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add site/data
-          git diff --cached --quiet || git commit -m "content: add latest learning notes"
+          git commit -m "content: add latest learning notes"
           git push
-      - uses: actions/configure-pages@v5
-        with:
-          enablement: true
-      - uses: actions/upload-pages-artifact@v4
-        with:
-          path: site
-      - name: Deploy updated site
-        id: deployment
-        uses: actions/deploy-pages@v4

@@ -48,9 +48,9 @@ STUDY_LEVELS = {
     "topic": {
         "label": "topic-focused",
         "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
-        "guidance": "words, short terms, and proper names essential for understanding this episode's subject",
-        "vocabulary_min": 5,
-        "vocabulary_max": 10,
+        "guidance": "place names and words or short terms closely tied to this episode's subject",
+        "vocabulary_min": 3,
+        "vocabulary_max": 15,
         "phrase_count": 0,
     },
 }
@@ -299,7 +299,12 @@ Transcript:
     return client.generate_json(prompt=prompt, schema=schema["schema"])
 
 
-def analyze_study_level(client, transcript: str, study_level: str) -> dict:
+def analyze_study_level(
+    client,
+    transcript: str,
+    study_level: str,
+    excluded_words: list[str] | None = None,
+) -> dict:
     config = STUDY_LEVELS[study_level]
     item_properties = {
         "word": {"type": "string"},
@@ -357,11 +362,16 @@ def analyze_study_level(client, transcript: str, study_level: str) -> dict:
 contiguous surface form that appears in `example` (for example, phrase `take a step back` may highlight
 `taking a step back`)."""
     else:
+        exclusions = ", ".join(excluded_words or []) or "(none)"
         selection_instructions = f"""Choose between {config['vocabulary_min']} and {config['vocabulary_max']} {config['guidance']}.
-Prioritize subject-specific terminology, key concepts, and important people, places, countries, organisations,
-laws, events, or cultural references. A vocabulary item may be a single word, a short technical term, or a
-proper name. Do not choose generic vocabulary merely to reach the maximum; return fewer items when fewer than
-{config['vocabulary_max']} genuinely useful topic terms appear in the transcript. Do not return phrases."""
+Use this priority order:
+1. Include useful place names that appear in the transcript, such as cities, regions, countries, parks, or landmarks.
+2. Then include only words or short terms that are closely and specifically connected to the episode's subject.
+
+For an everyday subject with few genuinely topic-specific terms, return a short list and do not pad it with generic
+vocabulary. A vocabulary item may be a single word, a short technical term, or a proper place name. Do not return phrases.
+Do not select any word already used in the practical or advanced vocabulary, including a capitalization
+variant or trivial inflection. Excluded practical and advanced words: {exclusions}"""
         phrase_instructions = ""
     prompt = f"""Create one {config['label']} English study set from this podcast transcript.
 {selection_instructions}
@@ -383,10 +393,15 @@ Transcript:
 
 def analyze(client, episode: dict, transcript: str) -> dict:
     notes = summarize(client, episode, transcript)
-    notes["studySets"] = {
-        study_level: analyze_study_level(client, transcript, study_level)
-        for study_level in STUDY_LEVELS
-    }
+    practical = analyze_study_level(client, transcript, "practical")
+    advanced = analyze_study_level(client, transcript, "advanced")
+    excluded_words = [
+        item["word"]
+        for study_set in (practical, advanced)
+        for item in study_set["vocabulary"]
+    ]
+    topic = analyze_study_level(client, transcript, "topic", excluded_words)
+    notes["studySets"] = {"practical": practical, "advanced": advanced, "topic": topic}
     return notes
 
 
@@ -503,11 +518,29 @@ def prepare_vocabulary(client, notes: dict) -> dict:
     return notes
 
 
+def filter_topic_duplicates(notes: dict) -> dict:
+    study_sets = notes.get("studySets", {})
+    topic = study_sets.get("topic")
+    if not topic:
+        return notes
+    used_words = {
+        " ".join(item["word"].casefold().split())
+        for study_level in ("practical", "advanced")
+        for item in study_sets.get(study_level, {}).get("vocabulary", [])
+    }
+    topic["vocabulary"] = [
+        item
+        for item in topic["vocabulary"]
+        if " ".join(item["word"].casefold().split()) not in used_words
+    ]
+    return notes
+
+
 def validate_notes(notes: dict) -> None:
     for study_level, study_set in notes["studySets"].items():
         vocabulary_count = len(study_set["vocabulary"])
         phrases = study_set.get("phrases", [])
-        expected_vocabulary = 5 <= vocabulary_count <= 10 if study_level == "topic" else vocabulary_count == 10
+        expected_vocabulary = 3 <= vocabulary_count <= 15 if study_level == "topic" else vocabulary_count == 10
         expected_phrases = len(phrases) == 0 if study_level == "topic" else len(phrases) == 5
         if not expected_vocabulary or not expected_phrases:
             raise ValueError(f"{study_level} study set has an unexpected item count")
@@ -592,6 +625,7 @@ def main() -> int:
         transcript = remove_advertising(client, episode, transcript)
         notes = analyze(client, episode, transcript)
         notes = prepare_vocabulary(client, notes)
+        notes = filter_topic_duplicates(notes)
         validate_notes(notes)
     save_episode(episode, notes, index)
     print(f"Published learning notes for {episode['id']}")
