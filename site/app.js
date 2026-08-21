@@ -1,9 +1,4 @@
 const app = document.querySelector('#app');
-const studyLevelOptions = [
-  { id: 'basic', label: '初級' },
-  { id: 'intermediate', label: '中級' },
-  { id: 'advanced', label: '高級' }
-];
 let selectedStudyLevel = 'advanced';
 
 const escapeHtml = (value = '') => value.replace(/[&<>'"]/g, char => ({
@@ -37,6 +32,17 @@ const speakerIcon = `
     <path d="M11 5 6 9H3v6h3l5 4V5Z"></path>
     <path d="M15.5 8.5a5 5 0 0 1 0 7"></path>
     <path d="M18.5 5.5a9 9 0 0 1 0 13"></path>
+  </svg>`;
+
+const copyIcon = `
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <rect x="9" y="9" width="11" height="11" rx="2"></rect>
+    <path d="M15 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h3"></path>
+  </svg>`;
+
+const copiedIcon = `
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="m5 12 4 4L19 6"></path>
   </svg>`;
 
 const speech = 'speechSynthesis' in window ? window.speechSynthesis : null;
@@ -81,8 +87,24 @@ function speakText(text = '') {
 }
 
 function bindSpeakButtons(root = app) {
-  root.querySelectorAll('.speak-word').forEach(button => {
+  root.querySelectorAll('.speak-word:not(.copy-word)').forEach(button => {
     button.addEventListener('click', () => speakText(button.dataset.speak));
+  });
+}
+
+function bindCopyButtons(root = app) {
+  root.querySelectorAll('.copy-word').forEach(button => {
+    button.addEventListener('click', async () => {
+      await navigator.clipboard.writeText(button.dataset.copy);
+      button.innerHTML = copiedIcon;
+      button.classList.add('copied');
+      button.setAttribute('aria-label', `${button.dataset.copy} 已複製`);
+      window.setTimeout(() => {
+        button.innerHTML = copyIcon;
+        button.classList.remove('copied');
+        button.setAttribute('aria-label', `複製 ${button.dataset.copy}`);
+      }, 1500);
+    });
   });
 }
 
@@ -91,13 +113,13 @@ function renderStudySet(studySet = {}) {
   const phrases = studySet.phrases || [];
   return `
     <section><h3>今日單字</h3><div class="cards">${vocabulary.map(item => `
-      <div class="card"><div class="word-row"><strong>${escapeHtml(item.word)}</strong><button class="speak-word" type="button" data-speak="${escapeHtml(item.word)}" aria-label="Pronounce ${escapeHtml(item.word)}">${speakerIcon}</button><span>${escapeHtml(item.level)} · ${escapeHtml(item.partOfSpeech)}</span></div>
+      <div class="card"><div class="word-row"><strong>${escapeHtml(item.word)}</strong><button class="speak-word" type="button" data-speak="${escapeHtml(item.word)}" aria-label="Pronounce ${escapeHtml(item.word)}">${speakerIcon}</button><button class="speak-word copy-word" type="button" data-copy="${escapeHtml(item.word)}" aria-label="複製 ${escapeHtml(item.word)}">${copyIcon}</button><span>${escapeHtml(item.level)} · ${escapeHtml(item.partOfSpeech)}</span></div>
       <p class="phonetic" lang="en">${escapeHtml(item.kkPhonetic || '')}</p>
       <p>${escapeHtml(item.meaningZh)}</p>
       <blockquote lang="en">${highlightTerm(item.example, item.highlight || item.word)}</blockquote></div>`).join('')}</div></section>
-    <section><h3>實用片語</h3><div class="cards">${phrases.map(item => `
+    ${phrases.length ? `<section><h3>實用片語</h3><div class="cards">${phrases.map(item => `
       <div class="card"><div class="phrase-row"><strong>${escapeHtml(item.phrase)}</strong><button class="speak-word" type="button" data-speak="${escapeHtml(item.phrase)}" aria-label="Pronounce ${escapeHtml(item.phrase)}">${speakerIcon}</button></div><p>${escapeHtml(item.meaningZh)}</p>
-      <blockquote lang="en">${highlightTerm(item.example, item.highlight || item.phrase)}</blockquote></div>`).join('')}</div></section>`;
+      <blockquote lang="en">${highlightTerm(item.example, item.highlight || item.phrase)}</blockquote></div>`).join('')}</div></section>` : ''}`;
 }
 
 async function loadEpisode(id) {
@@ -112,6 +134,16 @@ async function loadEpisode(id) {
   const episodeIndex = episodes.findIndex(item => item.id === id);
   const previousEpisode = episodeIndex >= 0 ? episodes[episodeIndex + 1] : null;
   const nextEpisode = episodeIndex > 0 ? episodes[episodeIndex - 1] : null;
+  const hasNewStudySets = Boolean(episode.studySets?.practical && episode.studySets?.topic);
+  const studyLevelOptions = hasNewStudySets ? [
+    { id: 'practical', label: '實用' },
+    { id: 'advanced', label: '進階' },
+    { id: 'topic', label: '主題' }
+  ] : [
+    { id: 'basic', label: '初級' },
+    { id: 'intermediate', label: '中級' },
+    { id: 'advanced', label: '高級' }
+  ];
   app.innerHTML = `
     <article>
       <button class="back" type="button">← 所有集數</button>
@@ -124,8 +156,8 @@ async function loadEpisode(id) {
       <section><h3>中文摘要</h3><p>${escapeHtml(episode.summaryZh)}</p></section>
       <section><h3>English summary</h3><p lang="en">${escapeHtml(episode.summaryEn)}</p></section>
       <div class="study-toolbar">
-        <h3>學習難度</h3>
-        <div class="level-switch" role="group" aria-label="選擇學習難度">
+        <h3>${hasNewStudySets ? '學習分類' : '學習難度'}</h3>
+        <div class="level-switch" role="group" aria-label="${hasNewStudySets ? '選擇學習分類' : '選擇學習難度'}">
           ${studyLevelOptions.map(option => `<button type="button" data-study-level="${option.id}" aria-pressed="${option.id === selectedStudyLevel}">${option.label}</button>`).join('')}
         </div>
       </div>
@@ -157,6 +189,7 @@ async function loadEpisode(id) {
       button.setAttribute('aria-pressed', String(button.dataset.studyLevel === studyLevel));
     });
     bindSpeakButtons(studyContent);
+    bindCopyButtons(studyContent);
   };
   levelButtons.forEach(button => {
     button.addEventListener('click', () => showStudyLevel(button.dataset.studyLevel));

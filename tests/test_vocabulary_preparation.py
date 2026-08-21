@@ -10,8 +10,8 @@ from scripts.update_podcast import (
 )
 
 
-def make_study_set(level):
-    return {
+def make_study_set(level, vocabulary_count=10, phrase_count=5):
+    study_set = {
         "vocabulary": [
             {
                 "word": f"word-{index}",
@@ -21,18 +21,20 @@ def make_study_set(level):
                 "meaningZh": "繁體中文解釋",
                 "example": f"This sentence contains word-{index}.",
             }
-            for index in range(10)
+            for index in range(vocabulary_count)
         ],
-        "phrases": [
+    }
+    if phrase_count:
+        study_set["phrases"] = [
             {
                 "phrase": f"phrase-{index}",
                 "highlight": f"phrase-{index}",
                 "meaningZh": "繁體中文解釋",
                 "example": f"This sentence contains phrase-{index}.",
             }
-            for index in range(5)
-        ],
-    }
+            for index in range(phrase_count)
+        ]
+    return study_set
 
 
 class AnalyzeTests(unittest.TestCase):
@@ -44,8 +46,8 @@ class AnalyzeTests(unittest.TestCase):
                 "summaryEn": "English summary",
             },
             make_study_set("A2"),
-            make_study_set("B1"),
             make_study_set("C1"),
+            make_study_set("B2", vocabulary_count=7, phrase_count=0),
         ]
 
         notes = analyze(
@@ -55,22 +57,28 @@ class AnalyzeTests(unittest.TestCase):
         )
 
         self.assertEqual(client.generate_json.call_count, 4)
-        self.assertEqual(set(notes["studySets"]), {"basic", "intermediate", "advanced"})
+        self.assertEqual(set(notes["studySets"]), {"practical", "advanced", "topic"})
         prompts = [call.kwargs["prompt"] for call in client.generate_json.call_args_list]
         self.assertIn("Taiwan Traditional Chinese only", prompts[0])
         self.assertIn("本集 BBC 節目《What in the World》探討", prompts[0])
-        self.assertIn("beginner English study set", prompts[1])
-        self.assertIn("intermediate English study set", prompts[2])
-        self.assertIn("advanced English study set", prompts[3])
+        self.assertIn("practical English study set", prompts[1])
+        self.assertIn("advanced English study set", prompts[2])
+        self.assertIn("topic-focused English study set", prompts[3])
+        self.assertIn("Do not choose generic vocabulary merely to reach the maximum", prompts[3])
+        self.assertIn("Do not return phrases", prompts[3])
         for prompt in prompts:
             self.assertIn("Traditional Chinese", prompt)
 
-        for call in client.generate_json.call_args_list[1:]:
+        for call in client.generate_json.call_args_list[1:3]:
             properties = call.kwargs["schema"]["properties"]
             self.assertEqual(properties["vocabulary"]["minItems"], 10)
             self.assertEqual(properties["vocabulary"]["maxItems"], 10)
             self.assertEqual(properties["phrases"]["minItems"], 5)
             self.assertEqual(properties["phrases"]["maxItems"], 5)
+        topic_properties = client.generate_json.call_args_list[3].kwargs["schema"]["properties"]
+        self.assertEqual(topic_properties["vocabulary"]["minItems"], 5)
+        self.assertEqual(topic_properties["vocabulary"]["maxItems"], 10)
+        self.assertNotIn("phrases", topic_properties)
 
 
 class AdvertisingRemovalTests(unittest.TestCase):

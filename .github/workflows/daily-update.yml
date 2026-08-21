@@ -33,7 +33,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           TRANSCRIPTION_MODEL: gemini-3.6-flash
           ANALYSIS_MODEL: gemini-3.6-flash
-          WORD_FORM_MODEL: gemini-3.5-flash-lite
+          WORD_FORM_MODEL: gemini-3.6-flash
         run: |
           set +e
           python scripts/update_podcast.py 2>&1 | tee /tmp/podcast-update.log

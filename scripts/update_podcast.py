@@ -26,23 +26,32 @@ SPOTIFY_SHOW_ID = "2mPQrJT37b3iXf4zxlnPOD"
 SPOTIFY_EMBED_URL = f"https://open.spotify.com/embed/show/{SPOTIFY_SHOW_ID}"
 USER_AGENT = "english-podcast-learning-project/1.0"
 DEFAULT_GEMINI_MODEL = "gemini-3.6-flash"
-DEFAULT_GEMINI_WORD_FORM_MODEL = "gemini-3.5-flash-lite"
+DEFAULT_GEMINI_WORD_FORM_MODEL = "gemini-3.6-flash"
 SUMMARY_ZH_PREFIX = "本集 BBC 節目《What in the World》探討"
 STUDY_LEVELS = {
-    "basic": {
-        "label": "beginner",
+    "practical": {
+        "label": "practical",
         "levels": ["A2", "B1"],
         "guidance": "common, concrete, broadly useful words and everyday phrases",
-    },
-    "intermediate": {
-        "label": "intermediate",
-        "levels": ["B1", "B2"],
-        "guidance": "moderately challenging words and idiomatic phrases useful in news and conversation",
+        "vocabulary_min": 10,
+        "vocabulary_max": 10,
+        "phrase_count": 5,
     },
     "advanced": {
         "label": "advanced",
-        "levels": ["C1", "C2"],
-        "guidance": "precise, nuanced, less common words and sophisticated phrases",
+        "levels": ["B2", "C1", "C2"],
+        "guidance": "precise, nuanced words and sophisticated phrases useful in news and discussion",
+        "vocabulary_min": 10,
+        "vocabulary_max": 10,
+        "phrase_count": 5,
+    },
+    "topic": {
+        "label": "topic-focused",
+        "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+        "guidance": "words, short terms, and proper names essential for understanding this episode's subject",
+        "vocabulary_min": 5,
+        "vocabulary_max": 10,
+        "phrase_count": 0,
     },
 }
 
@@ -306,47 +315,59 @@ def analyze_study_level(client, transcript: str, study_level: str) -> dict:
         "meaningZh": {"type": "string"},
         "example": {"type": "string"},
     }
+    study_properties = {
+        "vocabulary": {
+            "type": "array",
+            "minItems": config["vocabulary_min"],
+            "maxItems": config["vocabulary_max"],
+            "items": {
+                "type": "object",
+                "additionalProperties": False,
+                "properties": item_properties,
+                "required": list(item_properties),
+            },
+        },
+    }
+    if config["phrase_count"]:
+        study_properties["phrases"] = {
+            "type": "array",
+            "minItems": config["phrase_count"],
+            "maxItems": config["phrase_count"],
+            "items": {
+                "type": "object",
+                "additionalProperties": False,
+                "properties": phrase_properties,
+                "required": list(phrase_properties),
+            },
+        }
     schema = {
         "name": f"{study_level}_study_set",
         "strict": True,
         "schema": {
             "type": "object",
             "additionalProperties": False,
-            "properties": {
-                "vocabulary": {
-                    "type": "array",
-                    "minItems": 10,
-                    "maxItems": 10,
-                    "items": {
-                        "type": "object",
-                        "additionalProperties": False,
-                        "properties": item_properties,
-                        "required": list(item_properties),
-                    },
-                },
-                "phrases": {
-                    "type": "array",
-                    "minItems": 5,
-                    "maxItems": 5,
-                    "items": {
-                        "type": "object",
-                        "additionalProperties": False,
-                        "properties": phrase_properties,
-                        "required": list(phrase_properties),
-                    },
-                },
-            },
-            "required": ["vocabulary", "phrases"],
+            "properties": study_properties,
+            "required": list(study_properties),
         },
     }
+    if config["phrase_count"]:
+        selection_instructions = f"""Choose exactly 10 {config['guidance']} as vocabulary, at CEFR {"-".join(config['levels'])}, and exactly
+{config['phrase_count']} useful phrases at a comparable difficulty. Items may overlap with study sets created by other requests."""
+        phrase_instructions = """For phrases, `phrase` is the reusable learning form and `highlight` is the exact
+contiguous surface form that appears in `example` (for example, phrase `take a step back` may highlight
+`taking a step back`)."""
+    else:
+        selection_instructions = f"""Choose between {config['vocabulary_min']} and {config['vocabulary_max']} {config['guidance']}.
+Prioritize subject-specific terminology, key concepts, and important people, places, countries, organisations,
+laws, events, or cultural references. A vocabulary item may be a single word, a short technical term, or a
+proper name. Do not choose generic vocabulary merely to reach the maximum; return fewer items when fewer than
+{config['vocabulary_max']} genuinely useful topic terms appear in the transcript. Do not return phrases."""
+        phrase_instructions = ""
     prompt = f"""Create one {config['label']} English study set from this podcast transcript.
-Choose exactly 10 {config['guidance']} as vocabulary, at CEFR {"-".join(config['levels'])}, and exactly
-5 useful phrases at a comparable difficulty. Items may overlap with study sets created by other requests.
+{selection_instructions}
 
 Every vocabulary `word` must be the exact surface form that appears in its `example`; do not convert it to
-a dictionary form yet. For phrases, `phrase` is the reusable learning form and `highlight` is the exact
-contiguous surface form that appears in `example` (for example, phrase `take a step back` may highlight
-`taking a step back`).
+a dictionary form yet. {phrase_instructions}
 Each `example` must be one complete original sentence from the transcript containing that exact word or
 highlight. Do not rewrite examples and do not return multiple sentences or a paragraph.
 
@@ -418,6 +439,8 @@ ascending `id` order. Never omit, duplicate, merge, or add an item.
 For each item independently:
 - Change an ordinary inflected verb to its dictionary base form.
 - Change an ordinary plural count noun to singular.
+- Use lowercase for an ordinary vocabulary word when it is capitalized only because it begins the example sentence.
+- Preserve capitalization for proper names, acronyms, and words whose standard dictionary form requires it.
 - Keep an established adjective, adverb, noun, proper name, hyphenated term, or fixed lexical form unchanged.
 - Keep the original when normalization is uncertain or would make the learning item less natural in context.
 - Never correct spelling, rewrite the example, change the meaning, or substitute a synonym.
@@ -465,8 +488,8 @@ def prepare_vocabulary(client, notes: dict) -> dict:
     if study_sets:
         vocabulary = [
             item
-            for study_level in STUDY_LEVELS
-            for item in study_sets[study_level]["vocabulary"]
+            for study_set in study_sets.values()
+            for item in study_set["vocabulary"]
         ]
     else:
         vocabulary = notes.get("vocabulary", [])
@@ -481,16 +504,19 @@ def prepare_vocabulary(client, notes: dict) -> dict:
 
 
 def validate_notes(notes: dict) -> None:
-    for study_level in STUDY_LEVELS:
-        study_set = notes["studySets"][study_level]
-        if len(study_set["vocabulary"]) != 10 or len(study_set["phrases"]) != 5:
+    for study_level, study_set in notes["studySets"].items():
+        vocabulary_count = len(study_set["vocabulary"])
+        phrases = study_set.get("phrases", [])
+        expected_vocabulary = 5 <= vocabulary_count <= 10 if study_level == "topic" else vocabulary_count == 10
+        expected_phrases = len(phrases) == 0 if study_level == "topic" else len(phrases) == 5
+        if not expected_vocabulary or not expected_phrases:
             raise ValueError(f"{study_level} study set has an unexpected item count")
         for item in study_set["vocabulary"]:
             if item["highlight"].casefold() not in item["example"].casefold():
                 raise ValueError(
                     f"Vocabulary highlight {item['highlight']!r} is absent from its example"
                 )
-        for item in study_set["phrases"]:
+        for item in phrases:
             if item["highlight"].casefold() not in item["example"].casefold():
                 raise ValueError(
                     f"Phrase highlight {item['highlight']!r} is absent from its example"
