@@ -5,132 +5,132 @@
   "publishedAt": "2026-08-19T13:30:00+00:00",
   "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct992c",
   "spotifyUrl": "https://open.spotify.com/episode/4TVVivlZMLEEC0Bz3l6E8V",
-  "summaryZh": "本集 BBC 節目《What in the World》探討社群媒體上熱門的「黃體期變醜」 (luteal uglies) 現象，以及女性在月經黃體期所面臨的生理與心理變化。節目邀請倫敦大學學院 (UCL) 副教授 Helen O'Neill 博士拆解背後的科學機制，指出黃體期因雌激素與黃體素急劇下降，導致油脂分泌增加、水腫與痘痘生成，並影響腦部血清素與受體功能，引發情緒低落、焦慮、腦霧與注意力不集中。 O'Neill 博士建議女性透過記錄月經週期、維持適度運動、改善睡眠衛生並避免飲酒來應對，同時也呼籲男性主動了解女性生理週期，給予更多理解與支持。",
-  "summaryEn": "In this episode of What in the World, host Hannah Gelbart explores the social media trend known as the \"luteal uglies\"—a term describing the physical and emotional changes many women experience during the luteal phase of their menstrual cycle. Featuring personal accounts from women globally and expert insights from Dr. Helen O'Neill of University College London, the episode explains how sudden drops in estrogen and progesterone trigger symptoms like acne, bloating, mood swings, fatigue, and brain fog. Dr. O'Neill offers practical coping advice, such as tracking menstrual cycles, maintaining light exercise, practicing good sleep hygiene, and avoiding alcohol, while encouraging men to educate themselves to better support the women in their lives.",
+  "summaryZh": "本集 BBC 節目《What in the World》探討社群媒體上熱議的 luteal uglies 現象，即女性在經前黃體期面臨的身心變化。節目聽取來自加拿大、越南、菲律賓與英國女性的親身經歷，包含痘痘、腹脹、體重增加 1 至 1.5 公斤、疲勞、情緒波動與腦霧等症狀。倫敦大學學院 UCL 生殖與分子遺傳學副教授 Helen O'Neill 博士解釋，排卵後雌激素與黃體素濃度的急劇下降，會增加皮脂分泌並影響血清素與大腦功能，進而導致皮膚惡化與情緒低落。對此， O'Neill 博士建議女性透過追蹤月經週期、維持適度運動、改善睡眠衛生與避免飲酒來應對，同時鼓勵男性主動了解女性生理週期，給予身邊女性更多支持。",
+  "summaryEn": "In this episode of What in the World, presenter Hannah Gelbart explores the viral trend known as the \"luteal uglies\"—the physical and emotional changes women experience during the luteal phase preceding their periods. Women from Canada, Vietnam, the Philippines, and the UK share symptoms such as acne, bloating, water weight gain, fatigue, brain fog, and mood swings. Dr. Helen O'Neill, an associate professor at University College London, explains that a rapid drop in estrogen and progesterone after ovulation alters skin oil production, serotonin support, and brain function. Dr. O'Neill advises against bad social media tips and offers practical coping strategies, including tracking menstrual cycles, maintaining moderate exercise, practicing good sleep hygiene, and avoiding alcohol. She also encourages men to educate themselves about the menstrual cycle to better support the women in their lives.",
   "studySets": {
     "practical": {
       "vocabulary": [
         {
           "word": "confidence",
-          "kkPhonetic": "/ˈkɑnfədəns/",
+          "kkPhonetic": "/'kɑnfədəns/",
           "partOfSpeech": "noun",
           "level": "B1",
-          "meaningZh": "信心",
+          "meaningZh": "信心；自信",
           "example": "I overthink everything and my confidence just drops.",
           "highlight": "confidence"
         },
         {
-          "word": "cycle",
-          "kkPhonetic": "/ˈsaɪkəl/",
+          "word": "experience",
+          "kkPhonetic": "/ɪk'spɪrɪəns/",
           "partOfSpeech": "noun",
           "level": "A2",
-          "meaningZh": "週期",
-          "example": "If you are a woman or you know one, you'll know about the ups and downs of the menstrual cycle.",
-          "highlight": "cycle"
+          "meaningZh": "經驗；經歷",
+          "example": "We've been hearing from some of you about your experiences.",
+          "highlight": "experiences"
+        },
+        {
+          "word": "favorite",
+          "kkPhonetic": "/'fevərɪt/",
+          "partOfSpeech": "adjective",
+          "level": "A2",
+          "meaningZh": "最喜愛的",
+          "example": "My usual favorite clothes won't fit like before because I gain around 1 to 1 and a half kilos of water weight at this time.",
+          "highlight": "favorite"
         },
         {
           "word": "motivation",
-          "kkPhonetic": "/ˌmoʊtɪˈveɪʃən/",
+          "kkPhonetic": "/ˌmotə'veʃən/",
           "partOfSpeech": "noun",
           "level": "B1",
-          "meaningZh": "動力",
+          "meaningZh": "動力；動機",
           "example": "I also notice I have less motivation and energy to do things like going to the gym.",
           "highlight": "motivation"
         },
         {
-          "word": "physical",
-          "kkPhonetic": "/ˈfɪzɪkəl/",
-          "partOfSpeech": "adjective",
-          "level": "A2",
-          "meaningZh": "身體的",
-          "example": "I thought it changed how we feel about how we looked in our emotions, but it does actually have a lot of physical changes to the body, too.",
-          "highlight": "physical"
-        },
-        {
-          "word": "patience",
-          "kkPhonetic": "/ˈpeɪʃəns/",
+          "word": "appearance",
+          "kkPhonetic": "/ə'pɪrəns/",
           "partOfSpeech": "noun",
           "level": "B1",
-          "meaningZh": "耐心",
-          "example": "And actually, when you get that shift, you really see a change in your concentration, you see an increase in irritability, your patience levels really go down, and it it seems so easy to attribute that to something just psychological.",
-          "highlight": "patience"
+          "meaningZh": "外貌；外表",
+          "example": "I didn't know that these hormonal shifts actually change our physical appearance.",
+          "highlight": "appearance"
         },
         {
-          "word": "insecure",
-          "kkPhonetic": "/ˌɪnsɪˈkjʊr/",
-          "partOfSpeech": "adjective",
-          "level": "B1",
-          "meaningZh": "缺乏自信的",
-          "example": "I just feel really ugly and insecure and I start feeling like the whole world is against me and nothing's working out for me.",
-          "highlight": "insecure"
-        },
-        {
-          "word": "advice",
-          "kkPhonetic": "/ədˈvaɪs/",
+          "word": "knowledge",
+          "kkPhonetic": "/'nɑlɪdʒ/",
           "partOfSpeech": "noun",
           "level": "A2",
-          "meaningZh": "建議",
-          "example": "So, obviously you can't trust the advice that you get from social media, not all of it anyway.",
-          "highlight": "advice"
+          "meaningZh": "知識",
+          "example": "Knowledge is really power when it comes to understanding that this is a transient phase and that it will be over in a few days.",
+          "highlight": "knowledge"
         },
         {
-          "word": "attention",
-          "kkPhonetic": "/əˈtɛnʃən/",
-          "partOfSpeech": "noun",
+          "word": "improve",
+          "kkPhonetic": "/ɪm'pruv/",
+          "partOfSpeech": "verb",
           "level": "A2",
-          "meaningZh": "關注",
-          "example": "The second thing that surprises me is that a phase in your menstrual cycle which every woman encounters every single month is now getting attention not because of its impact on your brain, on your mood, on your skin, but because of its impact on how you look.",
-          "highlight": "attention"
-        },
-        {
-          "word": "impact",
-          "kkPhonetic": "/ˈɪmpækt/",
-          "partOfSpeech": "noun",
-          "level": "B1",
-          "meaningZh": "影響",
-          "example": "So we actually know that estrogen and progesterone both have big impacts on our brain health.",
-          "highlight": "impacts"
+          "meaningZh": "改善；提升",
+          "example": "Do you have any advice or tips for how women can use this information to try and improve our lives, considering that our cycle is such an important part of it?",
+          "highlight": "improve"
         },
         {
           "word": "concern",
-          "kkPhonetic": "/kənˈsɝn/",
+          "kkPhonetic": "/kən'sɝn/",
           "partOfSpeech": "noun",
           "level": "B1",
-          "meaningZh": "疑慮",
+          "meaningZh": "擔憂；疑慮",
           "example": "And just one thing to add, which is that if you're listening to this and you've got concerns about your menstrual cycle, do speak to a doctor.",
           "highlight": "concerns"
+        },
+        {
+          "word": "conversation",
+          "kkPhonetic": "/ˌkɑnvɚ'seʃən/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "對話；交談",
+          "example": "I really value conversations that highlight how PMDD is more than 'just PMS.'",
+          "highlight": "conversations"
+        },
+        {
+          "word": "episode",
+          "kkPhonetic": "/'ɛpəˌsod/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "（節目的）集數；集",
+          "example": "As I mentioned, we have done loads of episodes on women's health issues on What in the World.",
+          "highlight": "episodes"
         }
       ],
       "phrases": [
         {
-          "phrase": "ups and downs",
-          "highlight": "ups and downs",
-          "meaningZh": "起伏",
-          "example": "If you are a woman or you know one, you'll know about the ups and downs of the menstrual cycle."
+          "phrase": "get into it",
+          "highlight": "get into it",
+          "meaningZh": "開始深入了解（或討論）",
+          "example": "So, let's get into it."
         },
         {
           "phrase": "out of nowhere",
           "highlight": "out of nowhere",
-          "meaningZh": "突然之間",
+          "meaningZh": "憑空出現；突然發生",
           "example": "I feel like my luteal phase kind of hits me out of nowhere every month."
         },
         {
-          "phrase": "in one sitting",
-          "highlight": "in one sitting",
-          "meaningZh": "一口氣",
-          "example": "I feel like I could eat all the cinnamon rolls in the world in one sitting."
-        },
-        {
           "phrase": "work out",
-          "highlight": "working out",
-          "meaningZh": "順利進行",
-          "example": "I just feel really ugly and insecure and I start feeling like the whole world is against me and nothing's working out for me."
+          "highlight": "working out for me",
+          "meaningZh": "順利發展；產生好結果",
+          "example": "I just feel really ugly and insecure, and I start feeling like the whole world is against me and nothing's working out for me."
         },
         {
           "phrase": "be hard on oneself",
-          "highlight": "hard on myself",
-          "meaningZh": "對自己太嚴苛",
-          "example": "I also feel less productive and so I start to get hard on myself."
+          "highlight": "get hard on myself",
+          "meaningZh": "對自己太過苛刻",
+          "example": "I'm less productive, or I also feel less productive, and so I start to get hard on myself."
+        },
+        {
+          "phrase": "take it easy",
+          "highlight": "take it easy",
+          "meaningZh": "放鬆休息；不給自己太大壓力",
+          "example": "But equally, that the idea that people would just relax and take it easy, I think it's actually important to maintain regular exercise, keep moving to keep your mood and your sleep and your your bloating kind of at bay."
         }
       ]
     },
@@ -138,38 +138,38 @@
       "vocabulary": [
         {
           "word": "gravitate",
-          "kkPhonetic": "/ˈɡrævəˌtet/",
+          "kkPhonetic": "/ˈɡrævəˌteɪt/",
           "partOfSpeech": "verb",
-          "level": "B2",
-          "meaningZh": "偏好、傾向於",
+          "level": "C1",
+          "meaningZh": "傾向於、被……吸引",
           "example": "I also get really nauseous, so I find that I gravitate more towards carbs and more basic foods.",
           "highlight": "gravitate"
         },
         {
+          "word": "dermatological",
+          "kkPhonetic": "/ˌdɝːmətəˈlɑːdʒɪkəl/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "皮膚學的、皮膚科的",
+          "example": "And so it makes you feel physically look worse from a dermatological perspective.",
+          "highlight": "dermatological"
+        },
+        {
           "word": "attribute",
-          "kkPhonetic": "/əˈtrɪbjut/",
+          "kkPhonetic": "/əˈtrɪbjət/",
           "partOfSpeech": "verb",
           "level": "B2",
           "meaningZh": "將……歸因於",
-          "example": "If we're able to attribute these changes, then suddenly we can understand them a little bit better.",
+          "example": "Your patience levels really go down and it it seems so easy to attribute that to something just psychological.",
           "highlight": "attribute"
         },
         {
-          "word": "dismiss",
-          "kkPhonetic": "/dɪsˈmɪs/",
-          "partOfSpeech": "verb",
-          "level": "B2",
-          "meaningZh": "輕視、不予理會",
-          "example": "I especially appreciate the focus on how easily symptoms can be misunderstood or dismissed.",
-          "highlight": "dismissed"
-        },
-        {
           "word": "demeaning",
-          "kkPhonetic": "/dɪˈminɪŋ/",
+          "kkPhonetic": "/dɪˈmiːnɪŋ/",
           "partOfSpeech": "adjective",
           "level": "C1",
-          "meaningZh": "貶低的、損害尊嚴的",
-          "example": "Helen, I have to say the term uglies is dividing opinion online, as we've been saying, some find it really helpful, others do find it a bit demeaning.",
+          "meaningZh": "貶低的、有損尊嚴的",
+          "example": "Others do find it a bit demeaning.",
           "highlight": "demeaning"
         },
         {
@@ -177,22 +177,22 @@
           "kkPhonetic": "/vaɪˈræləti/",
           "partOfSpeech": "noun",
           "level": "C1",
-          "meaningZh": "病毒式傳播、爆紅現象",
-          "example": "It kind of amazes me that it's gotten all of a sudden this virality around the luteal uglies, and what's strange for me on two aspects: one is that actually many people have said to me they've never heard of the luteal phase before this, women and men, women who have been going through this whole their whole lives.",
+          "meaningZh": "病毒式傳播、網路瘋傳",
+          "example": "It kind of amazes me that it's gotten all of a sudden this virality around the luteal uglies.",
           "highlight": "virality"
         },
         {
           "word": "garner",
-          "kkPhonetic": "/ˈɡɑrnɚ/",
+          "kkPhonetic": "/ˈɡɑːrnər/",
           "partOfSpeech": "verb",
           "level": "C1",
           "meaningZh": "獲得、吸引",
-          "example": "Like we really simplify it down to just making you look ugly and therefore it seems to be garnering more, I don't know, attention in in social media.",
+          "example": "And therefore, it seems to be garnering more, I don't know, attention in in social media.",
           "highlight": "garnering"
         },
         {
           "word": "appalling",
-          "kkPhonetic": "/əˈpɔlɪŋ/",
+          "kkPhonetic": "/əˈpɑːlɪŋ/",
           "partOfSpeech": "adjective",
           "level": "C1",
           "meaningZh": "令人震驚的、極糟糕的",
@@ -204,7 +204,7 @@
           "kkPhonetic": "/ˈtrænʃənt/",
           "partOfSpeech": "adjective",
           "level": "C1",
-          "meaningZh": "短暫的、轉瞬即逝的",
+          "meaningZh": "短暫的、暫時的",
           "example": "Knowledge is really power when it comes to understanding that this is a transient phase and that it will be over in a few days.",
           "highlight": "transient"
         },
@@ -213,7 +213,7 @@
           "kkPhonetic": "/ˈblaɪndˌsaɪd/",
           "partOfSpeech": "verb",
           "level": "C1",
-          "meaningZh": "措手不及的、始料未及的",
+          "meaningZh": "措手不及的、受到突如其來打擊的",
           "example": "You would be amazed how many people are caught blindsided by the emotional dysregulation, the lack of concentration, the brain fog, because they're not really tracking where they are in their menstrual cycle.",
           "highlight": "blindsided"
         },
@@ -221,145 +221,118 @@
           "word": "adherent",
           "kkPhonetic": "/ədˈhɪrənt/",
           "partOfSpeech": "adjective",
-          "level": "C1",
+          "level": "C2",
           "meaningZh": "遵循的、堅持的",
-          "example": "Sleep is a key one and I think all of us have some level of modifiable sleep hygiene that we could improve on, and that is less scrolling, less blue light, you know, just being a little bit more adherent to trying to enable yourself to sleep during that time a little bit better, or going to bed earlier.",
+          "example": "Sleep is a key one, and I think all of us have some level of modifiable sleep hygiene that we could improve on and that is less scrolling, less blue light, you know, just being a little bit more adherent to trying to enable yourself to sleep during that time a little bit better, or going to bed earlier.",
           "highlight": "adherent"
         }
       ],
       "phrases": [
         {
-          "phrase": "in one sitting",
-          "highlight": "in one sitting",
-          "meaningZh": "一口氣完成",
-          "example": "I feel like I could eat all the cinnamon rolls in the world in one sitting."
-        },
-        {
           "phrase": "out of nowhere",
           "highlight": "out of nowhere",
-          "meaningZh": "突如其來、毫無預警地",
+          "meaningZh": "突然之間、莫名其妙地",
           "example": "I feel like my luteal phase kind of hits me out of nowhere every month."
         },
         {
-          "phrase": "dial down",
-          "highlight": "dialed down",
-          "meaningZh": "調低、調降",
-          "example": "Obviously intensity really should be dialed down for many people at this stage."
+          "phrase": "be hard on oneself",
+          "highlight": "hard on myself",
+          "meaningZh": "對自己太過苛刻、責備自己",
+          "example": "I'm less productive, or I also feel less productive, and so I start to get hard on myself."
         },
         {
           "phrase": "keep at bay",
           "highlight": "at bay",
-          "meaningZh": "遏制、控制住",
-          "example": "I think it's actually important to maintain regular exercise, keep moving, to keep your mood and your sleep and your your bloating kind of at bay."
+          "meaningZh": "遏制、控制（不良狀況）",
+          "example": "But equally, that the idea that people would just relax and take it easy, I think it's actually important to maintain regular exercise, keep moving to keep your mood and your sleep and your your bloating kind of at bay."
         },
         {
           "phrase": "slot into place",
           "highlight": "slots into place",
-          "meaningZh": "豁然開朗、水到渠成",
+          "meaningZh": "（事情）就緒、變得順理成章",
           "example": "I can totally relate to that feeling where you're feeling awful in yourself and then suddenly your period comes and you just everything slots into place and you understand why you felt so rubbish."
+        },
+        {
+          "phrase": "at play",
+          "highlight": "at play",
+          "meaningZh": "在起作用、發揮影響",
+          "example": "Educate yourself on the hormones that are at play."
         }
       ]
     },
     "topic": {
       "vocabulary": [
         {
-          "word": "Vietnam",
-          "kkPhonetic": "/ˌviətˈnɑm/",
-          "partOfSpeech": "proper noun",
-          "level": "A2",
-          "meaningZh": "越南",
-          "example": "I'm an Australian and I live in Da Nang, Vietnam.",
-          "highlight": "Vietnam"
-        },
-        {
-          "word": "Toronto",
-          "kkPhonetic": "/təˈrɑnto/",
-          "partOfSpeech": "proper noun",
-          "level": "A2",
-          "meaningZh": "多倫多",
-          "example": "Hi, I'm Aaliyah from Toronto, Canada.",
-          "highlight": "Toronto"
-        },
-        {
-          "word": "Philippines",
-          "kkPhonetic": "/ˈfɪləˌpinz/",
-          "partOfSpeech": "proper noun",
-          "level": "A2",
-          "meaningZh": "菲律賓",
-          "example": "Hi, I'm Bella from the Philippines.",
-          "highlight": "Philippines"
-        },
-        {
           "word": "luteal",
           "kkPhonetic": "/ˈlutɪəl/",
-          "partOfSpeech": "adj.",
-          "level": "C2",
-          "meaningZh": "黃體期的",
-          "example": "Suddenly everyone's talking about the luteal uglies.",
-          "highlight": "luteal"
-        },
-        {
-          "word": "menstrual",
-          "kkPhonetic": "/ˈmɛnstrʊəl/",
-          "partOfSpeech": "adj.",
-          "level": "B2",
-          "meaningZh": "月經的",
-          "example": "If you are a woman or you know one, you'll know about the ups and downs of the menstrual cycle.",
-          "highlight": "menstrual"
-        },
-        {
-          "word": "follicular",
-          "kkPhonetic": "/fəˈlɪkjəlɚ/",
-          "partOfSpeech": "adj.",
-          "level": "C2",
-          "meaningZh": "濾泡期的",
-          "example": "But you might not have known the names for all the different phases - luteal, menstrual, follicular, ovulation - until now.",
-          "highlight": "follicular"
-        },
-        {
-          "word": "ovulation",
-          "kkPhonetic": "/ˌɑvjuˈleʃən/",
-          "partOfSpeech": "n.",
+          "partOfSpeech": "adjective",
           "level": "C1",
-          "meaningZh": "排卵",
-          "example": "But you might not have known the names for all the different phases - luteal, menstrual, follicular, ovulation - until now.",
-          "highlight": "ovulation"
+          "meaningZh": "黃體期的（指月經週期中排卵後至下次月經來潮前的階段）",
+          "example": "But you might not have known the names for all the different phases: luteal, menstrual, follicular, ovulation, until now.",
+          "highlight": "luteal"
         },
         {
           "word": "estrogen",
           "kkPhonetic": "/ˈɛstrədʒən/",
-          "partOfSpeech": "n.",
-          "level": "C1",
-          "meaningZh": "雌激素",
-          "example": "So actually, estrogen supports serotonin activity.",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "雌激素（影響女性生理與膚質特性的荷爾蒙）",
+          "example": "And it's that rapid drop that we see in our estrogen, and then our progesterone as well, that causes us to feel so different from every other part of our menstrual cycle.",
           "highlight": "estrogen"
         },
         {
           "word": "progesterone",
           "kkPhonetic": "/prəˈdʒɛstəˌron/",
-          "partOfSpeech": "n.",
+          "partOfSpeech": "noun",
           "level": "C2",
-          "meaningZh": "黃體素",
-          "example": "We know that progesterone, which is one of the hormones, actually increases the sebum or the oil production, and that is what causes both kind of fluid retention, swelling, but also when that is combined with a falling estrogen, which is actually related to keeping our skin plump and regulate the oil, it actually kind of creates this perfect environment for breakouts, especially along the jawline and the chin.",
+          "meaningZh": "黃體酮；孕酮（影響月經週期與油脂分泌的激素）",
+          "example": "And it's that rapid drop that we see in our estrogen, and then our progesterone as well, that causes us to feel so different from every other part of our menstrual cycle.",
           "highlight": "progesterone"
-        },
-        {
-          "word": "sebum",
-          "kkPhonetic": "/ˈsibəm/",
-          "partOfSpeech": "n.",
-          "level": "C2",
-          "meaningZh": "皮脂",
-          "example": "We know that progesterone, which is one of the hormones, actually increases the sebum or the oil production, and that is what causes both kind of fluid retention, swelling, but also when that is combined with a falling estrogen, which is actually related to keeping our skin plump and regulate the oil, it actually kind of creates this perfect environment for breakouts, especially along the jawline and the chin.",
-          "highlight": "sebum"
         },
         {
           "word": "serotonin",
           "kkPhonetic": "/ˌsɛrəˈtonɪn/",
-          "partOfSpeech": "n.",
-          "level": "C2",
-          "meaningZh": "血清素",
-          "example": "So serotonin is a chemical messenger in the brain and the body and it's known for regulating our mood and our sleep and our appetite and our digestion.",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "血清素（腦中調節情緒、睡眠與食慾的神經傳導物質）",
+          "example": "So, serotonin is a chemical messenger in the brain and the body, and it's known for regulating our mood and our sleep and our appetite and our digestion.",
           "highlight": "serotonin"
+        },
+        {
+          "word": "bloated",
+          "kkPhonetic": "/ˈblotɪd/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "發脹的；水腫的",
+          "example": "Even getting dressed feels different because I'm bloated and I suddenly don't feel like reaching out for clothes I normally love.",
+          "highlight": "bloated"
+        },
+        {
+          "word": "Vietnam",
+          "kkPhonetic": "/ˌvjɛtˈnɑm/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "越南，節目聽眾 Stacia 目前居住並分享自身經期經驗的國家。",
+          "example": "I'm an Australian and I live in Da Nang, Vietnam.",
+          "highlight": "Vietnam"
+        },
+        {
+          "word": "Canada",
+          "kkPhonetic": "/ˈkænədə/",
+          "partOfSpeech": "noun",
+          "level": "A1",
+          "meaningZh": "加拿大，受訪聽眾時尚創作者 Aaliyah 的所在地。",
+          "example": "Hi, I'm Aaliyah from Toronto, Canada.",
+          "highlight": "Canada"
+        },
+        {
+          "word": "Philippines",
+          "kkPhonetic": "/ˈfɪləˌpinz/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "菲律賓，分享黃體期影響與情緒變化經驗的聽眾 Bella 來自的國家。",
+          "example": "Hi, I'm Bella from the Philippines.",
+          "highlight": "Philippines"
         }
       ]
     }

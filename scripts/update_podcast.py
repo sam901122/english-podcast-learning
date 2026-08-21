@@ -364,14 +364,16 @@ contiguous surface form that appears in `example` (for example, phrase `take a s
     else:
         exclusions = ", ".join(excluded_words or []) or "(none)"
         selection_instructions = f"""Choose between {config['vocabulary_min']} and {config['vocabulary_max']} {config['guidance']}.
-Use this priority order:
-1. Include useful place names that appear in the transcript, such as cities, regions, countries, parks, or landmarks.
-2. Then include only words or short terms that are closely and specifically connected to the episode's subject.
+Use this priority and output order:
+1. First include only words or short terms that are closely and specifically connected to the episode's subject.
+2. Then include useful place names that appear in the transcript, such as cities, regions, countries, parks, or
+   landmarks. Return every place-name item after all subject-related words.
 
 For an everyday subject with few genuinely topic-specific terms, return a short list and do not pad it with generic
 vocabulary. A vocabulary item may be a single word, a short technical term, or a proper place name. Do not return phrases.
 Do not select any word already used in the practical or advanced vocabulary, including a capitalization
-variant or trivial inflection. Excluded practical and advanced words: {exclusions}"""
+variant or trivial inflection. For a place name, `meaningZh` must briefly identify the place and explain its relevance
+in this podcast episode, rather than merely translating its name. Excluded practical and advanced words: {exclusions}"""
         phrase_instructions = ""
     prompt = f"""Create one {config['label']} English study set from this podcast transcript.
 {selection_instructions}

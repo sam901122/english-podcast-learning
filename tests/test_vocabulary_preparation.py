@@ -97,8 +97,10 @@ class AnalyzeTests(unittest.TestCase):
         self.assertEqual(topic_properties["vocabulary"]["minItems"], 3)
         self.assertEqual(topic_properties["vocabulary"]["maxItems"], 15)
         self.assertNotIn("phrases", topic_properties)
-        self.assertIn("Use this priority order", prompts[3])
+        self.assertIn("Use this priority and output order", prompts[3])
         self.assertIn("useful place names", prompts[3])
+        self.assertIn("after all subject-related words", prompts[3])
+        self.assertIn("explain its relevance", prompts[3])
         self.assertIn("Excluded practical and advanced words", prompts[3])
 
 
