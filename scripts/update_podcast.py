@@ -9,7 +9,6 @@ import os
 import re
 import sys
 import tempfile
-import time
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
@@ -56,67 +55,87 @@ STUDY_LEVELS = {
 }
 
 
+def should_fallback_to_paid(error: Exception) -> bool:
+    """Return whether a free-tier failure is likely caused by quota or capacity."""
+    message = str(error).casefold()
+    return any(
+        marker in message
+        for marker in (
+            "429",
+            "resource_exhausted",
+            "resource exhausted",
+            "503",
+            "service_unavailable",
+            "service unavailable",
+            "temporarily unavailable",
+            "no capacity",
+            "high demand",
+        )
+    )
+
+
 class GeminiClient:
     """Gemini operations used by the podcast pipeline."""
 
-    def __init__(self, api_key: str) -> None:
+    def __init__(self, free_api_key: str, paid_api_key: str | None = None) -> None:
         from google import genai
 
-        self._client = genai.Client(api_key=api_key)
+        self._free_client = genai.Client(api_key=free_api_key)
+        self._paid_client = genai.Client(api_key=paid_api_key) if paid_api_key else None
+
+    def _with_fallback(self, operation):
+        try:
+            return operation(self._free_client)
+        except Exception as error:
+            if not self._paid_client or not should_fallback_to_paid(error):
+                raise
+            print("Free Gemini capacity is unavailable; retrying this request with the paid key.")
+            return operation(self._paid_client)
 
     def generate_json(self, *, prompt: str, schema: dict, model: str | None = None) -> dict:
-        for attempt in range(5):
-            try:
-                response = self._client.interactions.create(
-                    model=model or os.getenv("ANALYSIS_MODEL", DEFAULT_GEMINI_MODEL),
-                    input=prompt,
-                    response_format={
-                        "type": "text",
-                        "mime_type": "application/json",
-                        "schema": schema,
-                    },
-                )
-                if not response.output_text:
-                    raise RuntimeError("Gemini returned an empty structured response")
-                return json.loads(response.output_text)
-            except Exception as error:
-                message = str(error)
-                permanent_quota_error = any(
-                    marker in message.casefold()
-                    for marker in ("prepayment credits", "billing", "permission_denied")
-                )
-                if "429" not in message or permanent_quota_error or attempt == 4:
-                    raise
-                retry_match = re.search(r"retry in ([0-9.]+)s", message, re.I)
-                requested_delay = float(retry_match.group(1)) + 1 if retry_match else 0
-                delay = max(2 ** (attempt + 1), requested_delay)
-                print(f"Gemini rate limited the request; retrying in {delay}s.")
-                time.sleep(delay)
-
-    def transcribe(self, audio_path: Path) -> str:
-        uploaded = self._client.files.upload(file=audio_path)
-        try:
-            response = self._client.interactions.create(
-                model=os.getenv("TRANSCRIPTION_MODEL", DEFAULT_GEMINI_MODEL),
-                input=[
-                    {
-                        "type": "text",
-                        "text": "BBC World Service news podcast with international names and current "
-                        "affairs. Transcribe all spoken English accurately. Return only "
-                        "the complete verbatim transcript as plain text. Do not summarize, add headings, "
-                        "identify speakers, or use Markdown.",
-                    },
-                    {"type": "audio", "uri": uploaded.uri, "mime_type": uploaded.mime_type},
-                ],
+        def request(client):
+            response = client.interactions.create(
+                model=model or os.getenv("ANALYSIS_MODEL", DEFAULT_GEMINI_MODEL),
+                input=prompt,
+                response_format={
+                    "type": "text",
+                    "mime_type": "application/json",
+                    "schema": schema,
+                },
             )
             if not response.output_text:
-                raise RuntimeError("Gemini returned an empty transcription")
-            return response.output_text.strip()
-        finally:
+                raise RuntimeError("Gemini returned an empty structured response")
+            return json.loads(response.output_text)
+
+        return self._with_fallback(request)
+
+    def transcribe(self, audio_path: Path) -> str:
+        def request(client):
+            uploaded = client.files.upload(file=audio_path)
             try:
-                self._client.files.delete(name=uploaded.name)
-            except Exception as error:
-                print(f"Could not delete the temporary Gemini upload: {error}")
+                response = client.interactions.create(
+                    model=os.getenv("TRANSCRIPTION_MODEL", DEFAULT_GEMINI_MODEL),
+                    input=[
+                        {
+                            "type": "text",
+                            "text": "BBC World Service news podcast with international names and current "
+                            "affairs. Transcribe all spoken English accurately. Return only "
+                            "the complete verbatim transcript as plain text. Do not summarize, add headings, "
+                            "identify speakers, or use Markdown.",
+                        },
+                        {"type": "audio", "uri": uploaded.uri, "mime_type": uploaded.mime_type},
+                    ],
+                )
+                if not response.output_text:
+                    raise RuntimeError("Gemini returned an empty transcription")
+                return response.output_text.strip()
+            finally:
+                try:
+                    client.files.delete(name=uploaded.name)
+                except Exception as error:
+                    print(f"Could not delete the temporary Gemini upload: {error}")
+
+        return self._with_fallback(request)
 
 
 def text_of(element: ET.Element | None, default: str = "") -> str:
@@ -615,11 +634,14 @@ def main() -> int:
     print(f"New episode: {episode['title']} ({episode['id']})")
     if args.dry_run:
         return 0
-    if not os.getenv("GEMINI_API_KEY"):
-        raise RuntimeError("GEMINI_API_KEY is required")
+    if not os.getenv("GEMINI_FREE_API_KEY"):
+        raise RuntimeError("GEMINI_FREE_API_KEY is required")
 
     episode["spotifyUrl"] = find_spotify_episode_url(episode)
-    client = GeminiClient(os.environ["GEMINI_API_KEY"])
+    client = GeminiClient(
+        os.environ["GEMINI_FREE_API_KEY"],
+        os.getenv("GEMINI_PAID_API_KEY"),
+    )
     with tempfile.TemporaryDirectory(prefix="english-podcast-") as temp_dir:
         audio_path = Path(temp_dir) / "episode.mp3"
         fetch(episode["audioUrl"], audio_path)

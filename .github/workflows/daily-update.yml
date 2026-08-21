@@ -26,7 +26,8 @@ jobs:
       - name: Fetch and process the newest episode
         id: podcast
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_FREE_API_KEY: ${{ secrets.GEMINI_FREE_API_KEY }}
+          GEMINI_PAID_API_KEY: ${{ secrets.GEMINI_PAID_API_KEY }}
           TRANSCRIPTION_MODEL: gemini-3.6-flash
           ANALYSIS_MODEL: gemini-3.6-flash
           WORD_FORM_MODEL: gemini-3.6-flash
