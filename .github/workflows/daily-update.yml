@@ -1,9 +1,6 @@
 name: Update daily podcast
 
 on:
-  push:
-    branches: [master]
-    paths: [.github/workflows/daily-update.yml]
   schedule:
     - cron: "5 6,8 * * 2-6"
       timezone: "Asia/Taipei"
