@@ -8,6 +8,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: daily-podcast-update
@@ -16,6 +18,8 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    outputs:
+      updated: ${{ steps.podcast.outputs.updated }}
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
@@ -61,3 +65,25 @@ jobs:
           git add site/data
           git commit -m "content: add latest learning notes"
           git push
+      - name: Configure GitHub Pages
+        if: steps.podcast.outputs.updated == 'true'
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - name: Upload GitHub Pages artifact
+        if: steps.podcast.outputs.updated == 'true'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+  deploy:
+    needs: update
+    if: needs.update.outputs.updated == 'true'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
