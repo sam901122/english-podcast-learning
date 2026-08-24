@@ -1,0 +1,340 @@
+{
+  "id": "2c35129dfc26b850",
+  "title": "Will the Divine app revive six-second loops on social media?",
+  "description": "<p>Divine, a short-form video-sharing app, lets users create and share videos which are just six seconds long and repeat on a loop. It’s inspired by Vine, an app founded in 2012 that, at its peak, had more than 200 million monthly active users. It helped launch the careers of some of the internet's biggest stars, including Jake Paul and Lele Pons.</p><p>Laura Cress, a BBC tech reporter, explains how the app plans to shake up social media by banning AI and moving away from an algorithm that feeds people videos specific to their taste and browsing habits. Instead it uses an open, decentralized design that encourages people to engage with similar videos as other users.  </p><p>Plus: Chelsea and Baldeep from the What in the World team re-enact some of the most iconic moments from the Vine era. </p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Iqra Farooq\nProducers: Chelsea Coates and William Lee Adams\nEditors: Verity Wilde</p>",
+  "publishedAt": "2026-08-24T13:30:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct98xw",
+  "summaryZh": "本集 BBC 節目《What in the World》探討一款靈感源自 Vine 的新短影音應用程式 Divine，該平台主打 6 秒重複循環影片。BBC 科技記者 Laura Cress 指出，Divine 試圖與 TikTok 等平台區隔，除了禁止 AI 生成內容且僅限在 App 內拍攝，更捨棄個人化演算法，採用開放與去中心化的架構，以重現社群共享的網路文化。儘管 Divine 切中了使用者對 AI 內容與演算法的疲倦感，其未來的商業化模式仍面臨挑戰。",
+  "summaryEn": "This episode of What in the World explores Divine, a new short-form video-sharing app inspired by Vine that features six-second looping clips. BBC technology reporter Laura Cress explains how Divine aims to stand out from platforms like TikTok by banning AI-generated content, forcing videos to be recorded directly within the app, replacing personalized algorithms with a decentralized feed to foster a shared online culture, and navigating the challenge of future monetization without relying on traditional advertising.",
+  "studySets": {
+    "practical": {
+      "vocabulary": [
+        {
+          "word": "impact",
+          "kkPhonetic": "/ˈɪmpækt/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "影響",
+          "example": "So, it has had a huge impact on the internet in general, like a lasting impact, you'd say.",
+          "highlight": "impact"
+        },
+        {
+          "word": "similar",
+          "kkPhonetic": "/ˈsɪməlɚ/",
+          "partOfSpeech": "adjective",
+          "level": "A2",
+          "meaningZh": "相似的",
+          "example": "It is quite similar in some respects to this app that used to exist, Vine.",
+          "highlight": "similar"
+        },
+        {
+          "word": "content",
+          "kkPhonetic": "/ˈkɑntɛnt/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "內容",
+          "example": "There's so much content out there that basically nobody gets your references these days.",
+          "highlight": "content"
+        },
+        {
+          "word": "clue",
+          "kkPhonetic": "/klu/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "線索",
+          "example": "So yeah, the name may give a little bit of a clue.",
+          "highlight": "clue"
+        },
+        {
+          "word": "culture",
+          "kkPhonetic": "/ˈkʌltʃɚ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "文化",
+          "example": "I think what Divine is trying to do is more about discovery and this kind of shared internet culture, say.",
+          "highlight": "culture"
+        },
+        {
+          "word": "simple",
+          "kkPhonetic": "/ˈsɪmpəl/",
+          "partOfSpeech": "adjective",
+          "level": "A2",
+          "meaningZh": "簡單的",
+          "example": "It is pretty simple and as you might imagine with it just being 6 seconds, you have to get used to that because obviously when you look at other apps now, they've really pushed towards longer form content.",
+          "highlight": "simple"
+        },
+        {
+          "word": "reason",
+          "kkPhonetic": "/ˈrizən/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "理由",
+          "example": "So it'll be interesting to know, you know, whether particularly younger users who are already on TikTok, you know, Instagram, YouTube, it gives them a reason to to move somewhere else that's trying to pitch to be a little bit different.",
+          "highlight": "reason"
+        },
+        {
+          "word": "guarantee",
+          "kkPhonetic": "/ˌɡærənˈti/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "保證",
+          "example": "So they're trying to say, you know, here's somewhere you can guarantee most of the time it's being made by actual people.",
+          "highlight": "guarantee"
+        },
+        {
+          "word": "challenge",
+          "kkPhonetic": "/ˈtʃælɪndʒ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "挑戰",
+          "example": "So the first challenge I think is first of all getting people there and getting them watching and using it, and then they're going to have to work out how to make money without I suppose undermining what makes it different in the first place.",
+          "highlight": "challenge"
+        },
+        {
+          "word": "system",
+          "kkPhonetic": "/ˈsɪstəm/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "系統",
+          "example": "Another thing that makes it different is it's built on a decentralized system, I saw.",
+          "highlight": "system"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "get used to",
+          "highlight": "get used to",
+          "meaningZh": "習慣",
+          "example": "It is pretty simple and as you might imagine with it just being 6 seconds, you have to get used to that because obviously when you look at other apps now, they've really pushed towards longer form content."
+        },
+        {
+          "phrase": "make money",
+          "highlight": "make money",
+          "meaningZh": "賺錢",
+          "example": "So how is it going to make money?"
+        },
+        {
+          "phrase": "bring back",
+          "highlight": "bring back",
+          "meaningZh": "帶回",
+          "example": "I think they're trying to bring back that old Vine feeling rather than it becoming another TikTok clone."
+        },
+        {
+          "phrase": "work out",
+          "highlight": "work out",
+          "meaningZh": "弄清楚",
+          "example": "It wants to keep you watching and it's trying to work out what you like."
+        },
+        {
+          "phrase": "in this day and age",
+          "highlight": "in this day and age",
+          "meaningZh": "在當今時代",
+          "example": "I think that there might be a gap for that right now in this day and age."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "bygone",
+          "kkPhonetic": "/ˈbaɪˌɡɔn/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "過往的，很久以前的",
+          "example": "So, it may kind of feel like an app from a bygone era, but you probably do know a lot of the references that come from Vine.",
+          "highlight": "bygone"
+        },
+        {
+          "word": "propel",
+          "kkPhonetic": "/prəˈpɛl/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "推動，驅使（走向某種狀態）",
+          "example": "So, Shawn Mendes actually started his career on there, Logan Paul also, and then we also have people like Jake Paul, Bretman Rock, so all started on this app where they were posting really short videos that were funny, and then have propelled them to huge careers in the influencer space.",
+          "highlight": "propelled"
+        },
+        {
+          "word": "chronically",
+          "kkPhonetic": "/ˈkrɑnɪklɪ/",
+          "partOfSpeech": "adverb",
+          "level": "C1",
+          "meaningZh": "長期地，習慣性地",
+          "example": "I'm feeling a bit less chronically online than you two.",
+          "highlight": "chronically"
+        },
+        {
+          "word": "sophisticated",
+          "kkPhonetic": "/səˈfɪstəˌkeɪtɪd/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "精密的，複雜的",
+          "example": "TikTok has got this incredibly sophisticated algorithm.",
+          "highlight": "sophisticated"
+        },
+        {
+          "word": "communal",
+          "kkPhonetic": "/kəˈmjunəl/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "社群共享的，團體的",
+          "example": "The idea is the videos that everyone is seeing and talking about rather than it being kind of really personalized, and it wants to feel maybe a little bit more communal.",
+          "highlight": "communal"
+        },
+        {
+          "word": "skeptical",
+          "kkPhonetic": "/ˈskɛptɪkl/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "持懷疑態度的",
+          "example": "I think it's this real pitch to be something a bit more kind of nostalgic and maybe also interestingly, you know, we are hearing that younger people are pretty skeptical of like, you know, AI-generated content, there's this broader feeling the internet's becoming too artificial.",
+          "highlight": "skeptical"
+        },
+        {
+          "word": "monetize",
+          "kkPhonetic": "/ˈmɑnəˌtaɪz/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "變現，從中獲利",
+          "example": "Now, they haven't said directly no to ads and potentially that might be one way they have to move into to monetize, but I think even if they were to do that, they would be looking very carefully at how they did it.",
+          "highlight": "monetize"
+        },
+        {
+          "word": "undermine",
+          "kkPhonetic": "/ˌʌndɚˈmaɪn/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "削弱，損害",
+          "example": "So the first challenge I think is first of all getting people there and getting them watching and using it, and then they're going to have to work out how to make money without I suppose undermining what makes it different in the first place.",
+          "highlight": "undermining"
+        },
+        {
+          "word": "decentralized",
+          "kkPhonetic": "/diˈsɛntrəˌlaɪzd/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "去中心化的",
+          "example": "Yeah, another thing that makes it different is it's built on a decentralized system, I saw.",
+          "highlight": "decentralized"
+        },
+        {
+          "word": "affiliated",
+          "kkPhonetic": "/əˈfɪlɪˌeɪtɪd/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "有聯繫的，隸屬的",
+          "example": "It's not affiliated with X or Twitter or anything like that as well.",
+          "highlight": "affiliated"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "in this day and age",
+          "highlight": "in this day and age",
+          "meaningZh": "在當今時代，現今",
+          "example": "I think that there might be a gap for that right now in this day and age."
+        },
+        {
+          "phrase": "get used to",
+          "highlight": "getting used to",
+          "meaningZh": "習慣於，適應",
+          "example": "So it does take a bit of getting used to, to, you know, fit anything you want into 6 seconds."
+        },
+        {
+          "phrase": "work in someone's favor",
+          "highlight": "works in its favor",
+          "meaningZh": "對……有利",
+          "example": "So that probably works in its favor."
+        },
+        {
+          "phrase": "shake up",
+          "highlight": "shake up",
+          "meaningZh": "震撼，帶來重大改變",
+          "example": "Do you think it's actually going to shake up the internet?"
+        },
+        {
+          "phrase": "tap into",
+          "highlight": "tapping into",
+          "meaningZh": "利用，觸及（情緒或趨勢）",
+          "example": "I think it's what's interesting about it is it is tapping into these two big frustrations."
+        }
+      ]
+    },
+    "topic": {
+      "vocabulary": [
+        {
+          "word": "influencer",
+          "kkPhonetic": "/ˈɪnfluənsɚ/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "網路紅人；網紅",
+          "example": "And also, it's given us a lot of huge influencers and celebrities that are big now started their careers on this app.",
+          "highlight": "influencers"
+        },
+        {
+          "word": "creator",
+          "kkPhonetic": "/kriˈetɚ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "創作者",
+          "example": "And they've also brought back old sort of classic Vines that people loved from these big creators that went on from making Vines, such as Jake Paul, Lele Pons.",
+          "highlight": "creators"
+        },
+        {
+          "word": "loop",
+          "kkPhonetic": "/lup/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "循環播放",
+          "example": "It's six seconds long, so they're looped.",
+          "highlight": "looped"
+        },
+        {
+          "word": "algorithm",
+          "kkPhonetic": "/ˈælɡəˌrɪðəm/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "演算法",
+          "example": "TikTok has got this incredibly sophisticated algorithm.",
+          "highlight": "algorithm"
+        },
+        {
+          "word": "moderation",
+          "kkPhonetic": "/ˌmɑdəˈreʃən/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "內容審核",
+          "example": "So what they've what they've said they're doing, they're using this kind of automated detection and human moderation to try and identify AI content.",
+          "highlight": "moderation"
+        },
+        {
+          "word": "nostalgic",
+          "kkPhonetic": "/nəˈstældʒɪk/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "懷舊的",
+          "example": "I think it's this real pitch to be something a bit more kind of nostalgic and maybe also interestingly, you know, we are hearing that younger people are pretty skeptical of like, you know, AI-generated content, there's this broader feeling the internet's becoming too artificial.",
+          "highlight": "nostalgic"
+        },
+        {
+          "word": "UK",
+          "kkPhonetic": "/ˌjuˈke/",
+          "partOfSpeech": "noun",
+          "level": "A1",
+          "meaningZh": "英國；本集節目開頭提及此 BBC 廣播節目在英國以外地區收聽時包含廣告。",
+          "example": "This BBC podcast is supported by ads outside the UK.",
+          "highlight": "UK"
+        },
+        {
+          "word": "US",
+          "kkPhonetic": "/ˌjuˈɛs/",
+          "partOfSpeech": "noun",
+          "level": "A1",
+          "meaningZh": "美國；主持人在討論一段 Vine 經典影片中車主拍攝公路路標的場面時，提及該影片地點位於美國。",
+          "example": "So, practically there's this guy filming himself in the car and then he pans, he changes the camera to the signs that he's seeing as he's going along the motorway or the highway, whatever, I think it's in the US.",
+          "highlight": "US"
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/77b69EZfhSG6SqGLBMuRXV"
+}
