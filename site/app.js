@@ -116,7 +116,7 @@ function renderStudySet(studySet = {}) {
       <p>${escapeHtml(item.meaningZh)}</p>
       <blockquote lang="en">${highlightTerm(item.example, item.highlight || item.word)}</blockquote></div>`).join('')}</div></section>
     ${phrases.length ? `<section><h3>實用片語</h3><div class="cards">${phrases.map(item => `
-      <div class="card"><div class="phrase-row"><strong>${escapeHtml(item.phrase)}</strong><button class="word-action" type="button" data-speak="${escapeHtml(item.phrase)}" aria-label="Pronounce ${escapeHtml(item.phrase)}">${speakerIcon}</button></div><p>${escapeHtml(item.meaningZh)}</p>
+      <div class="card"><div class="phrase-row"><strong>${escapeHtml(item.phrase)}</strong><button class="word-action" type="button" data-speak="${escapeHtml(item.phrase)}" aria-label="Pronounce ${escapeHtml(item.phrase)}">${speakerIcon}</button><button class="word-action copy-word" type="button" data-copy="${escapeHtml(item.phrase)}" aria-label="複製 ${escapeHtml(item.phrase)}">${copyIcon}</button></div><p>${escapeHtml(item.meaningZh)}</p>
       <blockquote lang="en">${highlightTerm(item.example, item.highlight || item.phrase)}</blockquote></div>`).join('')}</div></section>` : ''}`;
 }
 
