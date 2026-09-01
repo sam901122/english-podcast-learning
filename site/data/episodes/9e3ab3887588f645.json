@@ -1,0 +1,340 @@
+{
+  "id": "9e3ab3887588f645",
+  "title": "Why women are often better investors than men",
+  "description": "<p>Investing used to be seen as something that was for older people in suits, but now more young people are getting into it, thanks to the rise in online investing apps that have made it more accessible, and a growing awareness of how stocks and shares work.</p><p>But data suggests that despite being less likely to start investing, women often make higher returns than men when they do. So, why are women often better at investing? And how does it work?</p><p>BBC business reporter Emer Moreau unpacks the data on how women and men invest differently, what investing is and why it can be risky. We also chat to Viktoriia and Gabriella, two women in their 20s, about why they started investing and how they are finding it.</p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Iqra Farooq\nProducers: Chelsea Coates, Emily Horler and Emma-Louise Amanshia\nVideo Producer: Baldeep Chahal\nEditor: Verity Wilde</p>",
+  "publishedAt": "2026-09-01T13:30:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct9905",
+  "summaryZh": "本集 BBC 節目《What in the World》探討女性在投資領域表現往往優於男性的原因，以及年輕女性參與股票與指數股票型基金 ETF 投資的經驗。節目中，BBC 商業記者 Emer Moreau 指出，雖然女性開始投資的比例較低，但因傾向採取長期持有、降低風險、減少頻繁交易與注重情緒管理等策略，往往能獲得更佳的長期報酬。受訪者 Viktoriia 與 Gabriella 分享了她們透過社群媒體啟蒙、運用 ETF 分散風險並克服短期波動的親身歷程。最後，個人理財專家 Mary 建議新手在投資前應做好自主研究、了解指數基金等工具，並根據個人財務目標進行風險控管。",
+  "summaryEn": "In this episode of What in the World, host Iqra Farooq and BBC business reporter Emer Moreau explore why women often achieve better long-term investment returns than men despite lower participation rates. Research indicates that women tend to be more risk-averse, trade less frequently, maintain emotional discipline, and favor diversified funds like ETFs rather than chasing short-term speculative gains. Young investors Viktoriia and Gabriella share their personal journeys of starting out via social media, overcoming early losses, and focusing on long-term compound growth. Personal finance expert Mary also offers key advice, emphasizing due diligence, low-cost index funds, and goal-oriented planning while remaining mindful of market risks.",
+  "studySets": {
+    "practical": {
+      "vocabulary": [
+        {
+          "word": "evidence",
+          "kkPhonetic": "/ˈɛvədəns/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "證據",
+          "example": "Yeah, this is something people are definitely talking about more in the last few years, but there is actually a lot of evidence going back as far as 20 years showing that women might actually do better at investing over the long haul than men.",
+          "highlight": "evidence"
+        },
+        {
+          "word": "freelance",
+          "kkPhonetic": "/ˈfriˌlæns/",
+          "partOfSpeech": "adverb",
+          "level": "B1",
+          "meaningZh": "自由接案地",
+          "example": "So, I graduated last summer, and after that I started working as freelance, then landed a full-time job.",
+          "highlight": "freelance"
+        },
+        {
+          "word": "inspiring",
+          "kkPhonetic": "/ɪnˈspaɪrɪŋ/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "鼓舞人心的",
+          "example": "And it was generally like content from women who invest, which was quite inspiring and quite like interesting to watch.",
+          "highlight": "inspiring"
+        },
+        {
+          "word": "impact",
+          "kkPhonetic": "/ˈɪmpækt/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "影響",
+          "example": "Personally, for me, I started recently, so you can't really see that much of an impact of your investment, considering also I'm not investing in individual stocks, I'm mostly investing in ETFs.",
+          "highlight": "impact"
+        },
+        {
+          "word": "strategy",
+          "kkPhonetic": "/ˈstrætədʒi/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "策略",
+          "example": "Actually, it's all about the long-term gain and keeping your emotions regulated and sticking with your investing strategy.",
+          "highlight": "strategy"
+        },
+        {
+          "word": "patient",
+          "kkPhonetic": "/ˈpeʃənt/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "有耐心的",
+          "example": "Women also tend to be more patient.",
+          "highlight": "patient"
+        },
+        {
+          "word": "confident",
+          "kkPhonetic": "/ˈkɑnfədənt/",
+          "partOfSpeech": "adjective",
+          "level": "A2",
+          "meaningZh": "有自信的",
+          "example": "Again, the research does show that women tend to be less confident in their ability to make returns on their investment and their knowledge of how investing works in the stock market.",
+          "highlight": "confident"
+        },
+        {
+          "word": "expert",
+          "kkPhonetic": "/ˈɛkspɚt/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "專家",
+          "example": "You don't actually have to be an expert before deciding to invest in something.",
+          "highlight": "expert"
+        },
+        {
+          "word": "salary",
+          "kkPhonetic": "/ˈsæləri/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "薪水",
+          "example": "A lot of young people don't think, you know, their salary is going to increase massively in the near future or even long term.",
+          "highlight": "salary"
+        },
+        {
+          "word": "individual",
+          "kkPhonetic": "/ˌɪndəˈvɪdʒuəl/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "個別的",
+          "example": "When a lot of people think of the stock market, they think of individual stocks, like Apple or Google, or even Microsoft.",
+          "highlight": "individual"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "get the hang of",
+          "highlight": "got the hang of",
+          "meaningZh": "掌握技巧；上手",
+          "example": "But now three years later, I feel like I've sort of got the hang of it."
+        },
+        {
+          "phrase": "go with the flow",
+          "highlight": "going with the flow",
+          "meaningZh": "順其自然；隨波逐流",
+          "example": "I made quite a few silly decisions, and was also just going with the flow."
+        },
+        {
+          "phrase": "over the long haul",
+          "highlight": "over the long haul",
+          "meaningZh": "從長遠來看",
+          "example": "Yeah, this is something people are definitely talking about more in the last few years, but there is actually a lot of evidence going back as far as 20 years showing that women might actually do better at investing over the long haul than men."
+        },
+        {
+          "phrase": "stick around",
+          "highlight": "stick around",
+          "meaningZh": "持續存在；留下來",
+          "example": "And, you know, I think as Victoria said, the upward trend if you're investing in the right ETFs and, you know, companies that you know will probably stick around forever, um, that money is almost guaranteed to go up in the long term if you're not silly about it."
+        },
+        {
+          "phrase": "take control of",
+          "highlight": "take control of",
+          "meaningZh": "掌控",
+          "example": "But I do think it's so important that everyone, especially women, learn to invest and learn how to take control of their finances."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "entrepreneurial",
+          "kkPhonetic": "/ˌɑntrəprəˈnɝɪəl/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "創業的、具有企業家精神的",
+          "example": "I've always had a bit of an entrepreneurial spirit, so I was looking at a lot of self-development books and social media pages on self-development.",
+          "highlight": "entrepreneurial"
+        },
+        {
+          "word": "portfolio",
+          "kkPhonetic": "/pɔrtˈfolɪˌo/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "投資組合",
+          "example": "The idea with a fund is that there's less risk than investing in single stocks because your portfolio is more spread out.",
+          "highlight": "portfolio"
+        },
+        {
+          "word": "consistency",
+          "kkPhonetic": "/kənˈsɪstənsɪ/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "一貫性、持續性",
+          "example": "And now three years later, I'm up by about £21,000, which is incredible because of consistency.",
+          "highlight": "consistency"
+        },
+        {
+          "word": "diversify",
+          "kkPhonetic": "/daɪˈvɝsəˌfaɪ/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "分散（投資風險）",
+          "example": "So, it's basically a less, well I don't want to say less risky because there is still risk involved, but it's a way of diversifying your money across loads of different individual stocks instead of just betting all your money on one stock, um, which can obviously be a lot more risky.",
+          "highlight": "diversifying"
+        },
+        {
+          "word": "averse",
+          "kkPhonetic": "/əˈvɝs/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "厭惡的、迴避的",
+          "example": "As I say, women tend to be more risk averse.",
+          "highlight": "averse"
+        },
+        {
+          "word": "gravitate",
+          "kkPhonetic": "/ˈɡrævəˌtet/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "傾向於、受吸引",
+          "example": "Women also tend to gravitate more towards what's called ESG investing, so that stands for environmental, social, and governance.",
+          "highlight": "gravitate"
+        },
+        {
+          "word": "attribute",
+          "kkPhonetic": "/əˈtrɪbjut/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "歸因於",
+          "example": "There was one study in India, so basically the the amount of money that's put in savings accounts in India is quite high, and that's basically attributed to the fact that women tend to put their money in savings accounts as opposed to investing.",
+          "highlight": "attributed"
+        },
+        {
+          "word": "exposure",
+          "kkPhonetic": "/ɪkˈspoʒɚ/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "（對市場或投資風險的）接觸、參與",
+          "example": "But, I did also want to put on your radar diversified low-cost index funds, which can give you exposure to a lot of the market and a lot of different companies at once.",
+          "highlight": "exposure"
+        },
+        {
+          "word": "diligence",
+          "kkPhonetic": "/ˈdɪlədʒəns/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "勤勉審查（特指盡職調查）",
+          "example": "You should do what's called due diligence, which is when you do your own research about a particular stock or investment, and make sure you consult multiple sources and get different perspectives before you finally decide to click trade.",
+          "highlight": "diligence"
+        },
+        {
+          "word": "emphasise",
+          "kkPhonetic": "/ˈɛmfəˌsaɪz/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "強調",
+          "example": "But I suppose it is really important to emphasise to people that you hear a lot of success stories, especially with social media, of people who were able to retire at like 35, but there's a lot of risk involved in doing that kind of thing.",
+          "highlight": "emphasise"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "over the long haul",
+          "highlight": "over the long haul",
+          "meaningZh": "長遠來看、長期而言",
+          "example": "Yeah, this is something people are definitely talking about more in the last few years, but there is actually a lot of evidence going back as far as 20 years showing that women might actually do better at investing over the long haul than men."
+        },
+        {
+          "phrase": "get the hang of",
+          "highlight": "got the hang of",
+          "meaningZh": "掌握技巧、抓到竅門",
+          "example": "But now three years later, I feel like I've sort of got the hang of it."
+        },
+        {
+          "phrase": "rabbit hole",
+          "highlight": "rabbit hole",
+          "meaningZh": "越陷越深的複雜情境、迷宮",
+          "example": "I would also add that probably when you are like when you are spending a lot of time on social media and you obviously get inspired by people and start investing and building wealth, but you can also fall into the rabbit hole where people recommend some kind of like stocks or some kind of ETFs which you then don't check, you just trust, for some reason you trust people online, and you can get into that trap very easily."
+        },
+        {
+          "phrase": "plain sailing",
+          "highlight": "plain sailing",
+          "meaningZh": "一帆風順、順利無阻",
+          "example": "Yeah, it's good to hear, you know, the whole journey that you guys have been on through it as well, it's not all plain sailing all the time."
+        },
+        {
+          "phrase": "put on someone's radar",
+          "highlight": "put on your radar",
+          "meaningZh": "引起某人關注、將…納入考量",
+          "example": "But, I did also want to put on your radar diversified low-cost index funds, which can give you exposure to a lot of the market and a lot of different companies at once."
+        }
+      ]
+    },
+    "topic": {
+      "vocabulary": [
+        {
+          "word": "stock",
+          "kkPhonetic": "/stɑk/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "股票",
+          "example": "So what often people mean when they hear the word investing is investing in stocks and shares.",
+          "highlight": "stocks"
+        },
+        {
+          "word": "share",
+          "kkPhonetic": "/ʃɛr/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "股份",
+          "example": "So what often people mean when they hear the word investing is investing in stocks and shares.",
+          "highlight": "shares"
+        },
+        {
+          "word": "ETF",
+          "kkPhonetic": "/ˌi ti ˈɛf/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "指數型股票投資信託基金（Exchange Traded Fund）",
+          "example": "An ETF is an Exchange Traded Fund, and it's really not as complicated as it sounds.",
+          "highlight": "ETF"
+        },
+        {
+          "word": "manosphere",
+          "kkPhonetic": "/ˈmænəˌsfɪr/",
+          "partOfSpeech": "noun",
+          "level": "C2",
+          "meaningZh": "男性網路社群（網路上討論男性權益或強調極端男性氣概的社群網路）",
+          "example": "I think not letting other people influence you in a bad way to have this pressure of making loads and loads of money, and you know, when, you know, you've got the red pill and the manosphere saying men need to be millionaires at the age of 20 and men need to be making all this money, I think it forces men into a mindset to take more risks and to try and get money quickly.",
+          "highlight": "manosphere"
+        },
+        {
+          "word": "ESG",
+          "kkPhonetic": "/ˌi ɛs ˈdʒi/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "環境、社會與公司治理（永續投資指標）",
+          "example": "Women also tend to gravitate more towards what's called ESG investing, so that stands for environmental, social, and governance.",
+          "highlight": "ESG"
+        },
+        {
+          "word": "US",
+          "kkPhonetic": "/ˌju ˈɛs/",
+          "partOfSpeech": "noun",
+          "level": "A1",
+          "meaningZh": "美國；節目提及 S&P 500 是將美國前五百大表現優異的公司集合成的常見 ETF 基金。",
+          "example": "So, the most common one that people know is the S&P 500, stay with me, um, which is just the top 500 performing companies in the US put into one basket or one fund.",
+          "highlight": "US"
+        },
+        {
+          "word": "India",
+          "kkPhonetic": "/ˈɪndiə/",
+          "partOfSpeech": "noun",
+          "level": "A1",
+          "meaningZh": "印度；節目引用當地研究顯示，印度女性傾向把資金放在儲蓄帳戶而非進行投資。",
+          "example": "There was one study in India, so basically the the amount of money that's put in savings accounts in India is quite high, and that's basically attributed to the fact that women tend to put their money in savings accounts as opposed to investing.",
+          "highlight": "India"
+        },
+        {
+          "word": "UK",
+          "kkPhonetic": "/ˌju ˈke/",
+          "partOfSpeech": "noun",
+          "level": "A1",
+          "meaningZh": "英國；節目開場說明本 BBC Podcast 在英國境外收聽時附帶廣告。",
+          "example": "This BBC podcast is supported by ads outside the UK.",
+          "highlight": "UK"
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/4wcLJDXv0THtgaO9Xvvmf7"
+}
