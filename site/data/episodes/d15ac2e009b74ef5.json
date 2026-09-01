@@ -1,0 +1,349 @@
+{
+  "id": "d15ac2e009b74ef5",
+  "title": "Why humanoid robots matter to China",
+  "description": "<p>Videos from the second edition of the World Humanoid Robot Games in Beijing have been going viral. Two thousand robots from 16 countries took part and the robots seem more human-like than ever. They dance, compete in boxing matches, sprint faster than Usain Bolt, and even lift weights (not always successfully).</p><p>BBC China Analyst Kerry Allen explains how the Games relate to China’s international and domestic goals. Among other things, China’s leaders want to show the world how advanced their robotics industry is and demonstrate advances that will allow robots to strengthen China’s workforce.</p><p>We also hear reactions from content creators Christina Ernst in the United States, Uchechukwu Ololo in Nigeria and Cheryl Liu in China. </p><p>Email: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Hannah Gelbart\nProducers:  William Lee Adams, Benita Barden and Mollie Perella \nEditor: Harriet Oliver</p>",
+  "publishedAt": "2026-08-31T13:30:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct98xx",
+  "summaryZh": "本集 BBC 節目《What in the World》探討中國在北京舉行的世界人形機器人大賽及其背後的戰略意圖與影響。賽事中人形機器人展現了跑步、舞蹈甚至以 9.39 秒超越 Usain Bolt 紀錄的 100 公尺衝刺等技能，但也出現摔倒與失火等故障情形。BBC 中國媒體分析師 Kerry Allen 指出，在國際上，中國希望展示其領先的技術實力並協助開發中國家；在國內，受過去獨生子女政策引發的人口減少與老化影響，中國迫切需要機器人填補勞動力缺口。儘管網路內容創作者 Uchechukwu Ololo 與 Cheryl Liu 等人對取代人類工作表達疑慮，中國政府強調將實施人類監督，並透過機器人產業創造全新的就業機會。",
+  "summaryEn": "This episode of What in the World examines the viral World Humanoid Robot Games in Beijing and China's strategic motivations behind advancing its robotics industry. BBC China analyst Kerry Allen explains that internationally, China aims to showcase its technological leadership over competitors like the US and assist developing nations. Domestically, humanoid robots are key to addressing labor shortages driven by an aging and shrinking population stemming from the former one-child policy. While content creators express concerns over job displacement, Allen notes that the Chinese government emphasizes human oversight and expects the expanding robotics sector to create new employment opportunities.",
+  "studySets": {
+    "practical": {
+      "vocabulary": [
+        {
+          "word": "clip",
+          "kkPhonetic": "/klɪp/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "短片",
+          "example": "I don't know about you, but I have been seeing loads of clips of robots on my socials over the past week.",
+          "highlight": "clips"
+        },
+        {
+          "word": "advanced",
+          "kkPhonetic": "/ədˈvænst/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "先進的",
+          "example": "And for China, those games were a massive flex because they wanted to show what their robots are capable of and just how advanced their robotics industry is.",
+          "highlight": "advanced"
+        },
+        {
+          "word": "costume",
+          "kkPhonetic": "/ˈkɑstum/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "服裝",
+          "example": "She builds robots on socials and you might have seen the robotic jellyfish costume she made or the little Ratatouille head-dress that she made for Halloween.",
+          "highlight": "costume"
+        },
+        {
+          "word": "compete",
+          "kkPhonetic": "/kəmˈpit/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "競爭",
+          "example": "It's different robotics companies competing against each other to show how competitive they are in lots of different events.",
+          "highlight": "competing"
+        },
+        {
+          "word": "mission",
+          "kkPhonetic": "/ˈmɪʃən/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "任務",
+          "example": "But this year, it's expanded and you've got many more competitions, dances, table tennis, they carry out firefighting and rescue missions.",
+          "highlight": "missions"
+        },
+        {
+          "word": "rider",
+          "kkPhonetic": "/ˈraɪdɚ/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "騎手",
+          "example": "There was that video of the robotic horse with its rider.",
+          "highlight": "rider"
+        },
+        {
+          "word": "retire",
+          "kkPhonetic": "/rɪˈtaɪr/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "退休",
+          "example": "And the result is that now a lot of the parents from that policy are retiring, and there's a much smaller, younger demographic that can actually do jobs.",
+          "highlight": "retiring"
+        },
+        {
+          "word": "delivery",
+          "kkPhonetic": "/dɪˈlɪvəri/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "運送",
+          "example": "Here in Shenzhen, we are already seeing robots making deliveries and running around on the streets, and I wouldn't have believed this was the world I'd be living in 10 years ago.",
+          "highlight": "deliveries"
+        },
+        {
+          "word": "income",
+          "kkPhonetic": "/ˈɪnkʌm/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "收入",
+          "example": "Does that mean that jobs are going to be replaced by robots, or will the government look after people to make sure that they do still have jobs and an income?",
+          "highlight": "income"
+        },
+        {
+          "word": "pioneer",
+          "kkPhonetic": "/ˌpaɪəˈnɪr/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "先驅",
+          "example": "That's quite exciting because, you know, it's new jobs that have never existed before, so I think that really appeals to a lot of young Chinese that they can, they can be pioneers in a new industry.",
+          "highlight": "pioneers"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "take over",
+          "highlight": "taking over",
+          "meaningZh": "接管",
+          "example": "It's quite entertaining, I must say, but at the same time, I'm scared of these robots taking over."
+        },
+        {
+          "phrase": "according to plan",
+          "highlight": "according to plan",
+          "meaningZh": "按計劃進行",
+          "example": "Of course, things did not always go according to plan, and I actually felt quite bad for the robot who had to be stretched out after he failed to lift a barbell."
+        },
+        {
+          "phrase": "start off",
+          "highlight": "start off",
+          "meaningZh": "開始",
+          "example": "We're going to start off by hearing from someone who actually builds robots."
+        },
+        {
+          "phrase": "stand out",
+          "highlight": "stood out",
+          "meaningZh": "突出",
+          "example": "I think if there's one video that's really stood out for me, it's a robot outrunning Usain Bolt in the 100 meters."
+        },
+        {
+          "phrase": "look after",
+          "highlight": "look after",
+          "meaningZh": "照顧",
+          "example": "Does that mean that jobs are going to be replaced by robots, or will the government look after people to make sure that they do still have jobs and an income?"
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "uncanny",
+          "kkPhonetic": "/ʌnˈkæni/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "怪異的；令人毛骨悚然的",
+          "example": "They're a bit uncanny.",
+          "highlight": "uncanny"
+        },
+        {
+          "word": "malfunctioning",
+          "kkPhonetic": "/ˌmælˈfʌŋkʃənɪŋ/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "發生故障的",
+          "example": "I think these videos of malfunctioning robots are a really great reminder of human persistence, honestly.",
+          "highlight": "malfunctioning"
+        },
+        {
+          "word": "catastrophically",
+          "kkPhonetic": "/ˌkætəˈstrɑfɪkli/",
+          "partOfSpeech": "adverb",
+          "level": "C1",
+          "meaningZh": "災難性地；極其慘重地",
+          "example": "I mean, there have been these ridiculous moments, these moments of humiliation where these robots have failed catastrophically.",
+          "highlight": "catastrophically"
+        },
+        {
+          "word": "narrative",
+          "kkPhonetic": "/ˈnærətɪv/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "論述；說法",
+          "example": "Well, I think there are a few different narratives.",
+          "highlight": "narratives"
+        },
+        {
+          "word": "demographic",
+          "kkPhonetic": "/ˌdɛməˈɡræfɪk/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "特定年齡層；人口群體",
+          "example": "And the result is that now a lot of the parents from that policy are retiring, and there's a much smaller, younger demographic that can actually do jobs.",
+          "highlight": "demographic"
+        },
+        {
+          "word": "optimistic",
+          "kkPhonetic": "/ˌɑptəˈmɪstɪk/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "樂觀的",
+          "example": "On one hand, it does scare me a little bit when I think about the future, but, on the other hand, I'm pretty optimistic about the society where robots are part of our everyday lives.",
+          "highlight": "optimistic"
+        },
+        {
+          "word": "pioneer",
+          "kkPhonetic": "/ˌpaɪəˈnɪr/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "先驅；拓荒者",
+          "example": "There's opportunities for people to work with these robots, to build them, to be able to transform the workforce, and that's quite exciting because, you know, it's new jobs that have never existed before, so I think that really appeals to a lot of young Chinese that they can, they can be pioneers in a new industry.",
+          "highlight": "pioneers"
+        },
+        {
+          "word": "disrupt",
+          "kkPhonetic": "/dɪsˈrʌpt/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "受破壞的；被打亂的",
+          "example": "Most people talk about jobs disappearing, but this shows how education itself is getting disrupted, too.",
+          "highlight": "disrupted"
+        },
+        {
+          "word": "analyst",
+          "kkPhonetic": "/ˈænəlɪst/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "分析師",
+          "example": "And while they were still on, I was chatting to Kerry Allen, who is the BBC's China media analyst, about them.",
+          "highlight": "analyst"
+        },
+        {
+          "word": "extinguisher",
+          "kkPhonetic": "/ɪkˈstɪŋɡwɪʃɚ/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "滅火器",
+          "example": "And, you know, its team obviously come running towards it with fire extinguishers.",
+          "highlight": "extinguishers"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "go viral",
+          "highlight": "going viral",
+          "meaningZh": "（在網路上）瘋傳；爆紅",
+          "example": "And those are some of the videos that have been going viral during the recent World Humanoid Robot Games in China."
+        },
+        {
+          "phrase": "go haywire",
+          "highlight": "goes haywire",
+          "meaningZh": "失去控制；發生故障",
+          "example": "Like, for example, there's a weightlifter and he's lifting a bar and he kind of goes haywire and he stumbles and like, looks like he trips over his own feet."
+        },
+        {
+          "phrase": "plug gaps",
+          "highlight": "plug gaps",
+          "meaningZh": "填補缺口；補足空缺",
+          "example": "I mean, one of the big messages that newspapers have been saying is that it wants to plug gaps in markets and that it can help developing countries become developed by making such technology available to them."
+        },
+        {
+          "phrase": "work in tandem with",
+          "highlight": "works in tandem with",
+          "meaningZh": "與……協同工作；配合",
+          "example": "There is a real concern in China that this technology needs human oversight, and the government has been trying to send messaging that if this technology does come into place in various industries, that there will still be a human workforce that works in tandem with it and oversees the robots."
+        },
+        {
+          "phrase": "drive up",
+          "highlight": "drive up",
+          "meaningZh": "推高；抬高",
+          "example": "And the company behind this said it's because when you're running, you know, your arms moving back and forth, it can put a heavy load on the shoulder joints and that can drive up energy consumption."
+        }
+      ]
+    },
+    "topic": {
+      "vocabulary": [
+        {
+          "word": "humanoid",
+          "kkPhonetic": "/ˈhjuːməˌnɔɪd/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "人形的；似人的",
+          "example": "The thought of humanoid robots plugging gaps in the workforce, it does spark really strong reactions both inside and outside China.",
+          "highlight": "humanoid"
+        },
+        {
+          "word": "robotics",
+          "kkPhonetic": "/roʊˈbɑːtɪks/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "機器人技術；機器人學",
+          "example": "I pay pretty close attention to the robotics scene in China in general, but, honestly, when I was watching the opening ceremony of the robot games in Beijing, I was in absolute shock.",
+          "highlight": "robotics"
+        },
+        {
+          "word": "joint",
+          "kkPhonetic": "/dʒɔɪnt/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "關節",
+          "example": "And the company behind this said it's because when you're running, you know, your arms moving back and forth, it can put a heavy load on the shoulder joints and that can drive up energy consumption.",
+          "highlight": "joints"
+        },
+        {
+          "word": "workforce",
+          "kkPhonetic": "/ˈwɜːrkˌfɔːrs/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "勞動人口；勞動力",
+          "example": "The thought of humanoid robots plugging gaps in the workforce, it does spark really strong reactions both inside and outside China.",
+          "highlight": "workforce"
+        },
+        {
+          "word": "China",
+          "kkPhonetic": "/ˈtʃaɪnə/",
+          "partOfSpeech": "noun",
+          "level": "A1",
+          "meaningZh": "中國；本集節目討論的主要國家，正積極展現其先進的機器人產業並舉辦世界人形機器人運動會。",
+          "example": "And for China, those games were a massive flex because they wanted to show what their robots are capable of and just how advanced their robotics industry is.",
+          "highlight": "China"
+        },
+        {
+          "word": "Beijing",
+          "kkPhonetic": "/beɪˈdʒɪŋ/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "北京；中國首都，為本集提及舉辦世界人形機器人運動會開幕典禮的地點。",
+          "example": "I pay pretty close attention to the robotics scene in China in general, but, honestly, when I was watching the opening ceremony of the robot games in Beijing, I was in absolute shock.",
+          "highlight": "Beijing"
+        },
+        {
+          "word": "Shenzhen",
+          "kkPhonetic": "/ˈʃɛnˈdʒɛn/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "深圳；中國科技城市，受訪者分享當地街頭已常見機器人進行外送與日常運作。",
+          "example": "Here in Shenzhen, we are already seeing robots making deliveries and running around on the streets, and I wouldn't have believed this was the world I'd be living in 10 years ago.",
+          "highlight": "Shenzhen"
+        },
+        {
+          "word": "Nigeria",
+          "kkPhonetic": "/naɪˈdʒɪriə/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "奈及利亞；受訪聽眾所在國家，他在此分享對機器人取代人力可能引發失業潮的擔憂。",
+          "example": "Starting with Uchechukwu Ololo in Nigeria.",
+          "highlight": "Nigeria"
+        },
+        {
+          "word": "London",
+          "kkPhonetic": "/ˈlʌndən/",
+          "partOfSpeech": "noun",
+          "level": "A1",
+          "meaningZh": "倫敦；英國首都，主持人在此採訪國際學生，探討人工智慧如何影響其大學選科與規劃。",
+          "example": "I went to a university in London to speak to three international students about how AI is affecting their choices.",
+          "highlight": "London"
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/3fy56KwMCcExT0NwCHYWb8"
+}
