@@ -1,0 +1,331 @@
+{
+  "id": "9aead395db21585b",
+  "title": "Peekaboo! The story of Canada’s moving island",
+  "description": "<p>A floating island that appeared in a Canadian reservoir and seemed to vanish has returned. Officials at Williston Reservoir in British Columbia spent months tracking it through satellite imagery and discovered it had drifted 30 kilometres away. The island made international headlines and gained a loyal fan base on social media. Jake Horton from BBC Verify has been looking at the data and gave us an overview of what we can confirm about the island’s story.\nPlus, Jon Dickson, who specialising in marine wood and sea restoration tells us all about floating islands, and what it’s like to be on one.</p><p>Email: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Hannah Gelbart\nProducers: Mollie Perella and Benita Barden \nEditor: Verity Wilde</p>",
+  "publishedAt": "2026-09-04T13:49:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct8q61",
+  "summaryZh": "本集 BBC 節目《What in the World》探討加拿大不列顛哥倫比亞省 Williston 水庫一座會移動的漂浮島嶼及其背後的科學原理。BBC Verify 記者 Jake Horton 利用衛星資料證實，這座長滿 300 至 400 棵樹木、面積相當於 2 個足球場大的島嶼，在幾週內漂移了超過 30 公里。專家 Jon Dickson 解釋，此類漂浮島嶼是由厚實苔蘚層與淺根樹木組成，樹冠如同船帆般受風力推動而在水面上移動。專家也提醒民眾切勿登島以維護安全，並指出漂浮植被在海洋中能充當「浮動自助餐」，為魚類等海洋生物提供重要的棲地與食物來源。",
+  "summaryEn": "This episode of What in the World explores the mystery of a floating, moving island in British Columbia's Williston Reservoir in Canada. BBC Verify's Jake Horton explains how satellite imagery confirmed local reports that the island—covered in 300 to 400 trees and roughly the size of two football pitches—drifted over 30 kilometers in just a few weeks. Expert Jon Dickson describes how these floating islands form from thick moss layers and shallow-rooted trees, drifting when wind pushes the tree canopy like a sail. He warns against walking on the unstable formation and highlights how floating islands serve as vital ecosystems and floating food sources for marine life in open waters.",
+  "studySets": {
+    "practical": {
+      "vocabulary": [
+        {
+          "word": "shallow",
+          "kkPhonetic": "/ˈʃælo/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "淺的",
+          "example": "It's a lot of trees with very shallow roots that have grown on a thick layer of moss right at the water's edge.",
+          "highlight": "shallow"
+        },
+        {
+          "word": "upright",
+          "kkPhonetic": "/ˈʌpˌraɪt/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "直立的",
+          "example": "It is full of upright trees.",
+          "highlight": "upright"
+        },
+        {
+          "word": "fisherman",
+          "kkPhonetic": "/ˈfɪʃɚmən/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "漁夫",
+          "example": "He was a fisherman on a boat, and at first he posted a video of this alongside a picture.",
+          "highlight": "fisherman"
+        },
+        {
+          "word": "hoax",
+          "kkPhonetic": "/hoks/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "騙局",
+          "example": "I thought it was a hoax at first, never seen anything like it.",
+          "highlight": "hoax"
+        },
+        {
+          "word": "satellite",
+          "kkPhonetic": "/ˈsætəlˌaɪt/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "人造衛星",
+          "example": "That's part of the BBC that analyzes satellite data and loads of other stuff on the internet.",
+          "highlight": "satellite"
+        },
+        {
+          "word": "reservoir",
+          "kkPhonetic": "/ˈrɛzɚˌvwɑr/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "水庫",
+          "example": "So this probably little-known reservoir has now been in the headlines around the world.",
+          "highlight": "reservoir"
+        },
+        {
+          "word": "headline",
+          "kkPhonetic": "/ˈhɛdˌlaɪn/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "頭條新聞",
+          "example": "So this probably little-known reservoir has now been in the headlines around the world.",
+          "highlight": "headlines"
+        },
+        {
+          "word": "current",
+          "kkPhonetic": "/ˈkɝənt/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "水流",
+          "example": "So because this is a lake and it only has one outflow, the currents are not very significant.",
+          "highlight": "currents"
+        },
+        {
+          "word": "respectful",
+          "kkPhonetic": "/rɪˈspɛktfəl/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "尊敬的",
+          "example": "And Sonia said on YouTube, \"I think it's better to call them the respectful way, Mr or sir.\"",
+          "highlight": "respectful"
+        },
+        {
+          "word": "balance",
+          "kkPhonetic": "/ˈbæləns/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "平衡",
+          "example": "And it's very hard to keep your balance on these things because you are literally just walking like you're on top of a pool cover.",
+          "highlight": "balance"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "pop up",
+          "highlight": "pop up",
+          "meaningZh": "突然出現",
+          "example": "Where did it first pop up?"
+        },
+        {
+          "phrase": "believe one's eyes",
+          "highlight": "believe his eyes",
+          "meaningZh": "相信自己的眼睛",
+          "example": "So he couldn't quite believe his eyes, but that's where it all began."
+        },
+        {
+          "phrase": "blow over",
+          "highlight": "blows over",
+          "meaningZh": "平息；過去",
+          "example": "He said he's really enjoyed it, but he, in his words, pardon the pun, he said he hopes it all blows over soon so he can go back to his day job."
+        },
+        {
+          "phrase": "go viral",
+          "highlight": "go viral",
+          "meaningZh": "爆紅；在網路上瘋傳",
+          "example": "What did you make of it when this island, this floating island, started to go viral and get attention from around the world?"
+        },
+        {
+          "phrase": "keep one's balance",
+          "highlight": "keep your balance",
+          "meaningZh": "保持平衡",
+          "example": "And it's very hard to keep your balance on these things because you are literally just walking like you're on top of a pool cover."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "hoax",
+          "kkPhonetic": "/hoks/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "騙局；惡作劇",
+          "example": "I thought it was a hoax at first, never seen anything like it.",
+          "highlight": "hoax"
+        },
+        {
+          "word": "trajectory",
+          "kkPhonetic": "/trəˈdʒɛktərɪ/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "軌跡；移動路線",
+          "example": "Have you actually had a look at these images and been looking at the trajectory of this island?",
+          "highlight": "trajectory"
+        },
+        {
+          "word": "corroborate",
+          "kkPhonetic": "/kəˈrɑbəˌret/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "證實；確證",
+          "example": "So we have access to various providers and we found one provider where we could track the movements of this floating island ourselves, and we managed to corroborate what they were reporting.",
+          "highlight": "corroborate"
+        },
+        {
+          "word": "buoyant",
+          "kkPhonetic": "/ˈbɔɪənt/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "有浮力的；能浮起的",
+          "example": "But because there's so much air and maybe some driftwood trapped in that moss, it remains buoyant and the trees stay upright as they go out into the lake or the sea.",
+          "highlight": "buoyant"
+        },
+        {
+          "word": "whirlwind",
+          "kkPhonetic": "/ˈhwɝlˌwɪnd/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "旋風式的；忙亂匆忙的",
+          "example": "I spoke to the company that manages it and Bob, who is a spokesperson, said it's been a bit of a whirlwind week or two.",
+          "highlight": "whirlwind"
+        },
+        {
+          "word": "prevailing",
+          "kkPhonetic": "/prɪˈvelɪŋ/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "盛行的；主要的（風向等）",
+          "example": "Reattaching is a strong word, but it will lodge up against shore, for example, if you throw a stick in a river and it fetches up against a rock, it's pinned against the rock by the current, much like this island will be pinned against the shore by wind, prevailing wind, until the wind flips around and then it may come offshore again.",
+          "highlight": "prevailing"
+        },
+        {
+          "word": "inmesh",
+          "kkPhonetic": "/ɪnˈmɛʃ/",
+          "partOfSpeech": "verb",
+          "level": "C2",
+          "meaningZh": "纏繞；緊密交織在一起",
+          "example": "So it's not like its roots or its base have actually inmeshed with the mainland again, it's still an island, it's just pinned up against the mainland, and that's, that's what we think happened when it disappeared for all of those days?",
+          "highlight": "inmeshed"
+        },
+        {
+          "word": "monsoon",
+          "kkPhonetic": "/mɑnˈsun/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "季風",
+          "example": "And there's a very interesting set of occurrences in Asia in the South Pacific, where the Asian monsoons would wash a whole lot of wood out to the South Pacific and the Polynesians relied on wood season where they did their best fishing.",
+          "highlight": "monsoons"
+        },
+        {
+          "word": "algae",
+          "kkPhonetic": "/ˈældʒi/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "藻類",
+          "example": "A single drift tree would support 15,000 kg of tuna, simply because algae would grow on this drift island or these drift trees, and little fish would come and eat the algae, and bigger fish would come and eat the little fish, until you have a whole functioning ecosystem around this floating piece of wood or wood and vegetation as you see here.",
+          "highlight": "algae"
+        },
+        {
+          "word": "ecosystem",
+          "kkPhonetic": "/ˈikoʊˌsɪstəm/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "生態系統",
+          "example": "When these come into the ocean, these become floating buffet stations and provide ecosystem services and nourish fish and shellfish throughout the open ocean.",
+          "highlight": "ecosystem"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "come to the attention of",
+          "highlight": "came to the attention of",
+          "meaningZh": "引起……的注意",
+          "example": "So it first popped up, this came to the attention of the people who manage the reservoir in mid August when somebody by the name of Rocky Avery posted on his Facebook saying there's a floating, a new floating island on the Williston Lake."
+        },
+        {
+          "phrase": "hug the coastline",
+          "highlight": "hugging the coastline",
+          "meaningZh": "緊貼海岸線（或湖岸線）行進",
+          "example": "First in July and then in the middle of August where it was much further up in the northern section of the lake, and then we found another image from just a few days ago where it's just hugging the coastline of the lake, and that is a fair way away from where it was first seen in July."
+        },
+        {
+          "phrase": "create a stir",
+          "highlight": "created quite a stir",
+          "meaningZh": "引發轟動；引起熱議",
+          "example": "It's created quite a stir for residents, right?"
+        },
+        {
+          "phrase": "blow over",
+          "highlight": "blows over",
+          "meaningZh": "（風波、事態）平息；過去",
+          "example": "He said he's really enjoyed it, but he, in his words, pardon the pun, he said he hopes it all blows over soon so he can go back to his day job."
+        },
+        {
+          "phrase": "in the grand scheme of things",
+          "highlight": "in the grand scheme of things",
+          "meaningZh": "從總體來看；在大局中",
+          "example": "Yeah, it's a, it's a fairly large lake, so there's plenty of space for a fairly small island in the grand scheme of things to get lost against the forest cover, which surrounds the entire lake."
+        }
+      ]
+    },
+    "topic": {
+      "vocabulary": [
+        {
+          "word": "moss",
+          "kkPhonetic": "/mɑs/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "苔蘚",
+          "example": "It's a lot of trees with very shallow roots that have grown on a thick layer of moss right at the water's edge.",
+          "highlight": "moss"
+        },
+        {
+          "word": "beaver",
+          "kkPhonetic": "/ˈbivɚ/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "河狸",
+          "example": "And sooner or later, this moss can sometimes be cut by beavers cutting a channel to the bank, or perhaps the wind will blow it away from shore.",
+          "highlight": "beavers"
+        },
+        {
+          "word": "driftwood",
+          "kkPhonetic": "/ˈdrɪftˌwʊd/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "漂流木",
+          "example": "But because there's so much air and maybe some driftwood trapped in that moss, it remains buoyant and the trees stay upright as they go out into the lake or the sea.",
+          "highlight": "driftwood"
+        },
+        {
+          "word": "sailboat",
+          "kkPhonetic": "/ˈselˌbot/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "帆船",
+          "example": "So when this island got away from shore, it acted like a sailboat with a sail up, but no motor.",
+          "highlight": "sailboat"
+        },
+        {
+          "word": "Williston Lake",
+          "kkPhonetic": "/ˈwɪlɪstən lek/",
+          "partOfSpeech": "proper noun",
+          "level": "B2",
+          "meaningZh": "威利斯頓湖，位於加拿大英屬哥倫比亞省，為本集節目中出現巨大漂浮森林島嶼的湖泊水庫。",
+          "example": "So it first popped up, this came to the attention of the people who manage the reservoir in mid August when somebody by the name of Rocky Avery posted on his Facebook saying there's a floating, a new floating island on the Williston Lake.",
+          "highlight": "Williston Lake"
+        },
+        {
+          "word": "British Columbia",
+          "kkPhonetic": "/ˌbrɪtɪʃ kəˈlʌmbiə/",
+          "partOfSpeech": "proper noun",
+          "level": "B2",
+          "meaningZh": "英屬哥倫比亞省，位於加拿大西部，是本集節目中失蹤漂浮島嶼所在的省份。",
+          "example": "There's a floating forest island on a lake in British Columbia, in western Canada.",
+          "highlight": "British Columbia"
+        },
+        {
+          "word": "South Pacific",
+          "kkPhonetic": "/saʊθ pəˈsɪfɪk/",
+          "partOfSpeech": "proper noun",
+          "level": "B2",
+          "meaningZh": "南太平洋，節目中提及季風會將大量漂流木沖至此洋區，形成集結豐富海洋生物的漂浮生態系統。",
+          "example": "And there's a very interesting set of occurrences in Asia in the South Pacific, where the Asian monsoons would wash a whole lot of wood out to the South Pacific and the Polynesians relied on wood season where they did their best fishing.",
+          "highlight": "South Pacific"
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/7x3vkWUMHbj3ZpeMUcEI9A"
+}
