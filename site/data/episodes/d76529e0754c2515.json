@@ -1,0 +1,367 @@
+{
+  "id": "d76529e0754c2515",
+  "title": "Why flying can make you feel rough",
+  "description": "<p>Ever wondered why you might feel a bit unwell after a flight? There are lots of reasons for that  - from dehydration, jet lag, cabin pressure and altitude. </p><p>Last month, a French court recognised that cosmic radiation was a factor in a flight attendant’s breast cancer diagnosis. Studies show that cabin crew and pilots have the highest level of radiation- related cancer deaths compared to more than 500 other jobs. </p><p>We’re looking at what impacts flying regularly, and for long periods of time, can have on your body. We hear from Savannah, a pilot in the US, about what she does to keep herself healthy when sitting in a cockpit for hours. And Naomi, who is taking a break from being cabin crew, tells us how spending so much time in a plane has affected her. </p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Hannah Gelbart\nProducers:  Mollie Perella and Benita Barden \nVideo Journalist: Baldeep Chahal \nEditor: Verity Wilde</p>",
+  "publishedAt": "2026-09-15T13:30:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct9907",
+  "summaryZh": "本集 BBC 節目《What in the World》探討飛行對人體的生理影響，以及機組人員與機師長期高空工作的健康挑戰。節目訪問空服員 Naomi 與機師 Savannah 分享脫水、腿部腫脹、睡眠不足及高空 UV 輻射等實務經驗。BBC 健康編輯 Michelle Roberts 醫師解析，機艙內的低氣壓與乾燥空氣會引發頭痛、脹氣與血液積聚，長期高空工作者更需注意宇宙輻射的累積風險。專家建議飛行時應多補充水分、做好防曬、適度活動雙腿並優先保證充足睡眠。",
+  "summaryEn": "In this episode of What in the World, host Hannah Gelbart explores why flying can physically impact the body, particularly for pilots and cabin crew who fly frequently. Cabin crew member Naomi and pilot Savannah share their experiences with severe dehydration, swollen legs, sleep deprivation, and exposure to UV rays at high altitudes. BBC Health Editor Michelle Roberts explains the science behind these symptoms, noting how low cabin pressure and dry air cause headaches, bloating, and poor blood circulation. She also discusses the risks of cosmic radiation for long-haul flight workers, while offering practical health advice for travelers, such as staying hydrated, applying sunscreen, getting adequate rest, and moving during flights.",
+  "studySets": {
+    "practical": {
+      "vocabulary": [
+        {
+          "word": "headache",
+          "kkPhonetic": "/ˈhɛdˌek/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "頭痛",
+          "example": "If you're feeling a bit dehydrated, that can give you a bit of a headache.",
+          "highlight": "headache"
+        },
+        {
+          "word": "priority",
+          "kkPhonetic": "/praɪˈɔrəti/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "首要任務",
+          "example": "My number one priority for staying healthy when flying and traveling is getting enough sleep.",
+          "highlight": "priority"
+        },
+        {
+          "word": "stressful",
+          "kkPhonetic": "/ˈstrɛsfəl/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "壓力大的",
+          "example": "Travel can be stressful as it is, but then you take in all of the impacts that sleep has on your health, whether it's the way that your brain processes things, your immune system, you name it, and sleep most likely affects it.",
+          "highlight": "stressful"
+        },
+        {
+          "word": "rest",
+          "kkPhonetic": "/rɛst/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "休息",
+          "example": "So make sure that you're prioritizing rest when traveling.",
+          "highlight": "rest"
+        },
+        {
+          "word": "thirsty",
+          "kkPhonetic": "/ˈθɝsti/",
+          "partOfSpeech": "adjective",
+          "level": "A2",
+          "meaningZh": "口渴的",
+          "example": "so you'll be feeling a bit more thirsty and your skin will also feel quite dry.",
+          "highlight": "thirsty"
+        },
+        {
+          "word": "dehydrated",
+          "kkPhonetic": "/diˈhaɪdretɪd/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "脫水的",
+          "example": "If you're feeling a bit dehydrated, that can give you a bit of a headache.",
+          "highlight": "dehydrated"
+        },
+        {
+          "word": "horizon",
+          "kkPhonetic": "/həˈraɪzn/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "地平線",
+          "example": "Some people do get travel sick, so if you do, maybe sit by the window, make sure that you can kind of see a bit of horizon.",
+          "highlight": "horizon"
+        },
+        {
+          "word": "transport",
+          "kkPhonetic": "/ˈtrænspɔrt/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "交通工具",
+          "example": "And flying is a very safe mode of transport, even though it feels counterintuitive, you're in this metal box in the air, but actually the stats, when you look at them, pretty good compared to traveling in a car, for example.",
+          "highlight": "transport"
+        },
+        {
+          "word": "medicine",
+          "kkPhonetic": "/ˈmɛdəsɪn/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "藥物",
+          "example": "And if you have any particular medicines that you need, make sure you've got them on your hand luggage with you.",
+          "highlight": "medicines"
+        },
+        {
+          "word": "blister",
+          "kkPhonetic": "/ˈblɪstɚ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "水泡",
+          "example": "I remember actually my first day, I got a big blister on my lips from the dehydration, so bad that I couldn't even talk or move them.",
+          "highlight": "blister"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "take a toll",
+          "highlight": "takes a toll",
+          "meaningZh": "造成不良影響",
+          "example": "It sounds like it is, it sounds like it takes a toll physically, emotionally, the sleep."
+        },
+        {
+          "phrase": "make sure",
+          "highlight": "make sure",
+          "meaningZh": "確保",
+          "example": "So make sure that you're prioritizing rest when traveling."
+        },
+        {
+          "phrase": "body clock",
+          "highlight": "body clock",
+          "meaningZh": "生理時鐘",
+          "example": "I mean, obviously your body clock is one thing, if you're taking a flight at a different time of the day, you know, an overnight flight, a red-eye, that can be more challenging, and also you're moving through these time zones, so your body's trying to catch up or, you know, recalibrate really."
+        },
+        {
+          "phrase": "catch up",
+          "highlight": "catch up",
+          "meaningZh": "跟上進度",
+          "example": "I mean, obviously your body clock is one thing, if you're taking a flight at a different time of the day, you know, an overnight flight, a red-eye, that can be more challenging, and also you're moving through these time zones, so your body's trying to catch up or, you know, recalibrate really."
+        },
+        {
+          "phrase": "compared to",
+          "highlight": "compared to",
+          "meaningZh": "與……相比",
+          "example": "And flying is a very safe mode of transport, even though it feels counterintuitive, you're in this metal box in the air, but actually the stats, when you look at them, pretty good compared to traveling in a car, for example."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "dehydration",
+          "kkPhonetic": "/ˌdihaɪˈdreʃən/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "脫水",
+          "example": "Dehydration is a really difficult part.",
+          "highlight": "Dehydration"
+        },
+        {
+          "word": "recalibrate",
+          "kkPhonetic": "/ˌrikæləˈbret/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "重新調整",
+          "example": "And also you're moving through these time zones, so your body's trying to catch up or, you know, recalibrate really.",
+          "highlight": "recalibrate"
+        },
+        {
+          "word": "electrolyte",
+          "kkPhonetic": "/ɪˈlɛktrəˌlaɪt/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "電解質",
+          "example": "I also personally love to add electrolytes to my water to make sure that I am getting all of the nutrients that I need and staying so hydrated.",
+          "highlight": "electrolytes"
+        },
+        {
+          "word": "counterintuitive",
+          "kkPhonetic": "/ˌkaʊntərɪnˈtuətɪv/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "違背直覺的",
+          "example": "For the occasional flyer, really, I mean I suppose what people often think about more is how safe is it to fly in general, and flying is a very safe mode of transport, even though it feels counterintuitive, you're in this metal box in the air, but actually the stats, when you look at them, pretty good compared to traveling in a car, for example.",
+          "highlight": "counterintuitive"
+        },
+        {
+          "word": "mutate",
+          "kkPhonetic": "/ˈmjutet/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "突變",
+          "example": "So we know that cells can mutate if they get a lot of exposure, but this is something that is checked for and regulated.",
+          "highlight": "mutate"
+        },
+        {
+          "word": "occupation",
+          "kkPhonetic": "/ˌɑkjəˈpeʃən/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "職業",
+          "example": "But it's for the people who are doing lots and lots of long-haul flights all the time for their occupation, that's where experts are looking at what the risks are.",
+          "highlight": "occupation"
+        },
+        {
+          "word": "pre-existing",
+          "kkPhonetic": "/ˌpriɪɡˈzɪstɪŋ/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "既存的",
+          "example": "So if you've got pre-existing health conditions, so if you've got asthma, if you've got a heart condition, it's worth just sort of checking, you know, being clear that flying's safe enough for you.",
+          "highlight": "pre-existing"
+        },
+        {
+          "word": "butcher",
+          "kkPhonetic": "/ˈbʊtʃɚ/",
+          "partOfSpeech": "verb",
+          "level": "C2",
+          "meaningZh": "毀壞",
+          "example": "And we got this from Chris, who said, \"The meaning of tradwife has been butchered by influencers and wannabes.\"",
+          "highlight": "butchered"
+        },
+        {
+          "word": "thrombosis",
+          "kkPhonetic": "/θrɑmˈbosɪs/",
+          "partOfSpeech": "noun",
+          "level": "C2",
+          "meaningZh": "血栓形成",
+          "example": "Is that for deep vein thrombosis?",
+          "highlight": "thrombosis"
+        },
+        {
+          "word": "decompression",
+          "kkPhonetic": "/ˌdikəmˈprɛʃən/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "減壓",
+          "example": "My legs, I use the decompression tights, but when you remove it, you feel like you have a huge legs.",
+          "highlight": "decompression"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "take a toll",
+          "highlight": "takes a toll",
+          "meaningZh": "造成損耗；產生不良影響",
+          "example": "It sounds like it is, it sounds like it takes a toll physically, emotionally, the sleep."
+        },
+        {
+          "phrase": "throw someone out of kilter",
+          "highlight": "throw you out of kilter",
+          "meaningZh": "使打亂秩序；使失去平衡",
+          "example": "So there are lots of different ways that getting on a flight can sort of throw you out of kilter."
+        },
+        {
+          "phrase": "by and large",
+          "highlight": "By and large",
+          "meaningZh": "總體而言；大體上",
+          "example": "By and large, the amount that air crew clock up is within the safe limit."
+        },
+        {
+          "phrase": "clock up",
+          "highlight": "clock up",
+          "meaningZh": "累積達到",
+          "example": "So you can see how you can clock up these levels."
+        },
+        {
+          "phrase": "ease off",
+          "highlight": "ease off",
+          "meaningZh": "減少；節制",
+          "example": "You might want to take some anti-nausea tablets and maybe ease off the alcohol as well if you're on a flight."
+        }
+      ]
+    },
+    "topic": {
+      "vocabulary": [
+        {
+          "word": "cabin crew",
+          "kkPhonetic": "/ˈkæbɪn kru/",
+          "partOfSpeech": "n.",
+          "level": "B1",
+          "meaningZh": "機組人員、空服員",
+          "example": "It's really hard to be a cabin crew, it's not like a joke.",
+          "highlight": "cabin crew"
+        },
+        {
+          "word": "cockpit",
+          "kkPhonetic": "/ˈkɑkpɪt/",
+          "partOfSpeech": "n.",
+          "level": "B2",
+          "meaningZh": "駕駛艙",
+          "example": "It's not just in the cabin, of course, pilots are also extremely affected by spending so many hours on a plane, especially in those cockpits with their huge windows.",
+          "highlight": "cockpits"
+        },
+        {
+          "word": "flight deck",
+          "kkPhonetic": "/ˈflaɪt ˌdɛk/",
+          "partOfSpeech": "n.",
+          "level": "B2",
+          "meaningZh": "駕駛艙",
+          "example": "Number two, this is important for me up in the flight deck and for you sitting in a window seat, being about 30,000 feet up in the air, you are a lot closer to the sun's harmful UV rays, so applying sunscreen is so important.",
+          "highlight": "flight deck"
+        },
+        {
+          "word": "sunscreen",
+          "kkPhonetic": "/ˈsʌnˌskrin/",
+          "partOfSpeech": "n.",
+          "level": "A2",
+          "meaningZh": "防曬乳",
+          "example": "Number two, this is important for me up in the flight deck and for you sitting in a window seat, being about 30,000 feet up in the air, you are a lot closer to the sun's harmful UV rays, so applying sunscreen is so important.",
+          "highlight": "sunscreen"
+        },
+        {
+          "word": "cosmic radiation",
+          "kkPhonetic": "/ˈkɑzmɪk ˌredɪˈeʃən/",
+          "partOfSpeech": "n.",
+          "level": "C1",
+          "meaningZh": "宇宙輻射",
+          "example": "Can you explain what cosmic radiation is?",
+          "highlight": "cosmic radiation"
+        },
+        {
+          "word": "altitude",
+          "kkPhonetic": "/ˈæltətud/",
+          "partOfSpeech": "n.",
+          "level": "B2",
+          "meaningZh": "海拔高度",
+          "example": "Now, everybody encounters some of it, but you get more as you go higher up in altitude, which is why it's spoken about with flights.",
+          "highlight": "altitude"
+        },
+        {
+          "word": "long-haul",
+          "kkPhonetic": "/ˈlɔŋˌhɔl/",
+          "partOfSpeech": "adj.",
+          "level": "B2",
+          "meaningZh": "長途的",
+          "example": "But it's for the people who are doing lots and lots of long-haul flights all the time for their occupation, that's where experts are looking at what the risks are.",
+          "highlight": "long-haul"
+        },
+        {
+          "word": "air crew",
+          "kkPhonetic": "/ˈɛr ˌkru/",
+          "partOfSpeech": "n.",
+          "level": "B2",
+          "meaningZh": "空勤人員",
+          "example": "By and large, the amount that air crew clock up is within the safe limit.",
+          "highlight": "air crew"
+        },
+        {
+          "word": "hand luggage",
+          "kkPhonetic": "/ˈhænd ˌlʌɡɪdʒ/",
+          "partOfSpeech": "n.",
+          "level": "A2",
+          "meaningZh": "手提行李",
+          "example": "And then if you have any particular medicines that you need, make sure you've got them on your hand luggage with you.",
+          "highlight": "hand luggage"
+        },
+        {
+          "word": "France",
+          "kkPhonetic": "/fræns/",
+          "partOfSpeech": "n.",
+          "level": "A1",
+          "meaningZh": "法國，本集節目中提及其法庭判決認定宇宙輻射與空服員罹患乳癌有關。",
+          "example": "The other big risk is radiation, and a lot of people are talking about this court case in France that ruled that cosmic radiation had contributed to a flight attendant's breast cancer.",
+          "highlight": "France"
+        },
+        {
+          "word": "America",
+          "kkPhonetic": "/əˈmɛrɪkə/",
+          "partOfSpeech": "n.",
+          "level": "A1",
+          "meaningZh": "美國，節目中作為橫貫國內長途飛行（東岸至西岸）計算宇宙輻射暴露量的範例。",
+          "example": "This type of radiation, it's a bit like an X-ray, so if you were traveling traveling from the East Coast to the West Coast of America and back again, the amount of cosmic radiation might be similar to one X-ray.",
+          "highlight": "America"
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/3VnVIsfABX3b8oLYUXzAoD"
+}
