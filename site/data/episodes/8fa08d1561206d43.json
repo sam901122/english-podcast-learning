@@ -1,0 +1,349 @@
+{
+  "id": "8fa08d1561206d43",
+  "title": "Is sleepmaxxing actually helpful?",
+  "description": "<p>Researching ways to improve your sleep has been popular for years but now it’s evolved and there’s a whole new genre of social media content called ‘Sleepmaxxing’. It shows ways you can build your perfect night’s sleep, by taking magnesium supplements, using black-out curtains or white noise machines. Experts say the popularity has boomed thanks to the accessibility of smart watches which give users sleep scores. We hear from Ollie, who tracks his sleep and is aiming for the perfect score.</p><p>BBC reporter Ashitha Nagesh who’s been reporting on the trend, tells us why some experts advise against multi-layered sleep routines and an obsessive fixation with sleep called orthosomnia.</p><p>Plus, sleep expert Sophie Bostock tells us how reliable popular sleep trackers are and what they are really measuring.</p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Iqra Farooq\nProducers: Mollie Perella, Emily Horler and Benita Barden\nEditor: Verity Wilde</p>",
+  "publishedAt": "2026-10-01T13:36:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct994t",
+  "summaryZh": "本集 BBC 節目《What in the World》探討社群媒體上熱門的「睡眠極大化」趨勢，以及利用智慧裝置與追蹤器優化睡眠是否真的有效。 BBC 記者 Ashitha Nagesh 指出，全球約有 4 億人正在追蹤睡眠數據，但過度追求高分可能引發名為「完美睡眠症」（ orthosomnia ）的焦慮感，且研究顯示光是看到假給的低睡眠分數，就會讓人在隔天的認知測試中表現變差。節目採訪了記錄自身睡眠數據長達 140 天的創作者 Olly ，並由睡眠專家 Sophie Bostock 分析穿戴式裝置的限制：雖然測量睡眠時間的準確度可達 90% ，但由於裝置無法偵測腦波，對深層或快速動眼期等睡眠階段的判斷準確度僅約 50% 至 80% 。專家建議大眾回歸直覺且良好的睡眠衛生習慣，而非過度焦慮於螢幕上的數字。",
+  "summaryEn": "This episode of What in the World explores 'sleepmaxxing'—a viral social media trend where people use smart trackers, supplements, and routine tweaks to optimize their sleep and chase high sleep scores. BBC reporter Ashitha Nagesh highlights that while around 400 million people track their sleep, overanalyzing data can cause anxiety and lead to 'orthosomnia' (an obsession with perfect sleep), with research showing that even fake low scores can mentally impair next-day performance. Content creator Olly shares his 140-day journey tracking sleep scores, while sleep expert Sophie Bostock cautions that smartwatches are only 50–80% accurate for sleep stages because they measure movement and heart rate rather than brainwaves. Experts advise focusing on simple, intuitive sleep hygiene instead of stressing over numbers on a screen.",
+  "studySets": {
+    "practical": {
+      "vocabulary": [
+        {
+          "word": "temperature",
+          "kkPhonetic": "/ˈtɛmpərətʃɚ/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "溫度",
+          "example": "You know, they take magnesium tablets, they wear fancy special eye masks, earplugs, they try and keep their room at the perfect temperature.",
+          "highlight": "temperature"
+        },
+        {
+          "word": "score",
+          "kkPhonetic": "/skor/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "分數",
+          "example": "And I ended up tracking my sleep scores for 140 days.",
+          "highlight": "scores"
+        },
+        {
+          "word": "useful",
+          "kkPhonetic": "/ˈjusfəl/",
+          "partOfSpeech": "adjective",
+          "level": "A2",
+          "meaningZh": "有用的",
+          "example": "That's really useful information that you can act on.",
+          "highlight": "useful"
+        },
+        {
+          "word": "scientist",
+          "kkPhonetic": "/ˈsaɪəntɪst/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "科學家",
+          "example": "Yeah, I mean there was actually a study a few years ago where uh scientists monitored what happened when people were given a fake sleep score, so they had two groups of people.",
+          "highlight": "scientists"
+        },
+        {
+          "word": "routine",
+          "kkPhonetic": "/ruˈtin/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "例行公事",
+          "example": "I've come up with this routine.",
+          "highlight": "routine"
+        },
+        {
+          "word": "quiet",
+          "kkPhonetic": "/ˈkwaɪət/",
+          "partOfSpeech": "adjective",
+          "level": "A2",
+          "meaningZh": "安靜的",
+          "example": "So things like, you know, keeping your room generally cool, dark, and quiet.",
+          "highlight": "quiet"
+        },
+        {
+          "word": "device",
+          "kkPhonetic": "/dɪˈvaɪs/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "裝置",
+          "example": "Studies comparing them with lab measurements find that some devices detect more than 90% of sleep correctly.",
+          "highlight": "devices"
+        },
+        {
+          "word": "tired",
+          "kkPhonetic": "/taɪrd/",
+          "partOfSpeech": "adjective",
+          "level": "A2",
+          "meaningZh": "疲倦的",
+          "example": "And what they found was just being told that you had a poor sleep score was enough to make you actively perform worse during the day, feel more sluggish, feel more tired, and do worse in cognitive tests.",
+          "highlight": "tired"
+        },
+        {
+          "word": "smartwatch",
+          "kkPhonetic": "/ˈsmɑrtˌwɑtʃ/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "智慧型手錶",
+          "example": "A smartwatch can't see your brainwaves.",
+          "highlight": "smartwatch"
+        },
+        {
+          "word": "relaxing",
+          "kkPhonetic": "/rɪˈlæksɪŋ/",
+          "partOfSpeech": "adjective",
+          "level": "A2",
+          "meaningZh": "令人放鬆的",
+          "example": "After that, a routine of face massaging, and finally watching some relaxing videos on YouTube, so something about slow living or cottagecore.",
+          "highlight": "relaxing"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "look into",
+          "highlight": "looking into",
+          "meaningZh": "調查；研究",
+          "example": "So you have been looking into sleepmaxing and, I guess, what it involves, what people are doing."
+        },
+        {
+          "phrase": "come up with",
+          "highlight": "come up with",
+          "meaningZh": "想出；提出",
+          "example": "I've come up with this routine."
+        },
+        {
+          "phrase": "stand behind",
+          "highlight": "stand behind",
+          "meaningZh": "支持；為…背書",
+          "example": "And they told us that they stand behind their science and their research and and their claims of accuracy and they're committed to clearly communicating to people who use the ring how it works and how members should use that information."
+        },
+        {
+          "phrase": "end up",
+          "highlight": "ended up",
+          "meaningZh": "最終；結果為",
+          "example": "And I ended up tracking my sleep scores for 140 days."
+        },
+        {
+          "phrase": "fall asleep",
+          "highlight": "fall asleep",
+          "meaningZh": "入睡",
+          "example": "I fall asleep in half an hour, sometimes less, and sleep about 8 hours easily."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "optimize",
+          "kkPhonetic": "/ˈɑptəˌmaɪz/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "優化、使最佳化",
+          "example": "Yeah, so sleepmaxing, like you said, is a way of people sort of trying to optimize their sleep.",
+          "highlight": "optimize"
+        },
+        {
+          "word": "counterproductive",
+          "kkPhonetic": "/ˌkaʊntɚprəˈdʌktɪv/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "適得其反的、事與願違的",
+          "example": "I've spoken to experts about this, sleep doctors, sleep analysts, and they say that can be counterproductive.",
+          "highlight": "counterproductive"
+        },
+        {
+          "word": "fixate",
+          "kkPhonetic": "/ˈfɪkseɪt/",
+          "partOfSpeech": "verb",
+          "level": "C2",
+          "meaningZh": "過度專注於、固執於",
+          "example": "Trying to sort of dig into how can I optimize my sleep, how can I make it better can make you fixate on it and actually make your sleep worse.",
+          "highlight": "fixate"
+        },
+        {
+          "word": "instill",
+          "kkPhonetic": "/ɪnˈstɪl/",
+          "partOfSpeech": "verb",
+          "level": "C2",
+          "meaningZh": "逐步培養、灌輸",
+          "example": "I think by seeing this data, tracking my sleep, I'm starting to understand my body better and I'm starting to, you know, really instill these lifestyle changes that I need to make within myself in order to sleep better.",
+          "highlight": "instill"
+        },
+        {
+          "word": "dissociate",
+          "kkPhonetic": "/dɪˈsoʊʃiˌeɪt/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "脫離關係、分割",
+          "example": "So I think ever since that happened, I've really tried to kind of dissociate myself away from the score, because I know that, you know, I can do almost anything on such a bad sleep score.",
+          "highlight": "dissociate"
+        },
+        {
+          "word": "cautious",
+          "kkPhonetic": "/ˈkɔʃəs/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "謹慎的、持保留態度的",
+          "example": "But I'd be more cautious about your sleep stages.",
+          "highlight": "cautious"
+        },
+        {
+          "word": "fragmented",
+          "kkPhonetic": "/ˈfræɡmɛntɪd/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "支離破碎的、不連貫的",
+          "example": "Perhaps you discover that you're consistently getting only 6 hours or that your sleep is more fragmented after alcohol.",
+          "highlight": "fragmented"
+        },
+        {
+          "word": "sluggish",
+          "kkPhonetic": "/ˈslʌɡɪʃ/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "遲鈍的、懶散無精打采的",
+          "example": "And what they found was just being told that you had a poor sleep score was enough to make you actively perform worse during the day, feel more sluggish, feel more tired, and do worse in cognitive tests.",
+          "highlight": "sluggish"
+        },
+        {
+          "word": "reassuring",
+          "kkPhonetic": "/ˌriəˈʃʊrɪŋ/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "令人安心的、使人放心的",
+          "example": "And in some cases, you know, they told me that those patients, they had a full sleep study with reassuring results that told them they were fine, they don't have any kind of sleep condition, and they're still not convinced because of the data on their tracker.",
+          "highlight": "reassuring"
+        },
+        {
+          "word": "consensus",
+          "kkPhonetic": "/kənˈsɛnsəs/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "共識、一致意見",
+          "example": "Obviously, these things can sometimes work, but um the general consensus among sleep experts is that sleep doesn't respond well to being watched.",
+          "highlight": "consensus"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "dig into",
+          "highlight": "dig into",
+          "meaningZh": "深入探究、挖掘",
+          "example": "Trying to sort of dig into how can I optimize my sleep, how can I make it better can make you fixate on it and actually make your sleep worse."
+        },
+        {
+          "phrase": "carry through into",
+          "highlight": "carries through into",
+          "meaningZh": "延續至、影響到",
+          "example": "Do you feel like it carries through into the day?"
+        },
+        {
+          "phrase": "gold standard",
+          "highlight": "gold standard",
+          "meaningZh": "黃金標準、最佳參照標準",
+          "example": "And in a sleep laboratory, the gold standard is polysomnography."
+        },
+        {
+          "phrase": "power down",
+          "highlight": "power down",
+          "meaningZh": "關機、降低運作能量",
+          "example": "So just looking at the number on the screen and being told you've slept badly is enough to convince your brain that it needs to power down and and be less effective during the day."
+        },
+        {
+          "phrase": "stand behind",
+          "highlight": "stand behind",
+          "meaningZh": "為……背書、支持",
+          "example": "And they told us that they stand behind their science and their research and and their claims of accuracy and they're committed to clearly communicating to people who use the ring how it works and how members should use that information."
+        }
+      ]
+    },
+    "topic": {
+      "vocabulary": [
+        {
+          "word": "sleepmaxing",
+          "kkPhonetic": "/ˈslipˌmæksɪŋ/",
+          "partOfSpeech": "noun",
+          "level": "C2",
+          "meaningZh": "睡眠極限化（網路流行用語，指運用各種工具、補給品與科技極力追求完美睡眠的做法）",
+          "example": "Yeah, so sleepmaxing, like you said, is a way of people sort of trying to optimize their sleep.",
+          "highlight": "sleepmaxing"
+        },
+        {
+          "word": "earplug",
+          "kkPhonetic": "/ˈɪrˌplʌɡ/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "耳塞",
+          "example": "You know, they take magnesium tablets, they wear fancy special eye masks, earplugs, they try and keep their room at the perfect temperature.",
+          "highlight": "earplugs"
+        },
+        {
+          "word": "REM",
+          "kkPhonetic": "/rɛm/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "快速動眼期（Rapid Eye Movement 的縮寫，為睡眠週期中的重要階段）",
+          "example": "When your watch says you had 47 minutes of deep sleep or 90 minutes of REM, depending on the device and sleep stage, accuracy is broadly around 50 to 80%.",
+          "highlight": "REM"
+        },
+        {
+          "word": "polysomnography",
+          "kkPhonetic": "/ˌpɑliˌsɑmˈnɑɡrəfi/",
+          "partOfSpeech": "noun",
+          "level": "C2",
+          "meaningZh": "多頻道睡眠記錄圖檢查（睡眠實驗室中用以精確測量腦波及多項生理指標的黃金標準檢查）",
+          "example": "And in a sleep laboratory, the gold standard is polysomnography.",
+          "highlight": "polysomnography"
+        },
+        {
+          "word": "brainwave",
+          "kkPhonetic": "/ˈbreɪnˌweɪv/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "腦波",
+          "example": "We measure brainwaves, eye movements, and muscle activity, as well as heart rate, breathing, and oxygen saturation.",
+          "highlight": "brainwaves"
+        },
+        {
+          "word": "orthosomnia",
+          "kkPhonetic": "/ˌɔrθoʊˈsɑmniə/",
+          "partOfSpeech": "noun",
+          "level": "C2",
+          "meaningZh": "完美睡眠焦慮症（過度執著於透過睡眠追蹤器獲得完美睡眠數據而產生的焦慮症狀）",
+          "example": "Yeah, and obviously if you get too fixated on it, um it can give you something called orthosomnia, which is a term that was coined in the US, and orthosomnia is the obsession with achieving perfect sleep.",
+          "highlight": "orthosomnia"
+        },
+        {
+          "word": "Copenhagen",
+          "kkPhonetic": "/ˌkoʊpənˈheɪɡən/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "哥本哈根（丹麥首都；受訪者提及在此參加鐵人三項前夜僅睡一小時，藉此說明睡眠分數低並不代表隔天無法發揮）",
+          "example": "So when I did Ironman Copenhagen, I I actually only slept for one hour the night before I did that race.",
+          "highlight": "Copenhagen"
+        },
+        {
+          "word": "US",
+          "kkPhonetic": "/ˌjuˈɛs/",
+          "partOfSpeech": "noun",
+          "level": "A1",
+          "meaningZh": "美國（節目提到「完美睡眠焦慮症」這一詞彙最初是在美國創造出來的）",
+          "example": "Yeah, and obviously if you get too fixated on it, um it can give you something called orthosomnia, which is a term that was coined in the US, and orthosomnia is the obsession with achieving perfect sleep.",
+          "highlight": "US"
+        },
+        {
+          "word": "UK",
+          "kkPhonetic": "/ˌjuˈkeɪ/",
+          "partOfSpeech": "noun",
+          "level": "A1",
+          "meaningZh": "英國（節目說明完美睡眠焦慮症目前在英國尚未被正式列為醫療狀況，但當地醫生已發現相關病例）",
+          "example": "So, it's not recognized as a condition in the UK yet, but I've spoken to sleep doctors here who say they've noticed signs of it in their patients, you know, people bringing their sleep tracker data and their sleep scores to the doctor, completely convinced that there's something wrong with them and they must have a sleep disorder.",
+          "highlight": "UK"
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/7GRBgAXKhyGImjlnl2lEd8"
+}
