@@ -1,0 +1,358 @@
+{
+  "id": "21dc678937f6d8c1",
+  "title": "Location: Tiny Island. Population: YOU",
+  "description": "<p>It’s something you might dream of - or only see in films or read in books - moving to a remote island in the middle of the sea. Only wildlife around you. No bars or clubs and barely any people! </p><p>Sound like a bit of you? Or maybe it’s your worst nightmare. We speak to BBC reporter Georgina Rannard, about why she’s swapping city life to be a farmer on an island in Wales with only three other people. We also hear tips from people that’ve done similar things. Jaleesah lives on Siquijor in the Philippines and Tom works on a research station in Antarctica. </p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Hannah Gelbart\nProducer: Mollie Perella\nEditor: Emily Horler</p>",
+  "publishedAt": "2026-10-02T13:30:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct8q65",
+  "summaryZh": "本集 BBC 節目《What in the World》探討前 BBC 氣候與科學記者 Georgina Rannard 離開城市的媒體工作，與伴侶一同搬遷至人口僅有 4 人的威爾斯巴德西島，轉行從事保育農業的故事。該島氣候多風多雨且無公共電網，生活需依靠太陽能板與發電機，補給則全仰賴船隻運送，冬季極端天氣下甚至可能斷航長達 6 週。節目亦邀請住在菲律賓的 Jaleesah 與在南極研究站工作的 Tom 分享偏遠生活的建議，包含透過語音或影片訊息與親友聯繫、攜帶安慰心靈的家鄉物品，以及在遭遇挑戰時回想當初選擇改變生活的初衷。",
+  "summaryEn": "In this podcast episode, BBC climate and science correspondent Georgina Rannard discusses her transition from city life to becoming a conservation farmer on Bardsey Island (Ynys Enlli) in Wales, joining a permanent population of just four people. She details the realities of living off-grid—such as relying on solar power, generators, and outdoor toilets—and managing conservation farming to protect local seabirds and plant life despite harsh weather that can cut off boat deliveries for weeks. The episode also features insights from individuals living in remote parts of the Philippines and Antarctica, who share tips on staying connected through voice notes, bringing comforting items from home, and holding onto one's core motivation when facing major life changes.",
+  "studySets": {
+    "practical": {
+      "vocabulary": [
+        {
+          "word": "remote",
+          "kkPhonetic": "/rɪˈmoʊt/",
+          "partOfSpeech": "adj.",
+          "level": "B1",
+          "meaningZh": "偏遠的",
+          "example": "When you think of moving away from home, you might think of going to a big city, but how about a remote island?",
+          "highlight": "remote"
+        },
+        {
+          "word": "tropical",
+          "kkPhonetic": "/ˈtrɑpɪkl/",
+          "partOfSpeech": "adj.",
+          "level": "B1",
+          "meaningZh": "熱帶的",
+          "example": "The best thing about living where I do in Sikijor Island, it's a beautiful tropical island, so the best thing is that I live close to nature, that I live a slow-paced life.",
+          "highlight": "tropical"
+        },
+        {
+          "word": "challenging",
+          "kkPhonetic": "/ˈtʃælɪndʒɪŋ/",
+          "partOfSpeech": "adj.",
+          "level": "B1",
+          "meaningZh": "具挑戰性的",
+          "example": "Living and working in Antarctica can be really challenging.",
+          "highlight": "challenging"
+        },
+        {
+          "word": "separated",
+          "kkPhonetic": "/ˈsɛpəˌreɪtɪd/",
+          "partOfSpeech": "adj.",
+          "level": "B1",
+          "meaningZh": "分隔的",
+          "example": "So, what's it actually like to live somewhere where you're separated from the rest of civilization by dangerous, choppy seas, with no shops, no bars, no gym, and only a few other people to talk to?",
+          "highlight": "separated"
+        },
+        {
+          "word": "surrounded",
+          "kkPhonetic": "/səˈraʊndɪd/",
+          "partOfSpeech": "adj.",
+          "level": "B1",
+          "meaningZh": "被圍繞的",
+          "example": "When you're there, you do feel kind of you're absolutely surrounded by water, and it's very stormy there.",
+          "highlight": "surrounded"
+        },
+        {
+          "word": "pollution",
+          "kkPhonetic": "/pəˈluʃən/",
+          "partOfSpeech": "n.",
+          "level": "B1",
+          "meaningZh": "污染",
+          "example": "So, it has very, very dark skies because of a lack of light pollution, so...",
+          "highlight": "pollution"
+        },
+        {
+          "word": "generator",
+          "kkPhonetic": "/ˈdʒɛnəˌreɪtɚ/",
+          "partOfSpeech": "n.",
+          "level": "B1",
+          "meaningZh": "發電機",
+          "example": "But yeah, it's off-grid, so we have a solar panel and a generator.",
+          "highlight": "generator"
+        },
+        {
+          "word": "direction",
+          "kkPhonetic": "/dəˈrɛkʃən/",
+          "partOfSpeech": "n.",
+          "level": "A2",
+          "meaningZh": "方向",
+          "example": "So, why did you decide to do this to have such a big change of direction?",
+          "highlight": "direction"
+        },
+        {
+          "word": "seasoning",
+          "kkPhonetic": "/ˈsizənɪŋ/",
+          "partOfSpeech": "n.",
+          "level": "B1",
+          "meaningZh": "調味料",
+          "example": "I just brought some small things, like my favorite seasoning, so I can cook some meals from back home, and some meaningful gifts from my loved ones.",
+          "highlight": "seasoning"
+        },
+        {
+          "word": "delivery",
+          "kkPhonetic": "/dɪˈlɪvərɪ/",
+          "partOfSpeech": "n.",
+          "level": "B1",
+          "meaningZh": "遞送物件",
+          "example": "I'm really going to miss fresh milk because we don't get deliveries very often.",
+          "highlight": "deliveries"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "stay connected",
+          "highlight": "stay connected",
+          "meaningZh": "保持連線",
+          "example": "That's a really fun and easy way to stay connected."
+        },
+        {
+          "phrase": "stay in touch",
+          "highlight": "staying in touch",
+          "meaningZh": "保持聯絡",
+          "example": "Often I'm really bad at staying in touch, so I think this will I may end up talking to people even more than I have in the past."
+        },
+        {
+          "phrase": "get back on track",
+          "highlight": "get back on track",
+          "meaningZh": "重回正軌",
+          "example": "So when you're having a bad day, or you're feeling unsure about if you're doing the right thing, then just go back to that reason why you decided you wanted to come down here in the first place, and it really helps you kind of get back on track."
+        },
+        {
+          "phrase": "in the first place",
+          "highlight": "in the first place",
+          "meaningZh": "當初",
+          "example": "Remember the reason that you came down here in the first place."
+        },
+        {
+          "phrase": "ups and downs",
+          "highlight": "ups and downs",
+          "meaningZh": "高低起伏",
+          "example": "And I think we very much know that there'll be ups and downs, you know, more than our lives at the moment."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "tempted",
+          "kkPhonetic": "/ˈtɛmptɪd/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "心動的；受誘惑的",
+          "example": "Would you be tempted?",
+          "highlight": "tempted"
+        },
+        {
+          "word": "bonkers",
+          "kkPhonetic": "/ˈbɑːŋkɚz/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "瘋狂的；發瘋的",
+          "example": "We do think you're absolutely bonkers, in a good way.",
+          "highlight": "bonkers"
+        },
+        {
+          "word": "sanctuary",
+          "kkPhonetic": "/ˈsæŋktʃuɛri/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "保護區；庇護所",
+          "example": "And this is really nice, it's an international dark sky sanctuary.",
+          "highlight": "sanctuary"
+        },
+        {
+          "word": "colony",
+          "kkPhonetic": "/ˈkɑːləni/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "（生物）群落；棲息地",
+          "example": "And it's the fourth largest colony for them in the world.",
+          "highlight": "colony"
+        },
+        {
+          "word": "warden",
+          "kkPhonetic": "/ˈwɔːrdn/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "管理員；守護者",
+          "example": "They'll be the wardens of the island.",
+          "highlight": "wardens"
+        },
+        {
+          "word": "off-grid",
+          "kkPhonetic": "/ˌɑːfˈɡrɪd/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "脫離公共電網的；自給自足的",
+          "example": "But yeah, it's off-grid, so we have a solar panel and a generator.",
+          "highlight": "off-grid"
+        },
+        {
+          "word": "inhabitant",
+          "kkPhonetic": "/ɪnˈhæbɪtənt/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "居民；居住者",
+          "example": "It's got 100,000 inhabitants, so it is quite a lot bigger than yours, but I'm going to play you some of her top tips and see if they might be useful for you.",
+          "highlight": "inhabitants"
+        },
+        {
+          "word": "practicality",
+          "kkPhonetic": "/ˌpræktɪˈkæləti/",
+          "partOfSpeech": "noun",
+          "level": "C2",
+          "meaningZh": "實際事務；切實問題",
+          "example": "Yes, I I think what he's saying is so important, that actually the psychological journey will be as challenging, or maybe even more so, than just the practicalities and the physicality of moving to an island and being a farmer.",
+          "highlight": "practicalities"
+        },
+        {
+          "word": "physicality",
+          "kkPhonetic": "/ˌfɪzɪˈkæləti/",
+          "partOfSpeech": "noun",
+          "level": "C2",
+          "meaningZh": "身體上的勞累；體能考驗",
+          "example": "Yes, I I think what he's saying is so important, that actually the psychological journey will be as challenging, or maybe even more so, than just the practicalities and the physicality of moving to an island and being a farmer.",
+          "highlight": "physicality"
+        },
+        {
+          "word": "framework",
+          "kkPhonetic": "/ˈfreɪmwɜːrk/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "思維模式；心理架構",
+          "example": "Remembering that we've chosen to make this big life change and take on a big challenge and and accept the ups and the downs, I think is a really good mental framework to go in with, and I'm really going to remember on bad days that he said that because he's doing it now, so I kind of will take that as guidance.",
+          "highlight": "framework"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "stage an intervention",
+          "highlight": "stage an intervention",
+          "meaningZh": "進行介入干預（通常指親友聯合勸誡）",
+          "example": "Some people have tried to stage an intervention."
+        },
+        {
+          "phrase": "hand-in-hand",
+          "highlight": "hand-in-hand",
+          "meaningZh": "密切相關地；併行不悖地",
+          "example": "So, it's kind of farming done hand-in-hand with protecting the environment."
+        },
+        {
+          "phrase": "opportunity of a lifetime",
+          "highlight": "opportunity of a lifetime",
+          "meaningZh": "千載難逢的良機",
+          "example": "It's the opportunity of a lifetime, really."
+        },
+        {
+          "phrase": "stay in touch",
+          "highlight": "staying in touch",
+          "meaningZh": "保持聯繫",
+          "example": "Often I'm really bad at staying in touch, so I think this will I may end up talking to people even more than I have in the past."
+        },
+        {
+          "phrase": "get back on track",
+          "highlight": "get back on track",
+          "meaningZh": "重回正軌；恢復良好狀態",
+          "example": "So when you're having a bad day, or you're feeling unsure about if you're doing the right thing, then just go back to that reason why you decided you wanted to come down here in the first place, and it really helps you kind of get back on track."
+        }
+      ]
+    },
+    "topic": {
+      "vocabulary": [
+        {
+          "word": "seabird",
+          "kkPhonetic": "/ˈsiˌbɝd/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "海鳥（本集提及喬治娜即將移居的偏遠島嶼是多種海鳥的重要棲息地）。",
+          "example": "But the island's also very important for seabirds.",
+          "highlight": "seabirds"
+        },
+        {
+          "word": "shearwater",
+          "kkPhonetic": "/ˈʃɪrˌwɑtɚ/",
+          "partOfSpeech": "noun",
+          "level": "C2",
+          "meaningZh": "剪水鸌（巴德西島上的代表性海鳥之一，該島擁有全球第四大的繁殖群落）。",
+          "example": "So it has one called the Manx shearwater, which is a small, it's actually not that pretty, it's grey, but the chicks are beautiful, these very fluffy white chicks.",
+          "highlight": "shearwater"
+        },
+        {
+          "word": "pup",
+          "kkPhonetic": "/pʌp/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "幼崽（本集指在島嶼海灘上出生的幼海豹）。",
+          "example": "So, there's around 200 seals, they swim in the waters there, come up on the beach, have their pups, their babies, there.",
+          "highlight": "pups"
+        },
+        {
+          "word": "peninsula",
+          "kkPhonetic": "/pəˈnɪnsələ/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "半島（文中指威爾斯西北部的林半島，巴德西島即部位於其末端外海）。",
+          "example": "you zoom into a peninsula called the Llyn Peninsula, and off the very end of that, is an island called, in Welsh, Ynys Enlli, or in English, Bardsey Island, and that's where we're going.",
+          "highlight": "peninsula"
+        },
+        {
+          "word": "graze",
+          "kkPhonetic": "/ɡrez/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "放牧（喬治娜在島上透過放牧家畜來控制植物生長，以維護自然生態多樣性）。",
+          "example": "And it's actually conservation farming, so that's where you graze the animals in order to manage the environment.",
+          "highlight": "graze"
+        },
+        {
+          "word": "outhouse",
+          "kkPhonetic": "/ˈaʊtˌhaʊs/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "戶外廁所，外屋（島上缺乏現代基礎設施，戶外便所反映了該處原始偏遠的生活型態）。",
+          "example": "It's an outhouse.",
+          "highlight": "outhouse"
+        },
+        {
+          "word": "Wales",
+          "kkPhonetic": "/welz/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "威爾斯（英國西部的構成國，主角喬治娜即將移居的巴德西島即隸屬於此區域的外海）。",
+          "example": "so you start with UK, and then you zoom in to Wales, this country in the west of the UK, you go north into North Wales, you zoom into a peninsula called the Llyn Peninsula, and off the very end of that, is an island called, in Welsh, Ynys Enlli, or in English, Bardsey Island, and that's where we're going.",
+          "highlight": "Wales"
+        },
+        {
+          "word": "Bardsey Island",
+          "kkPhonetic": "/ˈbɑrdzi ˈaɪlənd/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "巴德西島（位於威爾斯外海的偏遠小島，為本集專訪主角喬治娜即將移居並經營生態農場的地點）。",
+          "example": "So, we, and when I say we I mean me and my partner, Gwyntaf, we are going to an island called in Welsh, Ynys Enlli, or in English, Bardsey Island.",
+          "highlight": "Bardsey Island"
+        },
+        {
+          "word": "Siquijor",
+          "kkPhonetic": "/ˌsɪkiˈhɔr/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "錫基霍爾島（菲律賓的熱帶島嶼，受訪者 Jelisa 在此生活，並分享偏遠島嶼生活的調適建議）。",
+          "example": "but we got this from Jelisa, who's Dutch, and she lives on Siquijor, which is in the Philippines.",
+          "highlight": "Siquijor"
+        },
+        {
+          "word": "Antarctica",
+          "kkPhonetic": "/ænˈtɑrktɪkə/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "南極洲（受訪者湯姆進行極地野外工作之地，他分享在極端環境下生活的心態調適經驗供主角參考）。",
+          "example": "Living and working in Antarctica can be really challenging.",
+          "highlight": "Antarctica"
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/7DYX0GPdlfuZTg0LYvFfIk"
+}
