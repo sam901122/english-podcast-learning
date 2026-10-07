@@ -1,0 +1,331 @@
+{
+  "id": "e3abfe19407830b1",
+  "title": "Why are black holes still such a mystery?",
+  "description": "<p>Can we really get swallowed by a black hole? And what would actually happen if we did? Black holes are really mysterious and there is still so much we don’t know about them. So, grab your space helmet because we’re getting into some of the biggest questions scientists are still trying to answer.</p><p>We speak to science journalist, Caroline Steel, to clear up some of the mysteries around black holes. How do they distort time? Are wormholes real? </p><p>We also hear from astrophysicist and postdoctoral researcher Rowina Nathan - she separates fact from fiction and busts some of the most common black hole myths, answering questions from members of the Cosmic Girls Foundation, a global community helping teenage girls engage with space, science and technology.</p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Hannah Gelbart\nProducers: Baldeep Chahal, William Lee Adams and Rita Behadini\nVideo Journalist: Baldeep Chahal\nEditor: Emily Horler</p>",
+  "publishedAt": "2026-10-06T13:30:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct990b",
+  "summaryZh": "本集 BBC 節目《What in the World》探討黑洞的奧秘與常見迷思。主持人 Hannah Gelbart 邀請 BBC 科學記者 Caroline Steel 與天體物理學家 Ruwina Nathan 共同解答大眾對黑洞的疑問。節目探討了黑洞由大質量恆星死亡坍縮形成、事件視界、重力波與蟲洞理論，並解釋掉入黑洞時發生的「義大利麵化」（ spaghettification ）現象。此外，專家也回應了 Cosmic Girls Foundation 青少年社群的提問，澄清太陽因質量過小不會變成黑洞、天體可在穩定軌道上繞行黑洞，以及遠方觀察者眼中時間看似凍結的物理原理。科學家目前正透過望遠鏡觀測遠古宇宙，持續探索黑洞的未解之謎。",
+  "summaryEn": "In this episode of the BBC World Service podcast What in the World, host Hannah Gelbart explores the mysteries of black holes alongside BBC science reporter Caroline Steel and astrophysicist Ruwina Nathan. The episode explains how black holes form from the collapse of massive dying stars, how scientists detect them via orbiting stars and gravitational waves, and what happens during the process of \"spaghettification\" if someone falls in. Addressing questions from members of the Cosmic Girls Foundation, Nathan debunks common myths—clarifying that our Sun is too small to become a black hole, that objects can safely orbit a black hole outside its innermost stable orbit, and that time only appears to freeze at the event horizon from the perspective of a distant observer. Finally, the guests discuss how astronomers use deep-space telescopes to study light from the early universe to uncover how ancient black holes formed.",
+  "studySets": {
+    "practical": {
+      "vocabulary": [
+        {
+          "word": "spooky",
+          "kkPhonetic": "/ˈspuki/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "令人毛骨悚然的",
+          "example": "So if you go beyond that point, you're basically stuck in a black hole forever, which is kind of spooky.",
+          "highlight": "spooky"
+        },
+        {
+          "word": "collide",
+          "kkPhonetic": "/kəˈlaɪd/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "相撞",
+          "example": "Also, when two black holes collide and form a new black hole, they give out gravitational waves and we can pick up on those and basically study that event.",
+          "highlight": "collide"
+        },
+        {
+          "word": "unstable",
+          "kkPhonetic": "/ʌnˈstebəl/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "不穩定的",
+          "example": "There's something we call the innermost stable circular orbit, and that's kind of the closest you can get in your orbit before your orbit becomes unstable, and you'll either plunge into the object or get flung away.",
+          "highlight": "unstable"
+        },
+        {
+          "word": "freeze",
+          "kkPhonetic": "/ˈfriz/",
+          "partOfSpeech": "verb",
+          "level": "A2",
+          "meaningZh": "凍結；停滯",
+          "example": "Is it true that time freezes completely at the event horizon of a black hole?",
+          "highlight": "freezes"
+        },
+        {
+          "word": "clock",
+          "kkPhonetic": "/klɑk/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "時鐘",
+          "example": "But if you were holding a clock and a distant observer somewhere very far away from the black hole was able to see that clock, time on that clock would stop ticking.",
+          "highlight": "clock"
+        },
+        {
+          "word": "explode",
+          "kkPhonetic": "/ɪkˈsplod/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "爆炸",
+          "example": "When you get bigger stars, so 10 times the mass of our Sun or larger, when they run out of fuel, they explode, and then gravity pulls all of that um matter inwards, and it either collapses into a neutron star, or if it's heavy enough, a black hole.",
+          "highlight": "explode"
+        },
+        {
+          "word": "visible",
+          "kkPhonetic": "/ˈvɪzəbəl/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "肉眼可見的",
+          "example": "This is looking for something that isn't visible, basically.",
+          "highlight": "visible"
+        },
+        {
+          "word": "crew",
+          "kkPhonetic": "/kru/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "機組人員",
+          "example": "Airline crew are aware of the health implications and accept them as part of the job.",
+          "highlight": "crew"
+        },
+        {
+          "word": "stuck",
+          "kkPhonetic": "/stʌk/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "卡住的；被困住的",
+          "example": "So if you go beyond that point, you're basically stuck in a black hole forever, which is kind of spooky.",
+          "highlight": "stuck"
+        },
+        {
+          "word": "shortcut",
+          "kkPhonetic": "/ˈʃɔrtˌkʌt/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "捷徑",
+          "example": "What about this theory that if you go into a black hole it might be a shortcut to another part of our galaxy?",
+          "highlight": "shortcut"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "first things first",
+          "highlight": "first things first",
+          "meaningZh": "首先；最要緊的事先做",
+          "example": "So, first things first, what actually is a black hole?"
+        },
+        {
+          "phrase": "read up about",
+          "highlight": "reading up about",
+          "meaningZh": "閱讀研讀關於……的資料",
+          "example": "Now I've been reading up about them and here are some of the things that I've found out."
+        },
+        {
+          "phrase": "run out of",
+          "highlight": "runs out of",
+          "meaningZh": "用完；耗盡",
+          "example": "But when the star runs out of fuel, it then collapses."
+        },
+        {
+          "phrase": "pick up on",
+          "highlight": "pick up on",
+          "meaningZh": "注意到；捕捉到（訊號或訊息）",
+          "example": "Also, when two black holes collide and form a new black hole, they give out gravitational waves and we can pick up on those and basically study that event."
+        },
+        {
+          "phrase": "come up with",
+          "highlight": "coming up with",
+          "meaningZh": "想出；提出（理論或想法）",
+          "example": "So often in science, we're coming up with a theory and then we're kind of testing stuff to see if our theory holds."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "equilibrium",
+          "kkPhonetic": "/ˌikwəˈlɪbrɪəm/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "平衡狀態",
+          "example": "So while a star is alive, it kind of exists in this equilibrium where it's producing energy which is sort of radiating and pushing against gravity which is wanting the star to collapse.",
+          "highlight": "equilibrium"
+        },
+        {
+          "word": "concentrated",
+          "kkPhonetic": "/ˈkɑnsnˌtretɪd/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "集中於一處的",
+          "example": "And if that collapse is big enough, and there basically ends up being enough mass concentrated in a small enough point, that's when a black hole forms.",
+          "highlight": "concentrated"
+        },
+        {
+          "word": "collide",
+          "kkPhonetic": "/kəˈlaɪd/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "相撞；碰撞",
+          "example": "Also, when two black holes collide and form a new black hole, they give out gravitational waves and we can pick up on those and basically study that event.",
+          "highlight": "collide"
+        },
+        {
+          "word": "entangled",
+          "kkPhonetic": "/ɪnˈtæŋɡld/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "發生糾纏的",
+          "example": "And also for two black holes to sort of be linked in this way, they have to be entangled, which is something, a property from quantum physics which doesn't happen that often.",
+          "highlight": "entangled"
+        },
+        {
+          "word": "doomed",
+          "kkPhonetic": "/dumd/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "注定遭遇不幸的",
+          "example": "We always hear that if you get anywhere near a black hole, you're doomed to get sucked in.",
+          "highlight": "doomed"
+        },
+        {
+          "word": "plunge",
+          "kkPhonetic": "/plʌndʒ/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "墜入；陡降",
+          "example": "There's something we call the innermost stable circular orbit, and that's kind of the closest you can get in your orbit before your orbit becomes unstable, and you'll either plunge into the object or get flung away.",
+          "highlight": "plunge"
+        },
+        {
+          "word": "fling",
+          "kkPhonetic": "/flɪŋ/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "被猛抛；被甩出",
+          "example": "There's something we call the innermost stable circular orbit, and that's kind of the closest you can get in your orbit before your orbit becomes unstable, and you'll either plunge into the object or get flung away.",
+          "highlight": "flung"
+        },
+        {
+          "word": "infer",
+          "kkPhonetic": "/ɪnˈfɝ/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "推斷；推論",
+          "example": "We're only seeing them kind of by inferring their existence by looking at how things like stars around them behave.",
+          "highlight": "inferring"
+        },
+        {
+          "word": "tangible",
+          "kkPhonetic": "/ˈtændʒəbl/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "切實的；明確的",
+          "example": "Well, one of my favorite mysteries, which has a kind of tangible solution, is we know black holes form from stars dying, but there are some black holes which seem to be older than stars themselves.",
+          "highlight": "tangible"
+        },
+        {
+          "word": "implication",
+          "kkPhonetic": "/ˌɪmpləˈkeʃən/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "影響；後果",
+          "example": "Airline crew are aware of the health implications and accept them as part of the job.",
+          "highlight": "implications"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "read up about",
+          "highlight": "reading up about",
+          "meaningZh": "研讀；收集閱讀有關……的資料",
+          "example": "Now I've been reading up about them and here are some of the things that I've found out."
+        },
+        {
+          "phrase": "run out of fuel",
+          "highlight": "runs out of fuel",
+          "meaningZh": "耗盡燃料；失去動力",
+          "example": "But when the star runs out of fuel, it then collapses."
+        },
+        {
+          "phrase": "pick up on",
+          "highlight": "pick up on",
+          "meaningZh": "偵測到；接收到",
+          "example": "Also, when two black holes collide and form a new black hole, they give out gravitational waves and we can pick up on those and basically study that event."
+        },
+        {
+          "phrase": "point of no return",
+          "highlight": "point of no return",
+          "meaningZh": "無法挽回的臨界點；不歸路",
+          "example": "And so the event horizon is the point of no return."
+        },
+        {
+          "phrase": "look for a needle in a haystack",
+          "highlight": "looking for a needle in a haystack",
+          "meaningZh": "大海撈針；極難找到的事物",
+          "example": "So yeah, it's kind of it's worse than looking for a needle in a haystack."
+        }
+      ]
+    },
+    "topic": {
+      "vocabulary": [
+        {
+          "word": "spaghettification",
+          "kkPhonetic": "/spəˌɡɛtəfəˈkeʃən/",
+          "partOfSpeech": "noun",
+          "level": "C2",
+          "meaningZh": "義大利麵化（物體掉入黑洞時因極端潮汐拉力被伸長成細絲狀的現象）",
+          "example": "That process is called spaghettification.",
+          "highlight": "spaghettification"
+        },
+        {
+          "word": "wormhole",
+          "kkPhonetic": "/ˈwɝmˌhol/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "蟲洞（理論上能連結宇宙中兩個不同時空點的快捷通道）",
+          "example": "I think they're called wormholes, that's the theory, right?",
+          "highlight": "wormholes"
+        },
+        {
+          "word": "plasma",
+          "kkPhonetic": "/ˈplæzmə/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "電漿（物體被黑洞拉碎解體後形成的熾熱高能物質狀態）",
+          "example": "You're essentially a a soupy, hot plasma.",
+          "highlight": "plasma"
+        },
+        {
+          "word": "astrophysicist",
+          "kkPhonetic": "/ˌæstroˈfɪzəsɪst/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "天體物理學家（受邀解答節目聽眾宇宙黑洞疑問的專家）",
+          "example": "And we've put your questions to astrophysicist and postdoctoral researcher Ruwina Nathan.",
+          "highlight": "astrophysicist"
+        },
+        {
+          "word": "orbit",
+          "kkPhonetic": "/ˈɔrbɪt/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "軌道（天體或物體環繞黑洞運行的穩定路徑）",
+          "example": "Yes, you can definitely get close to a black hole and stay in orbit.",
+          "highlight": "orbit"
+        },
+        {
+          "word": "Pakistan",
+          "kkPhonetic": "/ˈpækɪˌstæn/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "巴基斯坦（本集節目中提問關於接近黑洞是否必然會被吸入的聽眾 Kashaf 所來自的國家）",
+          "example": "Hi, I'm Kashaf Abbas from Pakistan.",
+          "highlight": "Pakistan"
+        },
+        {
+          "word": "Finland",
+          "kkPhonetic": "/ˈfɪnlənd/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "芬蘭（本集節目中提問太陽是否最終會變成黑洞的聽眾 Vanessa 所來自的國家）",
+          "example": "Hello, my name is Vanessa, and I come from Finland.",
+          "highlight": "Finland"
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/6YmcARfWO7zQADC6Ye8I4Y"
+}
