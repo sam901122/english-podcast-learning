@@ -1,0 +1,339 @@
+{
+  "id": "936c12ec37676961",
+  "title": "Why are so many students protesting in France?",
+  "description": "<p>Across France, thousands of high school students are protesting. They say they’re doing it because of conditions in their schools - that classrooms are overcrowded, there’s not enough teachers and they can’t concentrate on exams because school buildings aren’t being maintained well enough.</p><p>Five hundred schools are shut and some protests have turned violent, with riot police being deployed and some streets set on fire. Pupils, teachers and police have been injured. Many of the protesters are under 18 and at this point there is no sign of the demonstrations ending. So why is this happening? </p><p>We hear from French teenagers who have spent the last few days protesting about what they want to change and why this is so important to them. We also hear from BBC reporter Pierre-Antoine Denis and former student union president Manès Nadel.</p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a> \nWhatsApp: +44 330 12 33 22 6\nPresenter: Hannah Gelbart\nProducers: Chelsea Coates, Emma-Louise Amanshia and Rita Behadini\nEditor: Emily Horler</p>",
+  "publishedAt": "2026-10-05T14:23:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct98y2",
+  "summaryZh": "本集 BBC 節目《What in the World》探討法國高中生為何大規模抗議教育環境。學生反映教室過度擁擠、師資不足、校舍失修，以及不同地區資源分配不均；抗議從巴黎擴散到馬賽、里昂等城市。部分示威演變成衝突並造成傷者，政府指控政治活動人士混入學生運動煽動暴力，也有學生否認參與破壞，並有人質疑警方對和平示威者的處理方式。政府表示將改善設施、維持上課與提高大學入學程序的透明度，但抗議組織認為缺乏具體措施。節目也分析總統大選將近的時機，說明許多尚未取得投票資格的學生，希望藉由示威讓候選人重視教育與他們的未來。",
+  "summaryEn": "This episode examines why high school students across France are protesting. Students describe overcrowded classrooms, teacher shortages, deteriorating buildings, and unequal resources. Demonstrations spread from Paris to cities including Marseille and Lyon. Some turned violent and caused injuries. Authorities allege that political activists infiltrated the movement, while some students deny responsibility for damage and others challenge the police response to peaceful protesters. The government says it will address school facilities, keep classes running, and make university admissions more transparent, but protest organizers say the measures are not concrete enough. With a presidential election approaching, the programme explains why students who are too young to vote are using demonstrations to press candidates to prioritize education and their future.",
+  "studySets": {
+    "practical": {
+      "vocabulary": [
+        {
+          "word": "student",
+          "kkPhonetic": "/ˈstudənt/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "學生",
+          "example": "Teachers and students have been hurt and riot police are out using tear gas to break up the crowds.",
+          "highlight": "students"
+        },
+        {
+          "word": "crowd",
+          "kkPhonetic": "/kraʊd/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "人群",
+          "example": "Teachers and students have been hurt and riot police are out using tear gas to break up the crowds.",
+          "highlight": "crowds"
+        },
+        {
+          "word": "damage",
+          "kkPhonetic": "/ˈdæmɪdʒ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "損害；破壞",
+          "example": "There was no damage, there was no violence.",
+          "highlight": "damage"
+        },
+        {
+          "word": "improve",
+          "kkPhonetic": "/ɪmˈpruv/",
+          "partOfSpeech": "verb",
+          "level": "A2",
+          "meaningZh": "改善；提升",
+          "example": "He said they're looking into things like making sure classes continue, working to improve facilities and making French uni admissions more transparent.",
+          "highlight": "improve"
+        },
+        {
+          "word": "government",
+          "kkPhonetic": "/ˈɡʌvɚnmənt/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "政府",
+          "example": "Students, staff and police were injured, and the government called a crisis meeting.",
+          "highlight": "government"
+        },
+        {
+          "word": "future",
+          "kkPhonetic": "/ˈfjutʃɚ/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "未來",
+          "example": "We are thinking about our future.",
+          "highlight": "future"
+        },
+        {
+          "word": "unfair",
+          "kkPhonetic": "/ʌnˈfɛr/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "不公平的",
+          "example": "And some students have also been saying that they think the school system is unfair.",
+          "highlight": "unfair"
+        },
+        {
+          "word": "protest",
+          "kkPhonetic": "/ˈprotɛst/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "抗議；示威活動",
+          "example": "And some of these protests have turned violent.",
+          "highlight": "protests"
+        },
+        {
+          "word": "injure",
+          "kkPhonetic": "/ˈɪndʒɚ/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "使受傷",
+          "example": "Students, staff and police were injured, and the government called a crisis meeting.",
+          "highlight": "injured"
+        },
+        {
+          "word": "vote",
+          "kkPhonetic": "/vot/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "投票；選舉投票",
+          "example": "The vote will take place mid April and the beginning of May for the second round.",
+          "highlight": "vote"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "fall apart",
+          "highlight": "falling apart",
+          "meaningZh": "破敗；逐漸損壞",
+          "example": "The buildings are falling apart, there's no nurse, there's no teacher."
+        },
+        {
+          "phrase": "take part in",
+          "highlight": "taking part in",
+          "meaningZh": "參與……",
+          "example": "Here are some students who've been taking part in the protests and speaking to the BBC."
+        },
+        {
+          "phrase": "shut down",
+          "highlight": "shut down",
+          "meaningZh": "關閉；停止運作",
+          "example": "Sometimes classrooms are shut down, there's not enough teachers."
+        },
+        {
+          "phrase": "take place",
+          "highlight": "take place",
+          "meaningZh": "發生；舉行",
+          "example": "The vote will take place mid April and the beginning of May for the second round."
+        },
+        {
+          "phrase": "look into",
+          "highlight": "looking into",
+          "meaningZh": "調查；進一步了解或研議",
+          "example": "He said they're looking into things like making sure classes continue, working to improve facilities and making French uni admissions more transparent."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "overcrowded",
+          "kkPhonetic": "/ˌovɚˈkraʊdɪd/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "過度擁擠的",
+          "example": "When I was myself a high school student, it was already overcrowded in the high school that I was in.",
+          "highlight": "overcrowded"
+        },
+        {
+          "word": "crumbling",
+          "kkPhonetic": "/ˈkrʌmblɪŋ/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "破敗不堪、逐漸崩壞的",
+          "example": "Students are angry at the overcrowded classrooms, the lack of teachers and crumbling school buildings in Lycée, which are high schools for 15 to 18 year olds.",
+          "highlight": "crumbling"
+        },
+        {
+          "word": "vandalism",
+          "kkPhonetic": "/ˈvændəlˌɪzəm/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "蓄意破壞公共或私人財物的行為",
+          "example": "And some students have been saying the same thing, that they're not the ones behind the violence and the vandalism.",
+          "highlight": "vandalism"
+        },
+        {
+          "word": "infiltrate",
+          "kkPhonetic": "/ˈɪnfɪlˌtret/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "滲透；秘密混入團體",
+          "example": "But he says that political activists have infiltrated the high school student movement and have engaged in extreme violence.",
+          "highlight": "infiltrated"
+        },
+        {
+          "word": "instigate",
+          "kkPhonetic": "/ˈɪnstəˌɡet/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "煽動；挑起事件",
+          "example": "Yes, 80% of the people arrested are teenagers, but the people who are instigating the violence are a lot older than that.",
+          "highlight": "instigating"
+        },
+        {
+          "word": "repression",
+          "kkPhonetic": "/rɪˈprɛʃən/",
+          "partOfSpeech": "noun",
+          "level": "C2",
+          "meaningZh": "鎮壓；以強制手段壓制活動",
+          "example": "If it continues to be dealt only by repression, the following events will be just worse.",
+          "highlight": "repression"
+        },
+        {
+          "word": "transparent",
+          "kkPhonetic": "/trænsˈpærənt/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "透明的；程序與資訊公開清楚的",
+          "example": "He said they're looking into things like making sure classes continue, working to improve facilities and making French uni admissions more transparent.",
+          "highlight": "transparent"
+        },
+        {
+          "word": "accountable",
+          "kkPhonetic": "/əˈkaʊntəbəl/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "須負責任、接受問責的",
+          "example": "And he said that they're going to look into making protesters accountable for any damage that they've caused in the protests.",
+          "highlight": "accountable"
+        },
+        {
+          "word": "concrete",
+          "kkPhonetic": "/ˈkɑŋkrit/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "具體的；實際可執行的",
+          "example": "They say there aren't enough concrete measures and they want the protest to continue.",
+          "highlight": "concrete"
+        },
+        {
+          "word": "condemn",
+          "kkPhonetic": "/kənˈdɛm/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "譴責；強烈反對",
+          "example": "But then obviously there is the violence in there, which has been condemned by unions.",
+          "highlight": "condemned"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "add fuel to the fire",
+          "highlight": "adding fuel to the fire",
+          "meaningZh": "火上加油；使衝突更加嚴重",
+          "example": "They are political figures on the far left that are adding fuel to the fire."
+        },
+        {
+          "phrase": "bring about",
+          "highlight": "bring about",
+          "meaningZh": "促成；帶來改變",
+          "example": "So could these protests actually bring about the changes being asked for in the French education system?"
+        },
+        {
+          "phrase": "the vast majority",
+          "highlight": "the vast majority",
+          "meaningZh": "絕大多數",
+          "example": "Thousands have also been arrested, the vast majority under 18."
+        },
+        {
+          "phrase": "make one's voice heard",
+          "highlight": "make their voices heard",
+          "meaningZh": "讓自己的聲音被聽見；表達訴求",
+          "example": "As you heard from James there, the timing of these protests is key because there are elections just around the corner and, like we've been hearing from students, they're determined to make their voices heard to make sure that future governments prioritise their education."
+        },
+        {
+          "phrase": "on the back of",
+          "highlight": "on the back of",
+          "meaningZh": "在……之後；承接先前情勢",
+          "example": "So you have obviously a new term beginning and this comes on the back of a summer where people have experienced heat waves as they try to do the end of year exams and also it is the last term before the presidential elections."
+        }
+      ]
+    },
+    "topic": {
+      "vocabulary": [
+        {
+          "word": "riot police",
+          "kkPhonetic": "/ˈraɪət pəˌlis/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "鎮暴警察；此處指處理示威與衝突的警力",
+          "example": "Teachers and students have been hurt and riot police are out using tear gas to break up the crowds.",
+          "highlight": "riot police"
+        },
+        {
+          "word": "tear gas",
+          "kkPhonetic": "/ˈtɪr ˌɡæs/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "催淚瓦斯；節目提到警方用來驅散人群的手段",
+          "example": "Teachers and students have been hurt and riot police are out using tear gas to break up the crowds.",
+          "highlight": "tear gas"
+        },
+        {
+          "word": "placard",
+          "kkPhonetic": "/ˈplækɑrd/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "標語牌；示威者舉起以表達訴求的牌子",
+          "example": "So many of these protests started off peacefully, with students chanting, holding up placards, and blocking the entrances to a few lycées in the capital.",
+          "highlight": "placards"
+        },
+        {
+          "word": "lycée",
+          "kkPhonetic": "/liˈse/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "法國高中；節目說明其學生通常介於 15 至 18 歲",
+          "example": "Students are angry at the overcrowded classrooms, the lack of teachers and crumbling school buildings in Lycée, which are high schools for 15 to 18 year olds.",
+          "highlight": "Lycée"
+        },
+        {
+          "word": "France",
+          "kkPhonetic": "/fræns/",
+          "partOfSpeech": "proper noun",
+          "level": "A1",
+          "meaningZh": "法國，歐洲國家；本集報導高中生抗議教育條件的所在地",
+          "example": "That is one of thousands of high school students who've been protesting across France.",
+          "highlight": "France"
+        },
+        {
+          "word": "Paris",
+          "kkPhonetic": "/ˈpærɪs/",
+          "partOfSpeech": "proper noun",
+          "level": "A1",
+          "meaningZh": "巴黎，法國首都；節目提到抗議最初從此地展開",
+          "example": "They started in Paris, but last week they spread across the country to other major cities like Marseille and Lyon.",
+          "highlight": "Paris"
+        },
+        {
+          "word": "Marseille",
+          "kkPhonetic": "/mɑrˈse/",
+          "partOfSpeech": "proper noun",
+          "level": "A1",
+          "meaningZh": "馬賽，法國南部城市；學生抗議從巴黎擴散到此地",
+          "example": "They started in Paris, but last week they spread across the country to other major cities like Marseille and Lyon.",
+          "highlight": "Marseille"
+        },
+        {
+          "word": "Lyon",
+          "kkPhonetic": "/liˈɑn/",
+          "partOfSpeech": "proper noun",
+          "level": "A1",
+          "meaningZh": "里昂，法國城市；節目列為抗議擴散到的主要城市之一",
+          "example": "They started in Paris, but last week they spread across the country to other major cities like Marseille and Lyon.",
+          "highlight": "Lyon"
+        }
+      ]
+    }
+  }
+}

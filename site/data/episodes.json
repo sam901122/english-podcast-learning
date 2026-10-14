@@ -1,5 +1,19 @@
 [
   {
+    "id": "1726cab675baf8a2",
+    "title": "Would you do an ‘influencer degree’?",
+    "publishedAt": "2026-10-13T13:30:00+00:00",
+    "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct990c",
+    "summaryZh": "本集 BBC 節目《What in the World》探討大學開設內容創作與網紅學位的趨勢，以及這類課程是否值得投入時間與高額學費。節目採訪了正在英國諾丁漢特倫特大學攻讀內容創作學位的學生 Martyna 表示，課程核心主要為數位行銷、媒體研究與作品集建立，而非僅是教人如何成為網紅。 BBC 記者 Megan Lawton 指出，雖然創作者經濟規模龐大，但多數創作者收入偏低，這類學位提供的行銷技能與法律知識有助於提升就業競爭力。不過，醫師兼創作者 Daanish 則認為，相關技巧皆可透過網路自學，學生不應為了缺乏就業保證的學位而背負債務。"
+  },
+  {
+    "id": "3a73b42d28544b1e",
+    "title": "The AI influencer who had lots of us fooled",
+    "publishedAt": "2026-10-12T13:30:00+00:00",
+    "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct98y3",
+    "summaryZh": "本集 BBC 節目《What in the World》探討人工智慧網紅 Jean Philanthrope 爆紅的現象，以及其帳號推廣迷因幣所引發的風險。 BBC Verify 記者 Marco Silva 分享查證過程，包括檢查平台標示與影片中突然變形的背景物件。創作者拒絕公開身分，並表示角色並非為推廣迷因幣而製作，也未收取相關推廣費用。專家提醒，迷因幣價格容易受到社群炒作影響，觀眾應查證資訊，避免因害怕錯過機會而投入無法承受損失的資金。表演者 Nadir Josi 則認為，人工智慧可協助剪輯與製作字幕，但把完全生成的內容當成真人作品販售，可能誤導觀眾並排擠真正的創作者；他主張清楚標示，讓觀眾自行判斷。"
+  },
+  {
     "id": "c0f69742424b60c6",
     "title": "Christa Pike: What happens when executions go wrong?",
     "publishedAt": "2026-10-09T14:04:00+00:00",
@@ -7,11 +21,32 @@
     "summaryZh": "本集 BBC 節目《What in the World》探討美國死刑制度及近期發生的死刑執行意外事件。田納西州 50 歲死刑犯克里斯塔·派克（ Christa Pike ）因 1995 年殺害同窗被判處死刑，但在施打兩劑致命注射毒針後竟奇蹟生還並持續康復。此事件引發對藥物成分衰退、注射出錯率高等問題的質疑。田納西州州長已下令暫緩執行今年剩餘死刑並展開獨立調查，派克的律師則爭取改判終身監禁。此外，節目也討論了美國國防部計劃公開直播前軍官尼達爾·哈桑的槍決過程，反映出美國社會對死刑存廢與執行方式的多元爭議。"
   },
   {
+    "id": "2477ac429c39e6c4",
+    "title": "Everyone is talking about the \"great lock-in\"",
+    "publishedAt": "2026-10-08T13:30:00+00:00",
+    "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct994v",
+    "summaryZh": "本集 BBC 節目《What in the World》探討「 great lock-in 」年末自我提升潮流，以及如何讓目標轉化為持久的習慣。內容創作者 Adeja 分享減少早晨滑手機、運動與存錢的經驗，強調設定小而務實的目標，即使只完成一部分也有價值。 BBC 記者 Melissa Hogenboom 解釋「重新開始效應」：人們可以自行選擇有意義的時間點重新出發，不必等到新年。她建議將目標拆成可執行的日常行動，例如飯後散步，並提醒養成習慣的時間會因行為而異。面對社群媒體帶來的不斷自我優化壓力，節目鼓勵聽眾考慮長期的自己、設定可衡量的目標，並容許休息與偶爾未能堅持。"
+  },
+  {
+    "id": "a68081cb6b071954",
+    "title": "Are online gig spoilers ruining live music?",
+    "publishedAt": "2026-10-07T13:30:00+00:00",
+    "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct992l",
+    "summaryZh": "本集 BBC 節目《What in the World》探討演唱會短片在社群媒體流傳後，是否會破壞現場演出的驚喜。 BBC 記者 Riyah Collins 以 Olivia Rodrigo 舞臺上的服裝變換為例，說明有些歌迷期待保留第一次觀看的完整體驗，也有人認為短片能增加期待、提供穿搭靈感，讓無法買票或到場的人參與。節目介紹透過取消追蹤歌迷帳號、調整推薦內容或靜音特定主題來減少暴雷的方法，也討論部分藝人限制手機與錄影的做法。受訪者指出，手機可能影響現場的連結感，但網路分享也能擴大演出的可及性；親自到場與線上觀看各有不同價值。"
+  },
+  {
     "id": "e3abfe19407830b1",
     "title": "Why are black holes still such a mystery?",
     "publishedAt": "2026-10-06T13:30:00+00:00",
     "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct990b",
     "summaryZh": "本集 BBC 節目《What in the World》探討黑洞的奧秘與常見迷思。主持人 Hannah Gelbart 邀請 BBC 科學記者 Caroline Steel 與天體物理學家 Ruwina Nathan 共同解答大眾對黑洞的疑問。節目探討了黑洞由大質量恆星死亡坍縮形成、事件視界、重力波與蟲洞理論，並解釋掉入黑洞時發生的「義大利麵化」（ spaghettification ）現象。此外，專家也回應了 Cosmic Girls Foundation 青少年社群的提問，澄清太陽因質量過小不會變成黑洞、天體可在穩定軌道上繞行黑洞，以及遠方觀察者眼中時間看似凍結的物理原理。科學家目前正透過望遠鏡觀測遠古宇宙，持續探索黑洞的未解之謎。"
+  },
+  {
+    "id": "936c12ec37676961",
+    "title": "Why are so many students protesting in France?",
+    "publishedAt": "2026-10-05T14:23:00+00:00",
+    "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct98y2",
+    "summaryZh": "本集 BBC 節目《What in the World》探討法國高中生為何大規模抗議教育環境。學生反映教室過度擁擠、師資不足、校舍失修，以及不同地區資源分配不均；抗議從巴黎擴散到馬賽、里昂等城市。部分示威演變成衝突並造成傷者，政府指控政治活動人士混入學生運動煽動暴力，也有學生否認參與破壞，並有人質疑警方對和平示威者的處理方式。政府表示將改善設施、維持上課與提高大學入學程序的透明度，但抗議組織認為缺乏具體措施。節目也分析總統大選將近的時機，說明許多尚未取得投票資格的學生，希望藉由示威讓候選人重視教育與他們的未來。"
   },
   {
     "id": "21dc678937f6d8c1",

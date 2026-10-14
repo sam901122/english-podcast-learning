@@ -1,0 +1,303 @@
+{
+  "id": "2477ac429c39e6c4",
+  "title": "Everyone is talking about the \"great lock-in\"",
+  "description": "<p>January isn’t the only time for new year’s resolutions anymore. The end of the year is having a moment too - as part of the great lock-in trend. There’s lots of content online about locking in for the last four months of the year - whether that’s working out more regularly, spending less time on your phone, or trying to get that promotion at work. </p><p>Some people call it a winter arc, a September reset or the fresh-start effect - why have so many of us decided this is the perfect time for self-improvement? And is striving for optimisation all the time necessarily a good thing?</p><p>We hear from Adeja Shivonne, a lifestyle content creator based in New York City, who shares how her great lock-in is going. And BBC journalist Melissa Hogenboom explains what the science says about how to successfully set new goals - and stick to them.</p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Hannah Gelbart\nProducers: William Lee Adams and Chelsea Coates\nVideo Producer: Tim Hodges\nEditor: Emily Horler</p>",
+  "publishedAt": "2026-10-08T13:30:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct994v",
+  "summaryZh": "本集 BBC 節目《What in the World》探討「 great lock-in 」年末自我提升潮流，以及如何讓目標轉化為持久的習慣。內容創作者 Adeja 分享減少早晨滑手機、運動與存錢的經驗，強調設定小而務實的目標，即使只完成一部分也有價值。 BBC 記者 Melissa Hogenboom 解釋「重新開始效應」：人們可以自行選擇有意義的時間點重新出發，不必等到新年。她建議將目標拆成可執行的日常行動，例如飯後散步，並提醒養成習慣的時間會因行為而異。面對社群媒體帶來的不斷自我優化壓力，節目鼓勵聽眾考慮長期的自己、設定可衡量的目標，並容許休息與偶爾未能堅持。",
+  "summaryEn": "This episode explores the great lock-in trend of using the final months of the year for self-improvement. Content creator Adeja describes goals such as avoiding her phone in the morning, exercising, and saving money. She argues that small, realistic goals and partial progress are worthwhile. BBC journalist Melissa Hogenboom explains the fresh start effect and says people can choose a meaningful starting point rather than wait for January. She recommends turning goals into manageable daily habits, such as walking after dinner, and notes that the time needed to establish a habit varies. The discussion also considers the anxiety created by constant online self-optimization. Thinking about one's future self, making goals measurable, and allowing time for rest can help keep change purposeful and realistic.",
+  "studySets": {
+    "practical": {
+      "vocabulary": [
+        {
+          "word": "goal",
+          "kkPhonetic": "/ɡol/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "目標",
+          "example": "The smaller, more realistic the goal, the better and the more productive you'll be.",
+          "highlight": "goal"
+        },
+        {
+          "word": "habit",
+          "kkPhonetic": "/ˈhæbɪt/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "習慣",
+          "example": "But one study found that it takes about 66 days for a habit to stick.",
+          "highlight": "habit"
+        },
+        {
+          "word": "save",
+          "kkPhonetic": "/sev/",
+          "partOfSpeech": "verb",
+          "level": "A2",
+          "meaningZh": "存錢；儲蓄",
+          "example": "I saw that you also wanted to save two grand in September.",
+          "highlight": "save"
+        },
+        {
+          "word": "achieve",
+          "kkPhonetic": "/əˈtʃiv/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "達成；實現",
+          "example": "So if you're able to achieve at least half of the goals that you set, it's a win.",
+          "highlight": "achieve"
+        },
+        {
+          "word": "routine",
+          "kkPhonetic": "/ruˈtin/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "固定作息；日常安排",
+          "example": "That actually sounds like a really nice routine.",
+          "highlight": "routine"
+        },
+        {
+          "word": "daily",
+          "kkPhonetic": "/ˈdeli/",
+          "partOfSpeech": "adjective",
+          "level": "A2",
+          "meaningZh": "每日的；日常的",
+          "example": "And if you think about a habit, we don't think about it much because habits are built into our daily life.",
+          "highlight": "daily"
+        },
+        {
+          "word": "measure",
+          "kkPhonetic": "/ˈmɛʒɚ/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "衡量；測量",
+          "example": "And of course, it's hard to measure that over the long term.",
+          "highlight": "measure"
+        },
+        {
+          "word": "exercise",
+          "kkPhonetic": "/ˈɛksɚˌsaɪz/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "運動；身體鍛鍊",
+          "example": "And I think exercise is the biggest one people ask me about.",
+          "highlight": "exercise"
+        },
+        {
+          "word": "gym",
+          "kkPhonetic": "/dʒɪm/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "健身房",
+          "example": "I get out of bed and I make it to the gym.",
+          "highlight": "gym"
+        },
+        {
+          "word": "pressure",
+          "kkPhonetic": "/ˈprɛʃɚ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "壓力",
+          "example": "Does it generally feel like having a kind of great lock-in to creating these goals, is that something that's motivating for you or do you feel like it's extra pressure?",
+          "highlight": "pressure"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "stick to",
+          "highlight": "sticking to",
+          "meaningZh": "持續遵守；堅持執行",
+          "example": "Are you sticking to these goals?"
+        },
+        {
+          "phrase": "for the most part",
+          "highlight": "For the most part",
+          "meaningZh": "大致上；多半",
+          "example": "For the most part, I am."
+        },
+        {
+          "phrase": "get out of bed",
+          "highlight": "get out of bed",
+          "meaningZh": "起床；離開床鋪",
+          "example": "I get out of bed and I make it to the gym."
+        },
+        {
+          "phrase": "at least",
+          "highlight": "at least",
+          "meaningZh": "至少",
+          "example": "So if you're able to achieve at least half of the goals that you set, it's a win."
+        },
+        {
+          "phrase": "over time",
+          "highlight": "over time",
+          "meaningZh": "隨著時間經過",
+          "example": "And those are just small things, but they're small things that add up over time."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "realistic",
+          "kkPhonetic": "/ˌriəˈlɪstɪk/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "務實的；切合實際的",
+          "example": "The smaller, more realistic the goal, the better and the more productive you'll be.",
+          "highlight": "realistic"
+        },
+        {
+          "word": "productive",
+          "kkPhonetic": "/prəˈdʌktɪv/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "有效率的；能產生成果的",
+          "example": "The smaller, more realistic the goal, the better and the more productive you'll be.",
+          "highlight": "productive"
+        },
+        {
+          "word": "nuanced",
+          "kkPhonetic": "/ˈnuˌɑnst/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "細緻的；涉及細微差異的",
+          "example": "Like I said, it's those more nuanced things like less phone time.",
+          "highlight": "nuanced"
+        },
+        {
+          "word": "accomplish",
+          "kkPhonetic": "/əˈkɑmplɪʃ/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "完成；達成",
+          "example": "I think it's motivating for me because, again, like I said, I think if you start small and you're able to accomplish small things, then you can eventually accomplish bigger things.",
+          "highlight": "accomplish"
+        },
+        {
+          "word": "phenomenon",
+          "kkPhonetic": "/fəˈnɑməˌnɑn/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "現象",
+          "example": "But what researchers have actually found is that there is a phenomenon called the fresh start effect, and that is exactly what happens in January.",
+          "highlight": "phenomenon"
+        },
+        {
+          "word": "misconception",
+          "kkPhonetic": "/ˌmɪskənˈsɛpʃən/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "誤解；錯誤的認知",
+          "example": "There's a misconception that lots of New Year's goals end in disappointment.",
+          "highlight": "misconception"
+        },
+        {
+          "word": "implement",
+          "kkPhonetic": "/ˈɪmpləˌmɛnt/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "實施；付諸執行",
+          "example": "I think going for a walk 10 minutes after dinner is something that I've started to implement.",
+          "highlight": "implement"
+        },
+        {
+          "word": "displace",
+          "kkPhonetic": "/dɪsˈples/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "取代；使原有事物讓位",
+          "example": "But you can actually set up yourself to make very small habits throughout the day that displace maybe the ones you don't want.",
+          "highlight": "displace"
+        },
+        {
+          "word": "temptation",
+          "kkPhonetic": "/tɛmpˈteʃən/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "誘惑；想做某件事的衝動",
+          "example": "And that kind of removes the temptation to do something turning to screens or something we didn't want to do.",
+          "highlight": "temptation"
+        },
+        {
+          "word": "empowering",
+          "kkPhonetic": "/ɪmˈpaʊərɪŋ/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "讓人更有自主能力與信心的",
+          "example": "And I think that is really empowering and that is what we can take from kind of these fresh start moments.",
+          "highlight": "empowering"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "go hand in hand",
+          "highlight": "go hand in hand",
+          "meaningZh": "相輔相成；密切相關",
+          "example": "Again, I think they all go hand in hand."
+        },
+        {
+          "phrase": "a rat race",
+          "highlight": "a rat race",
+          "meaningZh": "激烈而令人疲憊的競爭",
+          "example": "I think it's kind of a rat race of self help."
+        },
+        {
+          "phrase": "see something through",
+          "highlight": "see them through",
+          "meaningZh": "將某件事堅持完成",
+          "example": "Because I think a lot of people set themselves new goals at the start of the year, perhaps don't see them through and then think they have to wait or they just don't think about it again."
+        },
+        {
+          "phrase": "add up",
+          "highlight": "add up",
+          "meaningZh": "逐漸累積；加總起來",
+          "example": "And those are just small things, but they're small things that add up over time."
+        },
+        {
+          "phrase": "set out to do",
+          "highlight": "set out to do",
+          "meaningZh": "著手做；原本打算完成",
+          "example": "It doesn't mean they're hitting the gym five days a week, but it is really effective to set yourself a goal, even though we sometimes think we haven't managed to achieve exactly what we set out to do."
+        }
+      ]
+    },
+    "topic": {
+      "vocabulary": [
+        {
+          "word": "fresh start effect",
+          "kkPhonetic": "/frɛʃ stɑrt ɪˈfɛkt/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "重新開始效應；把某個時間點視為新起點，有助於啟動目標",
+          "example": "But what researchers have actually found is that there is a phenomenon called the fresh start effect, and that is exactly what happens in January.",
+          "highlight": "fresh start effect"
+        },
+        {
+          "word": "self-improvement",
+          "kkPhonetic": "/ˌsɛlf ɪmˈpruvmənt/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "自我提升；改善生活習慣與能力",
+          "example": "It's this trend where you use the last few months of the year to get ahead with your wellness, your fitness and your self-improvement goals.",
+          "highlight": "self-improvement"
+        },
+        {
+          "word": "New Year's resolution",
+          "kkPhonetic": "/ˌnu jɪrz ˌrɛzəˈluʃən/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "新年新希望；在新年設定的改變目標",
+          "example": "And are you the kind of person who makes New Year's resolutions too?",
+          "highlight": "New Year's resolutions"
+        },
+        {
+          "word": "great lock-in",
+          "kkPhonetic": "/ɡret ˈlɑkˌɪn/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "年末專注自我提升的網路潮流，透過設定目標改善作息、健身或工作表現",
+          "example": "Loads of us are back to work, back to school, back to routine and all over my socials people have been talking about the great lock-in.",
+          "highlight": "great lock-in"
+        }
+      ]
+    }
+  }
+}
