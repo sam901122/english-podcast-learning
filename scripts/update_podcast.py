@@ -9,6 +9,7 @@ import os
 import re
 import sys
 import tempfile
+import time
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
@@ -55,23 +56,8 @@ STUDY_LEVELS = {
 }
 
 
-def should_fallback_to_paid(error: Exception) -> bool:
-    """Return whether a free-tier failure is likely caused by quota or capacity."""
-    message = str(error).casefold()
-    return any(
-        marker in message
-        for marker in (
-            "429",
-            "resource_exhausted",
-            "resource exhausted",
-            "503",
-            "service_unavailable",
-            "service unavailable",
-            "temporarily unavailable",
-            "no capacity",
-            "high demand",
-        )
-    )
+class GeminiRequestError(RuntimeError):
+    """All configured Gemini request attempts have failed."""
 
 
 class GeminiClient:
@@ -80,17 +66,32 @@ class GeminiClient:
     def __init__(self, free_api_key: str, paid_api_key: str | None = None) -> None:
         from google import genai
 
-        self._free_client = genai.Client(api_key=free_api_key)
-        self._paid_client = genai.Client(api_key=paid_api_key) if paid_api_key else None
+        # Keep retry counts and delays under our control, including SDK retries.
+        http_options = {"retry_options": {"attempts": 1}}
+        self._free_client = genai.Client(api_key=free_api_key, http_options=http_options)
+        self._paid_client = (
+            genai.Client(api_key=paid_api_key, http_options=http_options) if paid_api_key else None
+        )
 
     def _with_fallback(self, operation):
-        try:
-            return operation(self._free_client)
-        except Exception as error:
-            if not self._paid_client or not should_fallback_to_paid(error):
-                raise
-            print("Free Gemini capacity is unavailable; retrying this request with the paid key.")
-            return operation(self._paid_client)
+        clients = [("free", self._free_client)]
+        if self._paid_client is not None:
+            clients.append(("paid", self._paid_client))
+        total_attempts = len(clients) * 3
+        completed_attempts = 0
+        for tier, client in clients:
+            for attempt in range(1, 4):
+                if completed_attempts:
+                    time.sleep(30)
+                try:
+                    return operation(client)
+                except Exception as error:
+                    completed_attempts += 1
+                    print(f"Gemini {tier} attempt {attempt}/3 failed: {error}")
+                    if completed_attempts == total_attempts:
+                        raise GeminiRequestError(
+                            f"Gemini failed after {total_attempts} attempts: {error}"
+                        ) from error
 
     def generate_json(self, *, prompt: str, schema: dict, model: str | None = None) -> dict:
         def request(client):
@@ -511,6 +512,8 @@ Input items:
                 raise ValueError(f"Gemini returned an empty vocabulary decision for ID {index}")
             normalized.append({"word": candidate, "kkPhonetic": candidate_phonetic})
         return normalized
+    except GeminiRequestError:
+        raise
     except Exception as error:
         print(f"Batch word-form check failed; keeping all original forms: {error}")
         return [

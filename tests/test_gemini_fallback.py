@@ -1,64 +1,101 @@
 import unittest
+from pathlib import Path
 from types import SimpleNamespace
-from unittest.mock import Mock, patch
+from unittest.mock import Mock, call, patch
 
-from scripts.update_podcast import GeminiClient, should_fallback_to_paid
+from scripts.update_podcast import GeminiClient, GeminiRequestError, decide_study_words
 
 
+@patch('scripts.update_podcast.time.sleep')
 class GeminiFallbackTests(unittest.TestCase):
-    def test_recognizes_quota_and_capacity_errors(self):
-        for message in (
-            "429 Too Many Requests",
-            "RESOURCE_EXHAUSTED",
-            "503 Service Unavailable",
-            "Model has no capacity due to high demand",
-        ):
+    def make_client(self, paid=True):
+        with patch('google.genai.Client') as constructor:
+            free_client, paid_client = Mock(), Mock()
+            constructor.side_effect = [free_client, paid_client]
+            client = GeminiClient('free', 'paid' if paid else None)
+            for args in constructor.call_args_list:
+                self.assertEqual(args.kwargs['http_options']['retry_options']['attempts'], 1)
+        return client, free_client, paid_client
+
+    def test_free_success(self, sleep):
+        client, free, paid = self.make_client()
+        free.interactions.create.return_value = SimpleNamespace(output_text='{"ok": true}')
+        self.assertEqual(client.generate_json(prompt='test', schema={}), {'ok': True})
+        free.interactions.create.assert_called_once()
+        paid.interactions.create.assert_not_called()
+        sleep.assert_not_called()
+
+    def test_free_recovers_on_third_attempt(self, sleep):
+        client, free, paid = self.make_client()
+        free.interactions.create.side_effect = [RuntimeError('503'), RuntimeError('503'), SimpleNamespace(output_text='{}')]
+        self.assertEqual(client.generate_json(prompt='test', schema={}), {})
+        self.assertEqual(free.interactions.create.call_count, 3)
+        paid.interactions.create.assert_not_called()
+        self.assertEqual(sleep.call_args_list, [call(30)] * 2)
+
+    def test_paid_recovers_on_third_attempt_in_order(self, sleep):
+        client, free, paid = self.make_client()
+        events = Mock()
+        events.attach_mock(free.interactions.create, 'free')
+        events.attach_mock(paid.interactions.create, 'paid')
+        events.attach_mock(sleep, 'sleep')
+        free.interactions.create.side_effect = RuntimeError('429')
+        paid.interactions.create.side_effect = [RuntimeError('503'), RuntimeError('503'), SimpleNamespace(output_text='{}')]
+        self.assertEqual(client.generate_json(prompt='test', schema={}), {})
+        self.assertEqual([event[0] for event in events.mock_calls],
+                         ['free', 'sleep', 'free', 'sleep', 'free', 'sleep', 'paid', 'sleep', 'paid', 'sleep', 'paid'])
+        self.assertEqual(sleep.call_args_list, [call(30)] * 5)
+
+    def test_all_failures_raise_without_final_sleep(self, sleep):
+        for message in ('400 invalid schema', '429', 'timeout'):
             with self.subTest(message=message):
-                self.assertTrue(should_fallback_to_paid(RuntimeError(message)))
+                sleep.reset_mock()
+                client, free, paid = self.make_client()
+                free.interactions.create.side_effect = RuntimeError(message)
+                last_error = RuntimeError('paid failed')
+                paid.interactions.create.side_effect = last_error
+                with self.assertRaisesRegex(GeminiRequestError, '6 attempts') as raised:
+                    client.generate_json(prompt='test', schema={})
+                self.assertIs(raised.exception.__cause__, last_error)
+                self.assertEqual(free.interactions.create.call_count, 3)
+                self.assertEqual(paid.interactions.create.call_count, 3)
+                self.assertEqual(sleep.call_args_list, [call(30)] * 5)
 
-    def test_does_not_fallback_for_regular_errors(self):
-        self.assertFalse(should_fallback_to_paid(RuntimeError("Invalid JSON schema")))
-        self.assertFalse(should_fallback_to_paid(RuntimeError("401 invalid API key")))
+    def test_empty_and_invalid_json_responses_retry(self, sleep):
+        client, free, paid = self.make_client()
+        free.interactions.create.side_effect = [SimpleNamespace(output_text=''), SimpleNamespace(output_text='invalid'), SimpleNamespace(output_text='')]
+        paid.interactions.create.return_value = SimpleNamespace(output_text='{}')
+        self.assertEqual(client.generate_json(prompt='test', schema={}), {})
+        self.assertEqual(free.interactions.create.call_count, 3)
+        self.assertEqual(sleep.call_args_list, [call(30)] * 3)
 
-    @patch("google.genai.Client")
-    def test_generate_json_uses_free_key_first(self, client_class):
-        free_client = Mock()
-        paid_client = Mock()
-        client_class.side_effect = [free_client, paid_client]
-        free_client.interactions.create.return_value = SimpleNamespace(output_text='{"ok": true}')
+    def test_missing_paid_key(self, sleep):
+        client, free, _ = self.make_client(paid=False)
+        free.interactions.create.side_effect = RuntimeError('failed')
+        with self.assertRaisesRegex(GeminiRequestError, '3 attempts'):
+            client.generate_json(prompt='test', schema={})
+        self.assertEqual(free.interactions.create.call_count, 3)
+        self.assertEqual(sleep.call_args_list, [call(30)] * 2)
 
-        result = GeminiClient("free", "paid").generate_json(prompt="test", schema={})
+    def test_transcription_retries_and_cleans_up(self, sleep):
+        client, free, paid = self.make_client()
+        for sdk in (free, paid):
+            sdk.files.upload.return_value = SimpleNamespace(name='file', uri='uri', mime_type='audio/mp3')
+        free.interactions.create.side_effect = RuntimeError('503')
+        paid.interactions.create.return_value = SimpleNamespace(output_text='transcript')
+        self.assertEqual(client.transcribe(Path('episode.mp3')), 'transcript')
+        self.assertEqual(free.files.delete.call_count, 3)
+        paid.files.delete.assert_called_once_with(name='file')
+        self.assertEqual(sleep.call_args_list, [call(30)] * 3)
 
-        self.assertEqual(result, {"ok": True})
-        free_client.interactions.create.assert_called_once()
-        paid_client.interactions.create.assert_not_called()
-
-    @patch("google.genai.Client")
-    def test_generate_json_falls_back_to_paid_on_429(self, client_class):
-        free_client = Mock()
-        paid_client = Mock()
-        client_class.side_effect = [free_client, paid_client]
-        free_client.interactions.create.side_effect = RuntimeError("429 RESOURCE_EXHAUSTED")
-        paid_client.interactions.create.return_value = SimpleNamespace(output_text='{"ok": true}')
-
-        result = GeminiClient("free", "paid").generate_json(prompt="test", schema={})
-
-        self.assertEqual(result, {"ok": True})
-        free_client.interactions.create.assert_called_once()
-        paid_client.interactions.create.assert_called_once()
-
-    @patch("google.genai.Client")
-    def test_generate_json_does_not_fallback_on_invalid_request(self, client_class):
-        free_client = Mock()
-        paid_client = Mock()
-        client_class.side_effect = [free_client, paid_client]
-        free_client.interactions.create.side_effect = RuntimeError("400 invalid schema")
-
-        with self.assertRaisesRegex(RuntimeError, "invalid schema"):
-            GeminiClient("free", "paid").generate_json(prompt="test", schema={})
-
-        paid_client.interactions.create.assert_not_called()
+    def test_vocabulary_propagates_exhausted_retries(self, sleep):
+        client = Mock()
+        client.generate_json.side_effect = GeminiRequestError('all attempts failed')
+        with self.assertRaises(GeminiRequestError):
+            decide_study_words(client, [{'word': 'learning', 'kkPhonetic': '/test/',
+                                         'partOfSpeech': 'noun', 'meaningZh': '學習',
+                                         'example': 'Learning is fun.'}])
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()

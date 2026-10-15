@@ -12,8 +12,11 @@ static site to GitHub Pages. Audio and full transcripts are not committed to the
 
 1. In the GitHub repository, open **Settings → Secrets and variables → Actions**.
 2. Create repository secrets named `GEMINI_FREE_API_KEY` and `GEMINI_PAID_API_KEY`.
-   The free key is always tried first. The paid key is used only when the free request is rate-limited
-   or Gemini temporarily has no available capacity.
+   Each AI operation tries the free key up to three times, then the paid key up to three times.
+   Failed attempts wait 30 seconds before the next attempt, including when switching keys.
+   Retries stop as soon as an attempt succeeds; if all six fail, the update raises an error.
+   This adds at most 150 seconds of retry waiting per operation, excluding request duration.
+   For local runs without a paid key, it raises an error after three failed free attempts.
 3. Open **Settings → Pages** and select **GitHub Actions** as the deployment source.
 4. Run **Actions → Update daily podcast → Run workflow** once.
 
