@@ -17,6 +17,10 @@ static site to GitHub Pages. Audio and full transcripts are not committed to the
    Retries stop as soon as an attempt succeeds; if all six fail, the update raises an error.
    This adds at most 150 seconds of retry waiting per operation, excluding request duration.
    For local runs without a paid key, it raises an error after three failed free attempts.
+   Actions streams timestamped progress immediately: each AI operation logs its model, key tier,
+   attempt number, duration, and errors, with a waiting message every 30 seconds while blocked.
+   Audio download, Gemini upload/cleanup, validation, and saving are timed separately.
+   Retry waits are explicitly logged; waiting messages do not impose a request timeout.
 3. Open **Settings → Pages** and select **GitHub Actions** as the deployment source.
 4. Run **Actions → Update daily podcast → Run workflow** once.
 

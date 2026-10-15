@@ -9,6 +9,7 @@ import os
 import re
 import sys
 import tempfile
+import threading
 import time
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -27,6 +28,7 @@ SPOTIFY_EMBED_URL = f"https://open.spotify.com/embed/show/{SPOTIFY_SHOW_ID}"
 USER_AGENT = "english-podcast-learning-project/1.0"
 DEFAULT_GEMINI_MODEL = "gemini-3.6-flash"
 DEFAULT_GEMINI_WORD_FORM_MODEL = "gemini-3.6-flash"
+HEARTBEAT_INTERVAL_SECONDS = 30
 SUMMARY_ZH_PREFIX = "本集 BBC 節目《What in the World》探討"
 STUDY_LEVELS = {
     "practical": {
@@ -56,6 +58,38 @@ STUDY_LEVELS = {
 }
 
 
+def log(message: str) -> None:
+    timestamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    print(f"[{timestamp}] {message}", flush=True)
+
+
+def run_logged(label, operation, *args, **kwargs):
+    """Report elapsed time even while a blocking operation has not returned."""
+    started = time.monotonic()
+    finished = threading.Event()
+
+    def heartbeat():
+        while not finished.wait(HEARTBEAT_INTERVAL_SECONDS):
+            log(f"WAITING {label}; elapsed={time.monotonic() - started:.1f}s")
+
+    log(f"START {label}")
+    reporter = threading.Thread(target=heartbeat, daemon=True)
+    reporter.start()
+    try:
+        result = operation(*args, **kwargs)
+    except BaseException as error:
+        finished.set()
+        reporter.join()
+        log(f"FAILED {label}; elapsed={time.monotonic() - started:.1f}s; "
+            f"{type(error).__name__}: {error}")
+        raise
+    else:
+        finished.set()
+        reporter.join()
+        log(f"DONE {label}; elapsed={time.monotonic() - started:.1f}s")
+        return result
+
+
 class GeminiRequestError(RuntimeError):
     """All configured Gemini request attempts have failed."""
 
@@ -73,7 +107,7 @@ class GeminiClient:
             genai.Client(api_key=paid_api_key, http_options=http_options) if paid_api_key else None
         )
 
-    def _with_fallback(self, operation):
+    def _with_fallback(self, operation, label="AI request"):
         clients = [("free", self._free_client)]
         if self._paid_client is not None:
             clients.append(("paid", self._paid_client))
@@ -82,21 +116,24 @@ class GeminiClient:
         for tier, client in clients:
             for attempt in range(1, 4):
                 if completed_attempts:
+                    log(f"RETRY {label}; waiting 30s before {tier} attempt {attempt}/3")
                     time.sleep(30)
+                attempt_label = f"{label}; tier={tier}; attempt={attempt}/3"
                 try:
-                    return operation(client)
+                    return run_logged(attempt_label, operation, client)
                 except Exception as error:
                     completed_attempts += 1
-                    print(f"Gemini {tier} attempt {attempt}/3 failed: {error}")
                     if completed_attempts == total_attempts:
                         raise GeminiRequestError(
                             f"Gemini failed after {total_attempts} attempts: {error}"
                         ) from error
 
-    def generate_json(self, *, prompt: str, schema: dict, model: str | None = None) -> dict:
+    def generate_json(self, *, prompt: str, schema: dict, model: str | None = None,
+                      operation_name: str = "structured response") -> dict:
+        model = model or os.getenv("ANALYSIS_MODEL", DEFAULT_GEMINI_MODEL)
         def request(client):
             response = client.interactions.create(
-                model=model or os.getenv("ANALYSIS_MODEL", DEFAULT_GEMINI_MODEL),
+                model=model,
                 input=prompt,
                 response_format={
                     "type": "text",
@@ -108,14 +145,16 @@ class GeminiClient:
                 raise RuntimeError("Gemini returned an empty structured response")
             return json.loads(response.output_text)
 
-        return self._with_fallback(request)
+        return self._with_fallback(request, f"AI {operation_name}; model={model}")
 
     def transcribe(self, audio_path: Path) -> str:
+        model = os.getenv("TRANSCRIPTION_MODEL", DEFAULT_GEMINI_MODEL)
         def request(client):
-            uploaded = client.files.upload(file=audio_path)
+            uploaded = run_logged("Audio upload to Gemini", client.files.upload, file=audio_path)
             try:
+                log(f"Sending transcription request; model={model}")
                 response = client.interactions.create(
-                    model=os.getenv("TRANSCRIPTION_MODEL", DEFAULT_GEMINI_MODEL),
+                    model=model,
                     input=[
                         {
                             "type": "text",
@@ -129,14 +168,15 @@ class GeminiClient:
                 )
                 if not response.output_text:
                     raise RuntimeError("Gemini returned an empty transcription")
+                log(f"Transcription received; characters={len(response.output_text)}")
                 return response.output_text.strip()
             finally:
                 try:
-                    client.files.delete(name=uploaded.name)
+                    run_logged("Temporary Gemini upload cleanup", client.files.delete, name=uploaded.name)
                 except Exception as error:
                     print(f"Could not delete the temporary Gemini upload: {error}")
 
-        return self._with_fallback(request)
+        return self._with_fallback(request, f"AI transcription; model={model}")
 
 
 def text_of(element: ET.Element | None, default: str = "") -> str:
@@ -275,7 +315,9 @@ BBC description: {episode['description']}
 Transcript:
 {transcript}
 """
-    segments = client.generate_json(prompt=prompt, schema=schema["schema"])["segments"]
+    segments = client.generate_json(
+        prompt=prompt, schema=schema["schema"], operation_name="advertising detection"
+    )["segments"]
     cleaned = transcript
     for segment in segments:
         exact_segment = segment.strip()
@@ -316,7 +358,7 @@ BBC description: {episode['description']}
 Transcript:
 {transcript}
 """
-    return client.generate_json(prompt=prompt, schema=schema["schema"])
+    return client.generate_json(prompt=prompt, schema=schema["schema"], operation_name="episode summary")
 
 
 def analyze_study_level(
@@ -410,7 +452,9 @@ Mainland Chinese wording in any Chinese field. Do not invent facts, wording, wor
 Transcript:
 {transcript}
 """
-    return client.generate_json(prompt=prompt, schema=schema["schema"])
+    return client.generate_json(
+        prompt=prompt, schema=schema["schema"], operation_name=f"{study_level} study set"
+    )
 
 
 def analyze(client, episode: dict, transcript: str) -> dict:
@@ -494,6 +538,7 @@ Input items:
             prompt=prompt,
             schema=schema["schema"],
             model=os.getenv("WORD_FORM_MODEL", DEFAULT_GEMINI_WORD_FORM_MODEL),
+            operation_name=f"vocabulary normalization ({count} words)",
         )
         if "items" in payload:
             decisions = payload["items"]
@@ -619,7 +664,7 @@ def main() -> int:
     except ImportError:
         pass
     feed_url = os.getenv("PODCAST_FEED_URL", DEFAULT_FEED_URL)
-    feed = parse_feed(fetch(feed_url) or b"")
+    feed = parse_feed(run_logged("Fetch podcast RSS feed", fetch, feed_url) or b"")
     if not feed:
         raise RuntimeError("The podcast feed did not contain playable episodes")
 
@@ -634,34 +679,35 @@ def main() -> int:
     if episode is None:
         print("No new episode found.")
         return 0
-    print(f"New episode: {episode['title']} ({episode['id']})")
+    log(f"New episode: {episode['title']} ({episode['id']})")
     if args.dry_run:
         return 0
     if not os.getenv("GEMINI_FREE_API_KEY"):
         raise RuntimeError("GEMINI_FREE_API_KEY is required")
 
-    episode["spotifyUrl"] = find_spotify_episode_url(episode)
+    episode["spotifyUrl"] = run_logged("Spotify episode lookup", find_spotify_episode_url, episode)
     client = GeminiClient(
         os.environ["GEMINI_FREE_API_KEY"],
         os.getenv("GEMINI_PAID_API_KEY"),
     )
     with tempfile.TemporaryDirectory(prefix="english-podcast-") as temp_dir:
         audio_path = Path(temp_dir) / "episode.mp3"
-        fetch(episode["audioUrl"], audio_path)
+        run_logged("Download episode audio", fetch, episode["audioUrl"], audio_path)
+        log(f"Audio downloaded; bytes={audio_path.stat().st_size}")
         transcript = transcribe(client, audio_path)
         transcript = remove_advertising(client, episode, transcript)
         notes = analyze(client, episode, transcript)
         notes = prepare_vocabulary(client, notes)
         notes = filter_topic_duplicates(notes)
-        validate_notes(notes)
-    save_episode(episode, notes, index)
-    print(f"Published learning notes for {episode['id']}")
+        run_logged("Validate learning notes", validate_notes, notes)
+    run_logged("Save episode files", save_episode, episode, notes, index)
+    log(f"Published learning notes for {episode['id']}")
     return 0
 
 
 if __name__ == "__main__":
     try:
-        raise SystemExit(main())
+        raise SystemExit(run_logged("Podcast update", main))
     except Exception as error:
         print(f"ERROR: {error}", file=sys.stderr)
         raise
