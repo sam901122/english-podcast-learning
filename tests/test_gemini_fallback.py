@@ -34,6 +34,18 @@ class GeminiFallbackTests(unittest.TestCase):
         paid.interactions.create.assert_called_once()
         sleep.assert_not_called()
 
+    def test_daily_rate_limit_switches_immediately_without_quota_word(self, sleep):
+        client, free, paid = self.make_client()
+        free.interactions.create.side_effect = RuntimeError(
+            '429 Rate limit exceeded for model gemini-3.6-flash '
+            '(limit: 20 requests per day on Free Tier). Please retry in 9h12m46s'
+        )
+        paid.interactions.create.return_value = SimpleNamespace(output_text='{}')
+        self.assertEqual(client.generate_json(prompt='test', schema={}), {})
+        free.interactions.create.assert_called_once()
+        paid.interactions.create.assert_called_once()
+        sleep.assert_not_called()
+
     def test_quota_after_transient_failure_skips_transition_wait(self, sleep):
         client, free, paid = self.make_client()
         free.interactions.create.side_effect = [RuntimeError('503'), RuntimeError('Quota exceeded for metric: free_tier')]
@@ -64,7 +76,8 @@ class GeminiFallbackTests(unittest.TestCase):
         error = RuntimeError('429')
         error.response_json = {'error': {'message': 'Quota exceeded for metric: free_tier'}}
         self.assertTrue(is_quota_exhausted(error))
-        for message in ('429', '429 Too Many Requests', '503 no capacity', 'RESOURCE_EXHAUSTED'):
+        for message in ('429', '429 Too Many Requests', '503 no capacity', 'RESOURCE_EXHAUSTED',
+                        '429 Rate limit exceeded (limit: 10 requests per minute)'):
             self.assertFalse(is_quota_exhausted(RuntimeError(message)))
 
     def test_free_recovers_on_third_attempt(self, sleep):

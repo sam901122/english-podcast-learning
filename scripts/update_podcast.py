@@ -29,6 +29,7 @@ USER_AGENT = "english-podcast-learning-project/1.0"
 DEFAULT_GEMINI_MODEL = "gemini-3.6-flash"
 DEFAULT_GEMINI_WORD_FORM_MODEL = "gemini-3.6-flash"
 HEARTBEAT_INTERVAL_SECONDS = 30
+AI_REQUEST_TIMEOUT_MS = 120_000
 SUMMARY_ZH_PREFIX = "本集 BBC 節目《What in the World》探討"
 STUDY_LEVELS = {
     "practical": {
@@ -96,11 +97,19 @@ class GeminiRequestError(RuntimeError):
 
 def is_quota_exhausted(error: Exception) -> bool:
     """Require explicit quota evidence; a bare 429 can be a temporary rate limit."""
-    details = getattr(error, "response_json", None)
+    status = getattr(error, "status_code", None) or getattr(error, "code", None)
+    if isinstance(status, int) and status != 429:
+        return False
+    details = getattr(error, "body", None) or getattr(error, "response_json", None)
     message = f"{error} {json.dumps(details, default=str) if details else ''}".casefold()
-    return "quota" in message and any(
+    explicit_quota = "quota" in message and any(
         marker in message for marker in ("exceed", "exhaust", "ran out", "depleted")
     )
+    daily_limit = "limit" in message and "exceed" in message and any(
+        marker in message for marker in ("per day", "per_day", "perday", "daily")
+    )
+    short_term_limit = any(marker in message for marker in ("per minute", "per_minute", "perminute"))
+    return daily_limit or (explicit_quota and not short_term_limit)
 
 
 class GeminiClient:
@@ -110,24 +119,26 @@ class GeminiClient:
         from google import genai
 
         # Keep retry counts and delays under our control, including SDK retries.
-        http_options = {"retry_options": {"attempts": 1}}
-        self._free_client = genai.Client(api_key=free_api_key, http_options=http_options)
-        self._paid_client = (
-            genai.Client(api_key=paid_api_key, http_options=http_options) if paid_api_key else None
-        )
+        def create_client(key):
+            client = genai.Client(api_key=key, http_options={
+                "timeout": AI_REQUEST_TIMEOUT_MS,
+                "retry_options": {"attempts": 1},
+            })
+            # Interactions has a separate retry implementation in google-genai.
+            # Disable it too, so only our loop controls retries and waiting.
+            client.interactions.sdk_configuration.retry_config.strategy = "none"
+            return client
+
+        self._free_client = create_client(free_api_key)
+        self._paid_client = create_client(paid_api_key) if paid_api_key else None
 
     def _with_fallback(self, operation, label="AI request"):
         clients = [("free", self._free_client)]
         if self._paid_client is not None:
             clients.append(("paid", self._paid_client))
         completed_attempts = 0
-        skip_wait = False
         for tier_index, (tier, client) in enumerate(clients):
             for attempt in range(1, 4):
-                if completed_attempts and not skip_wait:
-                    log(f"RETRY {label}; waiting 30s before {tier} attempt {attempt}/3")
-                    time.sleep(30)
-                skip_wait = False
                 attempt_label = f"{label}; tier={tier}; attempt={attempt}/3"
                 try:
                     return run_logged(attempt_label, operation, client)
@@ -140,12 +151,14 @@ class GeminiClient:
                                 "no paid key configured"
                             ) from error
                         log(f"FALLBACK {label}; free quota exhausted; switching to paid immediately without sleeping")
-                        skip_wait = True
                         break
                     if tier_index == len(clients) - 1 and attempt == 3:
                         raise GeminiRequestError(
                             f"Gemini failed after {completed_attempts} attempts: {error}"
                         ) from error
+                    next_tier, next_attempt = (tier, attempt + 1) if attempt < 3 else ("paid", 1)
+                    log(f"RETRY {label}; waiting 30s before {next_tier} attempt {next_attempt}/3")
+                    time.sleep(30)
 
     def generate_json(self, *, prompt: str, schema: dict, model: str | None = None,
                       operation_name: str = "structured response") -> dict:
