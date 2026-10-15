@@ -94,6 +94,15 @@ class GeminiRequestError(RuntimeError):
     """All configured Gemini request attempts have failed."""
 
 
+def is_quota_exhausted(error: Exception) -> bool:
+    """Require explicit quota evidence; a bare 429 can be a temporary rate limit."""
+    details = getattr(error, "response_json", None)
+    message = f"{error} {json.dumps(details, default=str) if details else ''}".casefold()
+    return "quota" in message and any(
+        marker in message for marker in ("exceed", "exhaust", "ran out", "depleted")
+    )
+
+
 class GeminiClient:
     """Gemini operations used by the podcast pipeline."""
 
@@ -111,21 +120,31 @@ class GeminiClient:
         clients = [("free", self._free_client)]
         if self._paid_client is not None:
             clients.append(("paid", self._paid_client))
-        total_attempts = len(clients) * 3
         completed_attempts = 0
-        for tier, client in clients:
+        skip_wait = False
+        for tier_index, (tier, client) in enumerate(clients):
             for attempt in range(1, 4):
-                if completed_attempts:
+                if completed_attempts and not skip_wait:
                     log(f"RETRY {label}; waiting 30s before {tier} attempt {attempt}/3")
                     time.sleep(30)
+                skip_wait = False
                 attempt_label = f"{label}; tier={tier}; attempt={attempt}/3"
                 try:
                     return run_logged(attempt_label, operation, client)
                 except Exception as error:
                     completed_attempts += 1
-                    if completed_attempts == total_attempts:
+                    if tier == "free" and is_quota_exhausted(error):
+                        if self._paid_client is None:
+                            raise GeminiRequestError(
+                                f"Free quota exhausted after {completed_attempts} attempts; "
+                                "no paid key configured"
+                            ) from error
+                        log(f"FALLBACK {label}; free quota exhausted; switching to paid immediately without sleeping")
+                        skip_wait = True
+                        break
+                    if tier_index == len(clients) - 1 and attempt == 3:
                         raise GeminiRequestError(
-                            f"Gemini failed after {total_attempts} attempts: {error}"
+                            f"Gemini failed after {completed_attempts} attempts: {error}"
                         ) from error
 
     def generate_json(self, *, prompt: str, schema: dict, model: str | None = None,

@@ -14,6 +14,10 @@ static site to GitHub Pages. Audio and full transcripts are not committed to the
 2. Create repository secrets named `GEMINI_FREE_API_KEY` and `GEMINI_PAID_API_KEY`.
    Each AI operation tries the free key up to three times, then the paid key up to three times.
    Failed attempts wait 30 seconds before the next attempt, including when switching keys.
+   Exception: an explicit free-quota exhaustion error skips remaining free attempts and switches
+   to the paid key immediately, without sleeping. A bare 429 still uses the normal retry delay.
+   Paid attempts retain the three-attempt limit and 30-second retry delay. If no paid key is
+   configured, free-quota exhaustion raises an error immediately.
    Retries stop as soon as an attempt succeeds; if all six fail, the update raises an error.
    This adds at most 150 seconds of retry waiting per operation, excluding request duration.
    For local runs without a paid key, it raises an error after three failed free attempts.

@@ -3,7 +3,7 @@ from pathlib import Path
 from types import SimpleNamespace
 from unittest.mock import Mock, call, patch
 
-from scripts.update_podcast import GeminiClient, GeminiRequestError, decide_study_words
+from scripts.update_podcast import GeminiClient, GeminiRequestError, decide_study_words, is_quota_exhausted
 
 
 @patch('scripts.update_podcast.time.sleep')
@@ -24,6 +24,48 @@ class GeminiFallbackTests(unittest.TestCase):
         free.interactions.create.assert_called_once()
         paid.interactions.create.assert_not_called()
         sleep.assert_not_called()
+
+    def test_quota_exhaustion_switches_immediately(self, sleep):
+        client, free, paid = self.make_client()
+        free.interactions.create.side_effect = RuntimeError('429 RESOURCE_EXHAUSTED: You exceeded your current quota')
+        paid.interactions.create.return_value = SimpleNamespace(output_text='{}')
+        self.assertEqual(client.generate_json(prompt='test', schema={}), {})
+        free.interactions.create.assert_called_once()
+        paid.interactions.create.assert_called_once()
+        sleep.assert_not_called()
+
+    def test_quota_after_transient_failure_skips_transition_wait(self, sleep):
+        client, free, paid = self.make_client()
+        free.interactions.create.side_effect = [RuntimeError('503'), RuntimeError('Quota exceeded for metric: free_tier')]
+        paid.interactions.create.return_value = SimpleNamespace(output_text='{}')
+        self.assertEqual(client.generate_json(prompt='test', schema={}), {})
+        self.assertEqual(free.interactions.create.call_count, 2)
+        sleep.assert_called_once_with(30)
+
+    def test_paid_failures_after_quota_exhaustion_keep_retry_limit(self, sleep):
+        client, free, paid = self.make_client()
+        free.interactions.create.side_effect = RuntimeError('quota exhausted')
+        paid.interactions.create.side_effect = RuntimeError('paid quota exhausted')
+        with self.assertRaisesRegex(GeminiRequestError, '4 attempts'):
+            client.generate_json(prompt='test', schema={})
+        free.interactions.create.assert_called_once()
+        self.assertEqual(paid.interactions.create.call_count, 3)
+        self.assertEqual(sleep.call_args_list, [call(30)] * 2)
+
+    def test_quota_without_paid_key_fails_immediately(self, sleep):
+        client, free, _ = self.make_client(paid=False)
+        free.interactions.create.side_effect = RuntimeError('quota exhausted')
+        with self.assertRaisesRegex(GeminiRequestError, 'no paid key configured'):
+            client.generate_json(prompt='test', schema={})
+        free.interactions.create.assert_called_once()
+        sleep.assert_not_called()
+
+    def test_quota_detection(self, sleep):
+        error = RuntimeError('429')
+        error.response_json = {'error': {'message': 'Quota exceeded for metric: free_tier'}}
+        self.assertTrue(is_quota_exhausted(error))
+        for message in ('429', '429 Too Many Requests', '503 no capacity', 'RESOURCE_EXHAUSTED'):
+            self.assertFalse(is_quota_exhausted(RuntimeError(message)))
 
     def test_free_recovers_on_third_attempt(self, sleep):
         client, free, paid = self.make_client()
