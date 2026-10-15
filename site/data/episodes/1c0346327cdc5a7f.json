@@ -1,0 +1,358 @@
+{
+  "id": "1c0346327cdc5a7f",
+  "title": "Can airport scanners see you naked?",
+  "description": "<p>Shoes on or off? Laptops in or out? And don’t get us started on the rules around liquids! Getting through airport security never seems to be simple. It’s there for a reason, of course. But there are so many rules and why do they seem to be different everywhere you go? </p><p>We’re joined by science journalist and presenter Caroline Steel to talk about everything from the miles long luggage belts our suitcases travel on, how x-ray scanners work, what they’re looking for and whether or not they can ACTUALLY see us naked. </p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Hannah Gelbart\nProducers: Mollie Perella and Baldeep Chahal\nVideo Producer:  Baldeep Chahal\nEditor: Emily Horler</p>",
+  "publishedAt": "2026-10-15T13:30:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct994w",
+  "summaryZh": "本集 BBC 節目《What in the World》探討機場安檢技術的運作原理與各項規則背後的原因。主持人 Hannah Gelbart 與科學記者 Caroline Steel 深入解析託運行李在廣大地下輸送帶上的安檢程序、毫米波人體掃描儀如何穿透衣服偵測隱蔽物品，以及安檢人員為何不會看到乘客的裸體影像。節目亦介紹最新 CT 掃描器如何透過 X 光打造 3D 彩色影像來辨識物品、2006 年液體炸藥陰謀引發的 100 ml 液體限制由來，以及離子移動光譜儀能在數秒內偵測出十億分之一克的化學痕跡。最後，她們討論了入境時的海關與生物安全檢查，並展望未來的步行掃描與臉部辨識通關技術。",
+  "summaryEn": "This episode of What in the World explores the science and technology behind airport security rules and equipment. Host Hannah Gelbart and science journalist Caroline Steel explain how checked baggage travels through massive underground belt systems, how millimetre wave body scanners detect hidden objects without showing nude images to security staff, and how modern CT scanners produce 3D color-coded X-ray images of hand luggage. They also discuss the origin of liquid restrictions following a foiled 2006 plot, how swab machines can detect chemical traces down to a billionth of a gram, the purpose of customs and biosecurity checks on arrival, and future developments like walk-through scanners and facial recognition corridors.",
+  "studySets": {
+    "practical": {
+      "vocabulary": [
+        {
+          "word": "vacation",
+          "kkPhonetic": "/veˈkeʃən/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "假期",
+          "example": "We're going on a long-haul flight on a vacation.",
+          "highlight": "vacation"
+        },
+        {
+          "word": "luggage",
+          "kkPhonetic": "/ˈlʌɡɪdʒ/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "行李",
+          "example": "We've just sent off our luggage on that belt.",
+          "highlight": "luggage"
+        },
+        {
+          "word": "modern",
+          "kkPhonetic": "/ˈmɑdɚn/",
+          "partOfSpeech": "adjective",
+          "level": "A2",
+          "meaningZh": "現代的",
+          "example": "So the really modern ones, which actually are in quite a lot of airports now, are CT scanners, like the ones you see in a hospital, but they use X-rays.",
+          "highlight": "modern"
+        },
+        {
+          "word": "suspicious",
+          "kkPhonetic": "/səˈspɪʃəs/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "可疑的",
+          "example": "If your bag does contain something suspicious, it will be opened, which I always forget when I pack my suitcase.",
+          "highlight": "suspicious"
+        },
+        {
+          "word": "privacy",
+          "kkPhonetic": "/ˈpraɪvəsɪ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "隱私",
+          "example": "And well, all kinds of concerns about um about privacy, right?",
+          "highlight": "privacy"
+        },
+        {
+          "word": "explosive",
+          "kkPhonetic": "/ɪkˈsplosɪv/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "爆炸性的",
+          "example": "So an explosive liquid could look very similar to a bottle of water, and there's not much we can do about that.",
+          "highlight": "explosive"
+        },
+        {
+          "word": "illegal",
+          "kkPhonetic": "/ɪˈliɡəl/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "非法的",
+          "example": "They're looking for dangerous objects, these guns, explosives, weapons, drugs, anything illegal.",
+          "highlight": "illegal"
+        },
+        {
+          "word": "embarrassing",
+          "kkPhonetic": "/ɪmˈbærəsɪŋ/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "令人尷尬的",
+          "example": "I always have a water bottle hanging around in the bottom of my bag and it's really embarrassing when you have to sort of, you know, go and take it back through.",
+          "highlight": "embarrassing"
+        },
+        {
+          "word": "sensitive",
+          "kkPhonetic": "/ˈsɛnsətɪv/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "靈敏的",
+          "example": "So, they are so, so sensitive.",
+          "highlight": "sensitive"
+        },
+        {
+          "word": "destination",
+          "kkPhonetic": "/ˌdɛstəˈneʃən/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "目的地",
+          "example": "We've made it to our holiday destination!",
+          "highlight": "destination"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "take off",
+          "highlight": "take off",
+          "meaningZh": "起飛",
+          "example": "Have you ever been sort of sat ready to take off, and then you hear over the speaker system, \"Oh, sorry, we've just got to wait for a bag to be removed from the hold because someone hasn't boarded the plane\"?"
+        },
+        {
+          "phrase": "make sure",
+          "highlight": "make sure",
+          "meaningZh": "確保",
+          "example": "It's to make sure that we don't fly with unattended, sort of unattended bags."
+        },
+        {
+          "phrase": "make sense of",
+          "highlight": "make sense of",
+          "meaningZh": "理解",
+          "example": "And this 3D image is often also colour-coded so that the screeners, which are the people, you know, sat looking at the inside of your bag, um can sort of make sense of them more quickly."
+        },
+        {
+          "phrase": "catch someone out",
+          "highlight": "catches me out",
+          "meaningZh": "使……陷於困境",
+          "example": "But yeah, that's a pain, and that is the one that always catches me out."
+        },
+        {
+          "phrase": "on board",
+          "highlight": "on board",
+          "meaningZh": "在（機、車、船）上",
+          "example": "And this happened in 1988, when a bomb went off on a plane over Lockerbie in Scotland, and the owner of the bag wasn't on board the flight."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "suspicious",
+          "kkPhonetic": "/səˈspɪʃəs/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "可疑的",
+          "example": "If your bag does contain something suspicious, it will be opened, which I always forget when I pack my suitcase.",
+          "highlight": "suspicious"
+        },
+        {
+          "word": "unattended",
+          "kkPhonetic": "/ˌʌnəˈtɛndɪd/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "無人照看管的",
+          "example": "It's to make sure that we don't fly with unattended, sort of unattended bags.",
+          "highlight": "unattended"
+        },
+        {
+          "word": "iteration",
+          "kkPhonetic": "/ˌɪtəˈreʃən/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "疊代版本；改進版",
+          "example": "And there was actually an earlier iteration of these machines when they were first rolled out that that could actually see you naked, right?",
+          "highlight": "iteration"
+        },
+        {
+          "word": "foiled",
+          "kkPhonetic": "/fɔɪld/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "被挫敗的；被阻止的",
+          "example": "So this all comes from in 2006, there was basically a foiled liquid explosives plot, where people were going to create an explosion on board a plane that was taking off from Heathrow to somewhere in North America using liquids.",
+          "highlight": "foiled"
+        },
+        {
+          "word": "density",
+          "kkPhonetic": "/ˈdɛnsətɪ/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "密度",
+          "example": "The issue is, X-rays aren't very good at telling different liquids apart because they have really similar densities.",
+          "highlight": "densities"
+        },
+        {
+          "word": "evaporate",
+          "kkPhonetic": "/ɪˈvæpəˌret/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "蒸發；揮發",
+          "example": "Then that gets put into a machine, it's called an ion mobility spectrometer, and the machine heats up the swab, and basically these tiny, tiny, tiny traces of chemicals evaporate and turn into a gas.",
+          "highlight": "evaporate"
+        },
+        {
+          "word": "conceal",
+          "kkPhonetic": "/kənˈsil/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "隱藏；夾帶",
+          "example": "Some airports also want you to remove your shoes because you can conceal things in your shoes which wouldn't be picked up by a millimetre wave scanner, so that's one where you go like this, or like this, but would be picked up by the CT scanner or the X-ray scanner that your bag passes through.",
+          "highlight": "conceal"
+        },
+        {
+          "word": "invasive",
+          "kkPhonetic": "/ɪnˈvesɪv/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "入侵的；外來侵害的",
+          "example": "Um, so they they look for things like plants, animals, you know, some people smuggle animals onto planes, food, um, because they don't want any of that to come in because you could accidentally introduce an invasive species or a pest or a disease to a fragile ecosystem.",
+          "highlight": "invasive"
+        },
+        {
+          "word": "distinguish",
+          "kkPhonetic": "/dɪˈstɪŋɡwɪʃ/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "辨別；區分",
+          "example": "These CT scanners are much better at being able to distinguish between liquids.",
+          "highlight": "distinguish"
+        },
+        {
+          "word": "simultaneously",
+          "kkPhonetic": "/ˌsaɪməlˈtenɪəsli/",
+          "partOfSpeech": "adverb",
+          "level": "C1",
+          "meaningZh": "同時地",
+          "example": "And having a having a look on their website, and it says that they can process 10 people simultaneously, and some people can pass through it in as quick as 3 seconds.",
+          "highlight": "simultaneously"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "rifle through",
+          "highlight": "rifle through",
+          "meaningZh": "翻找；搜尋",
+          "example": "I don't think anyone's going to rifle through it, but if there's something suspicious in there, it will be opened."
+        },
+        {
+          "phrase": "keep someone on their toes",
+          "highlight": "keep the screeners on their toes",
+          "meaningZh": "使某人保持警覺；隨時準備應變",
+          "example": "So, to avoid this, a lot of airports do something called threat image projection, where they basically insert the image of something dangerous into random scans of people's bags to keep the screeners on their toes."
+        },
+        {
+          "phrase": "catch out",
+          "highlight": "catches me out",
+          "meaningZh": "使（某人）陷入困境；出乎意料地難倒",
+          "example": "But yeah, that's a pain, and that is the one that always catches me out."
+        },
+        {
+          "phrase": "hot on something",
+          "highlight": "hot on this",
+          "meaningZh": "對某事非常嚴格；極為重視",
+          "example": "So, Australia and New Zealand are really, really hot on this."
+        },
+        {
+          "phrase": "drop someone a line",
+          "highlight": "drop us a line",
+          "meaningZh": "給某人寫信；給某人留言",
+          "example": "And if you've got any more, you can drop us a line."
+        }
+      ]
+    },
+    "topic": {
+      "vocabulary": [
+        {
+          "word": "scanner",
+          "kkPhonetic": "/ˈskænɚ/",
+          "partOfSpeech": "n.",
+          "level": "B1",
+          "meaningZh": "掃描器",
+          "example": "And you know those body scanners, can they see you naked?",
+          "highlight": "scanners"
+        },
+        {
+          "word": "screener",
+          "kkPhonetic": "/ˈskrinɚ/",
+          "partOfSpeech": "n.",
+          "level": "B2",
+          "meaningZh": "安檢審圖人員",
+          "example": "And this 3D image is often also colour-coded so that the screeners, which are the people, you know, sat looking at the inside of your bag, um can sort of make sense of them more quickly.",
+          "highlight": "screeners"
+        },
+        {
+          "word": "swab",
+          "kkPhonetic": "/swɑːb/",
+          "partOfSpeech": "n.",
+          "level": "C1",
+          "meaningZh": "採樣棉籤；拭紙",
+          "example": "Then that gets put into a machine, it's called an ion mobility spectrometer, and the machine heats up the swab, and basically these tiny, tiny, tiny traces of chemicals evaporate and turn into a gas.",
+          "highlight": "swab"
+        },
+        {
+          "word": "spectrometer",
+          "kkPhonetic": "/spɛkˈtrɑːmətɚ/",
+          "partOfSpeech": "n.",
+          "level": "C2",
+          "meaningZh": "光譜儀",
+          "example": "Then that gets put into a machine, it's called an ion mobility spectrometer, and the machine heats up the swab, and basically these tiny, tiny, tiny traces of chemicals evaporate and turn into a gas.",
+          "highlight": "spectrometer"
+        },
+        {
+          "word": "biosecurity",
+          "kkPhonetic": "/ˌbaɪoʊsɪˈkjʊrəti/",
+          "partOfSpeech": "n.",
+          "level": "C1",
+          "meaningZh": "生物安全檢疫",
+          "example": "Biosecurity is looking for anything that could be a threat to the ecosystem that you're arriving into.",
+          "highlight": "biosecurity"
+        },
+        {
+          "word": "customs",
+          "kkPhonetic": "/ˈkʌstəmz/",
+          "partOfSpeech": "n.",
+          "level": "B1",
+          "meaningZh": "海關",
+          "example": "So, customs are looking for things like, they don't want you to be bringing in drugs, or weapons, so it could be looking for that.",
+          "highlight": "customs"
+        },
+        {
+          "word": "Lockerbie",
+          "kkPhonetic": "/ˈlɑːkɚbi/",
+          "partOfSpeech": "n.",
+          "level": "B2",
+          "meaningZh": "洛克比（蘇格蘭城鎮，節目提及1988年該地空域發生炸彈客未登機但行李上機的空難事件，促使機場實施人包合一的嚴格安全機制）。",
+          "example": "And this happened in 1988, when a bomb went off on a plane over Lockerbie in Scotland, and the owner of the bag wasn't on board the flight.",
+          "highlight": "Lockerbie"
+        },
+        {
+          "word": "Heathrow",
+          "kkPhonetic": "/ˈhiːθroʊ/",
+          "partOfSpeech": "n.",
+          "level": "B2",
+          "meaningZh": "希斯洛機場（倫敦主要國際機場，節目提及2006年從此機場起飛的班機曾遭液體炸彈威脅未遂，進而引發全球機場對隨身攜帶液體的管制規範）。",
+          "example": "So this all comes from in 2006, there was basically a foiled liquid explosives plot, where people were going to create an explosion on board a plane that was taking off from Heathrow to somewhere in North America using liquids.",
+          "highlight": "Heathrow"
+        },
+        {
+          "word": "Dubai",
+          "kkPhonetic": "/duːˈbaɪ/",
+          "partOfSpeech": "n.",
+          "level": "B1",
+          "meaningZh": "杜拜（阿拉伯聯合大公國城市，節目提及該地機場測試紅地毯走廊等新型人臉識別快速安檢技術）。",
+          "example": "In Dubai, certain passengers can use uh what they call a red carpet corridor, where basically you walk through a corridor, and rather than passport control, this corridor like scans your face as you go through, and you're just allowed through or not allowed through.",
+          "highlight": "Dubai"
+        },
+        {
+          "word": "Frankfurt",
+          "kkPhonetic": "/ˈfræŋkfɚt/",
+          "partOfSpeech": "n.",
+          "level": "B2",
+          "meaningZh": "法蘭克福（德國城市，節目用以舉例說明未來安檢趨勢，旅客經過安檢時只需正常行走即可完成毫米波掃描）。",
+          "example": "So, in Frankfurt in Germany, you don't sort of stand like this for your millimetre wave scanner as you pass through security, you just walk through it, and it scans you as you walk, which is so cool.",
+          "highlight": "Frankfurt"
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/0UhJQo67ue7sDou5sVJJr7"
+}
