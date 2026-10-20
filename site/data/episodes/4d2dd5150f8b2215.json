@@ -1,0 +1,367 @@
+{
+  "id": "4d2dd5150f8b2215",
+  "title": "Why the word ‘vagina’ is getting blocked on social media",
+  "description": "<p>Is educational content about women’s reproductive and sexual health being removed or restricted on social media apps? Content moderation tools are meant to flag specific words and imagery that breach platform guidelines, like showing nudity or explicit content, but posts that use clinical terms like ‘vagina’ are getting blocked too. BBC reporter, Ashitha Nagesh has been speaking to charities, campaigners and businesses about this issue.</p><p>We hear from three creators, Dr Aziza Sesay, Samantha Hadadi and Gigi Engle about their experience of being shadowbanned on social media and how it’s impacted their work.</p><p>And Martha Dimitratou is the founder of Repro Uncensored, a non profit that tracks censorship online, she tells us how this is impacting content creators on a global scale.</p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Hannah Gelbart\nProducers: Emily Horler and Benita Barden\nEditor: Verity Wilde</p>",
+  "publishedAt": "2026-10-19T13:30:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct98y4",
+  "summaryZh": "本集 BBC 節目《What in the World》探討女性健康與性教育內容在社群平台 Meta 與 TikTok 上遭隱藏或限流的現象，以及使用 vagina 等臨床詞彙為何會引發過濾。 BBC 記者 Ashitha Nagesh 採訪創作者、慈善機構與專家，指出隨著人工智慧 AI 自動化審查增加，許多衛教內容如懷孕、子宮內膜異位症與陰道癌等貼文被誤標為敏感資訊或遭下架。節目更揭露雙重標準：關於女性健康的貼文經常被封鎖，但涉及男性器官與保險套的內容卻不受影響。非營利組織 Repro Uncensored 的 Marta Dimitratou 指出，這項審查正影響全球創作者，且約 70% 的帳號在恢復後選擇自我審查。這類限制迫使創作者使用替代符號規避演算法，不僅使女性與女孩難以獲得正確的醫療衛生資訊與癌症早期警訊，也加深了對女性身體的羞恥感。",
+  "summaryEn": "This episode of What in the World explores how educational content and posts about women's reproductive and sexual health are being restricted, hidden, or shadowbanned on major social media platforms such as Meta (Facebook and Instagram) and TikTok. BBC reporter Ashitha Nagesh speaks with content creators, charities, and experts who report that posts containing clinical terms like 'vagina', 'vulva', 'pregnancy', and 'endometriosis' are being flagged, largely due to an increased reliance on automated AI moderation. The episode highlights a clear double standard—where similar content about male anatomy and contraceptives often passes without issue—and emphasizes the global scale of the problem reported by Repro Uncensored. As creators resort to self-censorship and altered spelling to bypass algorithms, experts warn that suppressing this information prevents women and girls from learning about vital health signs and early cancer detection while reinforcing societal stigma.",
+  "studySets": {
+    "practical": {
+      "vocabulary": [
+        {
+          "word": "question",
+          "kkPhonetic": "/ˈkwɛstʃən/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "問題",
+          "example": "If you've got a question about your period, contraception, fertility, where do you go for answers?",
+          "highlight": "question"
+        },
+        {
+          "word": "answer",
+          "kkPhonetic": "/ˈænsɚ/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "答案",
+          "example": "If you've got a question about your period, contraception, fertility, where do you go for answers?",
+          "highlight": "answers"
+        },
+        {
+          "word": "follower",
+          "kkPhonetic": "/ˈfɑloɚ/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "追蹤者",
+          "example": "My posts don't get seen nearly as much as they should for how many followers I have.",
+          "highlight": "followers"
+        },
+        {
+          "word": "reporter",
+          "kkPhonetic": "/rɪˈpɔrtɚ/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "記者",
+          "example": "I'm speaking to Ishitha Nagesh who's a BBC reporter.",
+          "highlight": "reporter"
+        },
+        {
+          "word": "opportunity",
+          "kkPhonetic": "/ˌɑpɚˈtjunətɪ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "機會",
+          "example": "I've definitely had reduced visibility, reduced engagement, and it's also meant that not as many people have had the opportunity to access this free information that a lot of us are sharing to combat misinformation and disinformation.",
+          "highlight": "opportunity"
+        },
+        {
+          "word": "conversation",
+          "kkPhonetic": "/ˌkɑnvɚˈseʃən/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "對話",
+          "example": "I cannot believe, to be quite honest, that we are even having this conversation, that we're in 2026 and this is even a topic in the news.",
+          "highlight": "conversation"
+        },
+        {
+          "word": "topic",
+          "kkPhonetic": "/ˈtɑpɪk/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "話題",
+          "example": "I cannot believe, to be quite honest, that we are even having this conversation, that we're in 2026 and this is even a topic in the news.",
+          "highlight": "topic"
+        },
+        {
+          "word": "creative",
+          "kkPhonetic": "/krɪˈetɪv/",
+          "partOfSpeech": "adjective",
+          "level": "A2",
+          "meaningZh": "有創意的",
+          "example": "Meanwhile, more content creators are coming up with creative solutions to get around these kinds of restrictions.",
+          "highlight": "creative"
+        },
+        {
+          "word": "solution",
+          "kkPhonetic": "/səˈluʃən/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "解決方案",
+          "example": "Meanwhile, more content creators are coming up with creative solutions to get around these kinds of restrictions.",
+          "highlight": "solutions"
+        },
+        {
+          "word": "tired",
+          "kkPhonetic": "/ˈtaɪɚd/",
+          "partOfSpeech": "adjective",
+          "level": "A2",
+          "meaningZh": "疲倦的",
+          "example": "I've been running for a year, and every week after my period, I feel so tired and sleepy that it's really difficult to maintain the routine.",
+          "highlight": "tired"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "to be honest",
+          "highlight": "to be quite honest",
+          "meaningZh": "坦白說；說實在的",
+          "example": "I cannot believe, to be quite honest, that we are even having this conversation, that we're in 2026 and this is even a topic in the news."
+        },
+        {
+          "phrase": "get around",
+          "highlight": "get around",
+          "meaningZh": "繞過；避開",
+          "example": "I've had to adapt my content, adapt my work to get around the shadowbanning, so to speak."
+        },
+        {
+          "phrase": "so to speak",
+          "highlight": "so to speak",
+          "meaningZh": "可以說；所謂的",
+          "example": "I've had to adapt my content, adapt my work to get around the shadowbanning, so to speak."
+        },
+        {
+          "phrase": "come up with",
+          "highlight": "coming up with",
+          "meaningZh": "想出；提出",
+          "example": "Meanwhile, more content creators are coming up with creative solutions to get around these kinds of restrictions."
+        },
+        {
+          "phrase": "get in touch with",
+          "highlight": "get in touch with",
+          "meaningZh": "與……取得聯繫",
+          "example": "You can get in touch with us, leave us a comment."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "suppress",
+          "kkPhonetic": "/səˈprɛs/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "被壓制；被抑制",
+          "example": "I've spoken to a sort of mix of content creators, business owners, charities who say that a lot of their content is being removed, it's being shadowbanned, which is where the reach is sort of suppressed, so the engagement's really low, or their content is being put behind sensitivity filters.",
+          "highlight": "suppressed"
+        },
+        {
+          "word": "sensationalized",
+          "kkPhonetic": "/sɛnˈseʃənəˌlaɪzd/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "聳人聽聞的；誇大炒作的",
+          "example": "I have to say, it boggles my mind that I constantly am exposed to hypersexualized content as well as those sensationalized content that give inaccurate information.",
+          "highlight": "sensationalized"
+        },
+        {
+          "word": "speculate",
+          "kkPhonetic": "/ˈspɛkjəˌlet/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "推測；揣測",
+          "example": "Again, I I mean I can't speculate and I did try to get an answer from Meta and from TikTok.",
+          "highlight": "speculate"
+        },
+        {
+          "word": "draconian",
+          "kkPhonetic": "/drəˈkoniən/",
+          "partOfSpeech": "adjective",
+          "level": "C2",
+          "meaningZh": "嚴苛的；極其嚴厲的",
+          "example": "We have documented suspensions of MFB, sexual health programs in France, and repeated removals affecting Women Help Women in Poland, where access to reproductive healthcare information is especially critical given the country's draconian, restrictive abortion laws.",
+          "highlight": "draconian"
+        },
+        {
+          "word": "reinstatement",
+          "kkPhonetic": "/ˌriɪnˈstetmənt/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "帳號恢復；復權",
+          "example": "Our own research found that 70% of people we help get their accounts back have reported self-censoring after reinstatement.",
+          "highlight": "reinstatement"
+        },
+        {
+          "word": "stagnated",
+          "kkPhonetic": "/ˈstæɡnetɪd/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "停滯不前的",
+          "example": "I have like stagnated follower counts.",
+          "highlight": "stagnated"
+        },
+        {
+          "word": "concession",
+          "kkPhonetic": "/kənˈsɛʃən/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "妥協；讓步",
+          "example": "And I try to do my best to get around it by censoring naughty words, like censoring them with asterisks or whatever, saying \"segs\" instead of \"sex\", you know, making almost humiliating concessions to try to get eyes on some of the stuff I see.",
+          "highlight": "concessions"
+        },
+        {
+          "word": "legitimate",
+          "kkPhonetic": "/lɪˈdʒɪtəmɪt/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "合法的；正當的",
+          "example": "We are receiving an increased amount of reports, much more than the previous years, with appeals taking longer and longer, and platforms now even flat-out refusing to reinstate legitimate women's health accounts, even accounts with hundreds of thousands of followers, often without any meaningful human review.",
+          "highlight": "legitimate"
+        },
+        {
+          "word": "progressively",
+          "kkPhonetic": "/prəˈɡrɛsɪvli/",
+          "partOfSpeech": "adverb",
+          "level": "B2",
+          "meaningZh": "漸進地；持續地",
+          "example": "The problem is getting progressively worse.",
+          "highlight": "progressively"
+        },
+        {
+          "word": "hypersexualized",
+          "kkPhonetic": "/ˌhaɪpɚˈsɛkʃuəˌlaɪzd/",
+          "partOfSpeech": "adjective",
+          "level": "C2",
+          "meaningZh": "過度性化的",
+          "example": "I have to say, it boggles my mind that I constantly am exposed to hypersexualized content as well as those sensationalized content that give inaccurate information.",
+          "highlight": "hypersexualized"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "boggle someone's mind",
+          "highlight": "boggles my mind",
+          "meaningZh": "使人難以置信；令人感到震驚",
+          "example": "I have to say, it boggles my mind that I constantly am exposed to hypersexualized content as well as those sensationalized content that give inaccurate information."
+        },
+        {
+          "phrase": "leave someone's blood boiling",
+          "highlight": "left my blood boiling",
+          "meaningZh": "令人怒火中燒；使人極度憤怒",
+          "example": "My experience of this has left my blood boiling."
+        },
+        {
+          "phrase": "fall foul of",
+          "highlight": "falling foul of",
+          "meaningZh": "觸犯；違反（規定或政策）",
+          "example": "So, I think there is definitely a question about why women's health topics are falling foul of these moderation policies more than men's health topics."
+        },
+        {
+          "phrase": "flat-out",
+          "highlight": "flat-out",
+          "meaningZh": "公然地；斷然地",
+          "example": "We are receiving an increased amount of reports, much more than the previous years, with appeals taking longer and longer, and platforms now even flat-out refusing to reinstate legitimate women's health accounts, even accounts with hundreds of thousands of followers, often without any meaningful human review."
+        },
+        {
+          "phrase": "shout something from the rooftops",
+          "highlight": "shout them from the rooftops",
+          "meaningZh": "大聲疾呼；公開宣揚",
+          "example": "I will shout them from the rooftops."
+        }
+      ]
+    },
+    "topic": {
+      "vocabulary": [
+        {
+          "word": "femtech",
+          "kkPhonetic": "/ˈfɛm.tɛk/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "女性科技（專注於女性健康的科技產品與服務）",
+          "example": "But some femtech brands, female health content creators, and sex educators are saying their posts are being hidden behind sensitivity filters or actually shadowbanned by the same platforms that they're trying to use to reach people.",
+          "highlight": "femtech"
+        },
+        {
+          "word": "contraception",
+          "kkPhonetic": "/ˌkɑntrəˈsɛpʃən/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "避孕；避孕法",
+          "example": "If you've got a question about your period, contraception, fertility, where do you go for answers?",
+          "highlight": "contraception"
+        },
+        {
+          "word": "shadowban",
+          "kkPhonetic": "/ˈʃædoʊˌbæn/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "被隱形封鎖（社群平台降權或降低貼文曝光率）",
+          "example": "Basically have been shadowbanned for like the last 10 years.",
+          "highlight": "shadowbanned"
+        },
+        {
+          "word": "endometriosis",
+          "kkPhonetic": "/ˌɛndoʊˌmitriˈoʊsɪs/",
+          "partOfSpeech": "noun",
+          "level": "C2",
+          "meaningZh": "子宮內膜異位症",
+          "example": "The fertility company Hertility told me that they've had a range of issues getting ads out there because their ads and their videos were classified as political content, including a video about a woman with endometriosis, which actually wasn't talking about, you know, their fertility testing products or anything, it was just about endometriosis.",
+          "highlight": "endometriosis"
+        },
+        {
+          "word": "dysmenorrhea",
+          "kkPhonetic": "/ˌdɪsmɛnəˈriə/",
+          "partOfSpeech": "noun",
+          "level": "C2",
+          "meaningZh": "經痛；月經困難症",
+          "example": "I find it wild that so many of us content creators, so many of us who work in the women's health space still can't write or talk about periods or bodies or even medical terms like dysmenorrhea or vulva, vagina, without being policed.",
+          "highlight": "dysmenorrhea"
+        },
+        {
+          "word": "vulva",
+          "kkPhonetic": "/ˈvʌlvə/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "外陰（女性外生殖器）",
+          "example": "I find it wild that so many of us content creators, so many of us who work in the women's health space still can't write or talk about periods or bodies or even medical terms like dysmenorrhea or vulva, vagina, without being policed.",
+          "highlight": "vulva"
+        },
+        {
+          "word": "vagina",
+          "kkPhonetic": "/vəˈdʒaɪnə/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "陰道",
+          "example": "So, why is the word vagina still so controversial on social media?",
+          "highlight": "vagina"
+        },
+        {
+          "word": "France",
+          "kkPhonetic": "/fræns/",
+          "partOfSpeech": "noun",
+          "level": "A1",
+          "meaningZh": "法國（節目指出該國的性健康計畫專案在社群平台上遭遇停權或審查）",
+          "example": "We have documented suspensions of MFB, sexual health programs in France, and repeated removals affecting Women Help Women in Poland, where access to reproductive healthcare information is especially critical given the country's draconian, restrictive abortion laws.",
+          "highlight": "France"
+        },
+        {
+          "word": "Poland",
+          "kkPhonetic": "/ˈpoʊlənd/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "波蘭（節目提到該國因嚴格的墮胎法使得生育保健資訊極為關鍵，但相關機構的貼文卻屢遭平台刪除）",
+          "example": "We have documented suspensions of MFB, sexual health programs in France, and repeated removals affecting Women Help Women in Poland, where access to reproductive healthcare information is especially critical given the country's draconian, restrictive abortion laws.",
+          "highlight": "Poland"
+        },
+        {
+          "word": "Colombia",
+          "kkPhonetic": "/kəˈlʌmbiə/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "哥倫比亞（節目指出女性健康衛教內容受網路審查的現象已蔓延至哥倫比亞等拉丁美洲國家）",
+          "example": "We are seeing similar patterns across the US, or the UK, Netherlands, all over Latin America, including Mexico and Colombia, and countries such as the Democratic Republic of Congo, or Benin, or even as far as Australia, really, with a growing number of cases.",
+          "highlight": "Colombia"
+        },
+        {
+          "word": "Australia",
+          "kkPhonetic": "/ɔˈstreɪljə/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "澳洲（節目以此為例說明網路平台過度審查女性健康內容的情況已遠及澳洲）",
+          "example": "We are seeing similar patterns across the US, or the UK, Netherlands, all over Latin America, including Mexico and Colombia, and countries such as the Democratic Republic of Congo, or Benin, or even as far as Australia, really, with a growing number of cases.",
+          "highlight": "Australia"
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/3mjKFyuqicqhCfp0vqI8L2"
+}
