@@ -1,0 +1,340 @@
+{
+  "id": "7c4aa20ee32d4235",
+  "title": "Why polyester is in its flop era",
+  "description": "<p>Have a look at the label in the clothes you’re wearing today. Chances are, you’re wearing some polyester. It’s the most- produced synthetic fibre on the planet and it’s having a bit of a moment on socials. In a bad way…people are giving it up and swapping for more natural fibres. </p><p>You might’ve seen claims that polyester is linked to diseases like cancer and can cause fertility issues. But how worried should we be? Professor Mohamed Abdallah from the University of Birmingham breaks it down for us and Chelsea Coates from the What in the World team explains how we can make better clothing choices. </p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Hannah Gelbart\nProducers: Chelsea Coates and Emily Horler\nEditor: Verity Wilde</p>",
+  "publishedAt": "2026-10-20T13:30:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct990d",
+  "summaryZh": "本集 BBC 節目《What in the World》探討聚酯纖維在社群平台上引發的反彈，並解析其對健康與環境的真實影響。節目指出，聚酯纖維佔全球纖維產量的 59% ，因耐用與抗皺而普及，但難以降解，在環境中需長達 200 年才能分解。針對網路關於聚酯纖維危害健康的傳言，伯明罕大學教授 Mohamed Abdallah 指出，聚酯纖維在製造過程中常添加阻燃劑或內分泌干擾化學物質 EDCs ，例如 PFAS 等持久性化學物質；在運動流汗或體溫升高時，衣物釋放的微纖維可能增加皮膚吸收化學物質的風險。此外，洗衣過程釋放的微塑膠是海洋微塑膠的主要來源，洗滌一件聚酯纖維襯衫一年可能釋放約 52,000 個微塑膠顆粒。團隊成員 Chelsea Coates 建議，民眾不應盲目丟棄舊衣以免加重掩埋場負擔（每年高達 85% 紡織品進入掩埋場）或造成過度消費，而是應選擇耐用衣物、關注品牌透明度，並透過低溫洗滌、低速轉速、使用洗衣袋與避免烘乾來減少微塑膠排放。",
+  "summaryEn": "In this episode of What in the World, presenter Hannah Gelbart and team member Chelsea Coates discuss the growing online backlash against polyester and investigate its health and environmental impacts. Accounting for 59% of global fiber production, polyester is widely used due to its durability and moisture resistance, but it is non-biodegradable and can take up to 200 years to decompose. Addressing health concerns, Professor Mohamed Abdallah from the University of Birmingham explains that chemical additives in synthetic fabrics—such as flame retardants, endocrine-disrupting chemicals (EDCs), and PFAS—can release microfibers that pose higher skin absorption risks during workouts when body temperature and sweat increase. Additionally, washing synthetic clothing is a major source of ocean microplastics, with a single polyester shirt releasing roughly 52,000 microplastic particles per year when washed biweekly. To address these issues without contributing to landfill waste or overconsumption, the episode advises consumers to buy durable clothes, check brand supply chain transparency, and practice gentle laundry habits—such as using lower temperatures, lower spin cycles, laundry bags, and avoiding tumble drying.",
+  "studySets": {
+    "practical": {
+      "vocabulary": [
+        {
+          "word": "label",
+          "kkPhonetic": "/ˈlebl/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "標籤",
+          "example": "So, I thought before we get into today's episode, it would be cool if we checked our clothing labels.",
+          "highlight": "labels"
+        },
+        {
+          "word": "durable",
+          "kkPhonetic": "/ˈdʊrəbl/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "耐用的",
+          "example": "And, practically, it was described as a miracle fabric at first when it was invented because it was very durable compared to a lot of the other natural fabrics that were on the market at the time.",
+          "highlight": "durable"
+        },
+        {
+          "word": "iron",
+          "kkPhonetic": "/ˈaɪərn/",
+          "partOfSpeech": "verb",
+          "level": "A2",
+          "meaningZh": "熨燙",
+          "example": "You don't have to iron.",
+          "highlight": "iron"
+        },
+        {
+          "word": "landfill",
+          "kkPhonetic": "/ˈlændfɪl/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "垃圾掩埋場",
+          "example": "So, it sits in landfills for a long time and can release pollutants.",
+          "highlight": "landfills"
+        },
+        {
+          "word": "regulate",
+          "kkPhonetic": "/ˈreɡjuleɪt/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "調節；控制",
+          "example": "So, essentially, they are chemical messengers that travel through your bloodstream, and they regulate lots of the important processes that go on there.",
+          "highlight": "regulate"
+        },
+        {
+          "word": "impact",
+          "kkPhonetic": "/ˈɪmpækt/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "影響",
+          "example": "And while we're talking about the health impact on our bodies, a lot of us have polyester sportswear, my leggings, they're pretty much polyester.",
+          "highlight": "impact"
+        },
+        {
+          "word": "temperature",
+          "kkPhonetic": "/ˈtemprətʃər/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "溫度",
+          "example": "Some of the things that you can do are washing them on a lower spin cycle and also at a lower temperature, because that can help to reduce the amount of microfibers that they shed.",
+          "highlight": "temperature"
+        },
+        {
+          "word": "cycle",
+          "kkPhonetic": "/ˈsaɪkl/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "循環",
+          "example": "And also, we're buying more clothes, so we're feeding into the cycle of potential overconsumption that only makes this issue worse.",
+          "highlight": "cycle"
+        },
+        {
+          "word": "panic",
+          "kkPhonetic": "/ˈpænɪk/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "恐慌",
+          "example": "So, it's it's not a reason to panic, but it's a reason to kind of get more informed about what is in your clothes and the impact that your clothes can potentially have on the environment.",
+          "highlight": "panic"
+        },
+        {
+          "word": "goal",
+          "kkPhonetic": "/ɡoʊl/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "目標",
+          "example": "Now, before we go, one of the things I've been seeing on my socials is people making, uh, mini resolutions or goals to use less plastic as part of the great reset.",
+          "highlight": "goals"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "break down",
+          "highlight": "break down",
+          "meaningZh": "詳細說明；分析",
+          "example": "I want you to break down for me what polyester is, what it's made of, and and how it got to be so popular."
+        },
+        {
+          "phrase": "work out",
+          "highlight": "work out",
+          "meaningZh": "運動；健身",
+          "example": "And people online are saying that it's not a good material to work out in because it can make you sweat more and it can make you smell bad."
+        },
+        {
+          "phrase": "keep in mind",
+          "highlight": "keep in mind",
+          "meaningZh": "牢記；記在心中",
+          "example": "But also, keep in mind that, like I was hearing from Professor Mohamed Abdallah earlier, the health risks to you, um, you have to kind of take a big-picture view on them."
+        },
+        {
+          "phrase": "throw out",
+          "highlight": "throwing out",
+          "meaningZh": "丟棄；扔掉",
+          "example": "So, we have to remember that if we're throwing out all of our clothes, we are potentially contributing to that."
+        },
+        {
+          "phrase": "go as planned",
+          "highlight": "go as planned",
+          "meaningZh": "按計劃進行",
+          "example": "And we did an episode on that, and we got a comment, which I want to read, which says, 'Stop blaming yourself when things don't go as planned, even though you've been working hard to make it happen.'"
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "backlash",
+          "kkPhonetic": "/ˈbækˌlæʃ/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "強烈反彈；強烈反對",
+          "example": "So, today we're going to look at some of the claims people are making about polyester online, and if it deserves the backlash it's getting.",
+          "highlight": "backlash"
+        },
+        {
+          "word": "durable",
+          "kkPhonetic": "/ˈdʊrəbl/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "耐用的；持久的",
+          "example": "And, practically, it was described as a miracle fabric at first when it was invented because it was very durable compared to a lot of the other natural fabrics that were on the market at the time.",
+          "highlight": "durable"
+        },
+        {
+          "word": "biodegradable",
+          "kkPhonetic": "/ˌbaɪo dɪˈɡredəbl/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "可生物分解的",
+          "example": "But as you mentioned, one of the big downsides is that it's not biodegradable.",
+          "highlight": "biodegradable"
+        },
+        {
+          "word": "decompose",
+          "kkPhonetic": "/ˌdikəmˈpoz/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "分解；腐爛",
+          "example": "So, it takes a long time to decompose in our environment, so it can take up to 200 years even.",
+          "highlight": "decompose"
+        },
+        {
+          "word": "pollutant",
+          "kkPhonetic": "/pəˈlutənt/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "污染物",
+          "example": "So, it sits in landfills for a long time and can release pollutants.",
+          "highlight": "pollutants"
+        },
+        {
+          "word": "disrupt",
+          "kkPhonetic": "/dɪsˈrʌpt/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "打亂；干擾",
+          "example": "So, one thing that people are saying that they're a bit a bit worried about is that polyester could potentially affect our health and disrupt our hormones.",
+          "highlight": "disrupt"
+        },
+        {
+          "word": "interfere",
+          "kkPhonetic": "/ˌɪntɚˈfɪr/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "干擾；干預",
+          "example": "So, that means that they could potentially interfere with your hormones if they get into your bloodstream.",
+          "highlight": "interfere"
+        },
+        {
+          "word": "persistent",
+          "kkPhonetic": "/pɚˈsɪstənt/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "（化學物質等）持久難消退的；持續存在的",
+          "example": "Uh, these chemicals are extremely persistent in the environment.",
+          "highlight": "persistent"
+        },
+        {
+          "word": "flammable",
+          "kkPhonetic": "/ˈflæməbl/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "易燃的",
+          "example": "So it helps it be less flammable.",
+          "highlight": "flammable"
+        },
+        {
+          "word": "overconsumption",
+          "kkPhonetic": "/ˌovɚkənˈsʌmpʃən/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "過度消費",
+          "example": "And also, we're buying more clothes, so we're feeding into the cycle of potential overconsumption that only makes this issue worse.",
+          "highlight": "overconsumption"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "break down",
+          "highlight": "break down",
+          "meaningZh": "分析；拆解說明",
+          "example": "I want you to break down for me what polyester is, what it's made of, and and how it got to be so popular."
+        },
+        {
+          "phrase": "quite a mouthful",
+          "highlight": "Quite a mouthful",
+          "meaningZh": "極為拗口的話；很難唸的名詞",
+          "example": "Quite Quite a mouthful!"
+        },
+        {
+          "phrase": "feed into",
+          "highlight": "feeding into",
+          "meaningZh": "助長；促成（不良循環）",
+          "example": "And also, we're buying more clothes, so we're feeding into the cycle of potential overconsumption that only makes this issue worse."
+        },
+        {
+          "phrase": "black-and-white issue",
+          "highlight": "black-and-white issue",
+          "meaningZh": "非黑即白的問題；絕對化的議題",
+          "example": "It's not necessarily a black-and-white issue."
+        },
+        {
+          "phrase": "take a big-picture view",
+          "highlight": "take a big-picture view",
+          "meaningZh": "從宏觀大局的角度看待",
+          "example": "But also, keep in mind that, like I was hearing from Professor Mohamed Abdallah earlier, the health risks to you, um, you have to kind of take a big-picture view on them."
+        }
+      ]
+    },
+    "topic": {
+      "vocabulary": [
+        {
+          "word": "polyester",
+          "kkPhonetic": "/ˌpɑliˈɛstɚ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "聚酯纖維（一種常見的合成纖維布料）",
+          "example": "I'm wearing 100% polyester.",
+          "highlight": "polyester"
+        },
+        {
+          "word": "detox",
+          "kkPhonetic": "/ˈdiˌtɑks/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "排毒（此處指停止使用或穿著聚酯纖維製品的戒除行為）",
+          "example": "I've seen loads of people talking about taking a polyester detox for environmental reasons, health reasons, and even the word polyester has become an insult, right?",
+          "highlight": "detox"
+        },
+        {
+          "word": "synthetic",
+          "kkPhonetic": "/sɪnˈθɛtɪk/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "人造的；合成的",
+          "example": "And some synthetic fabrics, so for example, polyester, but also natural ones as well, in the process of being made, they're treated with chemicals like, um, phthalates, or bisphenols, or brominated flame retardants.",
+          "highlight": "synthetic"
+        },
+        {
+          "word": "microplastic",
+          "kkPhonetic": "/ˈmaɪkroˌplæstɪk/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "塑膠微粒；微塑膠（聚酯纖維衣物洗滌時釋放出的極小塑膠碎片）",
+          "example": "So, more than a third of all microplastics that are found in our oceans, according to the UN, come from synthetic fabrics like polyester, and that makes synthetic fabrics actually the biggest source of microplastics in our oceans.",
+          "highlight": "microplastics"
+        },
+        {
+          "word": "microfiber",
+          "kkPhonetic": "/ˈmaɪkroˌfaɪbɚ/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "微纖維（清洗衣物時脫落的極微小纖維）",
+          "example": "Every time you wash your clothes, they shed these microfibers, which are essentially a type of microplastic if it is a synthetic material.",
+          "highlight": "microfibers"
+        },
+        {
+          "word": "moisture-wicking",
+          "kkPhonetic": "/ˈmɔɪstʃɚˌwɪkɪŋ/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "吸濕排汗的（能將身體汗水引導至衣物表面揮發）",
+          "example": "It's moisture-wicking, so that means that instead of it sticking to your body, it kind of helps it travel further away.",
+          "highlight": "moisture-wicking"
+        },
+        {
+          "word": "breathable",
+          "kkPhonetic": "/ˈbriðəbl/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "透氣的（指布料能讓空氣或水蒸氣穿透的特性）",
+          "example": "But it's not the most breathable fabric, so it can perhaps make some people feel kind of sweaty or more uncomfortable.",
+          "highlight": "breathable"
+        },
+        {
+          "word": "UK",
+          "kkPhonetic": "/ˌju ˈke/",
+          "partOfSpeech": "noun",
+          "level": "A1",
+          "meaningZh": "英國（節目提及聚酯纖維於1940年代在此發明）",
+          "example": "It was invented here in the UK in the 1940s.",
+          "highlight": "UK"
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/07Roz2eyjIlhEBkfn43iTO"
+}
