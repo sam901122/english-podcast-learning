@@ -1,0 +1,358 @@
+{
+  "id": "49f383c660a8315c",
+  "title": "How student protesters won against Serbia's Vučić",
+  "description": "<p>Snap elections in Serbia have resulted in the toppling of the long-term leader, Aleksandar Vučić, as protest movement ‘The Student List’ won a decisive victory over the weekend. \n \nOver the last two years, students have protested against the government after a concrete roof collapsed outside of a train station and 16 people were killed. Lots of people saw the disaster as a result of corruption and negligence in the country.\n \nWe hear from people on the streets of Belgrade celebrating this new era. But how did this win come about? Who will lead the country? And what is next for Serbia? </p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Emma-Louise Amanshia\nProducers: Emily Horler and Abigail Akerman\nEditor: Verity Wilde</p>",
+  "publishedAt": "2026-10-26T14:55:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct98yb",
+  "summaryZh": "本集 BBC 節目《What in the World》探討塞爾維亞學生運動如何在提前大選中擊敗長期執政的領導人 Aleksandar Vučić 與其陣營。這場抗爭始於 2024 年火車站混凝土雨棚坍塌造成 16 人死亡的事故，大眾認為這是政府貪腐與疏失所致。在創紀錄的高投票率下，由學生支持且涵蓋各領域專家的候選人陣營獲得 52.6% 的選票，擊敗得票率 39.2% 的 SNS 執政黨。該陣營提出打擊貪腐與改善民生等 11 項方案，並採用無單一領袖的分權合作模式。隨著年底前需舉行總統大選，此結果為塞爾維亞帶來新氣象。",
+  "summaryEn": "This episode explores how a student-led protest movement in Serbia achieved a decisive victory over long-term leader Aleksandar Vučić in recent snap elections. The protests began two years ago after a renovated train station's concrete canopy collapsed, killing 16 people—a disaster widely blamed on government corruption and negligence. Supported by a coalition of professionals without prior political experience, the student-backed list won 52.6% of the vote compared to 39.2% for Vučić’s ruling SNS party. The movement advocates for anti-corruption reforms, media transparency, and social welfare through a decentralized leadership structure. With a presidential election required before the end of the year, this victory marks a historic moment for Serbia and offers inspiration to student movements globally.",
+  "studySets": {
+    "practical": {
+      "vocabulary": [
+        {
+          "word": "celebrate",
+          "kkPhonetic": "/ˈsɛləˌbret/",
+          "partOfSpeech": "verb",
+          "level": "A2",
+          "meaningZh": "慶祝",
+          "example": "Now the movement celebrates a huge election win against the country's leader, Aleksandar Vučić.",
+          "highlight": "celebrates"
+        },
+        {
+          "word": "capital",
+          "kkPhonetic": "/ˈkæpətl/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "首都",
+          "example": "The capital city is Belgrade, and it's one of the world's biggest exporters of raspberries.",
+          "highlight": "capital"
+        },
+        {
+          "word": "surround",
+          "kkPhonetic": "/səˈraʊnd/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "環繞",
+          "example": "If you're trying to picture it on a map, it's surrounded by several countries, including Hungary, Romania, and Croatia.",
+          "highlight": "surrounded"
+        },
+        {
+          "word": "concrete",
+          "kkPhonetic": "/ˈkɑŋkrit/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "混凝土",
+          "example": "A roof canopy made of concrete collapsed outside a train station.",
+          "highlight": "concrete"
+        },
+        {
+          "word": "collapse",
+          "kkPhonetic": "/kəˈlæps/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "倒塌",
+          "example": "A roof canopy made of concrete collapsed outside a train station.",
+          "highlight": "collapsed"
+        },
+        {
+          "word": "kill",
+          "kkPhonetic": "/kɪl/",
+          "partOfSpeech": "verb",
+          "level": "A2",
+          "meaningZh": "殺死",
+          "example": "Sadly, 16 people were killed.",
+          "highlight": "killed"
+        },
+        {
+          "word": "pressure",
+          "kkPhonetic": "/ˈprɛʃɚ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "壓力",
+          "example": "The pressure clearly got to the government.",
+          "highlight": "pressure"
+        },
+        {
+          "word": "queue",
+          "kkPhonetic": "/kju/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "排隊隊伍",
+          "example": "There were long queues outside polling stations all around the country—in the big cities, but also in the small towns.",
+          "highlight": "queues"
+        },
+        {
+          "word": "persuade",
+          "kkPhonetic": "/pɚˈswed/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "說服",
+          "example": "They persuaded people to go out and vote, and they have given hope to so many.",
+          "highlight": "persuaded"
+        },
+        {
+          "word": "reality",
+          "kkPhonetic": "/riˈælətɪ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "現實",
+          "example": "I have a feeling I need to wake up, but it's not, it's reality.",
+          "highlight": "reality"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "all walks of life",
+          "highlight": "all walks of life",
+          "meaningZh": "各行各業",
+          "example": "People from all walks of life joined: teachers, farmers, actors, judges."
+        },
+        {
+          "phrase": "in power",
+          "highlight": "in power",
+          "meaningZh": "掌權；執政",
+          "example": "I think we as a country tend to, uh, idolize the person who's in power, so the whole point of this student party was to not have one person in power, but to have multiple people who know what they're doing in their fields doing the things that they know how to do best."
+        },
+        {
+          "phrase": "stay in power",
+          "highlight": "stay in power",
+          "meaningZh": "維持政權",
+          "example": "So this whole election process in a way was his attempt to stay in power, which has now backfired on him."
+        },
+        {
+          "phrase": "wake up",
+          "highlight": "wake up",
+          "meaningZh": "醒來",
+          "example": "I have a feeling I need to wake up, but it's not, it's reality."
+        },
+        {
+          "phrase": "take action",
+          "highlight": "taking action",
+          "meaningZh": "採取行動",
+          "example": "People are taking action against governments and systems they don't think are working well enough."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "canopy",
+          "kkPhonetic": "/ˈkænəpi/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "遮棚、雨棚",
+          "example": "A roof canopy made of concrete collapsed outside a train station.",
+          "highlight": "canopy"
+        },
+        {
+          "word": "negligence",
+          "kkPhonetic": "/ˈnɛɡlədʒəns/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "疏忽、職務過失",
+          "example": "And so lots of people saw what happened as representative of corruption and negligence in the country.",
+          "highlight": "negligence"
+        },
+        {
+          "word": "surreal",
+          "kkPhonetic": "/səˈriəl/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "超現實的、離奇的",
+          "example": "The feeling is surreal.",
+          "highlight": "surreal"
+        },
+        {
+          "word": "tyranny",
+          "kkPhonetic": "/ˈtɪrəni/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "暴政、專制統治",
+          "example": "It's just unbelievable after so many years of this tyranny and dictatorship.",
+          "highlight": "tyranny"
+        },
+        {
+          "word": "dictatorship",
+          "kkPhonetic": "/dɪkˈteɪtɚˌʃɪp/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "獨裁政權、專制政治",
+          "example": "It's just unbelievable after so many years of this tyranny and dictatorship.",
+          "highlight": "dictatorship"
+        },
+        {
+          "word": "hierarchy",
+          "kkPhonetic": "/ˈhaɪəˌrɑrkɪ/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "階級制度、等級制度",
+          "example": "The point of the party is to not have a clear hierarchy, but to have it be this almost democratic power of everybody who knows what they're doing.",
+          "highlight": "hierarchy"
+        },
+        {
+          "word": "transparency",
+          "kkPhonetic": "/trænsˈpɛrənsi/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "透明度",
+          "example": "They have an 11-point program which includes full transparency and more auditing of state contracts, removing political control over the public broadcaster, and stopping corruption and forming a police unit to arrest anyone responsible.",
+          "highlight": "transparency"
+        },
+        {
+          "word": "turnout",
+          "kkPhonetic": "/ˈtɝnˌaʊt/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "投票率、出席人數",
+          "example": "Early figures suggest a record-high turnout.",
+          "highlight": "turnout"
+        },
+        {
+          "word": "backfire",
+          "kkPhonetic": "/ˈbækˌfaɪɚ/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "事與願違、產生適得其反的結果",
+          "example": "So this whole election process in a way was his attempt to stay in power, which has now backfired on him.",
+          "highlight": "backfired"
+        },
+        {
+          "word": "allegedly",
+          "kkPhonetic": "/əˈlɛdʒɪdli/",
+          "partOfSpeech": "adverb",
+          "level": "C1",
+          "meaningZh": "據稱、據宣稱",
+          "example": "It is, honestly, still a bit hard to believe I have woken up in this new, allegedly new country.",
+          "highlight": "allegedly"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "from all walks of life",
+          "highlight": "from all walks of life",
+          "meaningZh": "來自各行各業",
+          "example": "People from all walks of life joined: teachers, farmers, actors, judges."
+        },
+        {
+          "phrase": "fizzle out",
+          "highlight": "fizzled out",
+          "meaningZh": "漸漸熄滅、無疾而終",
+          "example": "Anti-government protests are not a new thing in Serbia, but in the past, they've always fizzled out."
+        },
+        {
+          "phrase": "pull out",
+          "highlight": "pulled out",
+          "meaningZh": "退出競選、撤出",
+          "example": "And actually, several opposition parties actually pulled out in favor of the student list."
+        },
+        {
+          "phrase": "snap election",
+          "highlight": "snap election",
+          "meaningZh": "閃電大選、提前大選",
+          "example": "Aleksandar Vučić called this snap election, um, as president."
+        },
+        {
+          "phrase": "weed out",
+          "highlight": "weed out",
+          "meaningZh": "清除、剔除",
+          "example": "I think the entire goal of the student protests is to regulate matters inside of the country and to, uh, as they said, weed out the things that do not serve us anymore as a country, and then to focus on, um, the relationships with, uh, other countries."
+        }
+      ]
+    },
+    "topic": {
+      "vocabulary": [
+        {
+          "word": "protester",
+          "kkPhonetic": "/ˈproʊtɛstɚ/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "抗議者",
+          "example": "For the last two years, those same streets have been full of student protesters, demanding change and an end to corruption.",
+          "highlight": "protesters"
+        },
+        {
+          "word": "corruption",
+          "kkPhonetic": "/kəˈrʌpʃən/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "貪污腐敗",
+          "example": "For the last two years, those same streets have been full of student protesters, demanding change and an end to corruption.",
+          "highlight": "corruption"
+        },
+        {
+          "word": "auditing",
+          "kkPhonetic": "/ˈɑdətɪŋ/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "審計；查核",
+          "example": "They have an 11-point program which includes full transparency and more auditing of state contracts, removing political control over the public broadcaster, and stopping corruption and forming a police unit to arrest anyone responsible.",
+          "highlight": "auditing"
+        },
+        {
+          "word": "parliamentary",
+          "kkPhonetic": "/ˌpɑrləmɛntəri/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "議會的；國會的",
+          "example": "They put candidates up in all 250 available parliamentary seats.",
+          "highlight": "parliamentary"
+        },
+        {
+          "word": "candidate",
+          "kkPhonetic": "/ˈkændədɪt/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "候選人",
+          "example": "The student list, Students Win movement, felt that people wouldn't want to vote for young candidates without life experience.",
+          "highlight": "candidates"
+        },
+        {
+          "word": "Belgrade",
+          "kkPhonetic": "/ˈbɛlɡreɪd/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "塞爾維亞首都，本集節目中為群眾慶祝學生反腐運動獲勝與示威遊行發生的城市",
+          "example": "What you can hear is the sound of people dancing in the streets of Belgrade.",
+          "highlight": "Belgrade"
+        },
+        {
+          "word": "Serbia",
+          "kkPhonetic": "/ˈsɝbiə/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "位於東南歐的國家，本集主要探討其剛結束的重大國會大選與學生領導的反政府變革",
+          "example": "To understand what's going on, let me tell you more about Serbia.",
+          "highlight": "Serbia"
+        },
+        {
+          "word": "Hungary",
+          "kkPhonetic": "/ˈhʌŋɡəri/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "匈牙利，節目中提及作為說明塞爾維亞地緣位置的周邊鄰國之一",
+          "example": "If you're trying to picture it on a map, it's surrounded by several countries, including Hungary, Romania, and Croatia.",
+          "highlight": "Hungary"
+        },
+        {
+          "word": "Romania",
+          "kkPhonetic": "/roʊˈmeɪniə/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "羅馬尼亞，節目中提及作為介紹塞爾維亞地理位置的鄰國之一",
+          "example": "If you're trying to picture it on a map, it's surrounded by several countries, including Hungary, Romania, and Croatia.",
+          "highlight": "Romania"
+        },
+        {
+          "word": "Croatia",
+          "kkPhonetic": "/kroʊˈeɪʃə/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "克羅埃西亞，節目中提及作為幫助聽眾在地圖上定位塞爾維亞的鄰國之一",
+          "example": "If you're trying to picture it on a map, it's surrounded by several countries, including Hungary, Romania, and Croatia.",
+          "highlight": "Croatia"
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/1yeG7oT0KW46tYHEDEnipH"
+}
