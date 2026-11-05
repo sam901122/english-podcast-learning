@@ -1,0 +1,376 @@
+{
+  "id": "b8cd2ee31e20511d",
+  "title": "Midterm elections: How the Democrats beat President Trump’s Republicans",
+  "description": "<p>Democrats in the US have won control of Congress in the midterm elections. They’ve done better than even the polls suggested - winning seats held by Republicans for decades.  But what does that actually mean?  </p><p>BBC reporter and What in the World’s resident American, William Lee Adams, breaks down what the elections were for, what voters were most concerned about, what it means for President Trump and his Republican party as well as some of the notable firsts among the victors. And we’re hearing from young voters in some of the states that have changed parties this year</p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Hannah Gelbart\nProducers: William Lee Adams and Emily Horler\nEditor: Verity Wilde</p>",
+  "publishedAt": "2026-11-04T15:03:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct992w",
+  "summaryZh": "本集 BBC 節目《What in the World》探討美國期中選舉中民主黨取得的重大勝利。民主黨在此次選舉中掀起「藍潮」，贏得國會眾議院與參議院控制權。節目邀請記者 William Lee Adams 剖析選民關注的經濟與生活成本議題，指出物價上漲、住房負擔及外交政策引發不滿，導致青年選民大幅轉向民主黨。節目也介紹了多位具歷史意義的當選人，如首位 Z 世代國會議員與首位身心障礙參議員，並分析此結果將如何限制川普總統執政後期的施政。",
+  "summaryEn": "In this episode of What in the World, host Hannah Gelbart and reporter William Lee Adams analyze the US midterm election results, where Democrats won control of both the House of Representatives and the Senate in a major 'blue wave.' The episode explores how voter dissatisfaction over the cost of living, high fuel and food prices, housing affordability, and foreign policy contributed to Republican losses, especially among young voters. It also highlights several historic firsts among newly elected candidates and discusses how these results will constrain President Donald Trump's legislative agenda during his final two years in office.",
+  "studySets": {
+    "practical": {
+      "vocabulary": [
+        {
+          "word": "reaction",
+          "kkPhonetic": "/rɪˈækʃən/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "反應",
+          "example": "My reaction to Texas turning blue is one of amazement and disbelief.",
+          "highlight": "reaction"
+        },
+        {
+          "word": "agenda",
+          "kkPhonetic": "/əˈdʒɛndə/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "議程",
+          "example": "And for the next two years, the president is going to have to fight against Democrats in Congress to push through his agenda.",
+          "highlight": "agenda"
+        },
+        {
+          "word": "dissatisfied",
+          "kkPhonetic": "/dɪsˈsætəsˌfaɪd/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "不滿意的",
+          "example": "And people are also very, very dissatisfied with the affordability of things at grocery stores.",
+          "highlight": "dissatisfied"
+        },
+        {
+          "word": "afford",
+          "kkPhonetic": "/əˈfɔrd/",
+          "partOfSpeech": "verb",
+          "level": "A2",
+          "meaningZh": "負擔得起",
+          "example": "No, people should be able to afford basic things and things for their children and themselves.",
+          "highlight": "afford"
+        },
+        {
+          "word": "sentiment",
+          "kkPhonetic": "/ˈsɛntəmənt/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "觀點",
+          "example": "And I think that this is a sentiment that is shared by a lot of people in the state of Texas, my age mates, people younger than myself who really want to see a change.",
+          "highlight": "sentiment"
+        },
+        {
+          "word": "disappointment",
+          "kkPhonetic": "/ˌdɪsəˈpɔɪntmənt/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "失望",
+          "example": "And among young voters who supported President Trump, there is, as you'd expect, disappointment.",
+          "highlight": "disappointment"
+        },
+        {
+          "word": "ordinary",
+          "kkPhonetic": "/ˈɔrdnˌɛri/",
+          "partOfSpeech": "adjective",
+          "level": "A2",
+          "meaningZh": "一般的",
+          "example": "For some, there's a sense that President Trump has been focusing more on political battles and foreign policy than on financial problems facing ordinary Americans.",
+          "highlight": "ordinary"
+        },
+        {
+          "word": "ballot",
+          "kkPhonetic": "/ˈbælət/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "選票",
+          "example": "I wasn't on the ballot.",
+          "highlight": "ballot"
+        },
+        {
+          "word": "survey",
+          "kkPhonetic": "/sɚˈve/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "受訪的",
+          "example": "And 39% of those people surveyed said the economy was their top concern.",
+          "highlight": "surveyed"
+        },
+        {
+          "word": "tabloid",
+          "kkPhonetic": "/ˈtæblɔɪd/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "小報",
+          "example": "This is a conservative tabloid in the US, and at various times in its history, it's offered sympathetic coverage of President Trump.",
+          "highlight": "tabloid"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "push through",
+          "highlight": "push through",
+          "meaningZh": "強行通過",
+          "example": "And for the next two years, the president is going to have to fight against Democrats in Congress to push through his agenda."
+        },
+        {
+          "phrase": "break down",
+          "highlight": "break down",
+          "meaningZh": "剖析",
+          "example": "But before we get into those results, we're going to break down what the midterms are all about."
+        },
+        {
+          "phrase": "put food on the table",
+          "highlight": "put food on the table",
+          "meaningZh": "維持家計",
+          "example": "This win is for every teacher and every nurse, for every farmer and every rancher, for every young person who's trying to buy a home, for every parent who's trying to put food on the table."
+        },
+        {
+          "phrase": "look ahead",
+          "highlight": "Looking ahead",
+          "meaningZh": "展望未來",
+          "example": "Looking ahead, the party's going to enter its soul-searching era."
+        },
+        {
+          "phrase": "hear back",
+          "highlight": "hear back",
+          "meaningZh": "收到回覆",
+          "example": "They're the job ads that you might have seen, they never seem to go away, and if you do apply for them, you never hear back, because they're ads for roles that were never intended to be filled."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "gubernatorial",
+          "kkPhonetic": "/ˌɡjubɚnəˈtɔrɪəl/",
+          "partOfSpeech": "adj.",
+          "level": "C2",
+          "meaningZh": "州長的",
+          "example": "Uh, states that had gubernatorial elections included California, Florida, Georgia, where I'm from, and Michigan.",
+          "highlight": "gubernatorial"
+        },
+        {
+          "word": "rebuke",
+          "kkPhonetic": "/rɪˈbjuk/",
+          "partOfSpeech": "n.",
+          "level": "C2",
+          "meaningZh": "嚴厲指責",
+          "example": "But on their cover on Wednesday, the headline was, quote, \"Trump suffers historic rebuke as Dems romp in midterms.\"",
+          "highlight": "rebuke"
+        },
+        {
+          "word": "oust",
+          "kkPhonetic": "/aʊst/",
+          "partOfSpeech": "v.",
+          "level": "C1",
+          "meaningZh": "罷黜；驅逐",
+          "example": "Gina Hinojosa, she was elected the first Latina governor, ousting the Republican governor who was seeking a fourth term.",
+          "highlight": "ousting"
+        },
+        {
+          "word": "dissect",
+          "kkPhonetic": "/daɪˈsɛkt/",
+          "partOfSpeech": "v.",
+          "level": "C1",
+          "meaningZh": "仔細剖析",
+          "example": "Yeah, Republicans dissecting the results are already looking at the youth vote.",
+          "highlight": "dissecting"
+        },
+        {
+          "word": "hindrance",
+          "kkPhonetic": "/ˈhɪndrəns/",
+          "partOfSpeech": "n.",
+          "level": "C1",
+          "meaningZh": "障礙；阻礙",
+          "example": "Is his endorsement past present now more of a hindrance?",
+          "highlight": "hindrance"
+        },
+        {
+          "word": "veto",
+          "kkPhonetic": "/ˈvito/",
+          "partOfSpeech": "n.",
+          "level": "B2",
+          "meaningZh": "否決權",
+          "example": "And Trump has already made it very clear he's going to exercise his power to veto, which is basically to block, legislation that he doesn't agree with.",
+          "highlight": "veto"
+        },
+        {
+          "word": "sentiment",
+          "kkPhonetic": "/ˈsɛntəmənt/",
+          "partOfSpeech": "n.",
+          "level": "C1",
+          "meaningZh": "觀點；感受",
+          "example": "And while she voted in Texas, you hear those sentiments echoed all over the country.",
+          "highlight": "sentiments"
+        },
+        {
+          "word": "inroad",
+          "kkPhonetic": "/ˈɪnˌroʊd/",
+          "partOfSpeech": "n.",
+          "level": "C1",
+          "meaningZh": "進展；突破",
+          "example": "The fact is President Trump had made inroads with young voters ahead of the last presidential election, but they seem to have drifted from Trump in particular and Republicans in general in these midterms.",
+          "highlight": "inroads"
+        },
+        {
+          "word": "constituency",
+          "kkPhonetic": "/kənˈstɪtʃuənsi/",
+          "partOfSpeech": "n.",
+          "level": "C1",
+          "meaningZh": "選區",
+          "example": "He was elected to the House of Representatives representing a constituency that covers most of Denver.",
+          "highlight": "constituency"
+        },
+        {
+          "word": "rhetoric",
+          "kkPhonetic": "/ˈrɛtərɪk/",
+          "partOfSpeech": "n.",
+          "level": "C1",
+          "meaningZh": "言辭；辯才",
+          "example": "There's been a lot of back and forth in this campaign, and much of the rhetoric has centered around his identity.",
+          "highlight": "rhetoric"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "push through",
+          "highlight": "push through",
+          "meaningZh": "強行推動",
+          "example": "And for the next two years, the president is going to have to fight against Democrats in Congress to push through his agenda."
+        },
+        {
+          "phrase": "take responsibility for",
+          "highlight": "take any responsibility for",
+          "meaningZh": "對……承擔責任",
+          "example": "Speaking to Fox News, he said he didn't take any responsibility for the losses."
+        },
+        {
+          "phrase": "break down",
+          "highlight": "break down",
+          "meaningZh": "詳細剖析",
+          "example": "But before we get into those results, we're going to break down what the midterms are all about."
+        },
+        {
+          "phrase": "make inroads",
+          "highlight": "made inroads",
+          "meaningZh": "取得進展",
+          "example": "The fact is President Trump had made inroads with young voters ahead of the last presidential election, but they seem to have drifted from Trump in particular and Republicans in general in these midterms."
+        },
+        {
+          "phrase": "soul-searching",
+          "highlight": "soul-searching",
+          "meaningZh": "深層反省",
+          "example": "The party's going to enter its soul-searching era."
+        }
+      ]
+    },
+    "topic": {
+      "vocabulary": [
+        {
+          "word": "midterm",
+          "kkPhonetic": "/ˈmɪdˌtɝm/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "期中選舉（指美國總統任期過半時舉行的國會與地方選舉）",
+          "example": "And before we get into those results, we're going to break down what the midterms are all about.",
+          "highlight": "midterms"
+        },
+        {
+          "word": "chamber",
+          "kkPhonetic": "/ˈtʃembɚ/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "議院（指國會的參議院或眾議院）",
+          "example": "During Tuesday's midterm elections, they took control of both chambers of Congress.",
+          "highlight": "chambers"
+        },
+        {
+          "word": "Congress",
+          "kkPhonetic": "/ˈkɑŋɡrəs/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "國會（美國最高立法機關）",
+          "example": "During Tuesday's midterm elections, they took control of both chambers of Congress.",
+          "highlight": "Congress"
+        },
+        {
+          "word": "Senate",
+          "kkPhonetic": "/ˈsɛnɪt/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "參議院（美國國會的上議院）",
+          "example": "So, the US Congress is made up of two chambers: the lower chamber is the House of Representatives, and the upper chamber, that's the Senate.",
+          "highlight": "Senate"
+        },
+        {
+          "word": "governor",
+          "kkPhonetic": "/ˈɡʌvɚnɚ/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "州長（美國各州的行政首長）",
+          "example": "This is the first time that we will ever have a Latina governor, which is super exciting.",
+          "highlight": "governor"
+        },
+        {
+          "word": "senator",
+          "kkPhonetic": "/ˈsɛnətɚ/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "參議員（美國國會參議院的議員）",
+          "example": "And James Talarico became the state's first Democratic senator since 1988.",
+          "highlight": "senator"
+        },
+        {
+          "word": "congressman",
+          "kkPhonetic": "/ˈkɑŋɡrəsmən/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "國會議員（尤指美國眾議院議員）",
+          "example": "So, Maxwell Alejandro Frost, he is 25 years old, and he's become the first Gen Z congressman.",
+          "highlight": "congressman"
+        },
+        {
+          "word": "Texas",
+          "kkPhonetic": "/ˈtɛksəs/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "德克薩斯州（本集提及該州選出首位拉丁裔州長與多年來首位民主黨參議員，選情翻轉為民主黨勝出）",
+          "example": "My reaction to Texas turning blue is one of amazement and disbelief.",
+          "highlight": "Texas"
+        },
+        {
+          "word": "Kansas",
+          "kkPhonetic": "/ˈkænzəs/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "堪薩斯州（本集提及該州翻轉選情，選出近百年來首位民主黨參議員）",
+          "example": "And Hannah, Kansas last elected a Democrat to the Senate nearly a hundred years ago, way back in 1932.",
+          "highlight": "Kansas"
+        },
+        {
+          "word": "Iran",
+          "kkPhonetic": "/ɪˈrɑn/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "伊朗（本集提及美軍對該國發動空襲與戰爭，外交政策爭議影響了選民投票意願）",
+          "example": "And Hannah, on top of that, you have a very unpopular war in Iran.",
+          "highlight": "Iran"
+        },
+        {
+          "word": "Michigan",
+          "kkPhonetic": "/ˈmɪʃɪɡən/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "密西根州（本集提及該州選出全美首位穆斯林參議員）",
+          "example": "So, in Michigan, Dr. Abdul El-Sayed will become the nation's first Muslim senator when he takes office in January.",
+          "highlight": "Michigan"
+        },
+        {
+          "word": "Georgia",
+          "kkPhonetic": "/ˈdʒɔrdʒə/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "喬治亞州（本集提及該州選出全美首位黑人女性州長）",
+          "example": "Well, in Georgia, Kesha Lance Bottoms has become the first Black woman elected governor of a US state, and she's the first Democrat to win the governor's race in Georgia in decades.",
+          "highlight": "Georgia"
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/3U0gjyjhyk5YTsXmfZAKab"
+}
