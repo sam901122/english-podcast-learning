@@ -1,0 +1,322 @@
+{
+  "id": "9fdcbc076f9de9e5",
+  "title": "Is ‘ferritin face’ a real thing?",
+  "description": "<p>You might’ve seen lots of chat online about ‘ferritin face’ alongside zoomed in before and after pics of people’s faces. Some claim that changes in their appearance, like pale skin and hair loss, are down to having low ferritin levels. </p><p>But what even is ferritin? It’s the protein responsible for storing iron in the body. Iron is important for creating red blood cells, which carry oxygen around the body. It’s needed for things like your energy levels, skin and hair health. So, can you tell if your ferritin levels are low just by your face? We break it down with the BBC’s Zara Salaria and Dr Aziza Sesay, who specialises in female health. </p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Hannah Gelbart \nProducers: Mollie Perella and Zara Salaria \nEditor: Verity Wilde</p>",
+  "publishedAt": "2026-11-05T14:30:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct9954",
+  "summaryZh": "本集 BBC 節目《What in the World》探討社群媒體上熱門的「鐵蛋白臉」 (ferritin face) 流行趨勢，以及低鐵蛋白對人體健康的影響。鐵蛋白是負責儲存鐵質的蛋白質，雖然缺鐵可能導致疲倦、掉髮與眼袋等狀況，但「鐵蛋白臉」並非正式的醫學診斷，且深色膚色者的外在徵候可能較不明顯。專家提醒，血液檢查是確認鐵蛋白濃度的唯一方法，民眾應避免僅憑 TikTok 等網路資訊自行診斷或過量補充鐵劑。",
+  "summaryEn": "This episode of What in the World explores the social media trend known as 'ferritin face,' where users link symptoms like dark eye circles, pale skin, and hair loss to low ferritin levels. Presenter Hannah Gelbart, BBC reporter Zara Salaria, and Dr. Aziza Sesay explain that ferritin is the protein that stores iron, and 'ferritin face' is not an official medical diagnosis. They highlight that visual signs vary across skin tones and stress that a blood test is the only accurate way to determine ferritin levels before treating any deficiency.",
+  "studySets": {
+    "practical": {
+      "vocabulary": [
+        {
+          "word": "battery",
+          "kkPhonetic": "/ˈbætərɪ/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "電池",
+          "example": "A ferritin blood test gives us an indication of how much iron reserves the body has, so think of it a little bit like a battery.",
+          "highlight": "battery"
+        },
+        {
+          "word": "symptom",
+          "kkPhonetic": "/ˈsɪmptəm/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "症狀",
+          "example": "But that is just one part of the picture, and you could be having those visual symptoms for other reasons as well.",
+          "highlight": "symptoms"
+        },
+        {
+          "word": "pregnancy",
+          "kkPhonetic": "/ˈprɛɡnənsɪ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "懷孕",
+          "example": "You know, I was seeing that people might have it for all sorts of reasons, but it can be to do with periods and pregnancy.",
+          "highlight": "pregnancy"
+        },
+        {
+          "word": "anxiety",
+          "kkPhonetic": "/æŋˈzaɪətɪ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "焦慮",
+          "example": "I had like really high anxiety levels, and I've never really experienced it for that prolonged amount of time.",
+          "highlight": "anxiety"
+        },
+        {
+          "word": "stress",
+          "kkPhonetic": "/strɛs/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "壓力",
+          "example": "Ferritin levels are something that do naturally fluctuate, and all of these other symptoms you described can be caused by all kinds of things: you know, like dehydration, hormones, bad nutrition, stress.",
+          "highlight": "stress"
+        },
+        {
+          "word": "mirror",
+          "kkPhonetic": "/ˈmɪrɚ/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "鏡子",
+          "example": "And can you actually tell from your face, from looking in the mirror or on a selfie, if your iron stores are low?",
+          "highlight": "mirror"
+        },
+        {
+          "word": "treatment",
+          "kkPhonetic": "/ˈtritmənt/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "治療",
+          "example": "The good thing is that people can potentially pick up symptoms that they may have not considered as something to look into, and then the hope is that they come and see us so that we can have all the tests done, and we can give them the treatment that they need and deserve, and also the treatment at the correct levels.",
+          "highlight": "treatment"
+        },
+        {
+          "word": "clue",
+          "kkPhonetic": "/klu/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "線索",
+          "example": "So, the visual sort of symptoms that are part of ferritin face are kind of a clue of the picture, but not everything.",
+          "highlight": "clue"
+        },
+        {
+          "word": "perspective",
+          "kkPhonetic": "/pɚˈspɛktɪv/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "觀點",
+          "example": "Great to hear that perspective.",
+          "highlight": "perspective"
+        },
+        {
+          "word": "workout",
+          "kkPhonetic": "/ˈwɝkˌaʊt/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "健身鍛鍊",
+          "example": "So, fatigue, breathlessness, heart palpitations, reduced capacity to exercise, you might find it really difficult to do your workouts as normal, you might find going up a flight of stairs is much harder.",
+          "highlight": "workouts"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "take off",
+          "highlight": "taken off",
+          "meaningZh": "流行起來；掀起熱潮",
+          "example": "It's a phrase that's taken off on social media, essentially describing that iron deficiency has a sort of look to it."
+        },
+        {
+          "phrase": "in terms of",
+          "highlight": "in terms of",
+          "meaningZh": "就……而言",
+          "example": "We may even look at the palms of their hands, which again, if it's looking pale, that can give us some signs that something is going on in terms of the iron."
+        },
+        {
+          "phrase": "double-edged sword",
+          "highlight": "double-edged sword",
+          "meaningZh": "雙面刃",
+          "example": "I've always said that social media is a double-edged sword."
+        },
+        {
+          "phrase": "advocate for oneself",
+          "highlight": "advocate for themselves",
+          "meaningZh": "為自己爭取權益",
+          "example": "And it's given a lot of women the tools to advocate for themselves and to notice when something is wrong."
+        },
+        {
+          "phrase": "go with one's gut feeling",
+          "highlight": "go with your gut feeling",
+          "meaningZh": "憑直覺行事",
+          "example": "And I always think like go with your gut feeling, if you know something's not right, only you know what's not right in your body, right?"
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "prevalent",
+          "kkPhonetic": "/ˈprɛvələnt/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "普遍的；盛行的",
+          "example": "And again, especially prevalent in young women.",
+          "highlight": "prevalent"
+        },
+        {
+          "word": "underdiagnosed",
+          "kkPhonetic": "/ˌʌndɚˈdaɪəɡnoʊzd/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "未被充分診斷的",
+          "example": "And it often goes underdiagnosed, and we see this trend as a reaction to that.",
+          "highlight": "underdiagnosed"
+        },
+        {
+          "word": "brittle",
+          "kkPhonetic": "/ˈbrɪtl/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "易碎的；脆硬的",
+          "example": "They can be pale, or have dark circles around their eyes, and have brittle nails and hair.",
+          "highlight": "brittle"
+        },
+        {
+          "word": "prolonged",
+          "kkPhonetic": "/prəˈlɔŋd/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "長期的；持續很久的",
+          "example": "I had like really high anxiety levels, and I've never really experienced it for that prolonged amount of time.",
+          "highlight": "prolonged"
+        },
+        {
+          "word": "fluctuate",
+          "kkPhonetic": "/ˈflʌktʃʊˌet/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "波動；起伏",
+          "example": "Ferritin levels are something that do naturally fluctuate, and all of these other symptoms you described can be caused by all kinds of things: you know, like dehydration, hormones, bad nutrition, stress.",
+          "highlight": "fluctuate"
+        },
+        {
+          "word": "inquire",
+          "kkPhonetic": "/ɪnˈkwaɪr/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "詢問；打聽",
+          "example": "I think the important distinction is using that information well, and as a way to to maybe inquire about what's wrong and not using it to diagnose yourself and come to sweeping conclusions.",
+          "highlight": "inquire"
+        },
+        {
+          "word": "detrimental",
+          "kkPhonetic": "/ˌdɛtrəˈmɛntl/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "有害的；不利的",
+          "example": "If you're having too much of anything, that can be detrimental and dangerous.",
+          "highlight": "detrimental"
+        },
+        {
+          "word": "inflammation",
+          "kkPhonetic": "/ˌɪnfləˈmeʃən/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "發炎；炎症",
+          "example": "So, that's why it's important that you come, you see the doctor, you have the assessments done so that we can exclude things like inflammation, ulcers, or problems with the gastrointestinal system, heavy periods, those sort of things.",
+          "highlight": "inflammation"
+        },
+        {
+          "word": "distinction",
+          "kkPhonetic": "/dɪˈstɪŋkʃən/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "區別；差別",
+          "example": "This is the really important distinction.",
+          "highlight": "distinction"
+        },
+        {
+          "word": "palpitation",
+          "kkPhonetic": "/ˌpælpəˈteʃən/",
+          "partOfSpeech": "noun",
+          "level": "C2",
+          "meaningZh": "心悸",
+          "example": "So, fatigue, breathlessness, heart palpitations, reduced capacity to exercise, you might find it really difficult to do your workouts as normal, you might find going up a flight of stairs is much harder.",
+          "highlight": "palpitations"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "take off",
+          "highlight": "taken off",
+          "meaningZh": "流行起來；蓬勃發展",
+          "example": "Is this trend that's really taken off called ferritin face?"
+        },
+        {
+          "phrase": "go with your gut feeling",
+          "highlight": "go with your gut feeling",
+          "meaningZh": "憑直覺行事",
+          "example": "But I knew that something was not right in my body, and I always think like go with your gut feeling, if you know something's not right, only you know what's not right in your body, right?"
+        },
+        {
+          "phrase": "advocate for oneself",
+          "highlight": "advocate for themselves",
+          "meaningZh": "為自己爭取權益；替自己發聲",
+          "example": "And it's given a lot of women the tools to advocate for themselves and to notice when something is wrong."
+        },
+        {
+          "phrase": "double-edged sword",
+          "highlight": "double-edged sword",
+          "meaningZh": "雙面刃",
+          "example": "I've always said that social media is a double-edged sword."
+        },
+        {
+          "phrase": "sweeping conclusion",
+          "highlight": "sweeping conclusions",
+          "meaningZh": "概括性的結論；片面的結論",
+          "example": "I think the important distinction is using that information well, and as a way to to maybe inquire about what's wrong and not using it to diagnose yourself and come to sweeping conclusions."
+        }
+      ]
+    },
+    "topic": {
+      "vocabulary": [
+        {
+          "word": "ferritin",
+          "kkPhonetic": "/ˈfɛrətɪn/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "鐵蛋白（體內負責儲存鐵質的蛋白質）",
+          "example": "What is ferritin and how is it different to iron?",
+          "highlight": "ferritin"
+        },
+        {
+          "word": "haemoglobin",
+          "kkPhonetic": "/ˌhiːməˈɡloʊbɪn/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "血紅素（紅血球中幫助輸送氧氣的蛋白質）",
+          "example": "You can have low ferritin and a normal haemoglobin level.",
+          "highlight": "haemoglobin"
+        },
+        {
+          "word": "anaemia",
+          "kkPhonetic": "/əˈniːmiə/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "貧血症（因血紅素過低導致氧氣難以輸送到全身的狀況）",
+          "example": "That's anaemia, right?",
+          "highlight": "anaemia"
+        },
+        {
+          "word": "anaemic",
+          "kkPhonetic": "/əˈniːmɪk/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "貧血的",
+          "example": "And that's different to say if you're anaemic because you've got low iron.",
+          "highlight": "anaemic"
+        },
+        {
+          "word": "haemochromatosis",
+          "kkPhonetic": "/ˌhiːmoʊˌkroʊməˈtoʊsɪs/",
+          "partOfSpeech": "noun",
+          "level": "C2",
+          "meaningZh": "血鐵沈著症（因基因變異導致體內積聚過多鐵質的症狀）",
+          "example": "Yes, so having high levels of ferritin is a condition called haemochromatosis.",
+          "highlight": "haemochromatosis"
+        },
+        {
+          "word": "UK",
+          "kkPhonetic": "/ˌjuːˈkeɪ/",
+          "partOfSpeech": "noun",
+          "level": "A1",
+          "meaningZh": "英國（本集提到該國估計有三分之一的女性體內鐵質儲存量偏低）",
+          "example": "It's estimated that one in three women have low iron stores in the UK.",
+          "highlight": "UK"
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/5DcUDkew0Ul2N9ocYs3hW3"
+}
