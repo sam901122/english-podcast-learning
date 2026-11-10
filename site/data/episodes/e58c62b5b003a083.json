@@ -1,0 +1,349 @@
+{
+  "id": "e58c62b5b003a083",
+  "title": "Should film-makers be using AI?",
+  "description": "<p>Have you ever watched a film, and wondered: has this been made with AI? From AI animals to face swapping, it’s getting harder to tell. </p><p>When Director Danny Boyle’s upcoming movie Ink premiered at film festivals this autumn, many viewers noticed the tell-tale signs of AI. But the director said that he made sure no actors lost out on work and that AI-generated animals could be an ethical solution to using real ones. </p><p>BBC Journalist Kesewaa Browne joins Hannah to talk about whether AI is becoming another regular film making tool and if it’s something we should be excited or worried about in cinema.</p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Hannah Gelbart\nProducers: Chelsea Coates, Elena Angelides and Emily Horler\nEditor: Verity Wilde</p>",
+  "publishedAt": "2026-11-09T14:30:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct98yd",
+  "summaryZh": "本集 BBC 節目《What in the World》探討電影製作人使用 AI 技術的現況與爭議。起因是奧斯卡金像獎導演 Danny Boyle 在電影 Ink 中使用 AI 呈現特定畫面並引發討論。節目中，主持人 Hannah Gelbart 與 BBC 記者 Kesewaa Browne 探討了 AI 與 CGI 的差異、Boyle 對於保障演員薪酬與避免動物受壓迫的說法，以及預算有限的獨立創作者如何運用 AI 技術。討論亦提及影迷與業界對畫面品質下降、動畫與特效從業人員失業、版權侵權及資料中心能源消耗等隱憂，並指出 AI 目前更適合做為後製與前期企劃的輔助工具，而非完全取代人類的創意與演出。",
+  "summaryEn": "This episode explores the growing use and debate surrounding AI in filmmaking, sparked by Oscar-winning director Danny Boyle's use of AI in his movie Ink. Host Hannah Gelbart and BBC journalist Kesewaa Browne discuss the differences between AI and CGI, Boyle's defense regarding actor compensation and ethical animal treatment, and how budget-constrained indie filmmakers utilize AI tools. They also address concerns from moviegoers and industry professionals about declining quality, potential job losses for VFX artists and animators, copyright issues, and the environmental impact of data centers, concluding that AI currently works best as a supportive tool for post-production and planning rather than a full replacement for human creativity.",
+  "studySets": {
+    "practical": {
+      "vocabulary": [
+        {
+          "word": "scene",
+          "kkPhonetic": "/sin/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "場景",
+          "example": "And it's getting a bit of a backlash after people spotted some short scenes that used AI.",
+          "highlight": "scenes"
+        },
+        {
+          "word": "expensive",
+          "kkPhonetic": "/ɪkˈspɛnsɪv/",
+          "partOfSpeech": "adjective",
+          "level": "A2",
+          "meaningZh": "昂貴的",
+          "example": "Okay, so it takes a lot longer and it's more expensive to build a CGI model.",
+          "highlight": "expensive"
+        },
+        {
+          "word": "graphic",
+          "kkPhonetic": "/ˈɡræfɪk/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "圖形",
+          "example": "I mean, it could all have been done with CGI, like computer-generated images and graphics, right?",
+          "highlight": "graphics"
+        },
+        {
+          "word": "algorithm",
+          "kkPhonetic": "/ˈælɡəˌrɪðəm/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "演算法",
+          "example": "Whereas AI is more prompts and algorithms.",
+          "highlight": "algorithms"
+        },
+        {
+          "word": "aspect",
+          "kkPhonetic": "/ˈæspɛkt/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "方面",
+          "example": "And I think that's also a really, really interesting aspect that isn't always involved in that conversation.",
+          "highlight": "aspect"
+        },
+        {
+          "word": "dialogue",
+          "kkPhonetic": "/ˈdaɪəˌlɔɡ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "對話",
+          "example": "And critics have said the dialogue has been really wooden, and also that the words have been out of sync with the characters' mouths, which is really interesting.",
+          "highlight": "dialogue"
+        },
+        {
+          "word": "continue",
+          "kkPhonetic": "/kənˈtɪnju/",
+          "partOfSpeech": "verb",
+          "level": "A2",
+          "meaningZh": "繼續",
+          "example": "I will continue boycotting films that use it.",
+          "highlight": "continue"
+        },
+        {
+          "word": "replace",
+          "kkPhonetic": "/rɪˈples/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "取代",
+          "example": "Out of all jobs, I never thought AI would be replacing actors and actresses.",
+          "highlight": "replacing"
+        },
+        {
+          "word": "terrible",
+          "kkPhonetic": "/ˈtɛrəbəl/",
+          "partOfSpeech": "adjective",
+          "level": "A2",
+          "meaningZh": "糟糕的",
+          "example": "Many AI videos are terrible.",
+          "highlight": "terrible"
+        },
+        {
+          "word": "prefer",
+          "kkPhonetic": "/prɪˈfɝ/",
+          "partOfSpeech": "verb",
+          "level": "A2",
+          "meaningZh": "更喜歡",
+          "example": "I prefer real actors.",
+          "highlight": "prefer"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "stand out",
+          "highlight": "stands out",
+          "meaningZh": "顯眼；突出",
+          "example": "And I think one thing that really stands out to me in this conversation is last year there was this film called The Memory of Princess Muunbei made by a Swiss Kenyan director."
+        },
+        {
+          "phrase": "out of sync",
+          "highlight": "out of sync",
+          "meaningZh": "不同步",
+          "example": "And critics have said the dialogue has been really wooden, and also that the words have been out of sync with the characters' mouths, which is really interesting."
+        },
+        {
+          "phrase": "make a living",
+          "highlight": "make a living",
+          "meaningZh": "謀生",
+          "example": "And you know, these jobs are that so many young filmmakers actually rely on to make a living."
+        },
+        {
+          "phrase": "behind the scenes",
+          "highlight": "behind the scenes",
+          "meaningZh": "幕後",
+          "example": "But I think what's interesting is it will probably be seen more behind the scenes when it comes to maybe location scouting."
+        },
+        {
+          "phrase": "on the one hand",
+          "highlight": "on the one hand",
+          "meaningZh": "一方面",
+          "example": "And on the one hand, it's really exciting."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "backlash",
+          "kkPhonetic": "/ˈbækˌlæʃ/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "強烈反對",
+          "example": "And it's getting a bit of a backlash after people spotted some short scenes that used AI.",
+          "highlight": "backlash"
+        },
+        {
+          "word": "infamous",
+          "kkPhonetic": "/ˈɪnfəməs/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "聲名狼藉的",
+          "example": "And we also see these East End infamous twins, the Kray twins, which is used in the film, too.",
+          "highlight": "infamous"
+        },
+        {
+          "word": "precision",
+          "kkPhonetic": "/prɪˈsɪʒən/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "精準",
+          "example": "You know, there's a team that puts loads of effort into this to make sure that there's precision, that there's attention to detail, whereas with AI, I think the results, you don't have as much control of, and there can be flaws, and there can be that gap in quality.",
+          "highlight": "precision"
+        },
+        {
+          "word": "distortion",
+          "kkPhonetic": "/dɪˈstɔrʃən/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "失真",
+          "example": "And that's where you see the distortions and the errors and the six fingers and people in the background with funny faces and all of that stuff.",
+          "highlight": "distortions"
+        },
+        {
+          "word": "disheartening",
+          "kkPhonetic": "/dɪsˈhɑrtnɪŋ/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "令人沮喪的",
+          "example": "I think as a young filmmaker, what's been particularly disheartening is watching friends and colleagues train AI models in skills that take years or decades to master, whether that's cinematography, writing, editing.",
+          "highlight": "disheartening"
+        },
+        {
+          "word": "boycott",
+          "kkPhonetic": "/ˈbɔɪˌkɑt/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "抵制",
+          "example": "I will continue boycotting films that use it.",
+          "highlight": "boycotting"
+        },
+        {
+          "word": "inferior",
+          "kkPhonetic": "/ɪnˈfɪrɪər/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "較差的",
+          "example": "And above all else, it's an inferior product that's made cheaper, but the price of stuff still goes up, like cinema tickets, streaming subscriptions, DVDs, merch, books, which is a trend we're seeing in many aspects of life, not just movies, and this is why us young people really, really hate it.",
+          "highlight": "inferior"
+        },
+        {
+          "word": "glitch",
+          "kkPhonetic": "/ɡlɪtʃ/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "小故障",
+          "example": "That's a glitch in the software.",
+          "highlight": "glitch"
+        },
+        {
+          "word": "laborious",
+          "kkPhonetic": "/ləˈbɔriəs/",
+          "partOfSpeech": "adjective",
+          "level": "C2",
+          "meaningZh": "耗時費力的",
+          "example": "Of course, writing is so difficult and it's laborious, and it's an act of love.",
+          "highlight": "laborious"
+        },
+        {
+          "word": "scrutinize",
+          "kkPhonetic": "/ˈskrutnˌaɪz/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "仔細審視",
+          "example": "You have to really scrutinize.",
+          "highlight": "scrutinize"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "get a film off the ground",
+          "highlight": "get a film off the ground",
+          "meaningZh": "使電影順利起步",
+          "example": "It costs so much money to make a film, to get a film off the ground."
+        },
+        {
+          "phrase": "push back",
+          "highlight": "pushing back",
+          "meaningZh": "進行抵制",
+          "example": "We'll probably still be continuing this conversation in five, six years' time because I do think you've got these group of people who are pushing back, but then you've also got these people like Danny Boyle who are wanting to, I guess, you know, innovate or in a way create, boost their work with AI."
+        },
+        {
+          "phrase": "take off",
+          "highlight": "taking off",
+          "meaningZh": "蓬勃發展",
+          "example": "Yeah, editing, visual effects, those are the the areas that we're seeing AI is really taking off when it comes to the creative industries."
+        },
+        {
+          "phrase": "above all else",
+          "highlight": "above all else",
+          "meaningZh": "最重要的是",
+          "example": "And above all else, it's an inferior product that's made cheaper, but the price of stuff still goes up, like cinema tickets, streaming subscriptions, DVDs, merch, books, which is a trend we're seeing in many aspects of life, not just movies, and this is why us young people really, really hate it."
+        },
+        {
+          "phrase": "stand out",
+          "highlight": "stands out",
+          "meaningZh": "特別突出",
+          "example": "And I think one thing that really stands out to me in this conversation is last year there was this film called The Memory of Princess Muunbei made by a Swiss Kenyan director."
+        }
+      ]
+    },
+    "topic": {
+      "vocabulary": [
+        {
+          "word": "micro-drama",
+          "kkPhonetic": "/ˈmaɪkroʊˌdrɑːmə/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "微短劇（指時間短且步調快的數位影音劇集）",
+          "example": "And we've talked on the pod before about how some Chinese micro-dramas are completely AI-generated.",
+          "highlight": "micro-dramas"
+        },
+        {
+          "word": "keyframe",
+          "kkPhonetic": "/ˈkiːˌfreɪm/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "關鍵幀（動畫與影片製作中定義動作起止點的關鍵畫面格）",
+          "example": "But when it comes to CGI, there is a human team behind it, and it's created with keyframes, and they create a world that takes a lot of time between what we see on a computer and what we see on screen.",
+          "highlight": "keyframes"
+        },
+        {
+          "word": "cinematography",
+          "kkPhonetic": "/ˌsɪnəməˈtɑːɡrəfi/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "電影攝影術（指鏡頭取景、光線運用與畫面運鏡的專業藝術與技術）",
+          "example": "I think as a young filmmaker, what's been particularly disheartening is watching friends and colleagues train AI models in skills that take years or decades to master, whether that's cinematography, writing, editing.",
+          "highlight": "cinematography"
+        },
+        {
+          "word": "VFX",
+          "kkPhonetic": "/ˌviː.efˈeks/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "視覺效果（指在電影後期製作中加入的數位特效）",
+          "example": "I think the idea of replacing people in VFX and lighting departments who cost £200 to £300 a day on a studio level is insane.",
+          "highlight": "VFX"
+        },
+        {
+          "word": "post-production",
+          "kkPhonetic": "/ˌpoʊstprəˈdʌkʃn/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "後期製作（影片拍攝完成後進行剪輯、音效與特效處理的階段）",
+          "example": "And also, interestingly, I think it could be used with post-production also when it comes to editing, too.",
+          "highlight": "post-production"
+        },
+        {
+          "word": "animator",
+          "kkPhonetic": "/ˈænəˌmeɪtɚ/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "動畫師（專門繪製或以電腦製作動畫畫面的專業創作者）",
+          "example": "And one of the concerns that people have is that more AI means that skilled animators could lose their jobs.",
+          "highlight": "animators"
+        },
+        {
+          "word": "UK",
+          "kkPhonetic": "/ˌjuːˈkeɪ/",
+          "partOfSpeech": "noun",
+          "level": "A1",
+          "meaningZh": "英國（本集提及的節目廣告播送範圍與多位電影製作人的背景所在地）",
+          "example": "This BBC podcast is supported by ads outside the UK.",
+          "highlight": "UK"
+        },
+        {
+          "word": "Germany",
+          "kkPhonetic": "/ˈdʒɜːrməni/",
+          "partOfSpeech": "noun",
+          "level": "A1",
+          "meaningZh": "德國（本集節目中年輕電影人 Maya 提供個人對 AI 產業看法時的所在地）",
+          "example": "Hi, this is Maya speaking from Germany.",
+          "highlight": "Germany"
+        },
+        {
+          "word": "China",
+          "kkPhonetic": "/ˈtʃaɪnə/",
+          "partOfSpeech": "noun",
+          "level": "A1",
+          "meaningZh": "中國（本集節目探討 AI 生成微短劇發展趨勢的國家）",
+          "example": "Kes, we see with the AI micro-dramas from China and, you know, this Turkish TV show, a lot of people say the quality is worse.",
+          "highlight": "China"
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/4vnIdDLENtxo6SY4Tf7sMe"
+}
