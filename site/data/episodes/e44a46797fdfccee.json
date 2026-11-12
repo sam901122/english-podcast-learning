@@ -1,0 +1,322 @@
+{
+  "id": "e44a46797fdfccee",
+  "title": "Sex, lies and (alleged) Chinese spies: the Nvidia CEO’s affair",
+  "description": "<p>The Venn diagram of technology, geopolitics and national security = the Nvidia scandal. </p><p>Something we didn’t have on our bingo cards for 2026: The boss of the AI firm Nvidia is being investigated by his own company after being caught having an affair with a woman alleged to be a Chinese spy. </p><p>Jensen Huang’s admitted the affair with Alice Huang (no relation) and China’s denied that she’s a spy. Jensen Huang’s friend, the US President Donald Trump, has backed him. So, where does this leave one of the most powerful men in the world? And what does this all mean for US national security? We break it all down with Shawn Yuan from the BBC’s Global China Unit. </p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter:  Hannah Gelbart \nProducer: Emilia Jansson and Mollie Perella \nEditor: Verity Wilde</p>",
+  "publishedAt": "2026-11-11T14:41:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct992x",
+  "summaryZh": "本集 BBC 節目《What in the World》探討 Nvidia 執行長黃仁勳與 MegaSpeed 執行董事 Alice Huang 的婚外情醜聞，以及美方疑慮其涉嫌為中國間諜對美國國家安全的影響。美國情報機構正在調查 Alice Huang 是否利用此關係將遭禁運的高階 AI 晶片走私至中國。儘管 Nvidia 表示未洩漏任何機密，中國外交部亦否認指控，且美國總統川普公開挺黃仁勳，但消息仍導致 Nvidia 股價下跌 4% 的市值，顯示出美中科技競爭中複雜的人性與地緣政治威脅。",
+  "summaryEn": "This episode of BBC's What in the World examines the scandal surrounding Nvidia CEO Jensen Huang's admitted affair with Alice Huang, managing director of MegaSpeed, who is alleged by US intelligence to be a Chinese spy. The podcast explores allegations that she used the relationship to access restricted AI chips, posing national security risks to the US. While Nvidia stated no company secrets were compromised, China denied the spy claims, and US President Donald Trump backed Jensen Huang, the news still caused Nvidia's stock to tumble by 4%, illustrating how human relationships intersect with geopolitical tech rivalries.",
+  "studySets": {
+    "practical": {
+      "vocabulary": [
+        {
+          "word": "gorgeous",
+          "kkPhonetic": "/ˈɡɔrdʒəs/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "美麗迷人的",
+          "example": "She's gorgeous, funny, kind.",
+          "highlight": "gorgeous"
+        },
+        {
+          "word": "happen",
+          "kkPhonetic": "/ˈhæpən/",
+          "partOfSpeech": "verb",
+          "level": "A2",
+          "meaningZh": "發生",
+          "example": "That's what might just have happened to the CEO of one of the world's biggest companies.",
+          "highlight": "happened"
+        },
+        {
+          "word": "weapon",
+          "kkPhonetic": "/ˈwɛpən/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "武器",
+          "example": "They're one of the US's strongest weapons in its AI race with China.",
+          "highlight": "weapons"
+        },
+        {
+          "word": "security",
+          "kkPhonetic": "/sɪˈkjʊrətɪ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "安全",
+          "example": "The company's launched an inquiry, and US intelligence officers are investigating whether this threatens the security of the country.",
+          "highlight": "security"
+        },
+        {
+          "word": "amazed",
+          "kkPhonetic": "/əˈmezd/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "感到驚奇的",
+          "example": "When I heard about it, first of all I was amazed, because I I view him as a very high-quality person, I've known him a long time.",
+          "highlight": "amazed"
+        },
+        {
+          "word": "powerful",
+          "kkPhonetic": "/ˈpaʊɚfəl/",
+          "partOfSpeech": "adjective",
+          "level": "A2",
+          "meaningZh": "強大的",
+          "example": "Everything about AI right now is powered by those incredibly powerful chips.",
+          "highlight": "powerful"
+        },
+        {
+          "word": "secret",
+          "kkPhonetic": "/ˈsikrɪt/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "秘密",
+          "example": "Nvidia said it was not aware and it was actually quite certain that no national security threats were posed by the relationship between Jensen Huang and Alice Huang and no secrets were released from this company to the other company.",
+          "highlight": "secrets"
+        },
+        {
+          "word": "comment",
+          "kkPhonetic": "/ˈkɑmɛnt/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "留言評論",
+          "example": "You can watch them there, you can listen wherever you get your BBC podcasts, and please do keep commenting on our stuff.",
+          "highlight": "commenting"
+        },
+        {
+          "word": "issue",
+          "kkPhonetic": "/ˈɪʃu/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "問題",
+          "example": "But there are a couple of issues.",
+          "highlight": "issues"
+        },
+        {
+          "word": "relationship",
+          "kkPhonetic": "/rɪˈleʃənˌʃɪp/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "關係",
+          "example": "What does all of this mean for that that complex and tense relationship between the US and China going forward?",
+          "highlight": "relationship"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "take a step back",
+          "highlight": "take a step back",
+          "meaningZh": "退後一步思考",
+          "example": "So I think to answer that question, we have to take a step back to talk about AI."
+        },
+        {
+          "phrase": "first of all",
+          "highlight": "first of all",
+          "meaningZh": "首先",
+          "example": "When I heard about it, first of all I was amazed, because I I view him as a very high-quality person, I've known him a long time."
+        },
+        {
+          "phrase": "fall for",
+          "highlight": "fall for",
+          "meaningZh": "上……的當",
+          "example": "So, how did the CEO of Nvidia fall for a honeytrap, and what happens now?"
+        },
+        {
+          "phrase": "break down",
+          "highlight": "break down",
+          "meaningZh": "分析；拆解",
+          "example": "And can you break down what exactly the perceived threat would be to the US?"
+        },
+        {
+          "phrase": "with a grain of salt",
+          "highlight": "with a grain of salt",
+          "meaningZh": "持保留態度",
+          "example": "And obviously, we take that with a grain of salt because they are quite close to each other anyway."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "inquiry",
+          "kkPhonetic": "/ˈɪnkwəri/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "調查",
+          "example": "The company's launched an inquiry, and US intelligence officers are investigating whether this threatens the security of the country.",
+          "highlight": "inquiry"
+        },
+        {
+          "word": "extramarital",
+          "kkPhonetic": "/ˌɛkstrəˈmærət̮əl/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "婚外的",
+          "example": "And the story broke a couple of days ago that he was involved in an extramarital affair with a Chinese, according to US intelligence, a Chinese spy.",
+          "highlight": "extramarital"
+        },
+        {
+          "word": "speculate",
+          "kkPhonetic": "/ˈspɛkjəˌlet/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "推測",
+          "example": "And at that time people were starting to speculate because this person, Alice Huang, was leading a company called MegaSpeed, who was buying an insane amount of AI chips from Nvidia.",
+          "highlight": "speculate"
+        },
+        {
+          "word": "allegation",
+          "kkPhonetic": "/ˌælɪˈɡeʃən/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "指控",
+          "example": "Yes, and China of course rejects the allegations, says that they're groundless.",
+          "highlight": "allegations"
+        },
+        {
+          "word": "unsubstantiated",
+          "kkPhonetic": "/ˌʌnsəbˈstænʃiˌetɪd/",
+          "partOfSpeech": "adjective",
+          "level": "C2",
+          "meaningZh": "未經證實的",
+          "example": "And China, the foreign ministry came out, the spokesperson for Foreign Ministry came out on Monday, said that everything, all the claims are unsubstantiated.",
+          "highlight": "unsubstantiated"
+        },
+        {
+          "word": "nonchalant",
+          "kkPhonetic": "/ˌnɑnʃəˈlɑnt/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "若無其事的",
+          "example": "Donald Trump is very nonchalant about this.",
+          "highlight": "nonchalant"
+        },
+        {
+          "word": "surpass",
+          "kkPhonetic": "/sɚˈpæs/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "超越",
+          "example": "If China is able to surpass the US when it comes to the AI manufacturing, then the US lost one of the most important grounds of sort of containing China when it comes to both like the manufacturing small things, like the manufacturing of say robots, which is not actually small, but like to bigger things we were talking about, the large language models like we last year we talked about DeepSeek quite a lot, and we talk, obviously, Anthropic and OpenAI.",
+          "highlight": "surpass"
+        },
+        {
+          "word": "rivalry",
+          "kkPhonetic": "/ˈraɪvəlri/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "對立競爭",
+          "example": "First of all, Trump himself has said that AI is the future of China-US rivalry.",
+          "highlight": "rivalry"
+        },
+        {
+          "word": "arsenal",
+          "kkPhonetic": "/ˈɑrsənəl/",
+          "partOfSpeech": "noun",
+          "level": "C2",
+          "meaningZh": "資源庫",
+          "example": "And then they have a whole arsenal of tools to try to recruit them.",
+          "highlight": "arsenal"
+        },
+        {
+          "word": "charismatic",
+          "kkPhonetic": "/ˌkærɪzˈmætɪk/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "有魅力的",
+          "example": "He was very charismatic.",
+          "highlight": "charismatic"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "fall for",
+          "highlight": "fall for",
+          "meaningZh": "上……的當；迷戀",
+          "example": "So, how did the CEO of Nvidia fall for a honeytrap, and what happens now?"
+        },
+        {
+          "phrase": "take a step back",
+          "highlight": "take a step back",
+          "meaningZh": "退後一步思考",
+          "example": "So I think to answer that question, we have to take a step back to talk about AI."
+        },
+        {
+          "phrase": "with a grain of salt",
+          "highlight": "with a grain of salt",
+          "meaningZh": "持保留態度",
+          "example": "And obviously, we take that with a grain of salt because they are quite close to each other anyway."
+        },
+        {
+          "phrase": "honeytrap",
+          "highlight": "honeytrap",
+          "meaningZh": "美人計",
+          "example": "People are saying this could be a honeytrap."
+        },
+        {
+          "phrase": "behind closed doors",
+          "highlight": "behind closed doors",
+          "meaningZh": "私下；不公開地",
+          "example": "Because it's, you know, it strikes me that it's one thing on the surface, it's a very different thing behind closed doors."
+        }
+      ]
+    },
+    "topic": {
+      "vocabulary": [
+        {
+          "word": "honeytrap",
+          "kkPhonetic": "/ˈhʌnɪˌtræp/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "美人計（指利用浪漫或情色關係誘騙目標以獲取情報的手段）",
+          "example": "So, how did the CEO of Nvidia fall for a honeytrap, and what happens now?",
+          "highlight": "honeytrap"
+        },
+        {
+          "word": "surveillance",
+          "kkPhonetic": "/sɚˈveləns/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "監視；偵察（指對目標進行長期密切觀察與情報蒐集）",
+          "example": "So they're really worried about surveillance by the Chinese.",
+          "highlight": "surveillance"
+        },
+        {
+          "word": "backdoor",
+          "kkPhonetic": "/ˈbækˌdɔr/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "後門（指軟體或系統中未經授權存取資料的秘密漏洞或通道）",
+          "example": "Like for example, like the reason why DeepSeek caused such a big threat for the US lawmakers is because they are afraid that China is able to get information from users in the US and the DeepSeek powered by Chinese AI is able to have some sort of backdoor towards that.",
+          "highlight": "backdoor"
+        },
+        {
+          "word": "Silicon Valley",
+          "kkPhonetic": "/ˈsɪlɪkən ˈvæli/",
+          "partOfSpeech": "proper noun",
+          "level": "B1",
+          "meaningZh": "矽谷（美國加州高科技產業重鎮，為輝達等頂尖科技公司總部所在地）",
+          "example": "So, probably a lot of people have heard of the name Jensen Huang, who is the CEO of Nvidia, one of the most important and charismatic people in Silicon Valley.",
+          "highlight": "Silicon Valley"
+        },
+        {
+          "word": "China",
+          "kkPhonetic": "/ˈtʃaɪnə/",
+          "partOfSpeech": "proper noun",
+          "level": "A1",
+          "meaningZh": "中國（本集討論美國與中國在人工智慧晶片技術及國家安全上的競爭焦點）",
+          "example": "They're one of the US's strongest weapons in its AI race with China.",
+          "highlight": "China"
+        },
+        {
+          "word": "Taiwan",
+          "kkPhonetic": "/ˌtaɪˈwɑːn/",
+          "partOfSpeech": "proper noun",
+          "level": "A1",
+          "meaningZh": "台灣（輝達執行長黃仁勳的出生地，節目中討論其背景與東亞認同時代及的地點）",
+          "example": "And also, just having been born in Taiwan, there's also a sense of even though, you know, there's beef between China and Taiwan, and all that, he's always, oh yeah, absolutely, but there's still some sort of like East Asian pride, right?",
+          "highlight": "Taiwan"
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/2lHPA819WZoe49poN9U3ri"
+}
