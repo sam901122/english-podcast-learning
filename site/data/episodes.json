@@ -1,5 +1,12 @@
 [
   {
+    "id": "394b76464c855a8e",
+    "title": "Why do big companies keep getting hacked?",
+    "publishedAt": "2026-11-12T14:30:00+00:00",
+    "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct9955",
+    "summaryZh": "本集 BBC 節目《What in the World》探討大型企業頻繁遭受網路攻擊與資料外洩的原因及防範方法。節目以 ASOS 購物應用程式遭駭客侵入並推送勒索通知的事件為例，邀請 BBC 記者 Joe Tidy 分析駭客如何透過假冒員工身分進行「大獵捕」勒索。此外，網路安全專家 Tejal Reddy 針對民眾提問提供實用建議，主張使用者應實施「資料最小化」、優先使用驗證器應用程式設定 2FA 雙重驗證，並指出企業應落實「最小權限原則」以避免單點破壞影響整體系統。受訪者最後指出，雖然資料外洩令人焦慮，但一般民眾遭受嚴重損害的風險依然較低。"
+  },
+  {
     "id": "e44a46797fdfccee",
     "title": "Sex, lies and (alleged) Chinese spies: the Nvidia CEO’s affair",
     "publishedAt": "2026-11-11T14:41:00+00:00",

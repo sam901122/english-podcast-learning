@@ -1,0 +1,367 @@
+{
+  "id": "394b76464c855a8e",
+  "title": "Why do big companies keep getting hacked?",
+  "description": "<p>It’s not unusual to receive an email that your personal information has been accessed through a data breach or cyber attack these days. This happened to millions of ASOS customers in October. Or you might have logged onto a site and been told to change your password because it’s been found in a hack. </p><p>Loads of us are talking about how to protect yourself online, especially in cases where companies are responsible for handling your sensitive information. </p><p>BBC’s Cyber Correspondent Joe Tidy tells us about some of the methods cyber criminals use to carry out their hacks. We also get Tejal Reddy, a software engineer and cyber-security content creator to answer some of your online safety questions and concerns.</p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Hannah Gelbart\nProducers: Mollie Perella and Chelsea Coates\nVideo Producer: Benita Barden\nEditor: Emily Horler</p>",
+  "publishedAt": "2026-11-12T14:30:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct9955",
+  "summaryZh": "本集 BBC 節目《What in the World》探討大型企業頻繁遭受網路攻擊與資料外洩的原因及防範方法。節目以 ASOS 購物應用程式遭駭客侵入並推送勒索通知的事件為例，邀請 BBC 記者 Joe Tidy 分析駭客如何透過假冒員工身分進行「大獵捕」勒索。此外，網路安全專家 Tejal Reddy 針對民眾提問提供實用建議，主張使用者應實施「資料最小化」、優先使用驗證器應用程式設定 2FA 雙重驗證，並指出企業應落實「最小權限原則」以避免單點破壞影響整體系統。受訪者最後指出，雖然資料外洩令人焦慮，但一般民眾遭受嚴重損害的風險依然較低。",
+  "summaryEn": "This episode of What in the World explores why major companies continue to suffer cyberattacks and how individuals can better protect their personal data. BBC cyber correspondent Joe Tidy discusses recent high-profile breaches such as the ASOS attack, explaining how hackers use impersonation and aggressive extortion tactics to target large corporations. Cybersecurity expert Tejal Reddy also answers listener questions, recommending data minimization, advocating for authenticator apps over SMS for two-factor authentication, and stressing the importance of the principle of least privilege for corporate data security.",
+  "studySets": {
+    "practical": {
+      "vocabulary": [
+        {
+          "word": "notification",
+          "kkPhonetic": "/ˌnoʊtəfəˈkeɪʃən/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "通知",
+          "example": "You might even have got a notification on your phone.",
+          "highlight": "notification"
+        },
+        {
+          "word": "aggressive",
+          "kkPhonetic": "/əˈɡrɛsɪv/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "侵略性的；挑釁的",
+          "example": "However, what was really interesting about this one was the aggressive and highly visible nature of the extortion.",
+          "highlight": "aggressive"
+        },
+        {
+          "word": "method",
+          "kkPhonetic": "/ˈmɛθəd/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "方法",
+          "example": "What are some of the different methods that hackers use to try to get into these companies, and why is it that so many big companies are being targeted all the time now?",
+          "highlight": "methods"
+        },
+        {
+          "word": "individual",
+          "kkPhonetic": "/ˌɪndəˈvɪdʒuəl/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "個人",
+          "example": "We saw the shift from um, I don't know if you remember actually, there was uh the early days of ransomware kind of early 2000s, maybe maybe 2010s as well, you would get attacks on individuals.",
+          "highlight": "individuals"
+        },
+        {
+          "word": "pretend",
+          "kkPhonetic": "/prɪˈtɛnd/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "假裝",
+          "example": "So someone is pretending to be an employee and getting into the system, and then from there that's kind of where the where the wizardry wizardry happens, and they try and get as much access to as many databases as they can.",
+          "highlight": "pretending"
+        },
+        {
+          "word": "impossible",
+          "kkPhonetic": "/ɪmˈpɑsəbəl/",
+          "partOfSpeech": "adjective",
+          "level": "A2",
+          "meaningZh": "不可能的",
+          "example": "It's actually impossible to know for sure that your data is 100% protected once you give it over to a company.",
+          "highlight": "impossible"
+        },
+        {
+          "word": "protect",
+          "kkPhonetic": "/prəˈtɛkt/",
+          "partOfSpeech": "verb",
+          "level": "A2",
+          "meaningZh": "保護",
+          "example": "Because when a company says that they protect your data, what they mean is that they have basic security measures in place, like encryption and authentication.",
+          "highlight": "protect"
+        },
+        {
+          "word": "sensitive",
+          "kkPhonetic": "/ˈsɛnsətɪv/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "敏感的",
+          "example": "So, if a company doesn't need sensitive information from you, then you shouldn't be giving it to them.",
+          "highlight": "sensitive"
+        },
+        {
+          "word": "access",
+          "kkPhonetic": "/ˈæksɛs/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "存取權；使用權",
+          "example": "There's this key thing in cybersecurity called least privilege, which means that someone should only have access to as much data and information as their role requires.",
+          "highlight": "access"
+        },
+        {
+          "word": "headline",
+          "kkPhonetic": "/ˈhɛdˌlaɪn/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "頭條新聞",
+          "example": "Because we see these headlines, and and and we're all in these ginormous databases and they that it's it feels like the criminals know everything about us, and that is quite worrying.",
+          "highlight": "headlines"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "get in touch",
+          "highlight": "Get in touch",
+          "meaningZh": "聯絡；取得聯繫",
+          "example": "Suddenly, these phones that were all around the world pinged and it said, \"ASOS hacked,\" and it was a message to the uh the data protection officer and the IT manager of ASOS to say, \"Get in touch or we'll leak the data.\""
+        },
+        {
+          "phrase": "go after",
+          "highlight": "go after",
+          "meaningZh": "鎖定...為目標；追逐",
+          "example": "Well, there's a thing called big game hunting in cybercrime, which is where you go after the big names because you can expect a big payout."
+        },
+        {
+          "phrase": "for sure",
+          "highlight": "for sure",
+          "meaningZh": "確定地；肯定地",
+          "example": "How do I know for sure that the data that I inevitably going to have to share with different websites is actually 100% protected?"
+        },
+        {
+          "phrase": "in place",
+          "highlight": "in place",
+          "meaningZh": "到位；設置好",
+          "example": "Because when a company says that they protect your data, what they mean is that they have basic security measures in place, like encryption and authentication."
+        },
+        {
+          "phrase": "boil down to",
+          "highlight": "boils down to",
+          "meaningZh": "歸結為；關鍵在於",
+          "example": "It really all boils down to a company's security practices."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "havoc",
+          "kkPhonetic": "/ˈhævək/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "混亂",
+          "example": "Hackers are targeting airports, government systems, healthcare systems, retail companies, and generally just causing havoc.",
+          "highlight": "havoc"
+        },
+        {
+          "word": "extort",
+          "kkPhonetic": "/ɪkˈstɔrt/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "勒索",
+          "example": "They've downloaded a huge amount of data and then they've tried to extort the company.",
+          "highlight": "extort"
+        },
+        {
+          "word": "breach",
+          "kkPhonetic": "/briːtʃ/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "遭入侵",
+          "example": "We have breached your systems.",
+          "highlight": "breached"
+        },
+        {
+          "word": "extortion",
+          "kkPhonetic": "/ɪkˈstɔrʃən/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "勒索",
+          "example": "It's a data extortion attack where a cyber group has got into an organization, in this case it's ASOS which is obviously a household name used by millions of people around the world, and they've stolen data.",
+          "highlight": "extortion"
+        },
+        {
+          "word": "impersonation",
+          "kkPhonetic": "/ɪmˌpɜrsənˈeɪʃən/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "冒充",
+          "example": "The things with the the retail attacks last year and Ticketmaster and we think, early stages, but we think with ASOS is it's kind of just impersonation attacks.",
+          "highlight": "impersonation"
+        },
+        {
+          "word": "encryption",
+          "kkPhonetic": "/ɪnˈkrɪpʃən/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "加密",
+          "example": "Because when a company says that they protect your data, what they mean is that they have basic security measures in place, like encryption and authentication.",
+          "highlight": "encryption"
+        },
+        {
+          "word": "authentication",
+          "kkPhonetic": "/ɔˌθɛntəˈkeɪʃən/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "身份驗證",
+          "example": "Two-factor authentication is really important because it means that even if a hacker tries to use your password to log in, there's this extra level of verification that they need to pass before they can completely access your account.",
+          "highlight": "authentication"
+        },
+        {
+          "word": "verification",
+          "kkPhonetic": "/ˌvɛrəfəˈkeɪʃən/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "驗證",
+          "example": "Two-factor authentication is really important because it means that even if a hacker tries to use your password to log in, there's this extra level of verification that they need to pass before they can completely access your account.",
+          "highlight": "verification"
+        },
+        {
+          "word": "defraud",
+          "kkPhonetic": "/dɪˈfrɔd/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "遭受詐騙",
+          "example": "But at the same time, I think we do have to have some perspective here and some context, and think that yes, most people are probably affected by one of these data breaches, but the world is still turning, we are still able to use our bank accounts without them being emptied, um people are being defrauded, but the chances of you having something really really bad happen to you that that could really affect your life is very low.",
+          "highlight": "defrauded"
+        },
+        {
+          "word": "compromise",
+          "kkPhonetic": "/ˈkɑmprəˌmaɪz/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "危及",
+          "example": "So, if one account is breached, it doesn't compromise the entire system.",
+          "highlight": "compromise"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "household name",
+          "highlight": "household name",
+          "meaningZh": "家喻戶曉的名字",
+          "example": "It's a data extortion attack where a cyber group has got into an organization, in this case it's ASOS which is obviously a household name used by millions of people around the world, and they've stolen data."
+        },
+        {
+          "phrase": "in place",
+          "highlight": "in place",
+          "meaningZh": "就緒",
+          "example": "Because when a company says that they protect your data, what they mean is that they have basic security measures in place, like encryption and authentication."
+        },
+        {
+          "phrase": "boil down to",
+          "highlight": "boils down to",
+          "meaningZh": "歸結為",
+          "example": "It really all boils down to a company's security practices."
+        },
+        {
+          "phrase": "least privilege",
+          "highlight": "least privilege",
+          "meaningZh": "最小權限原則",
+          "example": "There's this key thing in cybersecurity called least privilege, which means that someone should only have access to as much data and information as their role requires."
+        },
+        {
+          "phrase": "in truth",
+          "highlight": "in truth",
+          "meaningZh": "事實上",
+          "example": "But in truth, it's very basic stuff."
+        }
+      ]
+    },
+    "topic": {
+      "vocabulary": [
+        {
+          "word": "cyberattack",
+          "kkPhonetic": "/ˈsaɪbɚəˌtæk/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "網路攻擊",
+          "example": "So, what actually happens in a cyberattack and what can you do to try to keep your data safe?",
+          "highlight": "cyberattack"
+        },
+        {
+          "word": "ransomware",
+          "kkPhonetic": "/ˈrænsəmˌwɛr/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "勒索軟體",
+          "example": "We saw the shift from um, I don't know if you remember actually, there was uh the early days of ransomware kind of early 2000s, maybe maybe 2010s as well, you would get attacks on individuals.",
+          "highlight": "ransomware"
+        },
+        {
+          "word": "phishing",
+          "kkPhonetic": "/ˈfɪʃɪŋ/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "網路釣魚",
+          "example": "And between texts, phone calls, and emails, honestly none of these methods are really secure because they're not resistant to phishing, and with email, your email codes are really only as secure as your email account is.",
+          "highlight": "phishing"
+        },
+        {
+          "word": "cybercrime",
+          "kkPhonetic": "/ˈsaɪbɚˌkraɪm/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "網路犯罪",
+          "example": "Well, there's a thing called big game hunting in cybercrime, which is where you go after the big names because you can expect a big payout.",
+          "highlight": "cybercrime"
+        },
+        {
+          "word": "cybersecurity",
+          "kkPhonetic": "/ˌsaɪbɚsɪˈkjʊrəti/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "網路安全",
+          "example": "Well, we have put your questions to a cybersecurity expert, Tejal Reddy.",
+          "highlight": "cybersecurity"
+        },
+        {
+          "word": "cryptocurrency",
+          "kkPhonetic": "/ˈkrɪptoʊˌkɝənsi/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "加密貨幣",
+          "example": "I would be more concerned, for example, if I had a a huge amount of cryptocurrency stashed away.",
+          "highlight": "cryptocurrency"
+        },
+        {
+          "word": "e-commerce",
+          "kkPhonetic": "/ˈiːˌkɑːmɚs/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "電子商務",
+          "example": "So, for in particular to ASOS uh and really any e-commerce platform could experience the same type of hack.",
+          "highlight": "e-commerce"
+        },
+        {
+          "word": "Bangladesh",
+          "kkPhonetic": "/ˌbɑːŋɡləˈdɛʃ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "孟加拉；節目聽眾 Bushra 來自此地，她針對網路資料保護提出疑問。",
+          "example": "I'm from Bangladesh.",
+          "highlight": "Bangladesh"
+        },
+        {
+          "word": "Pennsylvania",
+          "kkPhonetic": "/ˌpɛnsəlˈveɪnjə/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "賓夕法尼亞州；美國州名，節目聽眾 Collin 來自此處並提問雙重認證的安全性。",
+          "example": "Hi, my name is Collin, and I'm from Altoona, Pennsylvania.",
+          "highlight": "Pennsylvania"
+        },
+        {
+          "word": "Lagos",
+          "kkPhonetic": "/ˈlɑːɡoʊs/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "拉哥斯；尼日利亞城市，聽眾 XD 來自此地並詢問對大型網購平台資安的信任度。",
+          "example": "I'm a content creator from here, Lagos, Nigeria.",
+          "highlight": "Lagos"
+        },
+        {
+          "word": "Nigeria",
+          "kkPhonetic": "/naɪˈdʒɪriə/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "尼日利亞；西非國家，節目聽眾 XD 來自此國度。",
+          "example": "I'm a content creator from here, Lagos, Nigeria.",
+          "highlight": "Nigeria"
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/00x0hZm1pPMmHqmIP3jgms"
+}
