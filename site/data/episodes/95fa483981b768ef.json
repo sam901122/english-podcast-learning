@@ -1,0 +1,376 @@
+{
+  "id": "95fa483981b768ef",
+  "title": "Who will win Eurovision Asia?",
+  "description": "<p>Eurovision Song Contest Asia is happening for the first time in history! Expect a twerking Filipina, a KPop boyband star and a Mongolian dressed as a warrior…</p><p>Eleven countries will be competing to be the first ever winner of the singing competition. Vietnam, Cambodia, Laos, Mongolia, Bhutan, Philippines, Bangladesh, Thailand, South Korea, Nepal and Malaysia will all be involved in Saturday’s final. William Lee Adams, What in the World’s resident Eurovision expert, explains why the competition has been created, who the favourites are and some of the controversies that have surrounded the event.</p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Hannah Gelbart\nProducers: Mollie Perella, Adam Chowdhury and William Lee Adams \nEditor: Verity Wilde</p>",
+  "publishedAt": "2026-11-13T14:30:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct8q6j",
+  "summaryZh": "本集 BBC 節目《What in the World》探討即將於曼谷登場的首屆亞洲歌唱大賽 Eurovision Song Contest Asia 的盛況。節目邀請 Eurovision 專家 William Lee Adams 剖析賽事背景、熱門奪冠人選與幕後風波。本屆共有 11 個國家參賽，市場預測大熱門包含馬來西亞歌手 Aina Abdul、越南歌手 Thảo Trang 及菲律賓歌手 Karmel，南韓則派出前 2PM 成員 Jun. K 參賽。節目亦分析了賽事預算遭刪減 100 萬美元與團隊人事變動等爭議，並指出該比賽為亞洲各國提供了凝聚人心與展現文化的舞台。",
+  "summaryEn": "In this episode of What in the World, host Hannah Gelbart and Eurovision expert William Lee Adams discuss the inaugural Eurovision Song Contest Asia taking place in Bangkok. Eleven countries are competing, with Malaysia's Aina Abdul, Vietnam's Thảo Trang, and the Philippines' Karmel highlighted as top favorites according to bookmakers, alongside South Korea's K-pop entry by Jun. K. The episode also touches on behind-the-scenes controversies—including a $1 million budget cut and changes to the international production crew—and explores how the contest provides Asian nations with a platform to celebrate their diverse cultures and unity.",
+  "studySets": {
+    "practical": {
+      "vocabulary": [
+        {
+          "word": "trophy",
+          "kkPhonetic": "/ˈtrofɪ/",
+          "partOfSpeech": "n.",
+          "level": "B1",
+          "meaningZh": "獎盃",
+          "example": "It's a trophy.",
+          "highlight": "trophy"
+        },
+        {
+          "word": "expert",
+          "kkPhonetic": "/ˈɛkspɚt/",
+          "partOfSpeech": "n.",
+          "level": "A2",
+          "meaningZh": "專家",
+          "example": "This is What in the World from the BBC World Service, and we've got none other than the William Lee Adams, who is our resident Eurovision expert, and you were even in the Netflix film, right?",
+          "highlight": "expert"
+        },
+        {
+          "word": "festival",
+          "kkPhonetic": "/ˈfɛstəvḷ/",
+          "partOfSpeech": "n.",
+          "level": "A2",
+          "meaningZh": "節慶",
+          "example": "The Eurovision Song Contest is a glitter-slicked festival of pop, camp, and Gilbert.",
+          "highlight": "festival"
+        },
+        {
+          "word": "rhythm",
+          "kkPhonetic": "/ˈrɪðəm/",
+          "partOfSpeech": "n.",
+          "level": "B1",
+          "meaningZh": "節奏",
+          "example": "The music, it provides the rhythm of a nation on this night.",
+          "highlight": "rhythm"
+        },
+        {
+          "word": "experiment",
+          "kkPhonetic": "/ɪkˈspɛrəmənt/",
+          "partOfSpeech": "n.",
+          "level": "A2",
+          "meaningZh": "實驗",
+          "example": "At the time it was founded, it was an experiment.",
+          "highlight": "experiment"
+        },
+        {
+          "word": "desire",
+          "kkPhonetic": "/dɪˈzaɪɚ/",
+          "partOfSpeech": "n.",
+          "level": "B1",
+          "meaningZh": "渴望",
+          "example": "These days we know we can watch TV across borders, but there's still that desire to be together during this three-four-hour show.",
+          "highlight": "desire"
+        },
+        {
+          "word": "professional",
+          "kkPhonetic": "/prəˈfɛʃənḷ/",
+          "partOfSpeech": "adj.",
+          "level": "A2",
+          "meaningZh": "專業的",
+          "example": "Now, the public accounts for half of the score, and the other half of the score comes from professional juries.",
+          "highlight": "professional"
+        },
+        {
+          "word": "honor",
+          "kkPhonetic": "/ˈɑnɚ/",
+          "partOfSpeech": "n.",
+          "level": "B1",
+          "meaningZh": "榮譽",
+          "example": "What does it mean for singers apart from just, you know, representing their country, which is already a massive honor?",
+          "highlight": "honor"
+        },
+        {
+          "word": "statement",
+          "kkPhonetic": "/ˈstetmənt/",
+          "partOfSpeech": "n.",
+          "level": "B1",
+          "meaningZh": "聲明",
+          "example": "Yeah, powerful statement!",
+          "highlight": "statement"
+        },
+        {
+          "word": "budget",
+          "kkPhonetic": "/ˈbʌdʒɪt/",
+          "partOfSpeech": "n.",
+          "level": "B1",
+          "meaningZh": "預算",
+          "example": "So at the end of October, reports emerged that the budget for Eurovision Asia had been slashed by $1 million.",
+          "highlight": "budget"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "in a nutshell",
+          "highlight": "in a nutshell",
+          "meaningZh": "簡而言之",
+          "example": "But in a nutshell, it's a pan-European singing contest."
+        },
+        {
+          "phrase": "account for",
+          "highlight": "accounts for",
+          "meaningZh": "佔……比例",
+          "example": "Now, the public accounts for half of the score, and the other half of the score comes from professional juries."
+        },
+        {
+          "phrase": "take charge",
+          "highlight": "takes charge",
+          "meaningZh": "掌管；負責",
+          "example": "Now this essentially means \"too much,\" and she talks about how if she takes charge, they call her bossy, if she doesn't smile, people say she's too intense, and that if she's loud, she's crazy."
+        },
+        {
+          "phrase": "as a result of",
+          "highlight": "as a result of",
+          "meaningZh": "由於；作為……的結果",
+          "example": "So there was this financial restructuring, and as a result of this, they ended up laying off international talent, producers, many from Sweden, lighting technicians, directors, who had been producing Eurovision for several years, who were international experts, and they replaced them with local staff."
+        },
+        {
+          "phrase": "make it clear",
+          "highlight": "made it clear",
+          "meaningZh": "明確表示",
+          "example": "But I should point out that the Eurovision Song Contest Asia released a statement after that, and they made it clear that the show was going to go on."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "aftermath",
+          "kkPhonetic": "/ˈæftɚˌmæθ/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "餘波",
+          "example": "This is in the aftermath of the Second World War, and the whole point was to bring countries together as Europe rebuilt and to say, \"Let's put down our weapons and let's share song.\"",
+          "highlight": "aftermath"
+        },
+        {
+          "word": "stardom",
+          "kkPhonetic": "/ˈstɑrdəm/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "巨星地位",
+          "example": "If you win Eurovision, yes, there is a chance you can go on to global stardom.",
+          "highlight": "stardom"
+        },
+        {
+          "word": "celestial",
+          "kkPhonetic": "/səˈlɛstʃəl/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "天上的",
+          "example": "So she's essentially saying, \"I'm a Vietnamese fairy, a celestial being.\"",
+          "highlight": "celestial"
+        },
+        {
+          "word": "withstand",
+          "kkPhonetic": "/wɪðˈstænd/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "抵擋",
+          "example": "Bamboo, it can withstand the storm.",
+          "highlight": "withstand"
+        },
+        {
+          "word": "empowering",
+          "kkPhonetic": "/ɪmˈpaʊərɪŋ/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "給予力量的",
+          "example": "And of course, the sky can be empowering, it can be beautiful, but it can also be scary.",
+          "highlight": "empowering"
+        },
+        {
+          "word": "colloquialism",
+          "kkPhonetic": "/kəˈloʊkwiəlɪzəm/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "口語用語",
+          "example": "That's why I'm getting into the colloquialisms.",
+          "highlight": "colloquialisms"
+        },
+        {
+          "word": "slash",
+          "kkPhonetic": "/slæʃ/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "大幅削減",
+          "example": "So at the end of October, reports emerged that the budget for Eurovision Asia had been slashed by $1 million.",
+          "highlight": "slashed"
+        },
+        {
+          "word": "restructuring",
+          "kkPhonetic": "/riˈstrʌktʃərɪŋ/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "財務重組",
+          "example": "So there was this financial restructuring, and as a result of this, they ended up laying off international talent, producers, many from Sweden, lighting technicians, directors, who had been producing Eurovision for several years, who were international experts, and they replaced them with local staff.",
+          "highlight": "restructuring"
+        },
+        {
+          "word": "cater",
+          "kkPhonetic": "/ˈketɚ/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "迎合",
+          "example": "This is not about catering to the audiences in East, South, and Southeast Asia who are broadcasting the show, who are competing in the show.",
+          "highlight": "catering"
+        },
+        {
+          "word": "frothy",
+          "kkPhonetic": "/ˈfrɔθi/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "輕鬆不嚴肅的",
+          "example": "And when you think about that, how these countries suffered for decades, and how the effects of that war are still being felt, the fact that they can go to a frothy pop competition that people write off as silly, and just be carefree and have fun, that's already a victory, because it shows how far they've come.",
+          "highlight": "frothy"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "in a nutshell",
+          "highlight": "in a nutshell",
+          "meaningZh": "簡而言之",
+          "example": "But in a nutshell, it's a pan-European singing contest."
+        },
+        {
+          "phrase": "nothing to scoff at",
+          "highlight": "nothing to scoff at",
+          "meaningZh": "不可輕視",
+          "example": "So you can actually live off your music, which is nothing to scoff at."
+        },
+        {
+          "phrase": "off the back of",
+          "highlight": "off the back of",
+          "meaningZh": "藉由…的契機",
+          "example": "More recently, Måneskin, they won in 2021, and off the back of that, they ended up getting nominated for the Grammy Award for Best New Artist."
+        },
+        {
+          "phrase": "lay off",
+          "highlight": "laying off",
+          "meaningZh": "解僱",
+          "example": "So there was this financial restructuring, and as a result of this, they ended up laying off international talent, producers, many from Sweden, lighting technicians, directors, who had been producing Eurovision for several years, who were international experts, and they replaced them with local staff."
+        },
+        {
+          "phrase": "write off",
+          "highlight": "write off",
+          "meaningZh": "認定…無價值",
+          "example": "And when you think about that, how these countries suffered for decades, and how the effects of that war are still being felt, the fact that they can go to a frothy pop competition that people write off as silly, and just be carefree and have fun, that's already a victory, because it shows how far they've come."
+        }
+      ]
+    },
+    "topic": {
+      "vocabulary": [
+        {
+          "word": "bookie",
+          "kkPhonetic": "/ˈbʊki/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "博彩業者（指開出賭盤並評估比賽勝率的人）",
+          "example": "Well, why don't we go according to the bookies?",
+          "highlight": "bookies"
+        },
+        {
+          "word": "front runner",
+          "kkPhonetic": "/frʌnt ˈrʌnɚ/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "領跑者；最具奪冠希望的選手",
+          "example": "This is looking at Polymarket, and I tend to agree that these are the front runners.",
+          "highlight": "front runners"
+        },
+        {
+          "word": "jury",
+          "kkPhonetic": "/ˈdʒʊri/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "專業評審團",
+          "example": "Now, the public accounts for half of the score, and the other half of the score comes from professional juries.",
+          "highlight": "juries"
+        },
+        {
+          "word": "power ballad",
+          "kkPhonetic": "/ˈpaʊɚ ˈbæləd/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "力量流行抒情歌（情感濃烈且富爆發力的歌曲）",
+          "example": "Now, throughout Southeast Asia, there's a big love of power ballads, emotional, over-the-top songs, letting it all out, and she's doing that.",
+          "highlight": "power ballads"
+        },
+        {
+          "word": "running order",
+          "kkPhonetic": "/ˈrʌnɪŋ ˈɔrdɚ/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "出場順序",
+          "example": "You know, she's performing last in the running order, and this is what she had to say about that.",
+          "highlight": "running order"
+        },
+        {
+          "word": "Bangkok",
+          "kkPhonetic": "/ˈbæŋkɑk/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "曼谷（泰國首都，為首屆亞洲歐洲歌唱大賽的主辦城市）",
+          "example": "It's the first time ever that this version of the competition is happening and it's on this weekend in Bangkok.",
+          "highlight": "Bangkok"
+        },
+        {
+          "word": "Lisbon",
+          "kkPhonetic": "/ˈlɪzbən/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "里斯本（葡萄牙首都，2018年歐洲歌唱大賽主辦地，影星威爾法洛曾在此為相關電影進行調研）",
+          "example": "Will Ferrell was doing research for his movie in 2018 at Eurovision in Lisbon, and I have a YouTube channel and a blog, and he recognized me, so he came up, and we ended up having a long research chat, and then a lot of our chat ended up as plotlines in the movie.",
+          "highlight": "Lisbon"
+        },
+        {
+          "word": "Netherlands",
+          "kkPhonetic": "/ˈnɛðɚləndz/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "荷蘭（參賽國之一，其代表歌手 Duncan Laurence 贏得 2019 年歐洲歌唱大賽冠軍）",
+          "example": "Duncan Laurence, who won Eurovision 2019 for the Netherlands, his song Arcade has more than 1.5 billion streams on Spotify.",
+          "highlight": "Netherlands"
+        },
+        {
+          "word": "Vietnam",
+          "kkPhonetic": "/vɪɛtˈnɑm/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "越南（參賽國之一，代表歌手 Thảo Trang 為本屆大賽熱門選手之一）",
+          "example": "The second favorite is Vietnam, and this is my personal favorite.",
+          "highlight": "Vietnam"
+        },
+        {
+          "word": "Malaysia",
+          "kkPhonetic": "/məˈleʒə/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "馬來西亞（參賽國之一，代表歌手 Aina Abdul 為本屆大賽最被看好的奪冠熱門）",
+          "example": "The big favorite, currently with a 61% chance of winning according to Polymarket, is Malaysia.",
+          "highlight": "Malaysia"
+        },
+        {
+          "word": "South Korea",
+          "kkPhonetic": "/saʊθ kəˈriə/",
+          "partOfSpeech": "noun",
+          "level": "A1",
+          "meaningZh": "南韓（參賽國之一，由前男團 2PM 成員 Jun. K 代表登台演出）",
+          "example": "What about South Korea?",
+          "highlight": "South Korea"
+        },
+        {
+          "word": "Thailand",
+          "kkPhonetic": "/ˈtaɪlænd/",
+          "partOfSpeech": "noun",
+          "level": "A1",
+          "meaningZh": "泰國（首屆亞洲歐洲歌唱大賽決賽的舉辦國家）",
+          "example": "And William, obviously, the final is in Thailand, and we actually got a voice note from a fan in Bangkok telling us how much this means to them.",
+          "highlight": "Thailand"
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/7knLBCDGNrA50gprSpIk9L"
+}
