@@ -1,0 +1,358 @@
+{
+  "id": "6926db3883420b24",
+  "title": "Could AI help decide medals at the 2028 Olympics?",
+  "description": "<p>The 2028 Olympics in Los Angeles might look a little bit different…because of the use of AI-assisted judging. Sports like gymnastics are already starting to use the technology to decide who gets to stand on the podium in the run-up to 2028, and other Olympic disciplines like dressage, freestyle skiing and snowboarding are exploring doing the same.</p><p>Governing bodies say that AI could help to make things fairer, making judgements more accurate and objective. But some athletes aren’t happy with the decision - and say that AI can’t judge the artistry of their sport.</p><p>BBC Sports Correspondent Laura Scott joins us to explain how the AI judging process could work, which sports might adopt it in the future and how it might impact the 2028 Olympics in LA. We hear from the Olympic vault bronze medallist Harry Hepworth, on his experience of AI-assisted judging systems at the last World Gymnastics Championships. And sports journalist Emma (@emmasunny___) shares her thoughts on how this could impact how we wtach sports in the future.</p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Hannah Gelbart \nProducers: William Lee Adams and Chelsea Coates\nEditor: Verity Wilde</p>",
+  "publishedAt": "2026-11-16T14:30:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct98yf",
+  "summaryZh": "本集 BBC 節目《What in the World》探討在 2028 年洛杉磯奧運及其他體育賽事引進 AI 輔助裁判的可能性與爭議。體育機構希望藉由 AI 技術消除裁判的主觀偏見，目前已在體操項目協助評定難度分。然而，奧運跳馬銅牌得主 Harry Hepworth 等選手指出 AI 系統無法評估人體結構與安全性，甚至因將防護性的微彎雙腿判定為錯誤動作而扣分，迫使選手改變技術。此外，專家提醒 AI 目前無法評量藝術美感，且若在奧運出錯將嚴重影響選手多年努力。",
+  "summaryEn": "This episode of the BBC podcast What in the World explores the potential and challenges of using AI-assisted judging in major sports competitions, including the 2028 Los Angeles Olympics. Sports federations, particularly in gymnastics, are adopting AI technology to minimize human bias and objectively assess move difficulty ratings. However, athletes like Olympic vault bronze medalist Harry Hepworth express concern that current AI systems fail to account for human body mechanics and safety—such as slight leg bends needed to prevent injury—leading to unfairly downgraded scores and forcing competitors to alter their techniques. Experts also highlight AI's limitations in evaluating artistry and nuance, raising concerns about potential technology failures at major events.",
+  "studySets": {
+    "practical": {
+      "vocabulary": [
+        {
+          "word": "score",
+          "kkPhonetic": "/skɔr/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "分數",
+          "example": "But then, an AI system looks at your body, decides you've done it wrong, and takes points off your score.",
+          "highlight": "score"
+        },
+        {
+          "word": "studio",
+          "kkPhonetic": "/ˈstjudɪˌo/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "攝影棚",
+          "example": "I've got Laura Scott, who is a BBC sports correspondent, right here with me in the studio.",
+          "highlight": "studio"
+        },
+        {
+          "word": "medal",
+          "kkPhonetic": "/ˈmɛdl/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "獎牌",
+          "example": "So, let's start off with the sports that are considering using AI to judge competitions and decide who actually goes home with those medals.",
+          "highlight": "medals"
+        },
+        {
+          "word": "eliminate",
+          "kkPhonetic": "/ɪˈlɪməˌnet/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "消除",
+          "example": "And, increasingly, there is a push by the federations in charge of those sports to eliminate any of that potential bias.",
+          "highlight": "eliminate"
+        },
+        {
+          "word": "engaging",
+          "kkPhonetic": "/ɪnˈɡedʒɪŋ/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "吸引人的",
+          "example": "And then in winter sports: figure skating, but also slope style, big air, halfpipe, those sports that are becoming really popular because they're really engaging.",
+          "highlight": "engaging"
+        },
+        {
+          "word": "limitation",
+          "kkPhonetic": "/ˌlɪmɪˈteʃən/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "限制",
+          "example": "At the moment, they are only trying to get the AI-assisted judging to help with the difficulty rating of a movement because they think it will be possible for the execution, but a bit harder because there are limitations to what AI can do with regards to things like artistry.",
+          "highlight": "limitations"
+        },
+        {
+          "word": "controversial",
+          "kkPhonetic": "/ˌkɑntrəˈvɝʃəl/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "有爭議的",
+          "example": "And the president of World Gymnastics is incredibly keen on AI, and he came out with some quite controversial comments the other day saying his dream is basically to have computers deciding medals.",
+          "highlight": "controversial"
+        },
+        {
+          "word": "sensible",
+          "kkPhonetic": "/ˈsɛnsəbl/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "明智的",
+          "example": "On the half twist, I bend my legs so that I can prepare for the landing, which I think is the most sensible thing to do because you don't want to break your legs or anything.",
+          "highlight": "sensible"
+        },
+        {
+          "word": "refinement",
+          "kkPhonetic": "/rɪˈfaɪnmənt/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "改進",
+          "example": "But what World Gymnastics have said is they will take away gymnast feedback, coach feedback, they will make some refinements to the system, precisely sort of where the AI starts measuring body positionings.",
+          "highlight": "refinements"
+        },
+        {
+          "word": "sacrifice",
+          "kkPhonetic": "/ˈsækrəˌfaɪs/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "犧牲了",
+          "example": "They will want to know that the AI is working and it's not going to fail them on the biggest stage of all, the Olympics, one that they've sacrificed so many years of work for to be on that stage.",
+          "highlight": "sacrificed"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "break down",
+          "highlight": "break this down",
+          "meaningZh": "詳細分析",
+          "example": "We're going to break this down."
+        },
+        {
+          "phrase": "start off with",
+          "highlight": "start off with",
+          "meaningZh": "從...開始",
+          "example": "So, let's start off with the sports that are considering using AI to judge competitions and decide who actually goes home with those medals."
+        },
+        {
+          "phrase": "in the long term",
+          "highlight": "in the long term",
+          "meaningZh": "從長遠來看",
+          "example": "I was speaking to Andrew Tomes, he's in charge of the men's technical committee for world gymnastics, and he was saying it's something that could happen in the long term."
+        },
+        {
+          "phrase": "big deal",
+          "highlight": "big deal",
+          "meaningZh": "重大事項",
+          "example": "That's quite a big deal, isn't it?"
+        },
+        {
+          "phrase": "behind the scenes",
+          "highlight": "behind the scenes",
+          "meaningZh": "在幕後",
+          "example": "And don't get me wrong, there's definitely a place for it behind the scenes, I feel like analyzing performances and generally like keeping athletes fit and healthy, it's great."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "subjectivity",
+          "kkPhonetic": "/səbʒɛkˈtɪvətɪ/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "主觀性",
+          "example": "But it's those sports that take a bit of subjectivity to decide the medals.",
+          "highlight": "subjectivity"
+        },
+        {
+          "word": "bias",
+          "kkPhonetic": "/ˈbaɪəs/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "偏見",
+          "example": "And, increasingly, there is a push by the federations in charge of those sports to eliminate any of that potential bias.",
+          "highlight": "bias"
+        },
+        {
+          "word": "niche",
+          "kkPhonetic": "/niʃ/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "小眾的",
+          "example": "And this is specifically in gymnastics, it's a little bit niche, but there are two scores in gymnastics.",
+          "highlight": "niche"
+        },
+        {
+          "word": "nuance",
+          "kkPhonetic": "/ˈnuɑns/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "細微差別",
+          "example": "So in gymnastics, it's like there are dance elements, there are ways that an athlete performs something that perhaps the nuance of it and the artistry, the AI can't quite gauge yet.",
+          "highlight": "nuance"
+        },
+        {
+          "word": "artistry",
+          "kkPhonetic": "/ˈɑrtɪstrɪ/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "藝術技巧",
+          "example": "It doesn't have the delicacy of the creative human eye to really be able to judge artistry.",
+          "highlight": "artistry"
+        },
+        {
+          "word": "delicacy",
+          "kkPhonetic": "/ˈdɛləkəsɪ/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "精細",
+          "example": "It doesn't have the delicacy of the creative human eye to really be able to judge artistry.",
+          "highlight": "delicacy"
+        },
+        {
+          "word": "controversial",
+          "kkPhonetic": "/ˌkɑntrəˈvɝʃəl/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "引發爭議的",
+          "example": "But the president of World Gymnastics is incredibly keen on AI, and he came out with some quite controversial comments the other day saying his dream is basically to have computers deciding medals.",
+          "highlight": "controversial"
+        },
+        {
+          "word": "refinement",
+          "kkPhonetic": "/rɪˈfaɪnmənt/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "改進",
+          "example": "But what World Gymnastics have said is they will take away gymnast feedback, coach feedback, they will make some refinements to the system, precisely sort of where the AI starts measuring body positionings.",
+          "highlight": "refinements"
+        },
+        {
+          "word": "downgrade",
+          "kkPhonetic": "/ˈdaʊnˌgreɪd/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "降低評分",
+          "example": "But the AI detection system caught on to it, and AI said I was doing a tuck position, which then downgrades the vault by 4/10.",
+          "highlight": "downgrades"
+        },
+        {
+          "word": "harmony",
+          "kkPhonetic": "/ˈhɑrmənɪ/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "和諧",
+          "example": "So, the harmony between a horse and a rider, is that something that AI can ever truly judge?",
+          "highlight": "harmony"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "lead the way",
+          "highlight": "leading the way",
+          "meaningZh": "率先發展",
+          "example": "So, it is those judged disciplines, so you think of gymnastics, and they are very much leading the way on this."
+        },
+        {
+          "phrase": "outside the realms of possibility",
+          "highlight": "outside the realms of possibility",
+          "meaningZh": "不可能發生的事",
+          "example": "It's not outside the realms of possibility."
+        },
+        {
+          "phrase": "lose the plot",
+          "highlight": "lost the plot",
+          "meaningZh": "搞不清狀況",
+          "example": "I do feel like we've slightly lost the plot a bit there."
+        },
+        {
+          "phrase": "catch on to",
+          "highlight": "caught on to",
+          "meaningZh": "察覺到",
+          "example": "But the AI detection system caught on to it, and AI said I was doing a tuck position, which then downgrades the vault by 4/10."
+        },
+        {
+          "phrase": "across the board",
+          "highlight": "across the board",
+          "meaningZh": "全面地",
+          "example": "It's fairness across the board, so that you aren't having a judge be influenced by anything like a crowd cheering or the nationality of a gymnast or the profile of that gymnast."
+        }
+      ]
+    },
+    "topic": {
+      "vocabulary": [
+        {
+          "word": "gymnast",
+          "kkPhonetic": "/ˈdʒɪmnæst/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "體操運動員",
+          "example": "Imagine this. You're an Olympic gymnast.",
+          "highlight": "gymnast"
+        },
+        {
+          "word": "algorithm",
+          "kkPhonetic": "/ˈælɡəˌrɪðəm/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "演算法",
+          "example": "But some pro athletes say it's dangerous, and it could push them to perform differently to try to fit the algorithm.",
+          "highlight": "algorithm"
+        },
+        {
+          "word": "dressage",
+          "kkPhonetic": "/drəˈsɑʒ/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "馬術盛裝舞步",
+          "example": "But then you also have dressage, which will be a bit harder, and we'll come on to that, because of the combination of judging both horse and rider.",
+          "highlight": "dressage"
+        },
+        {
+          "word": "halfpipe",
+          "kkPhonetic": "/ˈhæfˌpaɪp/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "U型半管滑雪",
+          "example": "And then in winter sports: figure skating, but also slope style, big air, halfpipe, those sports that are becoming really popular because they're really engaging.",
+          "highlight": "halfpipe"
+        },
+        {
+          "word": "piked",
+          "kkPhonetic": "/paɪkt/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "（體操）屈體姿勢的",
+          "example": "So the vault I do is is the hardest vault in the world, and you do it in a piked position, so your legs are straight whilst doing it.",
+          "highlight": "piked"
+        },
+        {
+          "word": "tuck",
+          "kkPhonetic": "/tʌk/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "（體操）抱腿屈體姿勢",
+          "example": "But the AI detection system caught on to it, and AI said I was doing a tuck position, which then downgrades the vault by 4/10.",
+          "highlight": "tuck"
+        },
+        {
+          "word": "vault",
+          "kkPhonetic": "/vɔlt/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "（體操）跳馬項目",
+          "example": "So the vault I do is is the hardest vault in the world, and you do it in a piked position, so your legs are straight whilst doing it.",
+          "highlight": "vault"
+        },
+        {
+          "word": "LA",
+          "kkPhonetic": "/ɛl e/",
+          "partOfSpeech": "noun",
+          "level": "A1",
+          "meaningZh": "美國洛杉磯，本集討論AI評分系統是否能在2028年洛杉磯奧運中應用的主辦城市",
+          "example": "And the big question here is: how might AI-assisted judging impact the 2028 Olympics in LA?",
+          "highlight": "LA"
+        },
+        {
+          "word": "Rotterdam",
+          "kkPhonetic": "/ˈrɑtərˌdæm/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "荷蘭鹿特丹，本集提到在該地舉行的世界體操錦標賽中，AI評判引發了運動員不滿",
+          "example": "You know, we saw it at the recent World Gymnastics Championships in Rotterdam.",
+          "highlight": "Rotterdam"
+        },
+        {
+          "word": "Australia",
+          "kkPhonetic": "/ɔˈstreljə/",
+          "partOfSpeech": "noun",
+          "level": "A1",
+          "meaningZh": "澳洲，節目採訪的體育記者Emma所在地，她針對AI評分對體育賽事的衝擊表達看法",
+          "example": "Okay, Laura, let's just pause for a second, because we've been hearing from Emma, who's a sports journalist in Australia, and I want to play you this.",
+          "highlight": "Australia"
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/3XN84EDnbbAeOZJN83Qwpi"
+}
