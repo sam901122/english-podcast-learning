@@ -1,0 +1,349 @@
+{
+  "id": "91901000e776a6c9",
+  "title": "How vulnerable are our smart devices?",
+  "description": "<p>More and more of our tech is connected to the internet. Maybe you're wearing a fitness tracker right now, or you've got a smart doorbell, speaker or lamp at home.</p><p>So what happens when those devices get hacked? And is there anything you can do to protect them?</p><p>You might remember that in October, supermarkets across Europe were hit by a major cyber hack that caused fridge and freezer systems to heat up. Some stores say that their fridge temperatures rose as high as 50C (122F). </p><p>BBC tech reporter Shiona McCallum explains how older, internet-connected refrigeration tech with weak protections and remote management can be exploited, and why the wider risk extends to other connected systems in areas like banking, agriculture and utilities.</p><p>Plus cybersecurity educator Joan Nwafor shares tips on how to keep your smart devices safe and secure from cyber hacks.</p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Hannah Gelbart\nProducers: William Lee Adams and Adam Chowdhury\nVideo Producer: Benita Barden\nEditor: Verity Wilde</p>",
+  "publishedAt": "2026-11-20T14:30:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct8q6k",
+  "summaryZh": "本集 BBC 節目《What in the World》探討智慧裝置與連網設備的資安漏洞問題。歐洲多家超市的連網冷凍系統近期遭駭客入侵，導致溫度飆升至 50 度並廢棄大量食物。 BBC 科技記者 Shiona McCallum 表示，許多舊型連網設備僅靠簡易密碼保護，容易遭駭客攻擊，此風險更可能波及金融與農業等基礎設施。英國國家網路安全中心 NCSC 也針對數萬台連網設備進行修補。網路安全教育員 Joan Nwafor 則建議民眾修改預設密碼、定期更新軟體，並將智慧家電連至獨立網路。",
+  "summaryEn": "In this episode of What in the World, host Hannah Gelbart examines the cybersecurity vulnerabilities of smart devices following a major cyber attack on European supermarkets that pushed fridge and freezer temperatures up to 50°C, resulting in massive food waste. BBC tech reporter Shiona McCallum explains that older connected equipment with weak password security and remote access features can easily be exploited, threatening broader critical sectors like banking, agriculture, and public utilities. The UK's National Cyber Security Centre also intervened to secure tens of thousands of vulnerable refrigeration units across the country. Additionally, cybersecurity educator Joan Nwafor offers practical tips for consumers, advising them to change default passwords, routinely update software, and keep smart home devices on a separate network.",
+  "studySets": {
+    "practical": {
+      "vocabulary": [
+        {
+          "word": "device",
+          "kkPhonetic": "/dɪˈvaɪs/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "裝置",
+          "example": "And this really is a reminder that these attacks aren't just affecting computers and websites, they're affecting our devices, too.",
+          "highlight": "devices"
+        },
+        {
+          "word": "loss",
+          "kkPhonetic": "/lɔs/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "損失",
+          "example": "We saw lots of food being thrown away, businesses obviously now counting the financial losses, which is a shame.",
+          "highlight": "losses"
+        },
+        {
+          "word": "weakness",
+          "kkPhonetic": "/ˈwiknɪs/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "弱點",
+          "example": "You know, those are the security researchers who are trying to find these weaknesses that they can find before criminals exploit them.",
+          "highlight": "weaknesses"
+        },
+        {
+          "word": "expert",
+          "kkPhonetic": "/ˈɛkspɝt/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "專家",
+          "example": "Some of the cyber security experts that I've been speaking to have told me that, you know, we need much kind of clearer answers, and I think that people need to kind of understand this a bit more.",
+          "highlight": "experts"
+        },
+        {
+          "word": "manufacturer",
+          "kkPhonetic": "/ˌmænjəˈfæktʃərɚ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "製造商",
+          "example": "And that's why I think manufacturers need to take security more seriously.",
+          "highlight": "manufacturers"
+        },
+        {
+          "word": "equipment",
+          "kkPhonetic": "/ɪˈkwɪpmənt/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "設備",
+          "example": "But if older equipment is accessible online, that's obviously an issue.",
+          "highlight": "equipment"
+        },
+        {
+          "word": "temperature",
+          "kkPhonetic": "/ˈtɛmprətʃɚ/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "溫度",
+          "example": "In agriculture, you mentioned, you know, connected equipment can help farmers with irrigation, livestock, storage temperatures.",
+          "highlight": "temperatures"
+        },
+        {
+          "word": "industry",
+          "kkPhonetic": "/ˈɪndəstrɪ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "產業",
+          "example": "There are so many things when you kind of think about other industries that are, you know, machinery and things like that that can be attacked, could be potentially attacked, interrupt production or spoil valuable stock.",
+          "highlight": "industries"
+        },
+        {
+          "word": "action",
+          "kkPhonetic": "/ˈækʃən/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "行動",
+          "example": "Governments really across the world are taking action on this.",
+          "highlight": "action"
+        },
+        {
+          "word": "mistake",
+          "kkPhonetic": "/mɪˈstek/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "錯誤",
+          "example": "I see a lot of us make the mistake of ignoring software updates, but what those software updates do is they close gaps, they actually patch vulnerabilities, and they make you more secure.",
+          "highlight": "mistake"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "start off with",
+          "highlight": "started off with",
+          "meaningZh": "從……開始",
+          "example": "It started off with Belgium, Sweden, Ireland, Germany, and even the UK."
+        },
+        {
+          "phrase": "take action",
+          "highlight": "taking action",
+          "meaningZh": "採取行動",
+          "example": "Governments really across the world are taking action on this."
+        },
+        {
+          "phrase": "reach out to",
+          "highlight": "reached out to",
+          "meaningZh": "主動聯繫",
+          "example": "So we reached out to a cyber security expert and we got their tips on what we can do to try and keep our devices safe."
+        },
+        {
+          "phrase": "make a mistake",
+          "highlight": "make the mistake",
+          "meaningZh": "犯錯",
+          "example": "I see a lot of us make the mistake of ignoring software updates, but what those software updates do is they close gaps, they actually patch vulnerabilities, and they make you more secure."
+        },
+        {
+          "phrase": "fall back on",
+          "highlight": "fall back on",
+          "meaningZh": "依靠；轉而使用",
+          "example": "Businesses also need to be able to maybe fall back on manual controls if necessary, so that not everything is digital."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "infiltrate",
+          "kkPhonetic": "/ˈɪnfɪlˌtret/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "滲透；潛入",
+          "example": "It's very disruptive, and essentially, just a big headache for those companies, those supermarkets that had fridge freezers infiltrated.",
+          "highlight": "infiltrated"
+        },
+        {
+          "word": "vulnerability",
+          "kkPhonetic": "/ˌvʌlnərəˈbɪləti/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "漏洞；弱點",
+          "example": "There are vulnerabilities in this technology.",
+          "highlight": "vulnerabilities"
+        },
+        {
+          "word": "disruption",
+          "kkPhonetic": "/dɪsˈrʌpʃən/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "打亂；中斷",
+          "example": "It means that if hackers get in, they can cause this disruption.",
+          "highlight": "disruption"
+        },
+        {
+          "word": "analog",
+          "kkPhonetic": "/ˈænəlɔɡ/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "類比的；非數位的",
+          "example": "As we said before, you know, it seems like a bit mad to be thinking about going back to a more analog approach, but equally that could be something that is in the mix.",
+          "highlight": "analog"
+        },
+        {
+          "word": "infrastructure",
+          "kkPhonetic": "/ˈɪnfrəˌstrʌktʃɚ/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "基礎建設；基礎設施",
+          "example": "But on a national infrastructure level, you know, a bit more seriously now, what are the risks to things like our electricity supplies, farms, banks, water supplies?",
+          "highlight": "infrastructure"
+        },
+        {
+          "word": "irrigation",
+          "kkPhonetic": "/ˌɪrəˈɡeʃən/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "灌溉",
+          "example": "In agriculture, you mentioned, you know, connected equipment can help farmers with irrigation, livestock, storage temperatures.",
+          "highlight": "irrigation"
+        },
+        {
+          "word": "off-grid",
+          "kkPhonetic": "/ˌɔfˈɡrɪd/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "脫離公用事業供電網的；離網的",
+          "example": "So I think, you know, we need to try and prevent entire national systems going completely off-grid.",
+          "highlight": "off-grid"
+        },
+        {
+          "word": "exploit",
+          "kkPhonetic": "/ɪkˈsplɔɪt/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "被利用；被非法濫用",
+          "example": "However, there is this, I would say, challenge about securing older equipment, and that's where we've seen this vulnerability being exploited.",
+          "highlight": "exploited"
+        },
+        {
+          "word": "vigilant",
+          "kkPhonetic": "/ˈvɪdʒələnt/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "警惕的；警覺的",
+          "example": "Um, but I think it's just about being vigilant and understanding this a bit more.",
+          "highlight": "vigilant"
+        },
+        {
+          "word": "sophisticated",
+          "kkPhonetic": "/səˈfɪstəˌketɪd/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "複雜精密的；先進的",
+          "example": "But cyber security experts that I've spoken to say that, you know, these could be copycat attacks rather than anything sophisticated, because, again, it's kind of quite low-level tech.",
+          "highlight": "sophisticated"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "send shivers down one's spine",
+          "highlight": "sends shivers down my spine",
+          "meaningZh": "使人毛骨悚然；令人心驚膽戰",
+          "example": "This really sends shivers down my spine and I'm sure anyone else who's watching or listening to this who has smart tech will be thinking about that."
+        },
+        {
+          "phrase": "front and center",
+          "highlight": "front and center",
+          "meaningZh": "處於核心地位；成為焦點",
+          "example": "As a tech reporter, trust me, we used to be more on the fringes in tech, but now we're kind of front and center."
+        },
+        {
+          "phrase": "fall back on",
+          "highlight": "fall back on",
+          "meaningZh": "退而求助於；依賴後備方案",
+          "example": "Businesses also need to be able to maybe fall back on manual controls if necessary, so that not everything is digital."
+        },
+        {
+          "phrase": "around the clock",
+          "highlight": "around the clock",
+          "meaningZh": "日夜不停地；夜以繼日地",
+          "example": "So, since then, researchers, IT teams, and the National Cyber Security Centre have been working around the clock to warn dozens of companies."
+        },
+        {
+          "phrase": "at one end of the spectrum",
+          "highlight": "at one end of the spectrum",
+          "meaningZh": "在極端情況的一端",
+          "example": "Yeah, so at one end of the spectrum you've got really inexperienced people like, you know, teenage hackers, we quite often call them, experimenting with tools or maybe exploiting weaknesses that they found online."
+        }
+      ]
+    },
+    "topic": {
+      "vocabulary": [
+        {
+          "word": "smartwatch",
+          "kkPhonetic": "/ˈsmɑrtˌwɑtʃ/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "智慧型手錶",
+          "example": "I mean, maybe you're wearing a smartwatch, you've got a smart TV, a smart doorbell, or a smart lamp at home.",
+          "highlight": "smartwatch"
+        },
+        {
+          "word": "freezer",
+          "kkPhonetic": "/ˈfrizɚ/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "冷凍櫃，冷凍庫",
+          "example": "Across Europe, trolley after trolley piled high with food had to be thrown away after supermarkets were hacked, and in some shops the freezers were set to 50 degrees Celsius.",
+          "highlight": "freezers"
+        },
+        {
+          "word": "hacker",
+          "kkPhonetic": "/ˈhækɚ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "駭客",
+          "example": "We don't really know what the hackers want at this point in time, you know.",
+          "highlight": "hackers"
+        },
+        {
+          "word": "ransom",
+          "kkPhonetic": "/ˈrænsəm/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "贖金",
+          "example": "They obviously want to steal information, demand ransom payments, and try and disrupt businesses.",
+          "highlight": "ransom"
+        },
+        {
+          "word": "breach",
+          "kkPhonetic": "/britʃ/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "資安入侵、安全漏洞事件",
+          "example": "But I think, you know, cyber security is something that we need to be thinking about when we see these breaches.",
+          "highlight": "breaches"
+        },
+        {
+          "word": "Bluetooth",
+          "kkPhonetic": "/ˈbluˌtuθ/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "藍芽（短距離無線傳輸技術）",
+          "example": "Some connect to your phone through Bluetooth and security weaknesses could allow someone else control certain functions.",
+          "highlight": "Bluetooth"
+        },
+        {
+          "word": "Europe",
+          "kkPhonetic": "/ˈjʊrəp/",
+          "partOfSpeech": "noun",
+          "level": "A1",
+          "meaningZh": "歐洲；本集指出許多跨國超市冷凍系統遭駭客攻擊事件發生的洲別。",
+          "example": "Across Europe, trolley after trolley piled high with food had to be thrown away after supermarkets were hacked, and in some shops the freezers were set to 50 degrees Celsius.",
+          "highlight": "Europe"
+        },
+        {
+          "word": "Belgium",
+          "kkPhonetic": "/ˈbɛldʒəm/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "比利時；本集提及最早發現超市冷凍設備遭網路攻擊的歐洲國家之一。",
+          "example": "It started off with Belgium, Sweden, Ireland, Germany, and even the UK.",
+          "highlight": "Belgium"
+        },
+        {
+          "word": "Nigeria",
+          "kkPhonetic": "/naɪˈdʒɪrɪə/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "奈及利亞；本集中提供居家智慧設備防護建議的資安專家 John Wafford 來自的國家。",
+          "example": "Hi, I'm John Wafford and I'm a cyber security educator from Nigeria.",
+          "highlight": "Nigeria"
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/2QZYsE1QnRwViSpbrfmc94"
+}
