@@ -1,0 +1,349 @@
+{
+  "id": "c0188aac20f01a2e",
+  "title": "Why creators are reporting AI copycats",
+  "description": "<p>Imagine you’re a singer or dancer, and you post videos of yourself performing online. Then you see your video on another account, and your face has been changed.</p><p>This is part of a new trend on social media called reskinning - it’s often done for a laugh, and you might have seen those videos of politicians, actors - or cats - doing viral dances.</p><p>But the people who made the original videos -  content creators, musicians, dancers, comedians, athletes - say they’re seeing their work being reskinned re-uploaded, and monetised - without their permission. </p><p>So how exactly does re-skinning work? And, what can creators do when their work is taken and repackaged by AI? Marco Silva from BBC Verify has been looking into this trend.</p><p>Plus, we hear from Sophie and Monica who’ve both had it done to their content.</p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Hannah Gelbart\nProducers: Emily Horler and Benita Barden\nEditor: Verity Wilde</p>",
+  "publishedAt": "2026-11-23T14:30:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct98yg",
+  "summaryZh": "本集 BBC 節目《What in the World》探討社群媒體上新興的 AI 影片「換皮」現象。此趨勢指有心人士利用 AI 工具複製創作者的原始影片與表演，並將其臉部或身體替換成電腦生成的角色。BBC Verify 的記者 Marco Silva 指出，這些抄襲帳號未經授權便重製、上傳影片並進行牟利，損害了創作者的收益與曝光。節目採訪了吉他手 Sophie Lloyd 與創作者 Monica 的經歷，她們的作品遭 AI 竄改且個人身份被抹去。節目亦探討了法律在生成式 AI 發展下的局限，以及 Meta 與 TikTok 等社交平台採取的因應措施。",
+  "summaryEn": "This episode explores the growing social media trend of reskinning, where AI tools replicate content creators' original videos and performances while replacing their faces or bodies with computer-generated avatars. BBC Verify's Marco Silva explains how easily these AI copycats are created and monetized without permission, diverting views and revenue from original artists. Creators Sophie Lloyd and Monica share how reskinning impacted their work and identity, while the episode examines the legal gray areas surrounding generative AI and how platforms like Meta and TikTok are responding.",
+  "studySets": {
+    "practical": {
+      "vocabulary": [
+        {
+          "word": "actor",
+          "kkPhonetic": "/ˈæktɚ/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "演員",
+          "example": "You might have seen those videos of politicians, actors, or even cats doing viral dances.",
+          "highlight": "actors"
+        },
+        {
+          "word": "performance",
+          "kkPhonetic": "/pɚˈfɔrməns/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "表演",
+          "example": "So fundamentally, we're talking about, like you said, grabbing someone's video, and essentially copying the performance, the actions, the gestures that you see on that particular video, and replacing the person that you can see in the video with a computer-generated character.",
+          "highlight": "performance"
+        },
+        {
+          "word": "ordinary",
+          "kkPhonetic": "/ˈɔrdnˌɛri/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "一般的",
+          "example": "So Marco, how easy is it for an ordinary person to do this, to reskin a video?",
+          "highlight": "ordinary"
+        },
+        {
+          "word": "scary",
+          "kkPhonetic": "/ˈskɛri/",
+          "partOfSpeech": "adjective",
+          "level": "A2",
+          "meaningZh": "可怕的",
+          "example": "It doesn't take a long time for you to find them online, which again, from a content creator's point of view, is quite scary, is quite worrying.",
+          "highlight": "scary"
+        },
+        {
+          "word": "instrument",
+          "kkPhonetic": "/ˈɪnstrəmənt/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "樂器",
+          "example": "Takes years to like master an instrument or whatever, and seconds to, to take it and rip it off as something else.",
+          "highlight": "instrument"
+        },
+        {
+          "word": "product",
+          "kkPhonetic": "/ˈprɑdʌkt/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "產品",
+          "example": "So essentially they replicated the entire video including my movements, my gestures, my poses, my mannerisms, how I was holding and touching the product, but then they replaced me with an entirely different AI-generated white woman.",
+          "highlight": "product"
+        },
+        {
+          "word": "conversation",
+          "kkPhonetic": "/ˌkɑnvɚˈseʃən/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "對話",
+          "example": "So yeah, I hope this encourages a bigger conversation about creator consent and the protections we need as AI continues to evolve.",
+          "highlight": "conversation"
+        },
+        {
+          "word": "technology",
+          "kkPhonetic": "/tɛkˈnɑlədʒi/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "科技",
+          "example": "They announced plans to test new technology that could detect when AI-manipulated copies of videos appear online, and they also say that they are exploring ways to limit the reach of accounts that produce these sorts of copycats.",
+          "highlight": "technology"
+        },
+        {
+          "word": "guideline",
+          "kkPhonetic": "/ˈɡaɪdˌlaɪn/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "準則",
+          "example": "On the other side, TikTok, they say that community guidelines don't allow content that violates intellectual property rights.",
+          "highlight": "guidelines"
+        },
+        {
+          "word": "comment",
+          "kkPhonetic": "/ˈkɑmɛnt/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "留言",
+          "example": "And I want to read out some of your comments we got on those episodes.",
+          "highlight": "comments"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "up in arms",
+          "highlight": "up in arms",
+          "meaningZh": "憤怒不滿",
+          "example": "And which is why the content creators themselves that you mentioned are up in arms about it, because they say, \"Well, that joke is mine, that dance is mine, that performance is mine, and instead you're taking me out of the equation, you're using my work, and you're putting a computer-created person...\""
+        },
+        {
+          "phrase": "come across",
+          "highlight": "came across",
+          "meaningZh": "偶然發現",
+          "example": "So first of all, there's shock, because some of them came across the content themselves, others had the content, these copycats, sent to them by their followers who said, \"Have you seen, is this not your video? Is this not your background? Is this not your dance?\""
+        },
+        {
+          "phrase": "reach out to",
+          "highlight": "reached out to",
+          "meaningZh": "主動聯絡",
+          "example": "And then when I discovered the ads while I was scrolling through my feed, I actually reached out to them to express my concerns and requested that they be taken down."
+        },
+        {
+          "phrase": "take down",
+          "highlight": "take down",
+          "meaningZh": "下架",
+          "example": "Can they get the platforms to take down these imitation reskinned videos?"
+        },
+        {
+          "phrase": "speak up",
+          "highlight": "speaking up",
+          "meaningZh": "挺身發言",
+          "example": "However, after further conversations and other creators started speaking up, then the brand eventually apologized and confirmed that the AI-altered ads had been turned off."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "repackage",
+          "kkPhonetic": "/riˈpækɪdʒ/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "重新包裝",
+          "example": "And what can creators do when their work is taken and repackaged by AI?",
+          "highlight": "repackaged"
+        },
+        {
+          "word": "fundamentally",
+          "kkPhonetic": "/ˌfʌndəˈmɛntəlɪ/",
+          "partOfSpeech": "adverb",
+          "level": "B2",
+          "meaningZh": "根本上地",
+          "example": "So fundamentally, we're talking about, like you said, grabbing someone's video, and essentially copying the performance, the actions, the gestures that you see on that particular video, and replacing the person that you can see in the video with a computer-generated character.",
+          "highlight": "fundamentally"
+        },
+        {
+          "word": "motivation",
+          "kkPhonetic": "/ˌmotəˈveʃən/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "動機",
+          "example": "So the experts that I've spoken to on this subject say that the motivations here can be very different.",
+          "highlight": "motivations"
+        },
+        {
+          "word": "impactful",
+          "kkPhonetic": "/ɪmˈpæktfəl/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "具影響力的；有重大影響的",
+          "example": "well, it's, it, it could be potentially impactful from a financial point of view, because of course, if you don't have as many likes, as many views, as many followers, then the brand deals don't happen, then the revenue stream that you get from the platforms themselves is no longer there.",
+          "highlight": "impactful"
+        },
+        {
+          "word": "mannerism",
+          "kkPhonetic": "/ˈmænəˌrɪzəm/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "言談舉止；個人習慣動作",
+          "example": "So essentially they replicated the entire video including my movements, my gestures, my poses, my mannerisms, how I was holding and touching the product, but then they replaced me with an entirely different AI-generated white woman.",
+          "highlight": "mannerisms"
+        },
+        {
+          "word": "anticipate",
+          "kkPhonetic": "/ænˈtɪsəˌpet/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "預料；預期",
+          "example": "But I never anticipated that my performance would be recreated using AI while my appearance was replaced completely.",
+          "highlight": "anticipated"
+        },
+        {
+          "word": "infringement",
+          "kkPhonetic": "/ɪnˈfrɪndʒmənt/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "侵犯；侵害",
+          "example": "They have currently a public reporting tool for copyright holders who feel that, you know, that there was an infringement of copyright and they will assess each case case-by-case, and they also point out that they require content creators to label their content as AI-generated when AI or AI-editing is used as part of their content.",
+          "highlight": "infringement"
+        },
+        {
+          "word": "incorporate",
+          "kkPhonetic": "/ɪnˈkɔrpəˌret/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "併入；納入使用",
+          "example": "For some of the creators who are generating these AI avatars, they see, and this is something that I've encountered in my research, they see what they are doing as an art form, simply incorporating new tools to express something.",
+          "highlight": "incorporating"
+        },
+        {
+          "word": "monstrous",
+          "kkPhonetic": "/ˈmɑnstrəs/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "殘忍的；駭人聽聞的",
+          "example": "No telling how monstrous people are or will progressively become.",
+          "highlight": "monstrous"
+        },
+        {
+          "word": "replicate",
+          "kkPhonetic": "/ˈrɛpləˌket/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "複製；重現",
+          "example": "So essentially they replicated the entire video including my movements, my gestures, my poses, my mannerisms, how I was holding and touching the product, but then they replaced me with an entirely different AI-generated white woman.",
+          "highlight": "replicated"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "up in arms",
+          "highlight": "up in arms",
+          "meaningZh": "極力反對；憤慨不已",
+          "example": "And which is why the content creators themselves that you mentioned are up in arms about it, because they say, \"Well, that joke is mine, that dance is mine, that performance is mine, and instead you're taking me out of the equation, you're using my work, and you're putting a computer-created person...\""
+        },
+        {
+          "phrase": "take someone out of the equation",
+          "highlight": "taking me out of the equation",
+          "meaningZh": "將某人排除在外",
+          "example": "And which is why the content creators themselves that you mentioned are up in arms about it, because they say, \"Well, that joke is mine, that dance is mine, that performance is mine, and instead you're taking me out of the equation, you're using my work, and you're putting a computer-created person...\""
+        },
+        {
+          "phrase": "rip off",
+          "highlight": "rip it off",
+          "meaningZh": "抄襲；剽竊",
+          "example": "Takes years to like master an instrument or whatever, and seconds to, to take it and rip it off as something else."
+        },
+        {
+          "phrase": "reach out to",
+          "highlight": "reached out to",
+          "meaningZh": "主動聯繫",
+          "example": "And then when I discovered the ads while I was scrolling through my feed, I actually reached out to them to express my concerns and requested that they be taken down."
+        },
+        {
+          "phrase": "grey area",
+          "highlight": "grey area",
+          "meaningZh": "灰色地帶",
+          "example": "It's, it's a grey area."
+        }
+      ]
+    },
+    "topic": {
+      "vocabulary": [
+        {
+          "word": "reskinning",
+          "kkPhonetic": "/riˈskɪnɪŋ/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "換皮（利用 AI 替換影片中人物臉部或身體的技術）",
+          "example": "This is part of a new trend called reskinning and it's often done for a laugh.",
+          "highlight": "reskinning"
+        },
+        {
+          "word": "reskinned",
+          "kkPhonetic": "/riˈskɪnd/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "經換皮處理的（指影片人物已被 AI 替換）",
+          "example": "What kind of reskinned videos have you seen?",
+          "highlight": "reskinned"
+        },
+        {
+          "word": "copycat",
+          "kkPhonetic": "/ˈkɑpɪˌkæt/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "抄襲者；山寨內容",
+          "example": "They announced plans to test new technology that could detect when AI-manipulated copies of videos appear online, and they also say that they are exploring ways to limit the reach of accounts that produce these sorts of copycats.",
+          "highlight": "copycats"
+        },
+        {
+          "word": "memecoin",
+          "kkPhonetic": "/ˈmimˌkɔɪn/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "迷因幣（一種加密貨幣，常被用於推廣獲利）",
+          "example": "All the way from people just doing this for a laugh, to people definitely using this to make money, and they can make money in many different ways, whether it whether it is through subscription pages, by promoting risky cryptocurrency products like memecoins.",
+          "highlight": "memecoins"
+        },
+        {
+          "word": "monetize",
+          "kkPhonetic": "/ˈmɑnəˌtaɪz/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "變現；從……中獲利",
+          "example": "So there's there's different ways in which people are trying to monetize this sort of content, but again, it's not just about the money, there are other reasons as well.",
+          "highlight": "monetize"
+        },
+        {
+          "word": "avatar",
+          "kkPhonetic": "/ˈævəˌtɑr/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "虛擬化身（指 AI 生成的人物圖像）",
+          "example": "For some of the creators who are generating these AI avatars, they see, and this is something that I've encountered in my research, they see what they are doing as an art form, simply incorporating new tools to express something.",
+          "highlight": "avatars"
+        },
+        {
+          "word": "copyright",
+          "kkPhonetic": "/ˈkɑpɪˌraɪt/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "著作權；版權",
+          "example": "Is it actually copyright infringement?",
+          "highlight": "copyright"
+        },
+        {
+          "word": "UK",
+          "kkPhonetic": "/ˌjuːˈkeɪ/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "英國（本集提及該國法律尚未跟上生成式 AI 的發展）",
+          "example": "However, laws, at least in UK specifically, haven't quite caught up with generative AI.",
+          "highlight": "UK"
+        },
+        {
+          "word": "Europe",
+          "kkPhonetic": "/ˈjʊrəp/",
+          "partOfSpeech": "noun",
+          "level": "A1",
+          "meaningZh": "歐洲（本集提及近期該地區超市的智慧設備遭受駭客攻擊）",
+          "example": "They were targeted in supermarkets across Europe recently.",
+          "highlight": "Europe"
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/2jlG5LY9VMdH3sEtE3voOr"
+}
