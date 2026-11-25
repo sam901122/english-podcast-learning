@@ -1,0 +1,340 @@
+{
+  "id": "46d9259edeff19b0",
+  "title": "How dangerous are rollercoasters?",
+  "description": "<p>A passenger recently died following an incident on the Goliath roller coaster at Six Flags Over Georgia. And Six Flags Magic Mountain has permanently closed its X2 coaster after multiple rider injury reports. These separate events have led many roller coaster enthusiasts to ask how safe roller coasters actually are. BBC reporter William Lee Adams joins us to talk about what’s been going on at Six Flags, how common accidents and serious injuries are, and what safety checks are in place. </p><p>We also hear from Ryan the Ride Mechanic, a former amusement park mechanic and YouTuber who spent 14 years in the industry. He explains how safety is built into the design process, how amusement parks complete further checks during installation, and what daily checks take place to keep riders safe. </p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Iqra Farooq\nProducers: Mollie Perella, Chelsea Coates and William Lee Adams\nVideo Producer: Baldeep Chahal\nEditor: Verity Wilde</p>",
+  "publishedAt": "2026-11-24T14:30:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct990q",
+  "summaryZh": "本集 BBC 節目《What in the World》探討雲霄飛車的安全性。節目針對近期美國 Six Flags 樂園發生的乘客死亡與腦部受傷事故，邀請 BBC 記者與前遊樂園維修技師 Ryan 分析意外發生的機率及安全檢驗機制。統計資料顯示雲霄飛車致死率極低，遠低於遭雷擊的機率；此外，設施從設計階段的第三方審查，到每日開園前的軌道、煞車與防碰撞系統測試，均經過嚴格把關。",
+  "summaryEn": "This episode of BBC's What in the World explores roller coaster safety following recent incidents at Six Flags theme parks in the US, including a fatal ejection on the Goliath coaster and brain injury reports linked to the X2 coaster. BBC reporter William Lee Adams and former amusement park mechanic Ryan discuss the extreme rarity of roller coaster injuries and fatalities compared to lightning strikes or car accidents. Ryan details the multi-layered safety protocols in place, from third-party design reviews and accelerometer testing to rigorous daily pre-opening inspections of tracks, restraints, and collision-prevention block systems.",
+  "studySets": {
+    "practical": {
+      "vocabulary": [
+        {
+          "word": "investigation",
+          "kkPhonetic": "/ɪnˌvɛstəˈɡeʃən/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "調查",
+          "example": "Now, the park immediately launched an investigation, and as part of that there's photographic evidence, because there are these automated cameras that want to capture people's emotions while they're going up and down.",
+          "highlight": "investigation"
+        },
+        {
+          "word": "statement",
+          "kkPhonetic": "/ˈstetmənt/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "聲明",
+          "example": "So, Six Flags immediately closed the park and it issued a statement.",
+          "highlight": "statement"
+        },
+        {
+          "word": "attraction",
+          "kkPhonetic": "/əˈtrækʃən/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "遊樂設施",
+          "example": "In a separate statement posted on the website, they said that, \"Our attractions undergo daily, weekly, monthly, and annual inspections, and our team members receive extensive training to safely operate and maintain our rides.\"",
+          "highlight": "attractions"
+        },
+        {
+          "word": "responsibility",
+          "kkPhonetic": "/rɪˌspɑnsəˈbɪləti/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "責任",
+          "example": "While serious incidents of this nature are exceedingly rare, we never take responsibility to our guest for granted and remain committed to continuously strengthening our operations and safety practices.",
+          "highlight": "responsibility"
+        },
+        {
+          "word": "caution",
+          "kkPhonetic": "/ˈkɔʃən/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "謹慎",
+          "example": "So, they were sending a really bold statement there that they wanted to, you know, proceed with the utmost caution.",
+          "highlight": "caution"
+        },
+        {
+          "word": "accident",
+          "kkPhonetic": "/ˈæksədənt/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "事故",
+          "example": "If you look at road accidents here in the UK, in 2025, there were 1,538 road fatalities.",
+          "highlight": "accidents"
+        },
+        {
+          "word": "injury",
+          "kkPhonetic": "/ˈɪndʒəri/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "傷害",
+          "example": "So, we got an idea there of how rare it is to die on a roller coaster, but people might be thinking, what about injuries?",
+          "highlight": "injuries"
+        },
+        {
+          "word": "opinion",
+          "kkPhonetic": "/əˈpɪnjən/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "意見",
+          "example": "Yes, my opinion on roller coasters has changed.",
+          "highlight": "opinion"
+        },
+        {
+          "word": "survive",
+          "kkPhonetic": "/sɚˈvaɪv/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "生存",
+          "example": "If they don't feel safe, they're not going to go, and the industry can't survive.",
+          "highlight": "survive"
+        },
+        {
+          "word": "headline",
+          "kkPhonetic": "/ˈhɛdˌlaɪn/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "頭條新聞",
+          "example": "I think we have to remember the reason these incidents make headlines is because they are so rare.",
+          "highlight": "headlines"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "wait in line",
+          "highlight": "waiting in line",
+          "meaningZh": "排隊等候",
+          "example": "But if you've ever had that moment where maybe you're waiting in line or just about to get launched into the air and thinking, how safe is this? Then this episode is for you."
+        },
+        {
+          "phrase": "make sure",
+          "highlight": "make sure",
+          "meaningZh": "確保",
+          "example": "I used to watch the videos on YouTube before going on the ride to make sure I knew exactly when that upside-down loop was coming."
+        },
+        {
+          "phrase": "go wrong",
+          "highlight": "go wrong",
+          "meaningZh": "出錯",
+          "example": "Because after a few incidents in the US this year, we wanted to find out how experts make our favorite roller coasters safe and how likely it is for things to go wrong."
+        },
+        {
+          "phrase": "make headlines",
+          "highlight": "make headlines",
+          "meaningZh": "登上頭條",
+          "example": "I think we have to remember the reason these incidents make headlines is because they are so rare."
+        },
+        {
+          "phrase": "keep in mind",
+          "highlight": "keep that in mind",
+          "meaningZh": "牢記在心",
+          "example": "You know, more likely than not, you're going to be very safe and you're going to have a good time, so keep that in mind."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "condolence",
+          "kkPhonetic": "/kənˈdoʊləns/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "弔唁；慰問",
+          "example": "It said that it was deeply saddened by the guest incident, and they conveyed that their thoughts and heartfelt condolences were with the guest's family, friends, and loved ones.",
+          "highlight": "condolences"
+        },
+        {
+          "word": "exceedingly",
+          "kkPhonetic": "/ɪkˈsidɪŋli/",
+          "partOfSpeech": "adverb",
+          "level": "C1",
+          "meaningZh": "極其；非常",
+          "example": "While serious incidents of this nature are exceedingly rare, we never take responsibility to our guest for granted and remain committed to continuously strengthening our operations and safety practices.",
+          "highlight": "exceedingly"
+        },
+        {
+          "word": "restraint",
+          "kkPhonetic": "/rɪˈstrent/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "安全約束裝置",
+          "example": "Now, these seat belts are in addition to existing lap bar restraints.",
+          "highlight": "restraints"
+        },
+        {
+          "word": "elaborate",
+          "kkPhonetic": "/ɪˈlæbərɪt/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "複雜精密的",
+          "example": "Now, this roller coaster is incredibly elaborate.",
+          "highlight": "elaborate"
+        },
+        {
+          "word": "allege",
+          "kkPhonetic": "/əˈlɛdʒ/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "聲稱；指控",
+          "example": "And more than 100 people have alleged that they suffered brain injuries.",
+          "highlight": "alleged"
+        },
+        {
+          "word": "enthusiast",
+          "kkPhonetic": "/ɪnˈθuziˌæst/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "狂熱愛好者",
+          "example": "A lot of roller coaster enthusiasts will swear that like nothing like this will ever happen until it does.",
+          "highlight": "enthusiasts"
+        },
+        {
+          "word": "adrenaline",
+          "kkPhonetic": "/əˈdrɛnəlɪn/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "腎上腺素",
+          "example": "There are so many different reasons that I love roller coasters, but one of the main reasons is the adrenaline that they give you while riding them.",
+          "highlight": "adrenaline"
+        },
+        {
+          "word": "fatigue",
+          "kkPhonetic": "/fəˈtiɡ/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "金屬疲勞",
+          "example": "And then over the years they do other testing for long structure fatigue to make sure they don't crack excessively or anything like that.",
+          "highlight": "fatigue"
+        },
+        {
+          "word": "indicate",
+          "kkPhonetic": "/ˈɪndəˌket/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "顯示；表明",
+          "example": "You typically have a welder or someone experienced with structural steel looking at the track itself, making sure that they don't find any rust spots which indicate cracking, no loose bolts, loose hardware, or anything like that.",
+          "highlight": "indicate"
+        },
+        {
+          "word": "thankless",
+          "kkPhonetic": "/ˈθæŋklɪs/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "吃力不討好的",
+          "example": "That's kind of a thankless job that nobody ever really sees or understands.",
+          "highlight": "thankless"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "bear out",
+          "highlight": "bear that out",
+          "meaningZh": "證實；證明",
+          "example": "And the fact is the numbers bear that out."
+        },
+        {
+          "phrase": "utmost caution",
+          "highlight": "utmost caution",
+          "meaningZh": "極度審慎",
+          "example": "So, they were sending a really bold statement there that they wanted to, you know, proceed with the utmost caution."
+        },
+        {
+          "phrase": "in lieu of",
+          "highlight": "in lieu of",
+          "meaningZh": "鑑於；由於",
+          "example": "My name is Erage, and to answer if my opinion on roller coasters has changed in lieu of recent incidents, I would absolutely have to say 100% yes."
+        },
+        {
+          "phrase": "third-party review",
+          "highlight": "third-party review",
+          "meaningZh": "第三方審查",
+          "example": "But then afterwards, the engineer company, the people who design the coaster, have to go through a third-party review and have an outside firm to the design process inspect their design and say that it's safe, as well as the people that are buying it typically hire somebody else and have them inspect it as well."
+        },
+        {
+          "phrase": "seek confirmation",
+          "highlight": "seek confirmation",
+          "meaningZh": "尋求證實",
+          "example": "And I think sometimes we want to seek confirmation for our fears."
+        }
+      ]
+    },
+    "topic": {
+      "vocabulary": [
+        {
+          "word": "accelerometer",
+          "kkPhonetic": "/əkˌsɛləˈrɑmətɚ/",
+          "partOfSpeech": "noun",
+          "level": "C2",
+          "meaningZh": "加速度計（用於測量雲霄飛車運行時對乘客產生的重力加速度等數據的儀器）",
+          "example": "There's a lot of accelerometer testing to make sure the g-force on the rider, which is the most critical part, is within a certain standard.",
+          "highlight": "accelerometer"
+        },
+        {
+          "word": "g-force",
+          "kkPhonetic": "/ˈdʒiːˌfɔːrs/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "重力加速度（雲霄飛車運作時對乘客產生的加速度力量）",
+          "example": "There's a lot of accelerometer testing to make sure the g-force on the rider, which is the most critical part, is within a certain standard.",
+          "highlight": "g-force"
+        },
+        {
+          "word": "anti-rollback",
+          "kkPhonetic": "/ˌæntiˈroʊlbæk/",
+          "partOfSpeech": "noun",
+          "level": "C2",
+          "meaningZh": "防後退安全裝置（防止雲霄飛車車廂在斜坡上升時倒退的機械結構）",
+          "example": "It goes up and you service the brakes, anti-rollbacks are greased properly, drive tires are going to push the train forward every time all day without fail, and then you're going to move up into the structure of the train.",
+          "highlight": "anti-rollbacks"
+        },
+        {
+          "word": "welder",
+          "kkPhonetic": "/ˈwɛldɚ/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "焊接工（負責檢視與維護雲霄飛車鋼鐵軌道結構的專業人員）",
+          "example": "You typically have a welder or someone experienced with structural steel looking at the track itself, making sure that they don't find any rust spots which indicate cracking, no loose bolts, loose hardware, or anything like that.",
+          "highlight": "welder"
+        },
+        {
+          "word": "mechanic",
+          "kkPhonetic": "/məˈkænɪk/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "維修技師（負責檢查與維護主題樂園設施設備的機械技術人員）",
+          "example": "I am a ex-amusement park mechanic.",
+          "highlight": "mechanic"
+        },
+        {
+          "word": "Georgia",
+          "kkPhonetic": "/ˈdʒɔːrdʒə/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "喬治亞州（美國州名，本集提及主持人從小長大並經常造訪當地六旗樂園的所在地）",
+          "example": "I actually grew up near Six Flags Over Georgia, so every summer when the sun hits, I was at that park.",
+          "highlight": "Georgia"
+        },
+        {
+          "word": "California",
+          "kkPhonetic": "/ˌkælɪˈfɔːrnjə/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "加利福尼亞州（美國州名，本集提及六旗魔術山樂園因安全爭議而關閉四維雲霄飛車設施的所在地）",
+          "example": "Actually, Six Flags in California, this is Six Flags Magic Mountain, they recently announced that they were closing their X2 coaster.",
+          "highlight": "California"
+        },
+        {
+          "word": "North America",
+          "kkPhonetic": "/ˌnɔːrθ əˈmɛrɪkə/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "北美洲（本集指六旗樂園集團因事故調查而暫停營運近十項遊樂設施所涵蓋的區域）",
+          "example": "They closed down around 10 rides across theme parks in North America.",
+          "highlight": "North America"
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/5iSSLATxyRCPBVYREwYwwU"
+}
