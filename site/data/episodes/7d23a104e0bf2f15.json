@@ -1,0 +1,385 @@
+{
+  "id": "7d23a104e0bf2f15",
+  "title": "New planet, who dis?",
+  "description": "<p>Hidden away deep in the Milky Way, a potential new planet has been spotted. Catchily named - right now - ED138, experts reckon it could measure up to 1,500 kilometres wide and sits beyond Pluto, in a part of the sky that is crowded with millions of stars. But, an incredibly powerful telescope in Chile that monitors the sky managed to spot it.  </p><p>Experts say it could be the discovery of a generation! But ED138 needs to undergo a few checks before it can be officially declared a dwarf planet. So, what are those tests? And what else are we missing? Astronomer Dr Jenifer Millard breaks it all down for us. </p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Hannah Gelbart\nProducers: Mollie Perella and Adam Chowdhury \nVideo Producer: Adam Chowdhury\nEditor: Verity Wilde</p>",
+  "publishedAt": "2026-11-26T14:30:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct9957",
+  "summaryZh": "本集 BBC 節目《What in the World》探討天文學家在冥王星軌道之外發現潛在矮行星的重大突破。天體物理學家 Jennifer Millard 博士說明了定義行星與矮行星的標準，並介紹位於智利的 Vera Rubin 天文台如何運用超大數位相機與演算程式，在每日產生的 10 TB 資料中捕捉到該天體，同時解釋其因距離遙遠且藏身於銀河系密集星群中而長期未被發現的原因。",
+  "summaryEn": "Astronomers using the Vera Rubin Observatory in Chile may have discovered a new dwarf planet beyond Pluto's orbit. Astrophysicist Dr. Jennifer Millard explains the criteria defining dwarf planets, how complex software processes 10 terabytes of daily data from the telescope to spot mysterious space objects, and why this faint, slow-moving body remained hidden within the crowded stars of the Milky Way for so long.",
+  "studySets": {
+    "practical": {
+      "vocabulary": [
+        {
+          "word": "planet",
+          "kkPhonetic": "/ˈplænɪt/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "行星",
+          "example": "It went from being the ninth planet in our solar system to a dwarf planet.",
+          "highlight": "planet"
+        },
+        {
+          "word": "orbit",
+          "kkPhonetic": "/ˈɔrbɪt/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "軌道",
+          "example": "Well, now astronomers think they might have discovered a new dwarf planet way beyond Pluto's orbit.",
+          "highlight": "orbit"
+        },
+        {
+          "word": "expert",
+          "kkPhonetic": "/ˈɛkspɚt/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "專家",
+          "example": "And discoveries like this remind me that nobody has everything figured out and you never have to be an expert to feel amazed.",
+          "highlight": "expert"
+        },
+        {
+          "word": "definition",
+          "kkPhonetic": "/ˌdɛfəˈnɪʃən/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "定義",
+          "example": "So, talk me through that definition.",
+          "highlight": "definition"
+        },
+        {
+          "word": "gravity",
+          "kkPhonetic": "/ˈɡrævətɪ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "重力",
+          "example": "Then the second term we've got is whether something is massive enough so it has enough gravity to fall into hydrostatic equilibrium.",
+          "highlight": "gravity"
+        },
+        {
+          "word": "mirror",
+          "kkPhonetic": "/ˈmɪrɚ/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "鏡子",
+          "example": "So, it's got an enormous mirror, which is 8.4 meters across.",
+          "highlight": "mirror"
+        },
+        {
+          "word": "standard",
+          "kkPhonetic": "/ˈstændɚd/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "標準的",
+          "example": "So, for a bit of context, your standard door inside your house is about 2 meters across, so it's sort of four of those stacked on top of each other.",
+          "highlight": "standard"
+        },
+        {
+          "word": "mountain",
+          "kkPhonetic": "/ˈmaʊntn/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "山",
+          "example": "And it's in the Southern Hemisphere, it's in Chile, and it's up on the top of a mountain.",
+          "highlight": "mountain"
+        },
+        {
+          "word": "storage",
+          "kkPhonetic": "/ˈstɔrɪdʒ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "儲存空間",
+          "example": "That'll clog up your storage.",
+          "highlight": "storage"
+        },
+        {
+          "word": "camera",
+          "kkPhonetic": "/ˈkæmərə/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "相機",
+          "example": "It's been spotted by the world's biggest digital camera, which is in Chile.",
+          "highlight": "camera"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "figure out",
+          "highlight": "figured out",
+          "meaningZh": "弄清楚",
+          "example": "And discoveries like this remind me that nobody has everything figured out and you never have to be an expert to feel amazed."
+        },
+        {
+          "phrase": "talk through",
+          "highlight": "talk me through",
+          "meaningZh": "向…詳細解釋",
+          "example": "So, talk me through that definition."
+        },
+        {
+          "phrase": "stacked on top of",
+          "highlight": "stacked on top of",
+          "meaningZh": "堆疊在…之上",
+          "example": "So, for a bit of context, your standard door inside your house is about 2 meters across, so it's sort of four of those stacked on top of each other."
+        },
+        {
+          "phrase": "get used to",
+          "highlight": "get used to",
+          "meaningZh": "習慣於",
+          "example": "This is when you go to the countryside and and you look up in the night sky and you see this this river of dappled light once your eyes get used to the darkness, and and it kind of looks like foggy clouds, but that that band across the sky, that is the Milky Way, that is our galaxy."
+        },
+        {
+          "phrase": "look through",
+          "highlight": "look through",
+          "meaningZh": "瀏覽",
+          "example": "So, the lead astronomer, he he developed some code with some of his colleagues that would look through all of these alerts and then try and put together the alerts that were to do with the same object."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "demote",
+          "kkPhonetic": "/dɪˈmoʊt/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "降級",
+          "example": "It essentially got demoted and there's been a debate ever since about whether it should get its status back.",
+          "highlight": "demoted"
+        },
+        {
+          "word": "cosmic",
+          "kkPhonetic": "/ˈkɑːzmɪk/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "宇宙的",
+          "example": "Oh my goodness, this is so incredibly cool that we're still finding brand-new things in our own cosmic backyard.",
+          "highlight": "cosmic"
+        },
+        {
+          "word": "antiquity",
+          "kkPhonetic": "/ænˈtɪkwəti/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "古代",
+          "example": "You know, we've known about planets since antiquity, so, you know, back the ancient times, but, yeah, only defined it in 2005, and that was because we discovered something out beyond the orbit of Pluto, called Eris.",
+          "highlight": "antiquity"
+        },
+        {
+          "word": "spherical",
+          "kkPhonetic": "/ˈsfɪrɪkl/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "球形的",
+          "example": "So, what that means is it's got enough mass to make itself spherical.",
+          "highlight": "spherical"
+        },
+        {
+          "word": "debris",
+          "kkPhonetic": "/dəˈbri/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "殘骸",
+          "example": "You must have cleared your orbit of debris.",
+          "highlight": "debris"
+        },
+        {
+          "word": "overexert",
+          "kkPhonetic": "/ˌoʊvərɪɡˈzɜːrt/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "用力過度",
+          "example": "You know, we were told, you know, right, just stroll around, don't overexert yourself, and be careful you don't start getting a headache.",
+          "highlight": "overexert"
+        },
+        {
+          "word": "dappled",
+          "kkPhonetic": "/ˈdæpld/",
+          "partOfSpeech": "adjective",
+          "level": "C2",
+          "meaningZh": "斑駁的",
+          "example": "So, this is when you go to the countryside and and you look up in the night sky and you see this this river of dappled light once your eyes get used to the darkness, and and it kind of looks like foggy clouds, but that that band across the sky, that is the Milky Way, that is our galaxy.",
+          "highlight": "dappled"
+        },
+        {
+          "word": "hydrostatic",
+          "kkPhonetic": "/ˌhaɪdrəˈstætɪk/",
+          "partOfSpeech": "adjective",
+          "level": "C2",
+          "meaningZh": "流體靜力學的",
+          "example": "Then the second term we've got is whether something is massive enough so it has enough gravity to fall into hydrostatic equilibrium.",
+          "highlight": "hydrostatic"
+        },
+        {
+          "word": "gravitationally",
+          "kkPhonetic": "/ˌɡrævɪˈteɪʃənəli/",
+          "partOfSpeech": "adverb",
+          "level": "C1",
+          "meaningZh": "受引力作用地",
+          "example": "Now to be a planet, you have to be gravitationally dominant.",
+          "highlight": "gravitationally"
+        },
+        {
+          "word": "astrophysicist",
+          "kkPhonetic": "/ˌæstroʊˈfɪzɪsɪst/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "天體物理學家",
+          "example": "I'm speaking to Dr. Jennifer Millard, who's an astrophysicist.",
+          "highlight": "astrophysicist"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "figure out",
+          "highlight": "figured out",
+          "meaningZh": "弄清楚",
+          "example": "And discoveries like this remind me that nobody has everything figured out and you never have to be an expert to feel amazed."
+        },
+        {
+          "phrase": "clog up",
+          "highlight": "clog up",
+          "meaningZh": "塞滿",
+          "example": "That'll clog up your storage."
+        },
+        {
+          "phrase": "get used to",
+          "highlight": "get used to",
+          "meaningZh": "習慣於",
+          "example": "So, this is when you go to the countryside and and you look up in the night sky and you see this this river of dappled light once your eyes get used to the darkness, and and it kind of looks like foggy clouds, but that that band across the sky, that is the Milky Way, that is our galaxy."
+        },
+        {
+          "phrase": "fall down",
+          "highlight": "falls down",
+          "meaningZh": "未達標準",
+          "example": "And this is where Pluto falls down, because Pluto orbits in something called the Kuiper Belt."
+        },
+        {
+          "phrase": "fall into",
+          "highlight": "fall into",
+          "meaningZh": "進入（某種狀態）",
+          "example": "Then the second term we've got is whether something is massive enough so it has enough gravity to fall into hydrostatic equilibrium."
+        }
+      ]
+    },
+    "topic": {
+      "vocabulary": [
+        {
+          "word": "astronomy",
+          "kkPhonetic": "/əˈstrɑnəmɪ/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "天文學",
+          "example": "When we talk about astronomy, we look for distant black holes, distant planetary systems, distant supernovas.",
+          "highlight": "astronomy"
+        },
+        {
+          "word": "asteroid",
+          "kkPhonetic": "/ˈæstəˌrɔɪd/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "小行星（複數）",
+          "example": "And so, this stops asteroids from being planets, cuz well, asteroids are lumpy potato-shaped things, so even though they go around the sun, they aren't round, they aren't planets.",
+          "highlight": "asteroids"
+        },
+        {
+          "word": "comet",
+          "kkPhonetic": "/ˈkɑmɪt/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "彗星（複數）",
+          "example": "It's where we get a lot of our comets from.",
+          "highlight": "comets"
+        },
+        {
+          "word": "telescope",
+          "kkPhonetic": "/ˈtɛləˌskop/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "望遠鏡",
+          "example": "And this telescope is unbelievable.",
+          "highlight": "telescope"
+        },
+        {
+          "word": "galactic",
+          "kkPhonetic": "/ɡəˈlæktɪk/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "銀河的、星系的",
+          "example": "And also, it's been hanging around in our galactic plane.",
+          "highlight": "galactic"
+        },
+        {
+          "word": "Milky Way",
+          "kkPhonetic": "/ˈmɪlki ˌwe/",
+          "partOfSpeech": "proper noun",
+          "level": "B1",
+          "meaningZh": "銀河系",
+          "example": "And and it kind of looks like foggy clouds, but that that band across the sky, that is the Milky Way, that is our galaxy.",
+          "highlight": "Milky Way"
+        },
+        {
+          "word": "spaghettification",
+          "kkPhonetic": "/spəˌɡɛtəfəˈkeʃən/",
+          "partOfSpeech": "noun",
+          "level": "C2",
+          "meaningZh": "麵條化效應（天體物理學中物體因強大潮汐力而被拉長如麵條的現象）",
+          "example": "Spoiler alert, it's something called spaghettification.",
+          "highlight": "spaghettification"
+        },
+        {
+          "word": "Chile",
+          "kkPhonetic": "/ˈtʃɪli/",
+          "partOfSpeech": "proper noun",
+          "level": "A2",
+          "meaningZh": "智利；本集提到世界最大的數位相機與天文台所在地。",
+          "example": "It's been spotted by the world's biggest digital camera, which is in Chile.",
+          "highlight": "Chile"
+        },
+        {
+          "word": "Eris",
+          "kkPhonetic": "/ˈɛrɪs/",
+          "partOfSpeech": "proper noun",
+          "level": "B2",
+          "meaningZh": "鬩神星；本集提到在冥王星軌道外發現的矮行星，促使天文學家重新定義行星與矮行星。",
+          "example": "And that was because we discovered something out beyond the orbit of Pluto, called Eris.",
+          "highlight": "Eris"
+        },
+        {
+          "word": "Mars",
+          "kkPhonetic": "/mɑrz/",
+          "partOfSpeech": "proper noun",
+          "level": "A1",
+          "meaningZh": "火星；本集用來與木星共同說明主小行星帶位置的太陽系行星。",
+          "example": "It's a bit like the main asteroid belt between Mars and Jupiter, but for icy bodies.",
+          "highlight": "Mars"
+        },
+        {
+          "word": "Jupiter",
+          "kkPhonetic": "/ˈdʒupətɚ/",
+          "partOfSpeech": "proper noun",
+          "level": "A1",
+          "meaningZh": "木星；本集用來與火星共同標示主小行星帶位置的巨型行星。",
+          "example": "It's a bit like the main asteroid belt between Mars and Jupiter, but for icy bodies.",
+          "highlight": "Jupiter"
+        },
+        {
+          "word": "Neptune",
+          "kkPhonetic": "/ˈnɛptun/",
+          "partOfSpeech": "proper noun",
+          "level": "B1",
+          "meaningZh": "海王星；本集提到柯伊伯帶位於其軌道之外的太陽系行星。",
+          "example": "And the Kuiper Belt is a ring of icy debris that exists beyond the orbit of Neptune.",
+          "highlight": "Neptune"
+        },
+        {
+          "word": "Vera Rubin Observatory",
+          "kkPhonetic": "/ˈvɪrə ˈrubɪn əbˈzɝvəˌtɔri/",
+          "partOfSpeech": "proper noun",
+          "level": "B2",
+          "meaningZh": "維拉·魯賓天文台；本集提到位於智利高山上、配有巨大望遠鏡與相機以發現新矮行星的天文設施。",
+          "example": "Tell me a bit about that camera, the Vera Rubin Observatory.",
+          "highlight": "Vera Rubin Observatory"
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/7nmEvPipytdBpwhviSRhkS"
+}
