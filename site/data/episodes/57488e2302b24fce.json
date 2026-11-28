@@ -1,0 +1,340 @@
+{
+  "id": "57488e2302b24fce",
+  "title": "How young people in China lost their community spaces",
+  "description": "<p>Back in 2022, young people gathered in the Chinese city of Shanghai for a vigil. It was to mourn the deaths of 10 people who died in a fire in a high-rise residential building in Xinjiang. Many believed the victims couldn’t escape because of strict covid-19 restrictions, although Chinese authorities disputed this.</p><p>The demonstrators met on Urumqi Middle Road - a place that would go on to become the focal point of protests known as the Blank Paper Movement. Demonstrations spread across China, with people holding blank white sheets which they said represented “everything we want to say but cannot say”. </p><p>Four years later, the spaces young people gathered in are disappearing. Police now patrol Urumqi Middle Road. So what happened to the Blank Paper Movement? Eunice Yang from BBC Chinese breaks it down for us. </p><p>Instagram: @bbcwhatintheworld\nEmail: <a href=\"mailto:whatintheworld@bbc.co.uk\">whatintheworld@bbc.co.uk</a>\nWhatsApp: +44 330 12 33 22 6\nPresenter: Hannah Gelbart\nProducers: Mollie Perella, Benita Barden and Emily Horler\nEditor: Verity Wilde</p>",
+  "publishedAt": "2026-11-27T14:30:00+00:00",
+  "bbcUrl": "http://www.bbc.co.uk/programmes/w3ct8q6l",
+  "summaryZh": "本集 BBC 節目《What in the World》探討中國青年社群空間在白紙運動後逐漸消失的現象。自 2022 年新疆大火引發反對疫情封控的白紙運動以來，中國當局加強對上海烏魯木齊中路等公共場所、酒吧與 LGBT+ 據點的警力監控，導致實體聚會場所大量關閉。BBC 記者 Eunice Yang 指出，許多年輕人轉向使用 Discord 和 Signal 等加密線上平台交流，但在官方審查與監控下，不僅敏感話題受到限制，也難以建立人與人之間的信任感。",
+  "summaryEn": "This episode of BBC's What in the World explores how community spaces for young people in China have vanished following the 2022 Blank Paper Movement. Triggered by a deadly high-rise fire in Xinjiang during COVID lockdowns, the nationwide demonstrations prompted tighter Chinese state surveillance and police presence in public gathering hubs, leading to the shutdown of many local bars, cafes, and LGBT+ venues. BBC journalist Eunice Yang explains that young people have largely shifted their discussions to encrypted online platforms like Discord and Signal, though heavy censorship and diminished mutual trust continue to pose challenges.",
+  "studySets": {
+    "practical": {
+      "vocabulary": [
+        {
+          "word": "restriction",
+          "kkPhonetic": "/rɪˈstrɪkʃən/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "限制",
+          "example": "10 people died and many said that it was because of COVID restrictions that meant that they couldn't get out of the building, although the government does deny this.",
+          "highlight": "restrictions"
+        },
+        {
+          "word": "government",
+          "kkPhonetic": "/ˈɡʌvɚnmənt/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "政府",
+          "example": "You cannot criticize the government.",
+          "highlight": "government"
+        },
+        {
+          "word": "passionate",
+          "kkPhonetic": "/ˈpæʃənət/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "熱情的",
+          "example": "They were so passionate.",
+          "highlight": "passionate"
+        },
+        {
+          "word": "stranger",
+          "kkPhonetic": "/ˈstrendʒɚ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "陌生人",
+          "example": "Everyone on the street were trying to just do something for the strangers, they didn't know each other.",
+          "highlight": "strangers"
+        },
+        {
+          "word": "symbol",
+          "kkPhonetic": "/ˈsɪmbəl/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "象徵",
+          "example": "There was this very powerful symbol, which was people were holding up a piece of blank paper.",
+          "highlight": "symbol"
+        },
+        {
+          "word": "packed",
+          "kkPhonetic": "/pækt/",
+          "partOfSpeech": "adjective",
+          "level": "B1",
+          "meaningZh": "擠滿的",
+          "example": "The bar was packed with people from everywhere.",
+          "highlight": "packed"
+        },
+        {
+          "word": "disappear",
+          "kkPhonetic": "/ˌdɪsəˈpɪr/",
+          "partOfSpeech": "verb",
+          "level": "A2",
+          "meaningZh": "消失了",
+          "example": "Yeah, since the white paper protests, those bars, cafes where you get to chat with the politics and the current economy, etc., just disappeared everywhere in China.",
+          "highlight": "disappeared"
+        },
+        {
+          "word": "freedom",
+          "kkPhonetic": "/ˈfridəm/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "自由",
+          "example": "It's a very precious symbol in China that there are still a lot of people, they want free speech, they want freedom, they don't want king, they don't want dictatorship.",
+          "highlight": "freedom"
+        },
+        {
+          "word": "attract",
+          "kkPhonetic": "/əˈtrækt/",
+          "partOfSpeech": "verb",
+          "level": "B1",
+          "meaningZh": "吸引",
+          "example": "If the Chinese government cannot address the issues facing young people in China, it will be even less likely to attract foreigners.",
+          "highlight": "attract"
+        },
+        {
+          "word": "activity",
+          "kkPhonetic": "/ækˈtɪvətɪ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "活動",
+          "example": "People are just moving more activities to untraceable, but it's still traceable, but it's less traceable compared to like presenting yourself offline.",
+          "highlight": "activities"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "hold up",
+          "highlight": "holding up",
+          "meaningZh": "高舉",
+          "example": "That's because people were holding up pieces of white paper that symbolized the things that they weren't allowed to say, like talking about censorship, lockdowns, restrictions on everyday life."
+        },
+        {
+          "phrase": "step down",
+          "highlight": "step down",
+          "meaningZh": "下台",
+          "example": "In Mandarin, protesters chant, step down Xi Jinping, step down, end lockdown in Xinjiang."
+        },
+        {
+          "phrase": "set the scene",
+          "highlight": "set the scene",
+          "meaningZh": "描述背景狀況",
+          "example": "So to start with, can you set the scene for us?"
+        },
+        {
+          "phrase": "hang out",
+          "highlight": "hanging out",
+          "meaningZh": "聚會閒晃",
+          "example": "And if those spaces have now disappeared and police presence has increased to that extent, young people are no longer hanging out in the bars and cafes and nightclubs, where have they gone to?"
+        },
+        {
+          "phrase": "close down",
+          "highlight": "closed down",
+          "meaningZh": "關閉；查封",
+          "example": "So that's why the government has closed down so many of these public places and made them not very friendly to the community, because they don't want dissidents, they don't want people to gather and talk about things that are against what the government wants."
+        }
+      ]
+    },
+    "advanced": {
+      "vocabulary": [
+        {
+          "word": "symbolize",
+          "kkPhonetic": "/ˈsɪmbəˌlaɪz/",
+          "partOfSpeech": "verb",
+          "level": "B2",
+          "meaningZh": "象徵了",
+          "example": "That's because people were holding up pieces of white paper that symbolized the things that they weren't allowed to say, like talking about censorship, lockdowns, restrictions on everyday life.",
+          "highlight": "symbolized"
+        },
+        {
+          "word": "censorship",
+          "kkPhonetic": "/ˈsɛnsərˌʃɪp/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "審查制度",
+          "example": "That's because people were holding up pieces of white paper that symbolized the things that they weren't allowed to say, like talking about censorship, lockdowns, restrictions on everyday life.",
+          "highlight": "censorship"
+        },
+        {
+          "word": "dictatorship",
+          "kkPhonetic": "/dɪkˈteɪtərˌʃɪp/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "獨裁政權",
+          "example": "It's a very precious symbol in China that there are still a lot of people, they want free speech, they want freedom, they don't want king, they don't want dictatorship.",
+          "highlight": "dictatorship"
+        },
+        {
+          "word": "relaxation",
+          "kkPhonetic": "/ˌrilækˈseɪʃən/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "放寬",
+          "example": "You cannot say it's white paper protests led to the relaxation of the COVID control cup in China.",
+          "highlight": "relaxation"
+        },
+        {
+          "word": "untraceable",
+          "kkPhonetic": "/ʌnˈtreɪsəbəl/",
+          "partOfSpeech": "adjective",
+          "level": "C1",
+          "meaningZh": "無法追蹤的",
+          "example": "People are just moving more activities to untraceable, but it's still traceable, but it's less traceable compared to like presenting yourself offline.",
+          "highlight": "untraceable"
+        },
+        {
+          "word": "anniversary",
+          "kkPhonetic": "/ˌænəˈvɝsərɪ/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "週年紀念",
+          "example": "I talked to some professors about the white paper protests before this year's anniversary.",
+          "highlight": "anniversary"
+        },
+        {
+          "word": "dissident",
+          "kkPhonetic": "/ˈdɪsədənt/",
+          "partOfSpeech": "noun",
+          "level": "C1",
+          "meaningZh": "異議人士",
+          "example": "So that's why the government has closed down so many of these public places and made them not very friendly to the community, because they don't want dissidents, they don't want people to gather and talk about things that are against what the government wants.",
+          "highlight": "dissidents"
+        },
+        {
+          "word": "authority",
+          "kkPhonetic": "/əˈθɔrətɪ/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "官方當局",
+          "example": "And of- there's always the risk if what you're writing or saying is online, then some of the authorities could come across it at some point, and the code words might be decoded as well.",
+          "highlight": "authorities"
+        },
+        {
+          "word": "decode",
+          "kkPhonetic": "/diˈkoʊd/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "被破譯",
+          "example": "And of- there's always the risk if what you're writing or saying is online, then some of the authorities could come across it at some point, and the code words might be decoded as well.",
+          "highlight": "decoded"
+        },
+        {
+          "word": "restructure",
+          "kkPhonetic": "/riˈstrʌktʃər/",
+          "partOfSpeech": "verb",
+          "level": "C1",
+          "meaningZh": "重組",
+          "example": "They just say because of the economy, because we want to restructure this whole community, this block, we want to reconstruct the city, etc.",
+          "highlight": "restructure"
+        }
+      ],
+      "phrases": [
+        {
+          "phrase": "step down",
+          "highlight": "step down",
+          "meaningZh": "下台",
+          "example": "In Mandarin, protesters chant, step down Xi Jinping, step down, end lockdown in Xinjiang."
+        },
+        {
+          "phrase": "set the scene",
+          "highlight": "set the scene",
+          "meaningZh": "說明當時背景",
+          "example": "So to start with, can you set the scene for us?"
+        },
+        {
+          "phrase": "police presence",
+          "highlight": "police presence",
+          "meaningZh": "警力部署",
+          "example": "How much of a police presence is there?"
+        },
+        {
+          "phrase": "come across",
+          "highlight": "come across",
+          "meaningZh": "偶然發現",
+          "example": "And of- there's always the risk if what you're writing or saying is online, then some of the authorities could come across it at some point, and the code words might be decoded as well."
+        },
+        {
+          "phrase": "bare minimum",
+          "highlight": "bare minimum",
+          "meaningZh": "最低限度",
+          "example": "That's the the bare minimum if we just compare it to the former days."
+        }
+      ]
+    },
+    "topic": {
+      "vocabulary": [
+        {
+          "word": "lockdown",
+          "kkPhonetic": "/ˈlɑkˌdaʊn/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "封鎖；封城（指疫情期間政府實施的管制措施）",
+          "example": "That's because people were holding up pieces of white paper that symbolized the things that they weren't allowed to say, like talking about censorship, lockdowns, restrictions on everyday life.",
+          "highlight": "lockdowns"
+        },
+        {
+          "word": "protester",
+          "kkPhonetic": "/prəˈtɛstɚ/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "抗議者（指參與白紙運動等表達訴求的群眾）",
+          "example": "In Mandarin, protesters chant, step down Xi Jinping, step down, end lockdown in Xinjiang.",
+          "highlight": "protesters"
+        },
+        {
+          "word": "lesbian",
+          "kkPhonetic": "/'lɛzbɪən/",
+          "partOfSpeech": "adjective",
+          "level": "B2",
+          "meaningZh": "女同性戀的（形容在上海遭警方排查並被迫關閉的酒吧類型）",
+          "example": "Yeah, frightened, because I talked to a lesbian bar owner back in Shanghai.",
+          "highlight": "lesbian"
+        },
+        {
+          "word": "nightlife",
+          "kkPhonetic": "/'naɪtˌlaɪf/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "夜生活（指過去年輕人在酒吧與街頭聚集交流的社交生態）",
+          "example": "There was all this nightlife, people would be sitting on the curb side.",
+          "highlight": "nightlife"
+        },
+        {
+          "word": "Xinjiang",
+          "kkPhonetic": "/'ʃɪn'dʒjɑŋ/",
+          "partOfSpeech": "noun",
+          "level": "B1",
+          "meaningZh": "新疆（中國西北自治區，當地公寓火災死傷觸發民眾對封控政策的不滿，成為白紙運動的導火線）",
+          "example": "This all started after there was a huge fire in a high-rise block of flats in Xinjiang.",
+          "highlight": "Xinjiang"
+        },
+        {
+          "word": "Urumqi Road",
+          "kkPhonetic": "/uː'ruːmtʃi r oʊd/",
+          "partOfSpeech": "noun",
+          "level": "B2",
+          "meaningZh": "烏魯木齊路（位於上海的道路，為白紙運動的核心示威地點，現有大量警力巡邏監視）",
+          "example": "Today on the Urumqi Road, people presented me some photos who are still living in Shanghai.",
+          "highlight": "Urumqi Road"
+        },
+        {
+          "word": "Shanghai",
+          "kkPhonetic": "/'ʃæŋ'haɪ/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "上海（中國主要城市，曾是白紙運動及青年夜生活聚集地，現今街頭酒吧與集會空間大幅縮減）",
+          "example": "I was reading how the streets of Shanghai and other places in China, too, other cities, used to be these hubs where people used to get together and chat.",
+          "highlight": "Shanghai"
+        },
+        {
+          "word": "Beijing",
+          "kkPhonetic": "/'beɪ'dʒɪŋ/",
+          "partOfSpeech": "noun",
+          "level": "A2",
+          "meaningZh": "北京（中國首都，節目提及該城過去曾有熱鬧的酒吧與社交空間，現已受到嚴格管控）",
+          "example": "Formerly, when Shanghai, and also Beijing and Changsha, a lot of Chinese cities, when those cities, there were bars, cafes, nightclubs, etc., people on the street, they talk to each other with no restriction, and people just trust each other, and then they form a community un-organically.",
+          "highlight": "Beijing"
+        }
+      ]
+    }
+  },
+  "spotifyUrl": "https://open.spotify.com/episode/5XnHekHFZlNmGNY1KF9DWl"
+}
